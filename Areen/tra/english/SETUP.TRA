@@ -1,0 +1,146 @@
+@1   = ~Areen the wild mage NPC mod for BG2EE~
+@2   = ~Areen~
+@3   = ~When asked about his past, Areen Selemchant regards you with a measured gaze that belies his mastery of wild magic. He speaks with careful precision about his parents, pioneering wild mages who perished in their pursuit of understanding the chaotic art. Their dedication to scholarly rigor lives on in their son, who views wild magic not as a source of whimsy, but as a discipline demanding intellectual fortitude.
+
+His lips tighten when he mentions the recent loss of his crafting recipes and spell book in a bandit ambush, though he seems more bothered by the disruption to his systematic study than the material loss itself. You notice how he bristles at tales of wild mages who treat their gift as a joke, considering them an embarrassment to the art his parents helped establish. Despite his rigid demeanor, there's an underlying current of passion when he speaks of combining magical theory with practical craftsmanship, though he's currently seeking to reconstruct his lost knowledge.~
+@4   = ~Areen's Body~
+@5   = ~Areen was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you do not know what it would be.~
+@6   = ~Areen's Mother~
+@7   = ~After the Bhaalspawn saga concluded, Areen Selemchant returned briefly to Athkatla, where his systematic approach to wild magic earned him reluctant recognition from the Cowled Wizards. His theories on controlled chaos magic were eventually compiled into a treatise that found its way to Candlekeep's archives.
+
+The noble houses of Amn, however, proved as stifling as ever. When word reached him of ancient wild magic sites in the Snowflake Mountains, Areen departed his homeland, methodically documenting the chaotic energies he encountered. His research expeditions would occasionally cross paths with his old companions, leading to brief but meaningful reunions.
+
+Years later, Areen undertook the ambitious task of restoring the ruins of Ulcaster School of Magic. Where others saw only crumbling remnants of a tragic past, he recognized an opportunity to honor both magical scholarship and controlled chaos. He established an academy there, where he taught aspiring wild mages - though students would often hear him muttering "fuck fuck fuck" under his breath when experiments went particularly awry. Despite these occasional setbacks, his unique blend of scholarly precision and resigned acceptance of chaos proved remarkably effective.
+
+His parents' crafting journals, once lost to bandits, were eventually recovered from a collector in Waterdeep. They now rest in his academy's library, alongside his own extensive research - a testament to Areen's family's enduring dedication to understanding the controlled chaos of wild magic.~
+@8   = ~After the Bhaalspawn saga, Areen and <CHARNAME> found themselves bound by something deeper than adventure - a connection of minds and hearts that transcended the chaos around them. Together, they restored the ruins of Ulcaster School of Magic, turning it into both a sanctuary for their companionship and a beacon for aspiring wild mages.
+
+Their partnership proved as complementary as order and chaos themselves. While Areen meticulously documented magical theories, <CHARNAME> brought adventure and spontaneity to their shared life. Many evenings would find them in the academy's highest tower, sharing tales of their day's discoveries over cups of Amnian tea.
+
+Though they would occasionally part ways - Areen to his research expeditions and <CHARNAME> to answer destiny's call - they always found their way back to each other. Their reunions were marked by quiet joy and shared understanding, often accompanied by Areen's flustered yet endearing "Oh dear, I've missed you terribly."
+
+His parents' recovered journals now rest in their shared library, alongside the volumes of research he and <CHARNAME> compiled together - a testament to how love, like wild magic, needs neither physical expression nor conventional form to work its own special kind of chaos in perfect order.~
+
+
+// new items description
+
+@9 =     ~Areen's Legacy Staff~
+@10 =     ~This staff was crafted by Areen's parents through meticulous research as part of their legacy of bringing discipline to wild magic. Gifted to their son upon completing his early studies, the staff's intricate runes and carefully balanced enchantments help to guide and temper wild magic surges. Though already a remarkable achievement in magical crafting, certain patterns in its construction suggest it was designed with future improvements in mind.
+
+STATISTICS:
+
+Equipped Abilities:
+- Bonus to saving throws vs. polymorph +2
+- Wild surge bonus +5
+
+THAC0: +1
+Damage: 1d6+1 (crushing)
+Speed Factor: 3
+Proficiency Type: Quarterstaff
+Type: Two-handed
+Requires:
+ 5 Strength
+
+Weight: 4 lb.~
+
+@11 =     ~Nahal's Reckless Dweomer Instructions~
+@12 =     ~This instructional scroll contains the theoretical foundations and casting methodology of Nahal's Reckless Dweomer. While not suitable for direct casting, these detailed notes allow a trained wild mage to inscribe this fundamental technique into their spellbook. The complex formulae and precise diagrams can only be properly understood by those versed in wild magic principles.
+
+Weight: 0 lb.~
+
+@13 =     ~Chaos Shield Instructions~
+@14 =    ~This instructional scroll contains the theoretical foundations and casting methodology of Chaos Shield. While not suitable for direct casting, these detailed notes allow a trained wild mage to inscribe this fundamental technique into their spellbook. The complex formulae and precise diagrams can only be properly understood by those versed in wild magic principles.
+
+Weight: 0 lb.~
+
+@15 =     ~Improved Chaos Shield Instructions~
+@16 =     ~This instructional scroll contains the theoretical foundations and casting methodology of Improved Chaos Shield. While not suitable for direct casting, these detailed notes allow a trained wild mage to inscribe this fundamental technique into their spellbook. The complex formulae and precise diagrams can only be properly understood by those versed in wild magic principles.
+
+The wild mage that prepared this scroll was particularly gifted, making this version of the spell more accessible than its original incantation.
+
+Weight: 0 lb.~
+
+@17 =     ~Minor Chaos Armor~
+@18 =     ~These distinctive robes were first crafted in the years following the Time of Troubles, when practitioners of wild magic sought ways to better control their increasingly unpredictable art. The fabric is interwoven with metallic threads forming intricate patterns that help stabilize magical energies. While not as potent as the legendary Archmaster's Chaos Vestments crafted by the most accomplished wild mages, these robes became popular among early practitioners for their protective properties. Several sets were created in Waterdeep's magical academies as wild magic began to gain reluctant acceptance among more traditional spellcasters.
+
+STATISTICS:
+
+Equipped abilities:
+- Vocalize
+- Wild surge bonus +10
+
+Weight: 3 lb.~
+
+@19  =     ~Areen's Improved Chaos Shield~
+
+@20  =     ~Areen's Improved Chaos Shield
+(Abjuration)
+
+Level: 5
+Range: 0
+Duration: 2 hours
+Casting Time: 7
+Area of Effect: The caster
+Saving Throw: None
+
+Improved Chaos Shield increases a Wild Mage's chance to gain a favorable result when a Wild Surge occurs. Every time a roll is made on the Wild Surge chart, an extra 25 is added to the dice roll. When Nahal's Reckless Dweomer is cast, the bonus from Improved Chaos Shield stacks with the Wild Mage's level bonus. It does not stack with Chaos Shield.~
+
+@21 =     ~A Beginner's Guide to Controlled Chaos~
+@22 =     ~This foundational text approaches wild magic as a serious field of study requiring disciplined practice and thorough theoretical understanding. The author emphasizes the importance of proper magical theory, careful preparation, and methodical approach to spell manipulation. Essential Principles for the Aspiring Wild Mage:
+
+Contrary to common belief, most wild surge manifestations are manageable with proper preparation. While dramatic effects do occur, experienced practitioners rarely face truly dangerous consequences.
+
+The wise practitioner maintains basic protective enchantments against fire and movement impediments. A ring of fire resistance is considered essential equipment.
+
+When channeling unstable energies, direct them toward adversaries rather than allies. Many unexpected effects can prove advantageous when properly directed.
+
+Should a surge summon otherworldly entities, maintain distance and protective wards. Such manifestations, while unpredictable, often prove tactically advantageous.
+
+The fundamental protective enchantments developed by early wild magic practitioners remain essential. Advanced versions exist but are not strictly necessary for routine spellcasting.
+
+Maintain valuable items separately from coin wealth. The author particularly emphasizes this after documented instances of mass transmutation.
+
+At higher levels of mastery, practitioners can achieve remarkable effects through controlled manipulation of wild energies, including the casting of complex spells through relatively simple channels.
+
+The text concludes with detailed theoretical frameworks for advanced surge manipulation, though the author notes these techniques require significant magical expertise to attempt safely.~
+
+@23 =     ~Cautionary Tales: Notable Wild Magic Accidents in Waterdeep~
+@24 =     ~This analytical compilation from Waterdeep's Office of Magical Regulation examines significant magical incidents that shaped modern safety protocols. Of particular note is the infamous "Golden Disaster" of 1361 DR, when an unexpected surge transmuted a merchant's entire inventory into various species of waterfowl. While financially ruinous, this incident led to important advances in surge containment theory.
+
+The "Peculiar Case of the Purple Promenade" deserves mention - during a demonstration of controlled wild magic at the Watchful Order, an unexpected surge turned an entire street's worth of citizens temporarily purple. Though harmless, this incident prompted the development of current wild surge protection protocols.
+
+Perhaps most significant was the "Treasury Transmutation" of 1359 DR, where a wild surge accidentally converted a noble's fortune into copper pieces, leading to the current practices of storing valuable items separately from coin. Each case study is accompanied by detailed analysis of preventive measures now standard in magical institutions.~
+
+@25 =     ~Wild Magic in a Time of Troubles by Tromed Lov~
+@26 =     ~The Time of Troubles presented unprecedented opportunities for understanding magical instability. While conventional spellcasters struggled with the Weave's disruption, practitioners of wild magic found their theoretical frameworks uniquely suited to adapt. Their pre-existing research into magical fluctuations provided critical insights into spell stability during this period. The subsequent years saw increased academic interest in wild magic theory, though resistance from traditional magical institutions has slowed its acceptance as a legitimate field of study.~
+
+@27 =     ~Theories on Surge Manipulation and Containment~
+@28 =     ~A detailed examination of wild magic surge patterns and their theoretical foundations. The author presents compelling evidence that proper understanding of magical energy fluctuations can lead to predictable outcomes through careful application of established principles. The treatise includes extensive mathematical formulae for calculating surge probabilities and detailed diagrams of containment methodologies. Essential reading for serious practitioners of wild magic arts.~
+
+@29 =     ~Notable Wild Mages of the Sword Coast~
+@30 =     ~This scholarly work examines the contributions of prominent wild magic practitioners along the Sword Coast. Of particular significance is Randal Mahge, whose methodical approach to wild magic during the Time of Troubles led to breakthrough developments in surge control theory. His treatise 'On Predictable Unpredictability' remains a cornerstone text in magical academies, and his development of stabilizing formulae helped establish wild magic as a legitimate field of study. Unlike many of his contemporaries, Randal's careful documentation and controlled experiments advanced our understanding of wild magic as a distinct magical discipline.
+
+In stark contrast stands the infamous Pryce of Shadowdale, whose erratic experiments and casual approach to wild magic resulted in numerous documented incidents. While his occasional successes led to some interesting discoveries, particularly in the field of magical amplification, his legacy serves more as a cautionary tale of unbridled experimentation. The author notes that Pryce's eventual transformation into a talking sheep (a condition that persisted for three months) exemplifies the risks of treating wild magic without proper academic rigor.
+
+The text includes detailed analysis of experimental procedures and theoretical frameworks that advanced our understanding of wild magic, with particular emphasis on those practitioners who approached the art with scholarly dedication.~
+
+@31 =     ~Areen's notes~
+@32 =     ~These carefully annotated book details a complex magical crafting procedure, written in a precise hand with numerous theoretical calculations in the margins. The text bears the careful observations and methodical style characteristic of Areen's academic approach to wild magic.
+
+The primary formula appears to require five crucial components for what seems to be an enhancement to an existing staff's wild magic stabilization properties: A flawless star sapphire of exceptional quality, noted for its natural resonance with magical energies. A ring of protection, whose historical significance in magical control is well documented. The heart of a demon forcibly taken. Holy water knowingly given. Blood from a wild mage freely offered.
+
+The remainder of the text contains detailed theoretical frameworks and precise magical formulae, though several sections remain incomplete. Numerous side notes suggest that the author believes this enhancement would significantly improve the staff's capabilities, though the exact nature of these improvements remains unclear.
+
+A final notation reads: Father's theories on resonance manipulation appear sound, though mother's stabilization matrices will require further refinement.~
+
+
+@101 =  ~Revised Wild Surge Table~
+
+// These are the entries for Bodhi abduction. If you'd like to see how they are used, please, take a look at O#BranJ.d file, but only after you've read simpler dialogue files.
+
+@100001 = ~The Final Battle with Bodhi.
+
+Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Areen.  Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible.  I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!~
+@100002 = ~The Final Battle with Bodhi.
+
+While I had feared for some time that Bodhi's final revenge on me would be to take away Areen forever, it seems that the information in the lorebook was right... Amaunator's idol has restored Areen not only to life, but has removed the vampiric curse from her, as well.~

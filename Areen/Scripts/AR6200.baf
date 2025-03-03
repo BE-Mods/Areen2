@@ -1,0 +1,29 @@
+// There are two epilogues: one regular n, one for romanced if PC hasn't ascended.
+// Both epilogues are available in Setup-Areen.tp2.
+
+IF
+Global("StartEndBios","AR6200",1)
+InParty("BEAren")
+!Global("BEArenRomanceActive","GLOBAL",2)
+Global("BEArenBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("BEArenBio","GLOBAL",1)
+TextScreen("BEAre01")
+SmallWait(1)
+Continue()
+END
+
+IF
+Global("StartEndBios","AR6200",1)
+InParty("BEAren")
+!Global("PlayerChoseEssence","GLOBAL",1)
+Global("BEArenRomanceActive","GLOBAL",2)
+Global("BEArenBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("BEArenBio","GLOBAL",1)
+TextScreen("BEAre02")
+SmallWait(1)
+Continue()
+END

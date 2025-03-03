@@ -1,0 +1,12 @@
+// Branwen's Mother appears after Gorion's Wraith calls upon her in dialogue and this cutscene plays:
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+CreateVisualEffect("SPFLESHS",[1454.1398])
+Wait(1)
+CreateCreature("BEArenG",[1454.1398],14)
+Wait(1)
+ActionOverride("BEArenG",StartDialogueNoSet(Player1))
+END

@@ -1,0 +1,9 @@
+// Areen's abduction, adding to Bodhi's crypt: script for Areen's vampire appearance
+IF
+Global("BEArenVampire","GLOBAL",1)
+THEN
+RESPONSE #100
+CreateCreature("BEARENV",[1473.332],2)
+GiveItemCreate("BEArenB","BEArenV",1,0,0) // When Aren the vampire dies, we are going to get his body
+SetGlobal("BEArenVampire","GLOBAL",2)
+END
