@@ -7,9 +7,7 @@ BEGIN BEAREN
 CHAIN IF ~Global("BEArenMet","GLOBAL",0)~ THEN BEAren b1 
 @0 /* <CHARNAME>! By Tempus, 'tis good to see you again! I feared you had perished! */
 DO ~SetGlobal("BEArenMet","GLOBAL",1)~ 
-== VICONIJ IF ~InParty("Viconia") InMyArea("Viconia") !StateCheck("Viconia",CD_STATE_NOTVALID)~ THEN @1 /* I remember you, elg'caress. You were such an amusing statue with your mouth forever drooling. Pity someone had set you free. */
 == MINSCJ IF ~InParty("Minsc") InMyArea("Minsc") !StateCheck("Minsc",CD_STATE_NOTVALID)~ THEN @2 /* Little Branwen is back! Look, Boo, isn't it a proper reunion? Minsc and Boo and Branwen and friends! */
-== EDWINJ IF ~InParty("Edwin") InMyArea("Edwin") !StateCheck("Edwin",CD_STATE_NOTVALID)~ THEN @3 /* This one is useless, <CHARNAME>. Don't you remember how she got trapped in Nashkel? (Oh, fine, fine. But don't let her near my scrolls!) */
 == JAHEIRAJ IF ~InParty("Jaheira") InMyArea("Jaheira") !StateCheck("Jaheira",CD_STATE_NOTVALID)~ THEN @4 /* Well met, Branwen. It is good to see you once more. */
 == BEAren @5 /* I've learnt about mystery murders in this district and I've come to investigate. I am glad indeed that I've met you here! 'Twould be an honor to travel with you again. */
 END 

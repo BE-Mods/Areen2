@@ -1,13 +1,32 @@
-// This is Branwen's main script. Each block does one unique action.
-
-// For example, the first block: if you press K key when Branwen is selected, then script O#BranF.baf will run and assign Branwen a correct soundset again.
+// Areen doesn't know level 7 Improved Chaos Shield, but a level 5 version, this ensures he doesn't get it back after reload/death
 IF
-HotKey(K)
+  InParty(Myself)
+  HaveKnownSpell(2723)
+THEN
+    RESPONSE #100
+    ReallyForceSpellRES("BEDEL#3",Myself)
+END
+
+// Areen can practice magic and extend license  BUT I do not know how to reverse it yet.
+IF
+InParty(Myself)
+GlobalGT("CowledWarning","GLOBAL",0)
 THEN
 RESPONSE #100
-StartCutSceneMode()
-StartCutScene("O#BranF")
+SetGlobal("CowledWarning","GLOBAL",10)
 END
+
+// Kruin gives a ring in return for the silver blade
+ /*
+IF
+InParty(Myself)
+Global("BEArenKRUINGloves", "GLOBAL", 1)
+THEN
+RESPONSE #100
+GiveItemCreate("BEGLOVES",Player1,0,0,0)
+SetGlobal("BEArenKRUINGloves", "GLOBAL", 2)
+END
+ */
 
 // This is where Branwen's friendship talks start. O#BranShutUp is a variable you can set in player-initiated dialogue by telling Branwen you'd like some quiet, or asking her to talk to you again.
 // So, when Branwen joins your party, a timer is set for one hour, and the first talk is preparing to run.

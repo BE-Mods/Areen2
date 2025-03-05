@@ -66,19 +66,17 @@ The strictest wild caster particulah!~
 @61   = ~A hardly unexpected insinuation.~
 
 @62   = ~Where are your manners, Corneil?~
-@63   = ~Well, if it is not Areen Selemchant. What are you doing with these foreigners?~
-@64   = ~This here is my friend <CHARNAME>, and you would be wise to treat them with proper courtesy and answer their questions.~
+@63   = ~Well, if it is not Areen Selemchant. What are you doing with these foreneirs?~
+@64   = ~This here is my friend <CHARNAME>, you will will be wise well to treat them well and answer to their questions.~
 @65   = ~Of course, a friend of the Selemchants is a friend of mine.~
-@66   = ~And do not attempt to inflate the license prices. I shan't hesitate to report you to your superiors if you try to charge more than 5,000 gold pieces.~
-@67   = ~Of course. How may I help you <CHARNAME>?~
+@66   = ~And better to try to pull anything with the license prices, I won't hesitate to report you to your superious if you try to charge more than 5000 gold pices.~
+@67   = ~Of course~
 
-@68   = ~Galoomp, my dear fellow, can you believe what happened?~
-@69   = ~I saw yer house all blown t' smithereens, Areen, I did! Feared ye was a goner! Relieved as a frog in water t' see ye standin'! Perhaps ye'd be wantin' some comfort in me fine bookies? Nothin' mends a shattered home like a good tome, says I!~
-
-@70   = ~Yes, he was. Tell him, <CHARNAME>.~
-
-@71   = ~I am Areen Selemchant, and they are under my supervision.~
-@72   = ~Very well, sir. They shall be permitted to practice. However, I must issue the warning nonetheless, merely a formality, you understand.~
+@68   = ~I have a bad, bad feeling about this...~
+@69   = ~Looks like he's simply blind again. Poor fool.~
+@70   = ~Well, nobody said it was going to be easy.~
+@71   = ~(waves) Hello!~
+@72   = ~Unless we returned it! Ta-da!~
 
 @73   = ~Another thug, I'll bet.~
 @74   = ~I am not happy that we are doing their dirty work, <CHARNAME>.~
@@ -87,16 +85,7 @@ The strictest wild caster particulah!~
 @77   = ~Honor among thieves, am I right?~
 @78   = ~Let's get this over with.~
 
-@79   = ~This particular cowled wizard has a rather infamous reputation, <CHARNAME>. If you are set on murdering him...which I most certainly do not approve of, but that will be entirely on your conscience...better to act before he casts his magical wards.~
-
-@80   = ~Jermien, is that you? It's me, Areen. Areen Selemchant.~
-@81   = ~Oghma's beard! Areen? The last time I saw you, you were hiding behind your mother's robes.~
-@82   = ~Yes, it has been... quite some time.~
-@83   = ~By Mystra, you look so like your father. Except your eyes. You have...~
-@84   = ~My mother's eyes. I know.~
-@85   = ~So tragic an end... But let's not reminisce. What brings you here lad?~
-@86   = ~We've come to conduct some investigations. This here is a good friend of mine, and our leader, <CHARNAME>.~
-@87   = ~Farewell, Jermien.~
+// gap if needed
 
 @94   = ~Psst, <CHARNAME>, I've heard of this Tolgerias - a cunning fellow, shady to the core. He has a reputation for saying one thing while meaning another. Do not leap blindly into his requests. To be honest, I also doubt he possesses any genuine information about your friend Imoen.~
 @95   = ~I warned you this one was cunning. My lord Selemchant will hear about this.~
@@ -105,20 +94,32 @@ The strictest wild caster particulah!~
 @100  = ~If your father arranged this marriage, you ought to abide by his wishes. It is, after all, your duty as Lady de'Arnise.~
 @102  = ~If it is as you say, then you should bring this matter before the Council of Six rather than embroil us in these dubious arrangements, which I predict will only cause <CHARNAME> more headaches.~
 
-@107  = ~If he is indeed a Cowled Wizard, he's lost his mind long ago.~
 
-@111  = ~Play along, <CHARNAME>. These tests were designed to tame both the rebellious and the deranged. My hypothesis is that they still function as intended and reward submission.~
-
-@114  = ~Ah yes, 'healing and learning.' Much like how a butcher 'heals' a pig of its life and 'learns' the most efficient way to turn it into bacon. Your institutional hospitality is... overwhelming.~
-
-@115  = ~This proposal bears all the hallmarks of what Athkatlan merchants call the 'noble investor's folly'—extraordinary returns promised on a modest investment, only to discover it all has been a scam.~
-
-@116  = ~You offend me, friend, but I was not talking to you, was I?~
-
-@117  = ~Hand over the blade. It's rightfully his, and more importantly, a wild mage of his caliber could reduce half of Athkatla to smoking rubble should we provoke him. Some battles aren't worth the... collateral rearrangement of the cityscape.~
-@118  = ~Listen to your friend. He knows what he's talking about. Besides, I...might...even give you these magic gloves of mine in return. What say you?~
-
-@119  = ~Here, take these.~
+@104  = ~Dark minds follow us where'er we go. 'Tis your lot in life, <CHARNAME>.~
+@105  = ~Trademeet... without trade? Doesn't make any sense to me.~
+@106  = ~That's got to be one of the stupidest things I've ever heard. Why not leave the town and catch that rakshasa yourselves? People are starving here!~
+@107  = ~'Tis all a little too crazy for my taste. You'd better step back, though: he looks dangerous.~
+@108  = ~Did I ever mention that I do not trust him?~
+@109  = ~By Tempus, I *so* do not trust him.~
+@110  = ~You son of a mother!~
+@111  = ~Lovely. Can I whack him on the head with my hammer?~
+@112  = ~Hard to believe, but I actually missed the little fellow. Funny, isn't it?~
+@113  = ~Tiax! What is he doing here? He's not even a mage! Though his placement here is oddly apt, I admit.~
+@114  = ~Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see.~
+@115  = ~Uh-oh.~
+@116  = ~Good. Let these monsters slaughter each other.~
+@117  = ~Shark-men. I've seen them on the isles before. But how are we to understand them?~
+@118  = ~One is as bad as another. Why don't we slaughter them both? The ships and the fishing villages will be safe, and this cursed place will rot and be forgotten.~
+@119  = ~And what is that thing, creature? Must be some mighty treasure indeed.~
+@120  = ~Looks like everyone has their use for us. Well, 'tis good as long as they give us passage to Irenicus.~
+@121  = ~A silver dragon... 'Tis a strange peacemaker, but the only one the drow would truly fear.~
+@122  = ~Ugh. By Tempus, my hands look like... just ugh.~
+@123  = ~Looks like these two are worth each other.~
+@124  = ~He's an idiot. To speak against a Matron Mother's daughter so openly? She'll want his head soon, if she doesn't already.~
+@125  = ~Hear that, Veldrin? Any House would be lucky to have you.~
+@126  = ~'Tis not too late to turn back to the Underdark's caverns. I'm sure the drow will give us a warmer welcome.~
+@127  = ~Yet they are not defending this city. The task falls to us, and us alone.~
+@128  = ~You could incarcerate him and yet you did not? And 'tis your fault that <CHARNAME> lost <PRO_HISHER> soul?~
 
 
 // love talks

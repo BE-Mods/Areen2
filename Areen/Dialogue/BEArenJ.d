@@ -1,5 +1,3 @@
-// Read this dialogue file fourth, after BEAren.d, BEArenP.d and O#BBran.d.
-
 BEGIN BEARENJ
 
 // This is Branwen's main dialogue file after she joins the party. Whenever she interrupts Aran Linvail, confesses her love to CHARNAME or comments at the Tree of Life, she speaks from this very file.
@@ -49,13 +47,6 @@ Name("BEAren",LastTalkedToBy)
 == BEARENJ @5 /* Not in the sort you're proposing. Excuse me. */
 EXIT
 
-CHAIN IF WEIGHT #-1
-~!NumTimesTalkedTo(0)
-Name("BEAren",LastTalkedToBy)
-!Global("MadamUpset","GLOBAL",1)~ THEN MADAM BEArenReactionMadam2
-@6 /* So... do you wish a companion for the evening, then? */
-== BEARENJ @7 /* Hmph! */
-EXIT
 
 // THIS IS IMPORTANT: if you use INTERJECT, you must understand that you're cutting in the game's dialogue, replacing someone else's reaction. So my recommendation is NEVER to do it, except in one or two cases below.
 // On the other hand, using I_C_T, which means INTERJECT_COPY_TRANS, is fine and good.
@@ -90,7 +81,7 @@ EXIT
 
 // Player becomes the Slayer for the first time.
 
-I_C_T PLAYER1 5 BEArenFirstSlayerChange1 
+I_C_T PLAYER1 5 BEArenFirstSlayerChange1
 == BEARENJ IF ~InParty("BEAren") See("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @15 /* Uh-oh. Tempus would be... impressed, I think? But better not do it again. */
 END
 
@@ -118,15 +109,15 @@ END
 CHAIN BEARENJ pl2.1
 @21 /* You saved my life, and you are a friend. We're in this together, and I will remain by your side no matter what. By Tempus' shield! */
 END
-COPY_TRANS PLAYER1 33 
+COPY_TRANS PLAYER1 33
 
-// COPY_TRANS  means coming back to the main dialogue, so other characters can say their piece. 
+// COPY_TRANS  means coming back to the main dialogue, so other characters can say their piece.
 // INTERJECT 33 + COPY_TRANS 33 is okay, you can use it almost anywhere. Still, use I_C_T for one-liners - see examples below.
 
 // Romanced Branwen at the Tree of Life:
 
 EXTEND_BOTTOM PLAYER1 33
-IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) Global("BEArenTreeOfLife","GLOBAL",0) Global("BEArenRomanceActive","GLOBAL",2)~ 
+IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) Global("BEArenTreeOfLife","GLOBAL",0) Global("BEArenRomanceActive","GLOBAL",2)~
 EXTERN PLAYER1 pl3
 END
 
@@ -255,7 +246,7 @@ IF ~~ EXTERN C6BODHI BEArenAb
 CHAIN C6BODHI BEArenAb
 @45 /* Here she is, though I doubt your fumbling could have inspired the loyalty I have taken with a bite and a gaze.  She is mine now, and will do my bidding gladly. */
 == BEARENV @46 /* As you say, mistress. I am your servant in all things. */
-== C6BODHI @47 /* She is not even fully turned and yet she is mine to use against you. Doesn't it gall you? I thought it might. */ 
+== C6BODHI @47 /* She is not even fully turned and yet she is mine to use against you. Doesn't it gall you? I thought it might. */
 END
 IF ~~ EXTERN C6BODHI 28
 
@@ -360,64 +351,35 @@ I_C_T LYROS 5 BEArenLYROS5
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @61 /* Uh-oh. Weren't these fools... well, us? */
 END
 
-// Faldorn
+// Corneil, goverment building
 
-I_C_T CEFALDOR 9 BEArenCEFALDOR9
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @62 /* 'Tis truly a pity what happened to her. Faldorn was a good companion. */
+I_C_T CORNEIL 0 BEArenCORNEIL0
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @62
+== CORNEIL IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @63
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @64
+== CORNEIL IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @65
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @66
+== CORNEIL IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @67
 END
 
-I_C_T CEFALDOR 10 BEArenCEFALDOR10
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @62 /* 'Tis truly a pity what happened to her. Faldorn was a good companion. */
+I_C_T SHOP08 0 BEArenSHOP080
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @68
+== SHOP08 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @69
 END
 
-// Bodhi, Bodhi, more Bodhi. Bodhi!
-
-I_C_T BODHI 10 BEArenBODHI10
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @63 /* You're going to *kill*, that's what you're going to do. You will drown this city in blood and the Shadow Thieves will fall first. */
+I_C_T TRAX 7 BEArenTRAX7
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @70
 END
 
-I_C_T BODHI 72 BEArenBODHI43
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @64 /* I strongly hope 'tis our last task. I grow tired of her games. */
+I_C_T COWENF2 0 BEArenCOWENF20
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @71
+== COWENF2 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @72
 END
 
-I_C_T BODHI2 4 BEArenBODHI24
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @65 /* By Tempus, she's going to talk again! My ears are shriveling up already. */
-END
-
-I_C_T PPBODHI4 14 BEArenPPBODHI414
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @66 /* The bastard is in no hurry to leave, it seems. Just our luck. */
-END
-
-I_C_T C6BODHI 15 BEArenC6BODHI15
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @67 /* Wait, you're about to die, why would you care about the elves? Hello? */
-END
-
-// Unseeing Eye quest
-
-I_C_T GAAL 1 BEArenGAAL1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @68 /* I have a bad, bad feeling about this... */
-END
-
-I_C_T GAAL 22 BEArenGAAL22
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @69 /* Looks like he's simply blind again. Poor fool. */
-END
-
-I_C_T CTRAITOR 2 BEArenCTRAITOR2
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @70 /* Well, nobody said it was going to be easy. */
-END
-
-I_C_T RIFTM01 6 BEArenRIFTM016
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @71 /* (waves) Hello! */
-END
-
-I_C_T RIFTM01 28 BEArenRIFTM0128
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @72 /* Unless we returned it! Ta-da! */
-END
-
-// Maevar, Renal, Aran Linvail 
+// Maevar, Renal, Aran Linvail
 
 I_C_T MAEVAR 24 BEArenMAEVAR24
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @73 /* Another distasteful bastard, I'll wager. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @73 /* Another thug, I'll bet. */
 END
 
 I_C_T MAEVAR 29 BEArenMAEVAR29
@@ -440,92 +402,51 @@ I_C_T RENAL 41 BEArenRENAL41
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @78 /* Now, finally, are we allowed to kill someone or not?! */
 END
 
-I_C_T ARAN 49 BEArenARAN49
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @79 /* And 'tis obvious he won't show you the receipts. */
+// Rayic Gethras, Edwin quest
+I_C_T DCOWL1 0 BEArenDCOWL10
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @79 /* Now, finally, are we allowed to kill someone or not?! */
 END
 
-I_C_T ARAN 53 BEArenARAN53
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @80 /* Here it comes... */
+// Jermien, Imnesvale
+
+I_C_T JUGJER01 0 BEArenJUGJER010
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @80 /* Now, finally, are we allowed to kill someone or not?! */
+== JUGJER01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @81
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @82
+== JUGJER01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @83
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @84
+== JUGJER01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @85
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @86
 END
 
-I_C_T ARAN 12 BEArenARAN12
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @81 /* And that spy will be eaten alive by vampires, no doubt. You seem to be cruel to your enemies and your own men alike. */
+I_C_T JUGJER01 33 BEArenJUGJER0133
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @87
 END
 
-I_C_T ARAN 66 BEArenARAN66
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @82 /* He tortured my friends and you did nothing! What kind of people are you? */
+I_C_T JUGJER01 36 BEArenJUGJER0136
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @87
 END
 
-// Hendak and Lehtinian
+// Tolgerias in goverment building and planar sphere
 
-I_C_T LEHTIN 17 BEArenLEHTIN17
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @83 /* There's always more, isn't there? I wonder if you're compensating for something. */
-END
-
-I_C_T HENDAK 2 BEArenHendakInt2
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @84 /* By Valkur's greatsword, this is beyond injustice! I am going to give that slaver a huge kick in the batt and then some! */
-END
-
-I_C_T HENDAK 41 BEArenHendakInt41
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @85 /* And 'tis to be yours, too, after we're done cleaning it? Nay, you're not the noble warrior I imagined. */
-END
-
-I_C_T HENDAK 43 BEArenHendakInt43
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @86 /* And Hendak has a good piece of Athkatlan property, whereas those children ran the streets with nary a coin to their name and no means to feed themselves. I wonder if slavery not was better. */
-END
-
-// Bridge District, murders and Planar Prison and Fallen Paladins
-
-I_C_T MURDGIRL 8 BEArenMURDGIRL8
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @87 /* She escaped by sheer miracle. Can you remember anything else, girl? */
-END
-
-I_C_T TANNER 8 BEArenTanner8
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @88 /* Stop? We have already stopped you, only you still do not understand, old man! Your evil has come to an end! */
-END
-
-I_C_T INSPECT 43 BEArenINSPECT43
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @89 /* We do good things. I am mighty proud of our work, <CHARNAME>. */
-END
-
-I_C_T MEKRAT 11 BEArenMEKRAT11
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @90 /* Ugh. Why does it have to be in the sewers again? */
-END
-
-I_C_T RAELIS 17 BEArenRAELIS17
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @91 /* Pretty words, but the woman reeks of lies. I will breathe easier with her gone. */
-END
-
-I_C_T KAYL2 10 BEArenKAYL210
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @92 /* Every man is fallible, and even fallen paladins can do great and noble deeds. If only 'twas possible to redeem them. */
-END
-
-I_C_T KAYPAL02 16 BEArenKAYPAL0216
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @93 /* 'Tis a shame, truly. An honorable warrior such as he could bring much good. */
-END
-
-// Imnesvale-related
-
-I_C_T TOLGER 75 BEArenTOLGER75
+I_C_T TOLGER 0 BEArenTOLGER0
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @94 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
 END
 
-I_C_T UHMAY01 12 BEArenUHMAY12
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Their ranger is missing? 'Tis strange indeed... were there any tracks in her cabin? Perhaps she just went hunting? */
+I_C_T TOLGER2 0 BEArenTOLGER20
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
 END
 
-I_C_T UHOGRE01 5 BEArenUHOGRE01
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @96 /* So close to the village? Without even trying to move further into the woods? Truly, they are too foolish to be the true killers. */
+I_C_T TOLGER2 2 BEArenTOLGER22
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
 END
 
-// Windspear-related
-
-I_C_T VAELASA 7 BEArenVAELASA7
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @97 /* 'Twas a good deed indeed. I salute you. */
+I_C_T TOLGER2 4 BEArenTOLGER24
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
 END
 
-I_C_T FIRKRA02 7 BEArenFIRKRA02
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @98 /* And this one is after your heritage, too. Ugh. Is it so widely known? Or are these villains getting their announcements from somewhere? */
+I_C_T TOLGER2 5 BEArenTOLGER25
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
 END
 
 // de'Arnise-related
@@ -538,10 +459,6 @@ I_C_T NALIA 75 BEArenBEAren75
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @100 /* And your father allowed that? To marry you off to some noble brat against your will? */
 END
 
-I_C_T KPCAPT01 1 BEArenKPCAPT011
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @101 /* I am sorry to hear of your misfortune, captain. Tempus willing, we'll avenge your men. */
-END
-
 I_C_T NALIA 77 BEArenBEAren77
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @102 /* A barbaric custom. Why not drive him from your lands and whack him on the head with a mace if he does not take the hint? I'd help you gladly! */
 END
@@ -550,122 +467,48 @@ I_C_T NALIAJ 171 BEArenBEArenJ171
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @102 /* A barbaric custom. Why not drive him from your lands and whack him on the head with a mace if he does not take the hint? I'd help you gladly! */
 END
 
-// Trademeet has been here for generations...
-
-I_C_T NEEBER 8 BEArenNEEBER8
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @103 /* <CHARNAME>, may I show him? Pleeease? */
-END
-
-I_C_T CELOGAN 40 BEArenCELOGAN40
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @104 /* Dark minds follow us where'er we go. 'Tis your lot in life, <CHARNAME>. */
-END
-
-I_C_T TRHMER01 3 BEArenTRHMER013
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @105 /* Trademeet... without trade? Doesn't make any sense to me. */
-END
-
-I_C_T TRGENI01 6 BEArenTRGENI016
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @106 /* That's got to be one of the stupidest things I've ever heard. Why not leave the town and catch that rakshasa yourselves? People are starving here! */
-END
-
 // Spellhold
 
 I_C_T PPCOWLED 1 BEArenPPCOWLED1
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @107 /* 'Tis all a little too crazy for my taste. You'd better step back, though: he looks dangerous. */
 END
 
-I_C_T PPSAEM3 2 BEArenPPSAEM32
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @108 /* Did I ever mention that I do not trust him? */
-END
-
-I_C_T PPSAEM3 55 BEArenPPSAEM355
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @109 /* By Tempus, I *so* do not trust him. */
-END
-
-I_C_T PPSAEM3 52 BEArenPPSAEM352
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @110 /* You son of a mother! */
-END
-
 I_C_T ELEARB01 2 BEArenELEARB012
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @111 /* Lovely. Can I whack him on the head with my hammer? */
 END
 
-I_C_T PPTIAX 1 BEArenPPTIAX1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @112 /* Hard to believe, but I actually missed the little fellow. Funny, isn't it? */
-END
-
-I_C_T PPTIAX 6 BEArenPPTIAX6
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @113 /* Tiax! What is he doing here? He's not even a mage! Though his placement here is oddly apt, I admit. */
-END
-
-I_C_T PPIRENI1 4 BEArenPPIRENI14
+I_C_T PPIRENI1 3 BEArenPPIRENI13
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @114 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
 END
 
-I_C_T PPIRENI1 28 BEArenPPIRENI128
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @115 /* Uh-oh. */
+
+// The Underdark
+
+I_C_T BREG01 2 BEArenBREG012
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @115 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== BREG01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @116 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
 END
 
-I_C_T PPIRENI2 42 BEArenPPIRENI242
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @115 /* Uh-oh. */
+// Kruin
+
+I_C_T KRUIN 4 BEArenKRUIN4
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @118
 END
 
-// Sahuagin City
-
-I_C_T SAHKNG01 33 BEArenSAHKNG0133
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @116 /* Good. Let these monsters slaughter each other. */
+I_C_T KRUIN 6 BEArenKRUIN6
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @118
 END
 
-I_C_T SAHPR1 1 BEArenSAHPR11
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117 /* Shark-men. I've seen them on the isles before. But how are we to understand them? */
+I_C_T KRUIN 12 BEArenKRUIN12
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @118
 END
 
-I_C_T SAHPR2 12 BEArenSAHPR112
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @118 /* One is as bad as another. Why don't we slaughter them both? The ships and the fishing villages will be safe, and this cursed place will rot and be forgotten. */
-END
-
-I_C_T SAHBEH01 2 BEArenSAHBEH012
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @119 /* And what is that thing, creature? Must be some mighty treasure indeed. */
-END
-
-// The Underdark 
-
-I_C_T UDSVIR01 3 BEArenUDSVIR013
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @120 /* Looks like everyone has their use for us. Well, 'tis good as long as they give us passage to Irenicus. */
-END
-
-I_C_T UDSILVER 12 BEArenUDSILVER12
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @121 /* A silver dragon... 'Tis a strange peacemaker, but the only one the drow would truly fear. */
-END
-
-I_C_T UDSILVER 35 BEArenUDSILVER35
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @122 /* Ugh. By Tempus, my hands look like... just ugh. */
-END
-
-I_C_T UDSOLA01 56 BEArenUDSOLA0156
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @123 /* Looks like these two are worth each other. */
-END
-
-I_C_T UDSOLA01 91 BEArenUDSOLA191
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @124 /* He's an idiot. To speak against a Matron Mother's daughter so openly? She'll want his head soon, if she doesn't already. */
-END
-
-I_C_T UDDROW04 39 BEArenUDDROW0439
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @125 /* Hear that, Veldrin? Any House would be lucky to have you. */
-END
-
-// Chapter 6 and 7, Elhan and Demin
-
-I_C_T C6ELHAN2 8 BEArenC6ELHAN28
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @126 /* 'Tis not too late to turn back to the Underdark's caverns. I'm sure the drow will give us a warmer welcome. */
-END
-
-I_C_T SUELHAN 6 BEArenSUELHAN6
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @127 /* Yet they are not defending this city. The task falls to us, and us alone. */
-END
-
-I_C_T SUDEMIN 23 BEArenSUDEMIN23
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @128 /* You could incarcerate him and yet you did not? And 'tis your fault that <CHARNAME> lost <PRO_HISHER> soul? */
+I_C_T KRUIN 11 BEArenKRUIN11
+== KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @119 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+DO ~GiveItemCreate("BEGLOVES",Player1,0,0,0)~
 END
 
 // LOVETALKS START HERE

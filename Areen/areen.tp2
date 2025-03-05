@@ -10,7 +10,7 @@ README ~Areen/Readme-Areen.txt~
 
 AUTO_TRA ~Areen/tra/%s~
 
-/* definition of the journal numbers for EET's continuous journal*/
+// definition of the journal numbers for EET's continuous journal
 ALWAYS
   ACTION_IF NOT VARIABLE_IS_SET bg2_chapter BEGIN
     ACTION_IF GAME_IS ~eet~ BEGIN
@@ -25,10 +25,9 @@ ALWAYS
     END
   END
   
-/* convert strings to UTF-8 for BGEE/BG2EE by jastey*/	
+// convert strings to UTF-8 for BGEE/BG2EE by jastey
 ACTION_DEFINE_ARRAY 9xnoconvert BEGIN END //list here files that do not need to be converted, e.g. a file that only contains setup files.
 ACTION_DEFINE_ARRAY 9xreload BEGIN setup END //list the files that get read in after LANGUAGE declaration so the correct format will be used for ingame texts.
-
   LAF HANDLE_CHARSETS
     INT_VAR
       infer_charsets = 1
@@ -37,11 +36,10 @@ ACTION_DEFINE_ARRAY 9xreload BEGIN setup END //list the files that get read in a
       noconvert_array = 9xnoconvert
       reload_array = 9xreload
 END  
- 
-  
 END
 
 LANGUAGE ~English~ ~English~ ~Areen/tra/English/setup.tra~
+
 
 
 BEGIN @1
@@ -49,16 +47,53 @@ BEGIN @1
 APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
 UNLESS ~CD_STATE_NOTVALID~
 
+// load new items and spells
+COPY ~Areen/Items/BESTAF1.ITM~ ~override~
+     SAY 0xC @9
+     SAY 0x54 @10
+
+COPY ~Areen/Items/BEROBE1.ITM~ ~override~
+     SAY 0xC @11
+     SAY 0x54 @12
+
+COPY ~Areen/Spells/BEDEL#3.SPL~ ~override~
+
+COPY ~Areen/Spells/BEWI599.SPL~ ~override~
+     SAY 0X8 @13
+     SAY 0x50 @14
+
+COPY_EXISTING ~BOOK14.ITM~ ~override~
+     SAY 0xC @15
+     SAY 0x54 @16
+
+COPY_EXISTING ~BOOK63.ITM~ ~override~
+     SAY 0xC @17
+     SAY 0x54 @18
+
+COPY_EXISTING ~BOOK64.ITM~ ~override~
+     SAY 0xC @19
+     SAY 0x54 @20
+
+COPY_EXISTING ~BOOK65.ITM~ ~override~
+     SAY 0xC @21
+     SAY 0x54 @22
+
+COPY_EXISTING ~BOOK66.ITM~ ~override~
+     SAY 0xC @23
+     SAY 0x54 @24
+
+COPY ~Areen/Items/BEGLOVES.ITM~ ~override~
+     SAY 0xC @25
+     SAY 0x54 @26
 
 // creature file
 COPY ~Areen/Characters/BEAren.cre~ ~override/BEAren.cre~
-SAY NAME1 @2
-SAY NAME2 @2
-SAY BIO @3
-WRITE_ASCII 0x248 ~BEArenS~ #8  // script for lovetalks and such.
-WRITE_ASCII 0x2cc ~BEAren~  #8  // Areen's greeting dialogue.
-WRITE_ASCII 0x280 ~BEAren~  #32 // death variable - when we want to refer to Areen in the game, we'll call her BEAren. For example, InParty("BEAren") means that Areen is in party.
-
+     SAY NAME1 @2
+     SAY NAME2 @2
+     SAY BIO @3
+     WRITE_ASCII 0x248 ~BEArenS~ #8  // script for lovetalks and such.
+     WRITE_ASCII 0x2cc ~BEAren~  #8  // Areen's greeting dialogue.
+     WRITE_ASCII 0x280 ~BEAren~  #32 // death variable - when we want to refer to Areen in the game, we'll call her BEAren. For example, InParty("BEAren") means that Areen is in party.
 
 COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BEBAren.d~
 	~Areen/Dialogue/BEAren.d~  // Areen's greeting dialogue
@@ -69,10 +104,10 @@ COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BEBAren.d~
 	~Areen/Scripts/BEArenD.baf~ // Areen's dream script for events at rest. If you want your NPC to talk to you at rest, add scripting here.
 	~Areen/Scripts/BEArenF.baf~ // Areen's "fixing" script. Remember how various modders advised you to "select your NPC and press K"? Well, that's how they do it.
 
-// Place Areen
+// place Areen
 EXTEND_TOP ~AR0700.bcs~ ~Areen/Scripts/AR0700.baf~
 
-// Since Areen is going to be romanceable, we are going to add Bodhi's abduction. The dialogue is in BEARENJ.d file, and the rest is here:
+// since Areen is going to be romanceable, we are going to add Bodhi's abduction. The dialogue is in BEARENJ.d file, and the rest is here:
 COMPILE	~Areen/Scripts/BEArenVC.baf~                     // Areen's vampire cutscene.
 COMPILE	~Areen/Scripts/BEArenV.baf~                      // Areen's vampire script.
 EXTEND_TOP ~BODHIAMB.bcs~ ~Areen/Scripts/BODHIAMB.baf~   // Extending Bodhi's script
@@ -180,120 +215,6 @@ UNLESS ~BEAren~
 IF ~25FILE~
 
 
-// New items
-
-COPY ~Areen/Items/BESTAF1.ITM~ ~override~
-     SAY 0xC @9 //~Areen's Legacy Staff~
-     SAY 0x54 @10 /*~This staff was crafted by Areen's parents through meticulous research as part of their legacy of bringing discipline to wild magic. Gifted to their son upon completing his early studies, the staff's intricate runes and carefully balanced enchantments help to guide and temper wild magic surges. Though already a remarkable achievement in magical crafting, certain patterns in its construction suggest it was designed with future improvements in mind.
-
-STATISTICS:
-
-Equipped Abilities:
-- Bonus to saving throws vs. polymorph +2
-- Wild surge bonus +5
-
-THAC0: +1
-Damage: 1d6+1 (crushing)
-Speed Factor: 3
-Proficiency Type: Quarterstaff
-Type: Two-handed
-Requires:
- 5 Strength
-
-Weight: 4 lb.~ */
-
-COPY ~Areen/Items/BEROBE1.ITM~ ~override~
-     SAY 0xC @11 //~Minor Chaos Armor~
-     SAY 0x54 @12 /*~These distinctive robes were first crafted in the years following the Time of Troubles, when practitioners of wild magic sought ways to better control their increasingly unpredictable art. The fabric is interwoven with metallic threads forming intricate patterns that help stabilize magical energies. While not as potent as the legendary Archmaster's Chaos Vestments crafted by the most accomplished wild mages, these robes became popular among early practitioners for their protective properties. Several sets were created in Waterdeep's magical academies as wild magic began to gain reluctant acceptance among more traditional spellcasters.
-
-STATISTICS:
-
-Equipped abilities:
-- Vocalize
-- Wild surge bonus +10
-
-Weight: 3 lb.~   */
-
-
-// New spells
-
-//COPY ~Areen/Spells/BEDEL#3.SPL~ ~override~
-
-COPY ~Areen/Spells/BEWI599.SPL~ ~override~
-     SAY 0X8 @13 /*~Areen's Improved Chaos Shield~*/
-     SAY 0x50 @14 /*~Areen's Improved Chaos Shield
-(Abjuration)
-
-Level: 5
-Range: 0
-Duration: 2 hours
-Casting Time: 7
-Area of Effect: The caster
-Saving Throw: None
-
-Improved Chaos Shield increases a Wild Mage's chance to gain a favorable result when a Wild Surge occurs. Every time a roll is made on the Wild Surge chart, an extra 25 is added to the dice roll. When Nahal's Reckless Dweomer is cast, the bonus from Improved Chaos Shield stacks with the Wild Mage's level bonus. It does not stack with Chaos Shield.~
-  */
-
-// Lore Books
-COPY_EXISTING ~BOOK14.ITM~ ~override~
-     SAY 0xC @15 //~A Beginner's Guide to Controlled Chaos~
-     SAY 0x54 @16 /*~This foundational text approaches wild magic as a serious field of study requiring disciplined practice and thorough theoretical understanding. The author emphasizes the importance of proper magical theory, careful preparation, and methodical approach to spell manipulation.
-
-     A chapter catches your eye: Essential Principles for the Aspiring Wild Mage.
-
-Contrary to common belief, most wild surge manifestations are manageable with proper preparation. While dramatic effects do occur, experienced practitioners rarely face truly dangerous consequences.
-
-The wise practitioner maintains basic protective enchantments against fire and movement impediments. A ring of fire resistance is considered essential equipment.
-
-When channeling unstable energies, direct them toward adversaries rather than allies. Many unexpected effects can prove advantageous when properly directed.
-
-Should a surge summon otherworldly entities, maintain distance and protective wards. Such manifestations, while unpredictable, often prove tactically advantageous.
-
-The fundamental protective enchantments developed by early wild magic practitioners remain essential. Advanced versions exist but are not strictly necessary for routine spellcasting.
-
-Maintain valuable items separately from coin wealth. The author particularly emphasizes this after documented instances of mass transmutation.
-
-At higher levels of mastery, practitioners can achieve remarkable effects through controlled manipulation of wild energies, including the casting of complex spells through relatively simple channels.
-
-The text concludes with detailed theoretical frameworks for advanced surge manipulation, though the author notes these techniques require significant magical expertise to attempt safely.~
- */
-COPY_EXISTING ~BOOK63.ITM~ ~override~
-     SAY 0xC @17 //~Cautionary Tales: Notable Wild Magic Accidents in Waterdeep~
-     SAY 0x54 @18 /*~This analytical compilation from Waterdeep's Office of Magical Regulation examines significant magical incidents that shaped modern safety protocols. Of particular note is the infamous "Golden Disaster" of 1361 DR, when an unexpected surge transmuted a merchant's entire inventory into various species of waterfowl. While financially ruinous, this incident led to important advances in surge containment theory.
-
-The "Peculiar Case of the Purple Promenade" deserves mention - during a demonstration of controlled wild magic at the Watchful Order, an unexpected surge turned an entire street's worth of citizens temporarily purple. Though harmless, this incident prompted the development of current wild surge protection protocols.
-
-Perhaps most significant was the "Treasury Transmutation" of 1359 DR, where a wild surge accidentally converted a noble's fortune into copper pieces, leading to the current practices of storing valuable items separately from coin. Each case study is accompanied by detailed analysis of preventive measures now standard in magical institutions.~
-  */
-COPY_EXISTING ~BOOK64.ITM~ ~override~
-     SAY 0xC @19 //~Wild Magic in a Time of Troubles by Tromed Lov~
-     SAY 0x54 @20 /*~The Time of Troubles presented unprecedented opportunities for understanding magical instability. While conventional spellcasters struggled with the Weave's disruption, practitioners of wild magic found their theoretical frameworks uniquely suited to adapt. Their pre-existing research into magical fluctuations provided critical insights into spell stability during this period. The subsequent years saw increased academic interest in wild magic theory, though resistance from traditional magical institutions has slowed its acceptance as a legitimate field of study.~
-                    */
-COPY_EXISTING ~BOOK65.ITM~ ~override~
-     SAY 0xC @21 //~Theories on Surge Manipulation and Containment~
-     SAY 0x54 @22 //~A detailed examination of wild magic surge patterns and their theoretical foundations. The author presents compelling evidence that proper understanding of magical energy fluctuations can lead to predictable outcomes through careful application of established principles. The treatise includes extensive mathematical formulae for calculating surge probabilities and detailed diagrams of containment methodologies. Essential reading for serious practitioners of wild magic arts.~
-
-COPY_EXISTING ~BOOK66.ITM~ ~override~
-     SAY 0xC @23 //~Notable Wild Mages of the Sword Coast~
-     SAY 0x54 @24 /*~This scholarly work examines the contributions of prominent wild magic practitioners along the Sword Coast. Of particular significance is Randal Mahge, whose methodical approach to wild magic during the Time of Troubles led to breakthrough developments in surge control theory. His treatise 'On Predictable Unpredictability' remains a cornerstone text in magical academies, and his development of stabilizing formulae helped establish wild magic as a legitimate field of study. Unlike many of his contemporaries, Randal's careful documentation and controlled experiments advanced our understanding of wild magic as a distinct magical discipline.
-
-In stark contrast stands the infamous Pryce of Shadowdale, whose erratic experiments and casual approach to wild magic resulted in numerous documented incidents. While his occasional successes led to some interesting discoveries, particularly in the field of magical amplification, his legacy serves more as a cautionary tale of unbridled experimentation. The author notes that Pryce's eventual transformation into a talking sheep (a condition that persisted for three months) exemplifies the risks of treating wild magic without proper academic rigor.
-
-The text includes detailed analysis of experimental procedures and theoretical frameworks that advanced our understanding of wild magic, with particular emphasis on those practitioners who approached the art with scholarly dedication.~
- */
-
-COPY_EXISTING ~BOOK67.ITM~ ~override~
-     SAY 0xC @25 //~Areen's notes~
-     SAY 0x54 @26 /*~These carefully annotated book details a complex magical crafting procedure, written in a precise hand with numerous theoretical calculations in the margins. The text bears the careful observations and methodical style characteristic of Areen's academic approach to wild magic.
-
-The primary formula appears to require five crucial components for what seems to be an enhancement to an existing staff's wild magic stabilization properties: A flawless star sapphire of exceptional quality, noted for its natural resonance with magical energies. A ring of protection, whose historical significance in magical control is well documented. The heart of a demon forcibly taken. Holy water knowingly given. Blood from a wild mage freely offered.
-
-The remainder of the text contains detailed theoretical frameworks and precise magical formulae, though several sections remain incomplete. Numerous side notes suggest that the author believes this enhancement would significantly improve the staff's capabilities, though the exact nature of these improvements remains unclear.
-
-A final notation reads: Father's theories on resonance manipulation appear sound, though mother's stabilization matrices will require further refinement.~
-*/
-
-
 // EET related code
 ACTION_IF GAME_IS ~eet~ BEGIN //only true if game is detected as Enhanced Edition Trilogy (mod for BG2:EE)
   INCLUDE ~EET/other/EET_functions.tph~ //declaration of external EET functions used below. This is part of the EET package the player has in his install so don't worry about it
@@ -316,6 +237,8 @@ ACTION_IF GAME_IS ~eet~ BEGIN //only true if game is detected as Enhanced Editio
 END ELSE BEGIN //we use different Fate Spirit dialogue patching for any other platform than EET
   COMPILE ~Areen/Dialogue/FATESP.d~
 END
+
+
 
 BEGIN @101
 
