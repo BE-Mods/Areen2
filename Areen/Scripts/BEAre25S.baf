@@ -61,7 +61,7 @@ Global("BEArenTalkToB","GLOBAL",10)
 THEN
 RESPONSE #100
 PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 
@@ -111,7 +111,7 @@ See(Player1)
 THEN
 RESPONSE #100
 PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 
@@ -170,7 +170,7 @@ See(Player1)
 THEN
 RESPONSE #100
 PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 
@@ -212,10 +212,11 @@ See(Player1)
 THEN
 RESPONSE #100
 PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 
+/*
 // Flirts for Branwen: Branwen-initiated flirts
 
 // Flirts initiate...
@@ -268,3 +269,5 @@ RESPONSE #100
 StartCutSceneMode()
 StartCutScene("BEArenF")
 END
+
+*/

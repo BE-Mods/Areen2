@@ -4,11 +4,11 @@
 // Don't forget Continue() at the end. It's needed when you add to the top(EXTEND_TOP in Setup-Areen.tp2) of the script.
 
 IF
-Global("O#ArenSpawn","GLOBAL",0)
+Global("BEArenSpawn","GLOBAL",0)
 THEN
 RESPONSE #100
-CreateCreature("BEAren",[2552.502],13)  // To choose your own coordinates, choose a spot in the game and press CTRL-X
-SetGlobal("O#ArenSpawn","GLOBAL",1)
+CreateCreature("BEAren",[2968.592],13)  // To choose your own coordinates, choose a spot in the game and press CTRL-X
+SetGlobal("BEArenSpawn","GLOBAL",1)
 Continue()
 END
 

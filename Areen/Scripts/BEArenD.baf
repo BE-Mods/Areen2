@@ -14,8 +14,8 @@ GlobalGT("BEArenTalk","GLOBAL",2) // talk 1 already happened
 THEN
 RESPONSE #100
 IncrementGlobal("BEArenLovetalk","GLOBAL",1)
-PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySong(0)
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 
@@ -32,8 +32,8 @@ GlobalGT("BEArenTalk","GLOBAL",30) // talk 15 already happened
 THEN
 RESPONSE #100
 IncrementGlobal("BEArenLovetalk","GLOBAL",1)
-PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySong(0)
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 

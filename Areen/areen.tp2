@@ -95,6 +95,7 @@ COPY ~Areen/Characters/BEAren.cre~ ~override/BEAren.cre~
      WRITE_ASCII 0x2cc ~BEAren~  #8  // Areen's greeting dialogue.
      WRITE_ASCII 0x280 ~BEAren~  #32 // death variable - when we want to refer to Areen in the game, we'll call her BEAren. For example, InParty("BEAren") means that Areen is in party.
 
+
 COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BEBAren.d~
 	~Areen/Dialogue/BEAren.d~  // Areen's greeting dialogue
 	~Areen/Dialogue/BEArenJ.d~ // The rest of Areen's dialogue.

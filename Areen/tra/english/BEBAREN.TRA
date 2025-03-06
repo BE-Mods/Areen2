@@ -5,11 +5,13 @@
 @4    = ~Are!~
 @5    = ~Not, not, not! And you're too big and too loud and your feet are smelly when you take your huge boots off! So there!~
 @6    = ~Ha! When you want to, you're a regular little lioness, girl.~
+
 @7    = ~You are a strong warrior. I respect that.~
 @8    = ~Thank you for your kind words.~
 @9    = ~May I hold your hammer sometime?~
 @10   = ~You certainly may.~
 @11   = ~I'll take you up on this offer some day.~
+
 @12   = ~Branwen, you are well-versed in medicine. Why don't you become a healer, not a warrior?~
 @13   = ~'Twould be a huge insult to my honor! Me, sitting at home like a blind fishwife? Not for the whole world!~
 @14   = ~What of your children? Will they grow unattended like weeds, only seeing their mother between some crusade or another?~
@@ -17,6 +19,7 @@
 @16   = ~Perhaps there is some truth to what you say.~
 @17   = ~Nay, you speak truly, druid. Some maiden will be happier for hearing your words. Not me, though. And not yourself.~
 @18   = ~True enough.~
+
 @19   = ~Wizard! Stop stealing my herbs!~
 @20   = ~Who, me? You must be mistaken, erm, good woman. (She's blind as a monkey! Can't believe she noticed anything?)~
 @21   = ~You are using my herbs for your spell components, aren't you? Good for you, too, but you owe me for purchasing these.~
@@ -24,18 +27,21 @@
 @23   = ~W-WHAT? (She can't mean it. She can't mean THAT. She can't.)~
 @24   = ~'Twas a harmless joke, you ninny! By Tempus, you're red as your robes!~
 @25   = ~Grrrrr...(Fireball. Fireball. Fireball!)~
+
 @26   = ~Tell me, lovely magpie, why do you love gold thread so?~
 @27   = ~Why? 'Tis unbecoming, you wish to say?~
 @28   = ~Not for this bard, no. But yon garb can't withstand harsh weather and danger, surely?~
 @29   = ~I can always buy another tunic. But 'tis so much pleasure to shine, to let it caress my skin, to smile and be noticed. 'Tis not so for you?~
 @30   = ~Perchance you're wiser than you appear.~
 @31   = ~On that, bard, you're happily mistaken.~
+
 @32   = ~Imoen, what are you... wait, are you wearing my lipstick? And my gloss? And my... undertunic?~
 @33   = ~Well, Irenicus didn't exactly provide me with spare things...~
 @34   = ~You poor thing! Here, I have some new underclothes for you, too...~
 @35   = ~Aw, Branwen, I was just teasing. <CHARNAME> bought me all I needed. I just... liked your lipstick.~
 @36   = ~By Tempus! Oh, just keep it, girl. My lips are prettier than yours, anyhow.~
 @37   = ~Now wait just a minute!~
+
 @38   = ~Are you well, Branwen? You seem to be distracted often lately.~
 @39   = ~'Tis <CHARNAME>'s trials. Torture, and cages, and grim sights... <PRO_HESHE> is a grown <PRO_MANWOMAN> now.~
 @40   = ~That <PRO_HESHE> is.~
@@ -46,12 +52,14 @@
 @45   = ~And regrets.~
 @46   = ~We'll get through. By Tempus' shield!~
 @47   = ~Branwen! Do you have a big family?~
+
 @48   = ~Some. Two of my brothers are soldiers. Another is a fisherman. They don't talk to me, though. Not since...~
 @49   = ~Aye, the centuries-old disagreement of picking a profession! Uncle Scratchy once got burned, too. His betrothed, Leticia, decided to become a sales manager in a drow city. Surprisingly, her turnip sales were through the roof, but not for long.~
 @50   = ~Why is that?~
 @51   = ~Never trust an illithid. The tentacled devils ate the whole bunch.~
 @52   = ~Jan, that's horrible!~
 @53   = ~Told you. Career advice is the key.~
+
 @54   = ~You seem a reasonable and an honorable young lady, Branwen.~
 @55   = ~Why, thank you, good sir! 'Tis a great honor to be complimented by one such as you.~
 @56   = ~Yet your behavior toward young men is sometimes... unseemly. Have you noticed how free you can become with your affections?~
@@ -61,18 +69,21 @@
 @60   = ~Please, Branwen, you mustn't take it so seriously. A small adjustment in your temper...~
 @61   = ~Haha! Got you, old man!~
 @62   = ~(sigh) Torm help me.~
+
 @63   = ~I loved the way you chopped his head off in the last battle!~
 @64   = ~Har!~
 @65   = ~His innards were flying around like sausages! I confess, I grew hungry a little.~
 @66   = ~Meself, too.~
 @67   = ~Really? How about we grab a beer and some pork? I'll see what we can do.~
 @68   = ~(belch) Bring it on!~
+
 @69   = ~Mazzy, why don't you stop staring at human men?~
 @70   = ~Excuse me?~
 @71   = ~They are twice as tall as you! 'Twould be like cradling a child! And what would happen to your loins, should you carry a human boy?~
 @72   = ~Branwen, I'm not some lewd - slattern! I talk to people!~
 @73   = ~Hmph. That may be, but I wasn't born yesterday. I noticed that look in your eye, sister.~
 @74   = ~Well, keep your "notices" to yourself.~
+
 @75   = ~Minsc, my good friend! We are together again!~
 @76   = ~So we are! Let's sing a song!~
 @77   = ~From beyond the wooded island
@@ -101,12 +112,14 @@ Echo rolls the pealing thunder
 Of his voice across the land.~
 @83   = ~Boo says he's tired now, friend Branwen. Shall we sing the rest later?~
 @84   = ~Gladly!~
+
 @85   = ~Branwen, what do you do to help the less fortunate? Besides slaughtering goblins, I mean.~
 @86   = ~These goblins make out with harvest and sometimes even innocent children, foolish girl! Without adventurers and militia, entire villages would be dead!~
 @87   = ~Yes, but that's my point, isn't it? If these people had enough money to station guards, their children and crops needn't suffer!~
 @88   = ~No one can be safe day and night. Even the king can be murdered in his chambers.~
 @89   = ~Unless someone slaughters his guards and his battle mages, he is safe. Unlike the less fortunate I'm protecting!~
 @90   = ~How many less fortunate are there, girl? I say if they come together, no guards can save that king.~
+
 @91   = ~Your hair looks lovely in this light, Branwen.~
 @92   = ~Thank you. 'Tis a rare compliment from you, my friend.~
 @93   = ~I rarely make small talk anymore.~
@@ -115,12 +128,14 @@ Of his voice across the land.~
 @96   = ~They are. Shall I tell you more about them?~
 @97   = ~I... yes. Please do.~
 @98   = ~My mother was born in high summer, and it was said that the sun never left her hair. My father was a woodsman, a ranger not unlike yourself. A good man. When I was born, he held me and cried...~
+
 @99   = ~Viconia, I respect you.~
 @100  = ~Truly? Why is that?~
 @101  = ~You were nearly burnt, very probably raped, and very nearly killed. You must be hurting inside, but you persevered and became stronger.~
 @102  = ~Shar guides my hand.~
 @103  = ~And Tempus guides mine. I hope we'll never become enemies.~
 @104  = ~Perhaps one day, elg'caress. But not today.~
+
 @105  = ~Do you miss home, Yoshimo?~
 @106  = ~Of course I do! Every ronin and samurai does. Especially in spring, with every cherry tree in bloom.~
 @107  = ~I'd like to visit Kara-Tur one day.~
@@ -129,6 +144,7 @@ Of his voice across the land.~
 @110  = ~Perhaps one day we shall see it together?~
 @111  = ~Ha, you're a right cad, Yoshimo! I confess, I didn't see it coming.~
 @112  = ~I try my best.~
+
 @113  = ~Edwin, has anyone told you that you have a very nice voice?~
 @114  = ~Ahem. Do I? (She has noticed at last!)~
 @115  = ~Indeed. And these soft, soft hands...~
@@ -137,6 +153,7 @@ Of his voice across the land.~
 @118  = ~Yeees?~
 @119  = ~Will you peel the potatoes for the stew?~
 @120  = ~Rats.~
+
 @121  = ~Imoen! You've taken my towel again! And you haven't even folded it properly! It's lying in a heap, still wet!~
 @122  = ~Aww, stop shouting. Screaming won't make it dry, you know.~
 @123  = ~By Tempus's hairy ass, what will, then?~
@@ -146,6 +163,7 @@ Of his voice across the land.~
 @127  = ~Ah... uh... I forgot?~
 @128  = ~And you think these pretty dimples will help you, will they? Arrgh! Next time, I'll tell <CHARNAME>. I've no doubt <PRO_HISHER> towels suffered from your attacks, too. We'll plan revenge together.~
 @129  = ~But that's way too cruel! I'm being unfairly slandered here! <CHARNAME>, help!~
+
 @130  = ~I really don't understand, Jaheira. Why would you wear these braids? They make you look like a travelling gypsy!~
 @131  = ~Says a woman wearing way too much golden thread.~
 @132  = ~Well, I do! And it makes me prettier, would you not agree?~
@@ -156,6 +174,7 @@ Of his voice across the land.~
 @137  = ~And you. I sometimes say things... in anger. I do not mean them.~
 @138  = ~Then I declare Tempus' peace! Drinks?~
 @139  = ~Tonight.~
+
 @140  = ~Shall we finish the song, friend Minsc?~
 @141  = ~"Volga, Volga, mother Volga,
 Deep and wide beneath the sun,
@@ -182,6 +201,7 @@ Of a place where beauty lies."~
 @148  = ~Aye, well sung indeed. Shall we drown your hamster next? Ha! 'Twas a harmless joke, my friend Minsc, do not glare at me so.~
 @149  = ~Come, Boo, away from this not-so-nice lady. When she wants a hamster's company next, we'll make her beg for it.~
 @150  = ~Why, Minsc, you can be downright dirty sometimes.~
+
 @151  = ~Viconia, why don't we share a drink?~
 @152  = ~You would... drink with me?~
 @153  = ~Aye, and gladly! The strongest brew you can find!~
@@ -189,6 +209,7 @@ Of a place where beauty lies."~
 @155  = ~Did you just call me your friend?~
 @156  = ~No.~
 @157  = ~Thought so.~
+
 @158  = ~So, priestess, do you aspire to become a Chosen of your dumb deity? (No doubt she can't set her sights any higher. These monkeys are amusing.)~
 @159  = ~You are a heretic fool, Edwin, to speak of the Lord of Battles so carelessly. His wrath is great, and my hammer is only inches from your finger bones...~
 @160  = ~And my fingers are itching for a fireball!~
@@ -196,12 +217,14 @@ Of a place where beauty lies."~
 @162  = ~All right, all right! I... apologize.~
 @163  = ~Truly?~
 @164  = ~Yes! Now shut up and keep walking!~
+
 @165  = ~You're a sly one, aren't you?~
 @166  = ~What do you mean, Branwen?~
 @167  = ~You're a proper little vixen, that's what I mean. I've noticed your appraising look when I was repacking my backpack. You may be all smiles and innocent looks, but you're an accomplished rogue, little Imoen. I was a fool to doubt that.~
 @168  = ~Heh. Who'd notice an old little me? But your backpack is safe, Branwen.~
 @169  = ~Because there's nothing interesting for you inside.~
 @170  = ~That, too.~
+
 @171  = ~Branwen, what is it? You look drawn.~
 @172  = ~Those pines on the edge of Athkatla... 'Twas a rare sight. It reminded me of home.~
 @173  = ~Amn is not that far from Tethyr. I see reminders of my home every day.~
@@ -209,12 +232,14 @@ Of a place where beauty lies."~
 @175  = ~Do you truly think so?~
 @176  = ~No... 'twas spoken in haste. Forgive me, Jaheira.~
 @177  = ~Home is where the heart is, Branwen. May your heart find yours.~
+
 @178  = ~Branwen! Boo asks, do you have nuts?~
 @179  = ~Hmm. I confess, I do. Here, have some, little Boo.~
 @180  = ~Thank you! Oooh, Dynaheir used to carry nuts for us in her backpack. Just like old times, right, Boo?~
 @181  = ~You're welcome, Minsc and Boo. You miss Dynaheir, both of you?~
 @182  = ~We do! But she would want us to stay strong, so we are.~
 @183  = ~You keep it up, Minsc. You keep it up.~
+
 @184  = ~So, abbil, tell me true: what kind of men attract you? ~
 @185  = ~Tall ones. Hard ones. Strong arms and gentle hands.~
 @186  = ~Ha! What about your precious honor?~

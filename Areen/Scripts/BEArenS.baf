@@ -24,7 +24,7 @@ Global("BEArenKRUINGloves", "GLOBAL", 1)
 THEN
 RESPONSE #100
 GiveItemCreate("BEGLOVES",Player1,0,0,0)
-SetGlobal("BEArenKRUINGloves", "GLOBAL", 2)
+SetGlobal("BEArenKRUINGloves","GLOBAL",2)
 END
  */
 
@@ -44,12 +44,11 @@ END
 // And this is how we initiate romance:
 IF 
 InParty(Myself)
-//Gender(Player1,MALE)
-OR(4)				// OR(4) means that four lines after OR() are a part of this OR() command.
+Gender(Player1,FEMALE)
+OR(3)				// OR(4) means that four lines after OR() are a part of this OR() command.
 Race(Player1,HUMAN)
 Race(Player1,ELF)
 Race(Player1,HALF_ELF)
-Race(Player1,HALFORC)
 Global("BEArenLovetalk","GLOBAL",0)
 THEN
 RESPONSE #100
@@ -156,8 +155,8 @@ Global("BEArenTalk","GLOBAL",28)
 Global("BEArenTalk","GLOBAL",30)
 THEN
 RESPONSE #100
-PlaySong(0)
-PlaySound("O#BRAN")                     // You can play your song here. Just create a wav file(for example, AAAA.wav, but it really must be prefixed with your prefix), and place its name here.
+//PlaySong(0)
+//PlaySound("O#BRAN")                     // You can play your song here. Just create a wav file(for example, AAAA.wav, but it really must be prefixed with your prefix), and place its name here.
 StartDialogueNoSet(Player1)
 END
 
@@ -230,8 +229,8 @@ Global("BEArenChapter5","GLOBAL",1)
 Global("BEArenChapter7","GLOBAL",1)
 THEN
 RESPONSE #100
-PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySong(0)
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 
