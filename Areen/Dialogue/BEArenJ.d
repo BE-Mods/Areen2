@@ -1145,7 +1145,7 @@ SAY @376 /* He's dead! Isn't he? */
 IF ~~ + t10.3
 END
 
-// I want to check if Demogorgon is dead. Fortunately, it's easy: 
+// I want to check if Demogorgon is dead. Fortunately, it's easy:
 // Global("DemogorgonIsDead","GLOBAL",1)
 
 IF ~~ t10.7
@@ -1176,7 +1176,7 @@ IF ~~ t10.10
 SAY @387 /* Truly, I'd like us to play... other sorts of games one day. Would you consider it? */
 ++ @388 /* With you, my lovely Branwen, anything. */ + t10.11
 ++ @389 /* Me? Oh, I'm ready right now! */ + t10.11
-++ @390 /* I'd rather we stayed friends. */
+++ @390 /* I'd rather we stayed friends. */ + t.0
 END
 
 IF ~~ t10.11
@@ -1380,7 +1380,7 @@ IF ~~ + t13.7
 END
 
 IF ~~ t13.7
-SAY @465 [dbtpam4]
+SAY @465 // this does not work yet [BDTPAM4] nor [bdtpam4]  
 = @466 /* When next we are in an inn, shall we rent a royal room, do you think? With a huge pile of Calimshan grapes on the table and a hot bath in the corner? */
 ++ @467 /* I'm all for it! */ + t13.8
 ++ @468 /* We can do that. */ + t13.8
@@ -1753,8 +1753,8 @@ SAY @630 /* I love you. I've always loved you, I think. Ever since the Nashkel F
 END
 
 IF ~~ l4.4
-SAY @148 /* (Branwen laughs.) */
-= @635 /* Come. Let's show your enemies who holds the real power. And then we'll see what the night brings... */
+SAY @35 /* (Branwen laughs.) */
+= @636 /* Come. Let's show your enemies who holds the real power. And then we'll see what the night brings... */
 IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1)~ EXIT
 END
 

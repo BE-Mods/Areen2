@@ -44,7 +44,7 @@ END
 // And this is how we initiate romance:
 IF 
 InParty(Myself)
-Gender(Player1,MALE)
+//Gender(Player1,MALE)
 OR(4)				// OR(4) means that four lines after OR() are a part of this OR() command.
 Race(Player1,HUMAN)
 Race(Player1,ELF)
@@ -193,7 +193,7 @@ Global("BEArenChapter5","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("BEArenChapter5","GLOBAL",1)
-RealSetGlobalTimer("BEArenChapter5Timer","GLOBAL",3600)    // setting a timer for another talk
+RealSetGlobalTimer("BEArenChapter5Timer","GLOBAL",1800)    // setting a timer for another talk
 END
 
 IF
