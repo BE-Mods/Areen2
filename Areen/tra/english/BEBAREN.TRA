@@ -1,248 +1,203 @@
-@0    = ~Speak up, girl! Why are you always mumbling and stuttering?~
-@1    = ~I'm not!~
-@2    = ~Are too!~
-@3    = ~Not!~
-@4    = ~Are!~
-@5    = ~Not, not, not! And you're too big and too loud and your feet are smelly when you take your huge boots off! So there!~
-@6    = ~Ha! When you want to, you're a regular little lioness, girl.~
+@0    = ~Aeri, have I told you I met Quayle some time ago near Baldur's Gate?~
+@1    = ~You knew Quayle before me? He never mentioned that! He was so kind to me... taught me everything about magic when I couldn't fly anymore.~
+@2    = ~Indeed. Our acquaintance was brief then. What surprised me was seeing him months later with you. Quayle as a mentor seemed improbable-the man could barely finish a thought without praising himself.~
+@3    = ~*laughs softly* That sounds like him! He often said I reminded him of something he'd lost. Did he ever mention that to you?~
+@4    = ~I'm afraid not. Though I must say, his work with you has altered my perception of him. It seems that mentorship was his calling, though I suspect even he didn't realize it.~
+@5    = ~That's so kind. Quayle insisted I had talent, but I just had a good teacher. He said teaching me helped focus his thoughts-that I gave his scattered brilliance a constellation.~
+@6    = ~Well, it appears Quayle was wiser than I initially credited. I am glad you joined us.~
 
-@7    = ~You are a strong warrior. I respect that.~
-@8    = ~Thank you for your kind words.~
-@9    = ~May I hold your hammer sometime?~
-@10   = ~You certainly may.~
-@11   = ~I'll take you up on this offer some day.~
+@7    = ~Anomen, I heard your father is selling his last properties in the city... may I inquire about the price of your family's estate in the government district?~
+@8    = ~*face reddening* How DARE you! My family's affairs are none of your concern, Selemchant!~
+@9    = ~I meant no offense. Merely making conversation about real estate-a neutral topic among civilized men.~
+@10   = ~I... apologize for my outburst. When one bears the weight of restoring family honor, such topics become rather sensitive.~
+@11   = ~We all operate under the shadows of expectation and disappointment, don't we?~
 
-@12   = ~Branwen, you are well-versed in medicine. Why don't you become a healer, not a warrior?~
-@13   = ~'Twould be a huge insult to my honor! Me, sitting at home like a blind fishwife? Not for the whole world!~
-@14   = ~What of your children? Will they grow unattended like weeds, only seeing their mother between some crusade or another?~
-@15   = ~If I have any, they will be strong warriors like their father, honorable and courageous. No one but Tempus himself will make my sons and daughters stay at home.~
-@16   = ~Perhaps there is some truth to what you say.~
-@17   = ~Nay, you speak truly, druid. Some maiden will be happier for hearing your words. Not me, though. And not yourself.~
-@18   = ~True enough.~
+@12   = ~I sense a familiar air about you, Areen. You mentioned residing in Waukeen's Promenade before your travels. I too once maintained a small dwelling there, before nature's call drew me to her greater embrace.~
+@13   = ~Did you indeed? How curious our paths never crossed. Though I must say, rumors of your... hasty departure circulated rather widely among the merchants.~
+@14   = ~The city spreads tales as easily as the wind scatters seeds, yet not all take root in truth.~
+@15   = ~Quite the poetic justification. Forgive my directness, but I've always found it fascinating how people rationalize their choices.~
+@16   = ~You speak of matters you do not understand, Areen. But I have returned to face what I left behind, have I not?~
+@17   = ~Indeed you have, which is more than many would do. I suppose we all have our seasons of regrettable decisions.~
+@18   = ~On that we agree.~
 
-@19   = ~Wizard! Stop stealing my herbs!~
-@20   = ~Who, me? You must be mistaken, erm, good woman. (She's blind as a monkey! Can't believe she noticed anything?)~
-@21   = ~You are using my herbs for your spell components, aren't you? Good for you, too, but you owe me for purchasing these.~
-@22   = ~Although mayhap I'll take a different payment this time...~
-@23   = ~W-WHAT? (She can't mean it. She can't mean THAT. She can't.)~
-@24   = ~'Twas a harmless joke, you ninny! By Tempus, you're red as your robes!~
-@25   = ~Grrrrr...(Fireball. Fireball. Fireball!)~
+@19   = ~I've been meaning to ask, Edwin, are you operating independently in Amn, or might we expect more of your red-robed colleagues to make an appearance? The Cowled Wizards seem remarkably unconcerned by your presence...well...besides the late Rayic Gethras.~
+@20   = ~Do not insult my intelligence with such transparent questioning, Selemchant. As if I would divulge Thayan operations to someone of your... limited arcane standing.~
+@21   = ~Come now, there's no need for hostility. Professional curiosity, that's all. I merely wondered if your presence indicates a shift in Thayan foreign policy regarding Amn.~
+@22   = ~The politics of Thay are far beyond your comprehension, as are most matters of true consequence. My business here is my own. (For now, at least.)~
+@23   = ~Your defensiveness suggests either you're indeed acting alone-possibly even against your superiors' wishes-or there's something significant enough in motion to warrant such secrecy. Either way, rather telling.~
+@24   = ~Your attempts at psychological manipulation are as clumsy as your spellcasting. When Thay moves, worlds tremble. That I am here should be enough to concern you, not whether I am a vanguard or an outlier.~
+@25   = ~I'll take that as an answer in itself. Do remember, Edwin, that Amn may tolerate one Red Wizard as a curiosity, but would respond rather differently to one too many.~
 
-@26   = ~Tell me, lovely magpie, why do you love gold thread so?~
-@27   = ~Why? 'Tis unbecoming, you wish to say?~
-@28   = ~Not for this bard, no. But yon garb can't withstand harsh weather and danger, surely?~
-@29   = ~I can always buy another tunic. But 'tis so much pleasure to shine, to let it caress my skin, to smile and be noticed. 'Tis not so for you?~
-@30   = ~Perchance you're wiser than you appear.~
-@31   = ~On that, bard, you're happily mistaken.~
+@26   = ~This sparrow finds himself curious, my heron. A wild mage who seeks to tame chaos rather than embrace its inevitable entropy! 'Tis like watching a man build castles upon the shifting sands as the tide approaches.~
+@27   = ~If I might correct your metaphor, Haer'Dalis, it's less about building on sand and more about understanding the patterns of the tides. Wild magic isn't random happenstance-it follows principles, albeit complex ones. What you call chaos, I call an equation we haven't yet solved.~
+@28   = ~Oh, what a delicious contradiction! You speak of calculating the incalculable! When your spell transforms a foe into a squirrel rather than the intended fireball-was that a failure of your mathematics?~
+@29   = ~Those... unpredicted outcomes are precisely what we document. Each "mistake" provides data. Besides, if entropy is truly inevitable as you claim, then why does you Doomguards bother to exist at all? Surely entropy would occur without your philosophical cheerleading.~
+@30   = ~A hit! A palpable hit! But you misunderstand our purpose. We don't merely observe the dance of decay-we celebrate it! We find meaning in embracing what cannot be avoided. This sparrow sees the pattern OF chaos, while you seek patterns IN chaos.~
+@31   = ~Unlike your Doomguard philosophy, my approach allows for adaptation. Perhaps that's why my perspective will outlast yours in the grand scheme of things.~
 
-@32   = ~Imoen, what are you... wait, are you wearing my lipstick? And my gloss? And my... undertunic?~
-@33   = ~Well, Irenicus didn't exactly provide me with spare things...~
-@34   = ~You poor thing! Here, I have some new underclothes for you, too...~
-@35   = ~Aw, Branwen, I was just teasing. <CHARNAME> bought me all I needed. I just... liked your lipstick.~
-@36   = ~By Tempus! Oh, just keep it, girl. My lips are prettier than yours, anyhow.~
-@37   = ~Now wait just a minute!~
+@32   = ~I don't mean to be impertinent, Imoen, but that last spell you casted was...quite possibly...the most unorthodox somatic component I've ever witnessed. Where exactly did you receive your arcane education?~
+@33   = ~Hey, it worked, didn't it? Lady Liia Jannath taught me some basics back in Baldur's Gate. She is one of the Grand Dukes, you know? Though I might've added my own... flourishes.~
+@34   = ~Lady Jannath? I... I'm rather impressed, actually. Though I suspect she would raise an eyebrow at your interpretive additions.~
+@35   = ~When you grow up in Candlekeep with Gorion always saying *imitating Gorion's voice* "not in the library," you learn to study on the go! Besides, Lady Jannath said I had a natural intuition that couldn't be taught in stuffy classrooms.~
+@36   = ~I daresay she was correct. In your case.~
+@37   = ~Not everyone needs to be all proper and stiff to be good at magic, y'know? Your wild magic is already unpredictable. Maybe loosen up a little! Might even improve your casting. Just a friendly tip from ol' Imoen!~
 
-@38   = ~Are you well, Branwen? You seem to be distracted often lately.~
-@39   = ~'Tis <CHARNAME>'s trials. Torture, and cages, and grim sights... <PRO_HESHE> is a grown <PRO_MANWOMAN> now.~
-@40   = ~That <PRO_HESHE> is.~
-@41   = ~And he needs a strong woman besides him, don't you think?~
-@42   = ~As long as she keeps him away from the darkness.~
-@43   = ~She will.~
-@44   = ~'Tis strange how little time has passed. Only a year. And now my old captor, Tranzig, lies dead, Khalid has fallen, and <CHARNAME> is a Bhaalspawn. So many losses...~
-@45   = ~And regrets.~
-@46   = ~We'll get through. By Tempus' shield!~
-@47   = ~Branwen! Do you have a big family?~
+@38   = ~You know, young Areen, I've been meaning to ask you. Are you by any chance related to the Athkatlan Selemchants? My second cousin Petunia Jansen once had quite the turnip trading arrangement with a Selemchant fellow. Had this marvelous contraption that could peel, slice, and dice a turnip into perfect medallions in the shape of the Council of Six's faces! Quite the conversation starter at dinner parties, I'll have you know. Though it did cause a bit of a stir when Meisarch Thayze's nose kept coming out looking like a radish instead of a turnip. Political scandal, that was!~
+@39   = ~I am indeed of the Athkatlan Selemchants, though I suspect that's where the accuracy in your tale ends.~
+@40   = ~You want an accurate tale? I can tell you of the time my aunt Petunia's prize-winning purple turnip patch was infiltrated by what we thought were Cowled Wizards, but turned out to be a family of particularly sneaky moles wearing little black masks! Mother always said our family had a flair for the dramatic, but those moles had real theatrical talent. We ended up booking them at the Five Flagons in Athkatla. Did you ever see the show? "Moles in the Moonlight" it was called. Had a five-tenday run before the critics buried it. Buried it! Get it? Because moles... they dig... Oh, never mind.~
+@41   = ~I assure you I've never witnessed masked moles performing theatre. But I am sure the Cowled Wizards wouldn't appreciate either.~
+@42   = ~My uncle Scratchy had quite the run-in with those humorless robes. See, he'd invented this marvelous turnip-powered illumination device – a precursor to my own Flasher Master Bruiser, if you will. Anyway, he was demonstrating it in the Promenade when it malfunctioned and turned one of those wizards completely purple from head to toe! Matched his cowl perfectly, I must say. The poor fellow kept sneezing sparkles for a fortnight. Now, normally this would've meant a one-way ticket to *whispering* Spellhold, but Uncle Scratchy had the brilliant idea to convince them it was a new fashion trend. Within a week, half the Cowled Wizards were dyeing themselves purple! Started calling themselves the 'Aubergine Authority.' Fashion is so fickle, don't you think?~
+@43   = ~I wonder about the origin of these fantastical narratives, Jan. Was this... peculiar storytelling tendency inherited from your parents?~
+@44   = ~Tricky business, parents. My own father was adamant I follow in the family turnip business - "Jan," he'd say, "turnips are in our blood!" Which was technically true after that unfortunate accident with the Turnip Juice Extractor. Turned his veins slightly green for months! Your parents sound like proper magical folk though. Reminds me of my great-aunt Gertrude who tried to magically enhance her turnips to sing opera. Didn't work out, but she did get the most melodious compost heap in all of Waterdeep! Say, did your parents ever experiment with agricultural applications for wild magic? I've always thought a self-seasoning turnip would revolutionize the culinary world!~
+@45   = ~My parents were serious magical theorists, Jan. They explored the fundamental nature of wild magic and its relationship to the Weave. Their work on chaotic energy stabilization ended when... *voice becomes slightly strained* when the experiment failed.~
+@46   = ~Oh, I'm terribly sorry to hear about your parents' experiment. Failure can be quite the teacher though! Why, when my Turnip Trebuchet failed spectacularly during the annual Jansen family picnic, sending Great-Uncle Hermie soaring over three counties, we learned valuable lessons about trajectory, wind resistance, and the surprising aerodynamic properties of elderly gnomes! He landed in a hay wagon in Beregost, and met his fifth wife that way!~
+@47   = ~But losing family to magical mishaps - that's rough. No wonder you're so dedicated to getting it right.~
+@48   = ~I... thank you, Jan.~
 
-@48   = ~Some. Two of my brothers are soldiers. Another is a fisherman. They don't talk to me, though. Not since...~
-@49   = ~Aye, the centuries-old disagreement of picking a profession! Uncle Scratchy once got burned, too. His betrothed, Leticia, decided to become a sales manager in a drow city. Surprisingly, her turnip sales were through the roof, but not for long.~
-@50   = ~Why is that?~
-@51   = ~Never trust an illithid. The tentacled devils ate the whole bunch.~
-@52   = ~Jan, that's horrible!~
-@53   = ~Told you. Career advice is the key.~
+@49   = ~This sparrow has a proposition for the methodical heron! Teach me that spell of yours, the Nahal's Reckless Dweomer one. What better bridge between our philosophies than for a Doomguard to wield the very magic that courts the entropy we so adore? Think of the poetic symmetry!~
+@50   = ~You can't be serious. Nahal's Reckless Dweomer isn't some theatrical prop for your philosophical musings. It requires years of disciplined study and a fundamental understanding of magical theory. Besides, I rather suspect you'd use it purely to generate more...entropy.~
+@51   = ~You wound me with your suspicions, my cautious friend! Is not experimentation at the heart of your scientific method? Consider what insights might bloom from combining your rigorous approach with my...penache. This sparrow has witnessed the birth and death of planes-surely I can handle one small spell that courts the edges of possibility!~
+@52   = ~That's precisely the mindset that concerns me. It's not about "handling" the spell-it's about respecting what it represents. In the wrong hands-particularly hands that actively celebrate disorder-it could only bring havoc.~
+@53   = ~This sparrow shall not press further today. But consider my request when our current tale reaches its conclusion-when I return to the Planes and you to your studies. What better final act between a Doomguard and a wild mage than passing such knowledge between worlds? Think on it, my heron.~
 
-@54   = ~You seem a reasonable and an honorable young lady, Branwen.~
-@55   = ~Why, thank you, good sir! 'Tis a great honor to be complimented by one such as you.~
-@56   = ~Yet your behavior toward young men is sometimes... unseemly. Have you noticed how free you can become with your affections?~
-@57   = ~Sir Keldorn! You're a married man who fathered two strong daughters! How can you say such things to an innocent young woman like myself?~
-@58   = ~My apologies, Branwen, but sometimes truth must be heard.~
-@59   = ~No. No, it mustn't! I'll just go and cry myself to sleep... curl in some dark corner...~
-@60   = ~Please, Branwen, you mustn't take it so seriously. A small adjustment in your temper...~
-@61   = ~Haha! Got you, old man!~
-@62   = ~(sigh) Torm help me.~
+@54   = ~Wild mage. A moment of your time, if you please.~
+@55   = ~Sir Keldorn. I presume this is not merely a social inquiry.~
+@56   = ~You presume correctly. In my years as an Inquisitor of Torm, I have witnessed many drawn to wild magic for its... unpredictable power. Too often, these practitioners harbor dark intentions.~
+@57   = ~I understand your concern, but I assure you my approach is one of scholarly discipline, not reckless ambition. My parents established methodical frameworks for studying wild magic before their unfortunate passing.~
+@58   = ~Many hide behind scholarly pretense. What safeguards have you implemented to prevent your magic from causing harm to innocents? Wild surges can be devastating.~
+@59   = ~A valid concern. I maintain extensive containment protocols documented in my research journals. Volume three details countermeasures for eleven categories of surge manifestations. Is that sufficient, or shall I elaborate on my contingency spells as well?~
+@60   = ~Your methodical approach is... unexpected. Most wild mages I've encountered embrace chaos rather than attempt to control it.~
+@61   = ~That's precisely the problem, Sir Keldorn. They treat as entertainment what should be approached with academic rigor and goodwill. First do no harm.~
+@62   = ~I sense no falsehood in your words. Perhaps I have been... overzealous in my assessment of you.~
 
-@63   = ~I loved the way you chopped his head off in the last battle!~
-@64   = ~Har!~
-@65   = ~His innards were flying around like sausages! I confess, I grew hungry a little.~
-@66   = ~Meself, too.~
-@67   = ~Really? How about we grab a beer and some pork? I'll see what we can do.~
-@68   = ~(belch) Bring it on!~
+@63   = ~Korgan, I would appreciate if you do not splash all this blood on my tunic when you swing your weapon. These stains are dreadfully difficult to remove.~
+@64   = ~Bah! Ye prancin' Amnian popinjay! Maybe if ye weren't standin' about like some useless ornament, ye wouldn't get decorated with me handiwork! A bit o' blood might put some steel in that jellied spine o' yours!~
+@65   = ~I... well, yes, quite. Perhaps I should... um... maintain a more prudent distance.~
+@66   = ~In me day, mages knew their place-behind the axe-wielders, where they could toss their sparkly nonsense without gettin' in the way!~
+@67   = ~You're right, of course. I shall endeavor to position myself more advantageously in future encounters.~
+@68   = ~Look at ye, foldin' faster than a cheap tent in a storm! Stand yer ground next time, wizard, or I'll use yer fancy robes to clean me steel!~
 
-@69   = ~Mazzy, why don't you stop staring at human men?~
-@70   = ~Excuse me?~
-@71   = ~They are twice as tall as you! 'Twould be like cradling a child! And what would happen to your loins, should you carry a human boy?~
-@72   = ~Branwen, I'm not some lewd - slattern! I talk to people!~
-@73   = ~Hmph. That may be, but I wasn't born yesterday. I noticed that look in your eye, sister.~
-@74   = ~Well, keep your "notices" to yourself.~
+@69   = ~Mazzy, if I may inquire about your time as prisoner of the Shade Lord. Did you witness any unusual magic manipulation of shadows?~
+@70   = ~What a peculiar question, Areen. I was more focused on the horrific undead surrounding me and my fallen companions than observing shadow phenomena. The entire temple was shrouded in darkness.~
+@71   = ~Yes, understandable. But I'm specifically concerned about instances where the Shade Lord might have drawn power directly from shadows themselves-weaving them like threads into spells, rather than simply manipulating existing darkness. Did his magic manifest differently than conventional necromancy?~
+@72   = ~I cannot say I noticed such details. The magic felt cold, unnaturally so. The shadows seemed to have substance, yes, but I assumed that was merely the way these things are.~
+@73   = ~This is most concerning. The theoretical implications of a being capable of manipulating what some dusty scholars call the "Shadow Weave", a parallel magical structure, could have far-reaching consequences.~
+@74   = ~I know nothing of this "Shadow Weave" you speak of, sir. I was more preoccupied with escaping that dreadful place and avenging my fallen friends. Perhaps you should direct your scholarly inquiries elsewhere.~
 
-@75   = ~Minsc, my good friend! We are together again!~
-@76   = ~So we are! Let's sing a song!~
-@77   = ~From beyond the wooded island
-To the river wide and free,
-Proudly sail the arrow-breasted
-Ships of Cossack yeomanry.~
-@78   = ~On the first is Stenka Razin
-With a princess at his side,
-Drunken, holds a marriage revel
-With his beautiful young bride.~
-@79   = ~But behind them rose a whisper,
-"He has left his sword to woo;
-One short night, and Stenka Razin
-Has become a woman too!"~
-@80   = ~Stenka Razin hears the jeering
-Of his discontented band,
-And the lovely Persian princess
-He has circled with his hand.~
-@81   = ~His black brows have come together
-As the waves of anger rise,
-And the blood comes rushing swiftly
-To his piercing, jet-black eyes.~
-@82   = ~"I will give you all you ask for,
-Life and heart, and head and hand,"
-Echo rolls the pealing thunder
-Of his voice across the land.~
-@83   = ~Boo says he's tired now, friend Branwen. Shall we sing the rest later?~
-@84   = ~Gladly!~
+@75   = ~Minsc, I wanted to offer my condolences about Dynaheir. I...I understand the two of you shared a bond that transcended mere companionship.~
+@76   = ~Little Areen speaks of my witch with the right words, but Minsc's heart still feels like it was stomped by a frost giant! Dynaheir was wise and powerful, like a shining star in the night to guide Minsc and Boo!~
+@77   = ~I wish I could discuss certain spells with her. Now... well, such academic matters seem rather trivial in comparison.~
+@78   = ~Boo says you wanted to learn from Dynaheir? She would have liked that. She always said knowledge should be shared, except the knowledge of where Minsc keeps his emergency hamster treats! That is a secret for Minsc and Boo alone!~
+@79   = ~Yes, well... quite. If there's anything I can do-though I suspect smashing evil is your preferred method of processing grief. Not an entirely unreasonable approach, all things considered.~
 
-@85   = ~Branwen, what do you do to help the less fortunate? Besides slaughtering goblins, I mean.~
-@86   = ~These goblins make out with harvest and sometimes even innocent children, foolish girl! Without adventurers and militia, entire villages would be dead!~
-@87   = ~Yes, but that's my point, isn't it? If these people had enough money to station guards, their children and crops needn't suffer!~
-@88   = ~No one can be safe day and night. Even the king can be murdered in his chambers.~
-@89   = ~Unless someone slaughters his guards and his battle mages, he is safe. Unlike the less fortunate I'm protecting!~
-@90   = ~How many less fortunate are there, girl? I say if they come together, no guards can save that king.~
+@80   = ~I hope I'm not being indiscreet, my dear Jaheira, but one hears things. You are a Harper, correct?~
+@81   = ~Don't be so polite about it. You know it well enough.~
+@82   = ~A group as shrouded in mystery as the very Council of Six, and as meddlesome as the Cowled Wizards. Neither particularly known for their restraint when it comes to other people's affairs.~
+@83   = ~True Harpers stand for balance in the Realms. We fight tyranny and preserve knowledge that would otherwise be lost. We protect those who cannot protect themselves. That is hardly "meddling" as you so dismissively call it.~
+@84   = ~In Athkatla, one quickly learns that even the most well-intentioned organizations can make life exceedingly difficult for those who merely wish to live in peace.~
 
-@91   = ~Your hair looks lovely in this light, Branwen.~
-@92   = ~Thank you. 'Tis a rare compliment from you, my friend.~
-@93   = ~I rarely make small talk anymore.~
-@94   = ~I understand. I miss my parents, too, very much.~
-@95   = ~Are they dead?~
-@96   = ~They are. Shall I tell you more about them?~
-@97   = ~I... yes. Please do.~
-@98   = ~My mother was born in high summer, and it was said that the sun never left her hair. My father was a woodsman, a ranger not unlike yourself. A good man. When I was born, he held me and cried...~
+@85   = ~I must say, Areen, your spellcasting has a certain... flair to it. It is quite impressive.~
+@86   = ~That's rather kind of you to notice. Most observers only see the spectacle, not the discipline. Where did you receive your arcane education, if I may inquire?~
+@87   = ~Oh, Father hired the finest tutors from across the region. I studied primarily within the castle walls, though occasionally we'd venture into the courtyard for certain demonstrations. Master Dentril was particularly fond of fresh air for his conjuration lessons.~
+@88   = ~I see. So your experience with casting under duress or environmental variables is somewhat limited, then? Controlled settings are hardly adequate preparation for field applications.~
+@89   = ~Well, I wouldn't say limited exactly. We did have to deal with the occasional unexpected visitor or weather change during outdoor lessons. Though I suppose it's not quite the same as casting while someone's trying to separate your head from your shoulders.~
+@90   = ~If you'd like, I could offer some guidance on maintaining concentration amidst chaos. Simply observe my techniques in our forthcoming encounters.~
 
-@99   = ~Viconia, I respect you.~
-@100  = ~Truly? Why is that?~
-@101  = ~You were nearly burnt, very probably raped, and very nearly killed. You must be hurting inside, but you persevered and became stronger.~
-@102  = ~Shar guides my hand.~
-@103  = ~And Tempus guides mine. I hope we'll never become enemies.~
-@104  = ~Perhaps one day, elg'caress. But not today.~
+@91   = ~I've been watching you, Selemchant. The way you cast those chaotic spells with such... casual disregard. Do you even understand the dangers of what you're doing?~
+@92   = ~There's nothing casual about my approach to wild magic, Corthala. My parents dedicated their lives to its scholarly understanding. I continue their work with precision and discipline, not reckless abandon.~
+@93   = ~Discipline? There's no disciplining chaos. I know what I am talking about. My entire family was destroyed by the pursuit of magical power. Each generation consumed by it until nothing remained but madness and suffering.~
+@94   = ~I'm well aware of your family's history. However, you're conflating the pursuit of necromancy with the study of wild magic. They are fundamentally different disciplines. One seeks to control death; mine seeks to understand the chaotic foundations of the Weave itself.~
+@95   = ~Different paths to the same destination. Magic corrupts, regardless of its form. I've seen how it twists people. How it promises control while stealing it away. Your "wild surges" are merely the most honest expression of magic's true nature.~
+@96   = ~That's precisely the point. Wild magic doesn't pretend to offer absolute control-it acknowledges the inherent chaos in all magic. By studying this chaos systematically, we develop a more complete understanding of the Weave than those who delude themselves with illusions of perfect control.~
+@97   = ~And what happens when your "systematic study" produces a surge that turns you inside out? Or worse, endangers those around you? My ancestor Lavok began as a curious scholar too, before ambition consumed him.~
+@98   = ~The difference is that I harbor no delusions of immortality, Valygar. I seek knowledge, not power. My family may have embraced an unorthodox art, but we've always maintained strict ethical boundaries. Perhaps that's where yours went astray.~
 
-@105  = ~Do you miss home, Yoshimo?~
-@106  = ~Of course I do! Every ronin and samurai does. Especially in spring, with every cherry tree in bloom.~
-@107  = ~I'd like to visit Kara-Tur one day.~
-@108  = ~Then you will! A fierce maiden like yourself will not let a little bit of distance stop her. Just be careful on the way: these roads are crawling with bandits.~
-@109  = ~And other filth. But I have Tempus' favor, truth and honor. I will see Kara-Tur, Yoshimo.~
-@110  = ~Perhaps one day we shall see it together?~
-@111  = ~Ha, you're a right cad, Yoshimo! I confess, I didn't see it coming.~
-@112  = ~I try my best.~
+@99   = ~Sorry if I stare, Viconia, I am not used to traveling with Drow. Pay me no mind.~
+@100  = ~I pay no attention to weak jaluk. Your gaze means nothing.~
+@101  = ~I assure you, my discomfort is merely unfamiliarity. In Athkatla, one hears... stories.~
+@102  = ~Stories? You surface dwellers and your pathetic tales cannot capture the true glory of the Drow.~
+@103  = ~I meant no offense. One can hardly separate fact from fiction when it comes to the peoples of the Underdark.~
+@104  = ~Then perhaps you should remain silent on matters you cannot comprehend, rivvil. Your ignorance is as apparent as your fear.~
+@105  = ~Not fear, my lady. Caution. A wise approach when encountering the unknown.~
+@106  = ~You mistake cowardice for prudence. Oloth plynn dos. Do not talk to me again.~
 
-@113  = ~Edwin, has anyone told you that you have a very nice voice?~
-@114  = ~Ahem. Do I? (She has noticed at last!)~
-@115  = ~Indeed. And these soft, soft hands...~
-@116  = ~Yes?~
-@117  = ~My heart is beating faster when I think about ALL the wonderful things these deft fingers can do...~
-@118  = ~Yeees?~
-@119  = ~Will you peel the potatoes for the stew?~
-@120  = ~Rats.~
+@107  = ~So, Yoshimo, where are you from... originally? I detect an accent that isn't native to these parts of the Sword Coast.~
+@108  = ~Ah, my friend, you have a good ear. I am from Kara-Tur. A beautiful land of cherry blossoms and honor-bound warriors, far to the east beyond the Hordelands.~
+@109  = ~Do you have family there still? I imagine maintaining correspondence across such vast distances must be... challenging, to say the least.~
+@110  = ~I had a sister, but she travelled... north. Such is the way of things when one chooses the path of adventure, yes? Family becomes distant, like stars in the night sky.~
+@111  = ~And what brings you to Athkatla? Amn isn't exactly known for its welcoming attitude toward foreigners unless they come bearing substantial wealth.~
+@112  = ~Ah, you know how it is with we bounty hunters. We follow the coin, and Athkatla has no shortage of wealthy merchants willing to pay for... discreet services. A man must eat, after all!~
 
-@121  = ~Imoen! You've taken my towel again! And you haven't even folded it properly! It's lying in a heap, still wet!~
-@122  = ~Aww, stop shouting. Screaming won't make it dry, you know.~
-@123  = ~By Tempus's hairy ass, what will, then?~
-@124  = ~Here, let me... Oooougeli bugeli!~
-@125  = ~See? Just a small spell, and it's fresh and dry, good as new.~
-@126  = ~Hmph. Thank you, Imoen but what exactly prevented you from doing it right after you first used it?~
-@127  = ~Ah... uh... I forgot?~
+@113  = ~Edwin, might I have a word? Your expertise in conjuration has been... evident.~
+@114  = ~(Another interruption.) What is it? Make it quick, I have scrolls to study that your primitive mind couldn't begin to comprehend.~
+@115  = ~Charming as ever. I require advice of a specific nature. During wild surges, I've occasionally summoned beings that were... decidedly not on my agenda. Demons, specifically. Rather inconvenient. I was hoping you might have insight on how to avoid such occurrences.~
+@116  = ~*snorts* Avoiding demons? Why would one wish to do that? They make excellent servants when properly bound. But I suppose your feeble wild magic lacks the precision of proper Thayan conjuration. The key is intent and dominance. Your will must be absolute. Demons sense hesitation like wolves sense fear.~
+@117  = ~Intent? That's your sage advice? I'm not summoning them deliberately, Edwin. What I need are containment protocols - preventative measures for when theory inevitably gives way to chaos. Surely even Thayan conjurers have contingencies when things go... sideways?~
+@118  = ~Bah! Contingencies are for the weak! (Though my own are quite elegant, of course.) Fine. If you insist on cowering from power rather than wielding it, draw a binding circle beforehand and protect yourself against their evil. Elementary precautions that even a child in Thay would know.~
+@119  = ~The binding circle is sensible. I'll incorporate that into my rutine. I appreciate the practical advice. We will all benefit from it...sooner than later.~
+@120  = ~Right. Don't bother me again.~
+
+@121  = ~*notices Imoen staring emptily at the horizon* I've observed that particular expression before. On old scholars who've gazed too deeply into existential questions. It's... disconcerting to see it on someone so young.~
+@122  = ~Yeah, well... turns out having part of your soul ripped away changes a girl. I keep reaching for something inside me that should be there, but... it's like trying to remember a word that's on the tip of your tongue, except the word is... me.~
+@123  = ~The literature on soul fragmentation is woefully inadequate. Theoretical at best, sensationalist at worst. None of it captures the... profound violation you and <CHARNAME> have endured.~
+@124  = ~You know what's weird? Sometimes I feel almost normal, like I could just skip away and play a prank on someone. Then suddenly there's this... emptiness. Like I'm just pretending to be Imoen, putting on a performance of who I used to be.~
+@125  = ~Identity isn't merely spiritual, Imoen. It's also memory, choice, and will. Aspects you demonstrably retain. Your soul may be wounded, but your personhood remains intact.~
+@126  = ~That's the fancy way of saying I'm still me, huh? I want to believe that. But what if the part that was taken... what if it was the most important part? The best parts of me just... gone?~
+@127  = ~The soul isn't quantifiable into "better" or "worse" segments, Imoen. You remain, fundamentally, you.~
 @128  = ~And you think these pretty dimples will help you, will they? Arrgh! Next time, I'll tell <CHARNAME>. I've no doubt <PRO_HISHER> towels suffered from your attacks, too. We'll plan revenge together.~
-@129  = ~But that's way too cruel! I'm being unfairly slandered here! <CHARNAME>, help!~
+@129  = ~You know, for someone so buttoned-up, you've got a way with words sometimes, Areen. I can't totally get back what was taken, but maybe... maybe I can build something new around what's left.~
 
-@130  = ~I really don't understand, Jaheira. Why would you wear these braids? They make you look like a travelling gypsy!~
-@131  = ~Says a woman wearing way too much golden thread.~
-@132  = ~Well, I do! And it makes me prettier, would you not agree?~
-@133  = ~Branwen, I am used to comfort. Long hair can be used against you in battle. Hasn't anyone shown you this?~
-@134  = ~...~
-@135  = ~I... yes. Once. I remember. It hurt.~
-@136  = ~Please disregard what I told you earlier. You're beautiful with the braids.~
-@137  = ~And you. I sometimes say things... in anger. I do not mean them.~
-@138  = ~Then I declare Tempus' peace! Drinks?~
-@139  = ~Tonight.~
+/*
+@130  = ~~
+@131  = ~~
+@132  = ~~
+@133  = ~~
+@134  = ~~
+@135  = ~~
+@136  = ~~
+@137  = ~~
+@138  = ~~
+@139  = ~~
 
-@140  = ~Shall we finish the song, friend Minsc?~
-@141  = ~"Volga, Volga, mother Volga,
-Deep and wide beneath the sun,
-You have never seen a present
-From the Cossack of the Don.~
-@142  = ~And that peace might rule as always
-All my free-born men and brave,
-Volga, Volga, mother Volga,
-Volga, make this girl a grave."~
-@143  = ~Minsc cannot continue! He is crying!~
-@144  = ~With a sudden, mighty movement,
-Razin lifts the beauty high,
-And he casts her where the waters
-Of the Volga move and sigh.~
-@145  = ~Now a silence like the grave sinks
-To all those who stand to see,
-And the battle-hardened Cossacks
-Sink to weep on bended knee.~
-@146  = ~"Dance, you fool, and men, make merry!
-What has got into your eyes?
-Let us thunder out a chanty
-Of a place where beauty lies."~
-@147  = ~Look what you have done! Even Boo's little whiskers are quivering!~
-@148  = ~Aye, well sung indeed. Shall we drown your hamster next? Ha! 'Twas a harmless joke, my friend Minsc, do not glare at me so.~
-@149  = ~Come, Boo, away from this not-so-nice lady. When she wants a hamster's company next, we'll make her beg for it.~
-@150  = ~Why, Minsc, you can be downright dirty sometimes.~
+@140  = ~~
+@141  = ~~
+@142  = ~~
+@143  = ~~
+@144  = ~~
+@145  = ~~
+@146  = ~~
+@147  = ~~
+@148  = ~~
+@149  = ~~
+@150  = ~~
 
-@151  = ~Viconia, why don't we share a drink?~
-@152  = ~You would... drink with me?~
-@153  = ~Aye, and gladly! The strongest brew you can find!~
-@154  = ~Let's see if you can keep up, abbil.~
-@155  = ~Did you just call me your friend?~
-@156  = ~No.~
-@157  = ~Thought so.~
+*/
 
-@158  = ~So, priestess, do you aspire to become a Chosen of your dumb deity? (No doubt she can't set her sights any higher. These monkeys are amusing.)~
-@159  = ~You are a heretic fool, Edwin, to speak of the Lord of Battles so carelessly. His wrath is great, and my hammer is only inches from your finger bones...~
-@160  = ~And my fingers are itching for a fireball!~
-@161  = ~Which would take you two seconds to cast. My hammer is ready now. 'Twould be a pity to bereave this party of a capable mage, but Tempus holds with no affronts to his honor, and his will be done.~
-@162  = ~All right, all right! I... apologize.~
-@163  = ~Truly?~
-@164  = ~Yes! Now shut up and keep walking!~
+@151  = ~You there, Selemchant! I require your assistance immediately. (As if this day could not become more humiliating.) You are versed in the arcane arts of gender reversal magic, are you not? I demand you help me with this... predicament.~
+@152  = ~I beg your pardon, Edwin..sorry...Edwina? I'm afraid wild magic theory doesn't specifically address gender transformations. This appears to be the result of a powerful artifact enchantment, not some trivial cantrip gone awry.~
+@153  = ~Do not lecture me on the origin of my condition, you simpleton! (Why am I surrounded by such incompetence?) The Nether Scroll's magic is beyond your meager understanding, but surely your chaotic spellcasting must have some utility in reversing unwanted transformations!~
+@154  = ~I must caution you against making assumptions about wild magic, Edwin. I could attempt to help, but without proper research and preparation, the results would be unpredictable at best.~
+@155  = ~Unpredictable? (As if I hadn't noticed.) Look at me, you fool! I have female... attachments! My robes no longer fit properly! Every moment in this form is an insult. I demand action, not excuses!~
+@156  = ~I understand your frustration, but attempting to reverse this with a wild surge would be profoundly unwise. The interaction between Netherese magic and wild magic could compound your problem-you might end up with additional transformations or worse. I'd recommend consulting a specialist in transmutation magic or finding the original scroll's countermeasure.~
+@157  = ~Bah! Useless, the lot of you! By the crimson flames of Kossuth, if I must remain in this form one more day, I shall rain such destruction upon this realm that even the Red Wizards will speak of it in hushed tones!~
 
-@165  = ~You're a sly one, aren't you?~
-@166  = ~What do you mean, Branwen?~
-@167  = ~You're a proper little vixen, that's what I mean. I've noticed your appraising look when I was repacking my backpack. You may be all smiles and innocent looks, but you're an accomplished rogue, little Imoen. I was a fool to doubt that.~
-@168  = ~Heh. Who'd notice an old little me? But your backpack is safe, Branwen.~
-@169  = ~Because there's nothing interesting for you inside.~
-@170  = ~That, too.~
+@158  = ~Thanks for nothing, Selemchant. In the end, your help was not necessary. (As if I would rely on such incompetence.) I have returned to my magnificent male form without your chaotic fumbling.~
+@159  = ~Yes, I witnessed the rather dramatic encounter with your Thayan colleague. An interesting application of dispelling magic, though his approach lacked subtlety. I presume that wasn't exactly how you planned to resolve your situation?~
+@160  = ~That miserable interfering fool Degardan! (At least he served one useful purpose before his timely demise.) His dispelling was a crude technique, but effective nonetheless. The knowledge of my... condition will die with him, as will anyone else who dares mention it again.~
+@161  = ~I'm not interested in spreading tales of your transformation, Edwin. I'm far more intrigued by the magical principles involved. A Nether Scroll capable of complete physiological alteration, followed by a standard dispelling that could reverse it? That contradicts established magical theory.~
+@162  = ~Your ignorance is showing, Selemchant. (Though marginally less irritating than most.) The Nether Scrolls contain magic beyond your limited comprehension. Degardan simply knew the precise counter-incantation required. Knowledge he will no longer be sharing with anyone.~
+@163  = ~I see. Well, should you ever wish to document the theoretical framework behind such magic, I would approach such research with appropriate discretion and scholarly rigor. The interaction between Netherese artifacts and modern counterspells deserves systematic study.~
+@164  = ~Do not take this as a compliment, but you are not as utterly stupid as the rest of this lot. (One must acknowledge even the faintest glimmer of intelligence when surrounded by such overwhelming mediocrity.) Though your obsession with 'systematic study' is tedious. True power requires ambition, not just dusty theorizing.~
 
-@171  = ~Branwen, what is it? You look drawn.~
-@172  = ~Those pines on the edge of Athkatla... 'Twas a rare sight. It reminded me of home.~
-@173  = ~Amn is not that far from Tethyr. I see reminders of my home every day.~
-@174  = ~Lucky you.~
-@175  = ~Do you truly think so?~
-@176  = ~No... 'twas spoken in haste. Forgive me, Jaheira.~
-@177  = ~Home is where the heart is, Branwen. May your heart find yours.~
-
-@178  = ~Branwen! Boo asks, do you have nuts?~
-@179  = ~Hmm. I confess, I do. Here, have some, little Boo.~
-@180  = ~Thank you! Oooh, Dynaheir used to carry nuts for us in her backpack. Just like old times, right, Boo?~
-@181  = ~You're welcome, Minsc and Boo. You miss Dynaheir, both of you?~
-@182  = ~We do! But she would want us to stay strong, so we are.~
-@183  = ~You keep it up, Minsc. You keep it up.~
-
-@184  = ~So, abbil, tell me true: what kind of men attract you? ~
-@185  = ~Tall ones. Hard ones. Strong arms and gentle hands.~
-@186  = ~Ha! What about your precious honor?~
-@187  = ~I confess, I wouldn't lie with a rascal willingly, but if I were truly starved and hungry for a strong man's caresses...~
-@188  = ~Ha! You'd yield shamefully, and lick his boot like a good bitch!~
-@189  = ~Hmph. You're a real ray of sunshine sometimes, do you know that?~
+@165  = ~You're approaching archmage potential, Imoen, though I suspect you're unaware of it.~
+@166  = ~Wait, what? Me? An archmage? *laughs* C'mon, Areen. I'm just a girl who picked up a few tricks. Not exactly Elminster material here.~
+@167  = ~That assessment is profoundly inaccurate. Your intuitive grasp of magical principles is exceptional. What others struggle to learn through decades of formal study, you appear to absorb almost... osmotically. It's rather vexing from an academic perspective, but undeniably impressive.~
+@168  = ~*looks down at her hands* It's because of... what happened, isn't it? I don't know if that makes it really me, or if I'm just... channeling something else.~
+@169  = ~That certainly may have accelerated your development, but the foundation was indisputably yours. Consider: your affinity for magic manifested long before Irenicus's... interventions. What happened to you didn't create your talent.~
+@170  = ~But how can you be sure? Sometimes I feel like there's this... river of power running through me, and I'm just trying not to drown in it. Not exactly the way proper mages are supposed to learn, is it?~
+@171  = ~There is no single "proper" path to magical mastery. The Weave responds differently to different practitioners. Your approach may be unorthodox, but the results are undeniable.~
+@172  = ~So what am I supposed to do with all this? I never asked to be powerful. I just wanted to... I dunno, have adventures, maybe learn enough magic to pull off some really spectacular pranks. Not exactly noble archmage ambitions.~
+@173  = ~That's precisely why you'll excel where others fail, I guess. The most dangerous mages are those who pursue power as an end unto itself. Your reluctance is actually reassuring. And as for what to "do" with your abilities, that remains entirely your prerogative. Though I would caution against the "spectacular pranks" route.~
+@174  = ~Don't worry, I wouldn't waste good magic on you. Too easy a target. But seriously... thanks. For seeing something in me that's not just... broken bits and stolen pieces. Makes me feel a little more whole, you know?~
+@175  = ~Yes, well. Simply an objective observation. Now, regarding that cantrip you were attempting before, your somatic component was imprecise. The fourth finger movement should trace a parabola, not an ellipse.~
+@176  = ~And he's back. Fine, Professor Selemchant. Show me this fancy finger-wiggling of yours. But I still say my way looks more dramatic.~
