@@ -341,11 +341,11 @@ DO ~SetGlobal("BEArenImoen2","GLOBAL",1)~
 == IMOEN2J @122
 == BEBAREN @123
 == IMOEN2J @124
-== IMOEN2J @125
-== BEBAREN @126
-== IMOEN2J @127
-== BEBAREN @128
-== IMOEN2J @129
+== BEBAREN @125
+== IMOEN2J @126
+== BEBAREN @127
+== IMOEN2J @128
+== BEBAREN @129
 EXIT
 
 /* Gap between @130 and @150, in case we want to include more 2nd round banter in the future. */
