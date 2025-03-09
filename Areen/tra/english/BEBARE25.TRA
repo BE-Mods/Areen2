@@ -149,20 +149,18 @@
 @134  = ~Noble sentiments. But remember this, Selemchant – I've seen how men's principles melt away in the crucible of divine power. When the moment comes, we shall see what truly drives you.~
 @135  = ~Indeed we shall, Sarevok. Now, if you'll excuse me, I have work that actually matters.~
 
-// ME HE QUEDADO AQUI
+@136  = ~Your wild magic... it didn't destroy us all back there. I've been meaning to ask - how is it you haven't turned yourself into a potted plant yet?~
+@137  = ~Disappointed?~
+@138  = ~But I've noticed something. When that Bhaalspawn attached us, your counterspell wasn't... chaotic. It was calculated.~
+@139  = ~Wild magic isn't about embracing randomness, it's about acknowledging it exists and preparing accordingly. Rather like your ancestors should have done instead of believing they could master death without consequences.~
+@140  = ~The difference being?~
+@141  = ~When I stand before the abyss of magical chaos, I don't delude myself that I control it. I merely... negotiate favorable terms. Your ancestors believed they could dominate the powers they toyed with.~
+@142  = ~Too bad you were born a few centuries too late. You might have talked some sense into Lavok before he damned us all.~
 
-@136  = ~I'm going to make myself a new skirt.~
-@137  = ~This short?~
-@138  = ~Aye! You think it won't suit me?~
-@139  = ~No, I think... it will be very becoming. Just not very practical.~
-@140  = ~Flatterer. All right, let's consider you've wormed your way out of that one.~
-@141  = ~I'm ever at your service, milady.~
-@142  = ~Whenever I approach you, abbil, we talk about perfume, clothes and drinking. Doesn't it bore you?~
-
-@143  = ~Aye! I've been waiting for that moment eagerly, in fact. Shall we finally talk about what's truly important?~
-@144  = ~Their size, their weight, their hard smoothness in our hands?~
-@145  = ~Their prices?~
-@146  = ~The way battle dents and batters them?~
-@147  = ~Aye, I love comparing war hammers and maces! Let's go over there, so no one would interrupt us! Oh, it's going to be such fun!~
-@148  = ~Hmm. Surface-dwellers can be quite practical.~
-@149  = ~~
+@143  = ~You call yourself a mage of discipline, rivvil? Your magic is as untamed as a drow child's first steps.~
+@144  = ~I wouldn't expect you to comprehend my craft.~
+@145  = ~I have seen goblins with more mastery of their crude magics than you demonstrate, Selemchant.~
+@146  = ~How fascinating that you've made such comprehensive observations of goblin spellcasters. One wonders about the company you've kept.~
+@147  = ~You mock me?~
+@148  = ~What if I do?~
+@149  = ~I will peel your skin from your bones, jaluk~

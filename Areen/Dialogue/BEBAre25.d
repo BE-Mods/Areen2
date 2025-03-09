@@ -296,7 +296,7 @@ DO ~SetGlobal("BEArenValygarToB2","GLOBAL",1)~
 == BVALYG25 @142
 EXIT
 
-CHAIN 
+CHAIN
 IF ~InParty("BEAren")
 See("BEAren")
 !StateCheck("BEAren",CD_STATE_NOTVALID)
