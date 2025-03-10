@@ -103,7 +103,6 @@ COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BEBAren.d~
 
 	~Areen/Scripts/BEArenS.baf~ // Areen's script.
 	~Areen/Scripts/BEArenD.baf~ // Areen's dream script for events at rest. If you want your NPC to talk to you at rest, add scripting here.
-	~Areen/Scripts/BEArenF.baf~ // Areen's "fixing" script. Remember how various modders advised you to "select your NPC and press K"? Well, that's how they do it.
 
 // place Areen
 EXTEND_TOP ~AR0700.bcs~ ~Areen/Scripts/AR0700.baf~

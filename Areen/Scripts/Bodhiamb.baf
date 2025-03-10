@@ -1,4 +1,4 @@
-// Branwen's abduction, adding to Bodhi's script
+// Abduction, adding to Bodhi's script
 IF
 Global("BEArenVampire","GLOBAL",1)
 THEN

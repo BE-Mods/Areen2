@@ -1,23 +1,20 @@
-// Read this after all SoA dialogue. Start reading with BEAren.d
-// This is Branwen's ToB main dialogue file, after she joins the party. Best read after SoA files.
-
 BEGIN BEARE25J
 
 // Volo's obligatory interjection in Saradush.
 
 EXTEND_TOP SARVOLO 9 #2
-+ ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) !Global("BEArenRomanceActive","GLOBAL",2)~ + @0 /* Tell me about Branwen. */ + BEArenVoloBio1
-+ ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) Global("BEArenRomanceActive","GLOBAL",2)~ + @0 /* Tell me about Branwen. */ + BEArenVoloBio2
++ ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) !Global("BEArenRomanceActive","GLOBAL",2)~ + @0 + BEArenVoloBio1
++ ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) Global("BEArenRomanceActive","GLOBAL",2)~ + @0 + BEArenVoloBio2
 END
 
 CHAIN SARVOLO BEArenVoloBio1
-@1 /* A priestess of Tempus and an honorable warrior without equal, Branwen of Norheim Isles inspires countless songs with her ardor in battle and her fervent devotion to her friends. */
-== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @2 /* Ha! Flattering and accurate. What else could I ever desire? */
+@1
+== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @2
 EXTERN SARVOLO 9
 
 CHAIN SARVOLO BEArenVoloBio2
-@3 /* They said that the Child of Bhaal found solace in the arms of a beautuful and deadly priestess of Tempus, but only now I can see that for myself! Would you grant me a private meeting, my dear? I would like to learn some of the details. */
-== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @4 /* Certainly. As long as you burn the end result. */
+@3
+== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @4
 EXTERN SARVOLO 9
 
 // Solar, final interjections at the Throne of Bhaal and <CHARNAME>'s choice for the romanced protagonists.
@@ -25,26 +22,26 @@ EXTERN SARVOLO 9
 // non-romanced
 
 I_C_T FINSOL01 27 BEArenSolarFriend1
-== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) !Global("BEArenRomanceActive","GLOBAL",2)~ THEN @5 /* You are leaving, aren't you? I would be sorely tempted, if I were you. But 'tis your choice, only and forever. Good luck in making it, my friend. */
+== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) !Global("BEArenRomanceActive","GLOBAL",2)~ THEN @5
 END
 
-// romanced, Branwen and PC talk before the choice
+// romanced, PC chooses to stay
 
 EXTEND_BOTTOM FINSOL01 27
 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) Global("BEArenRomanceActive","GLOBAL",2) Global("BEArenSolarPers","GLOBAL",0)~ DO ~SetGlobal("BEArenSolarPers","GLOBAL",1)~ EXTERN BEARE25J BEArenSolarPers
 END
 
 CHAIN BEARE25J BEArenSolarPers
-@6 /* This is it, isn't it? This is the moment. */
+@6
 END
-++ @7 /* I do not wish to leave you, Branwen. I love you. */ EXTERN BEARE25J BEArenSolarPers1.1
-++ @8 /* I would miss you, but I want to see the planes, as well. */ EXTERN BEARE25J BEArenSolarPers1.1
-++ @9 /* I really do not know what to choose. */ EXTERN BEARE25J BEArenSolarPers1.1
+++ @7 EXTERN BEARE25J BEArenSolarPers1.1
+++ @8 EXTERN BEARE25J BEArenSolarPers1.1
+++ @9 EXTERN BEARE25J BEArenSolarPers1.1
 
 CHAIN BEARE25J BEArenSolarPers1.1
-@10 /* I do not know what to say. 'Tis your choice and yours alone. But I can tell you this: if you stay, the world will be ours. We will travel, laugh, outwit kings, duel assassins and make love all night long. */
-= @11 /* Perhaps we'll settle down, perhaps not. But I'll love you, and I'll never leave you. */
-= @12 /* Remember this before you make a choice. Please. */
+@10
+= @11
+= @12
 END
 COPY_TRANS FINSOL01 27
 
@@ -74,27 +71,27 @@ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)
 END
 
 CHAIN BEARE25J BEArenSolarStay
-@14 /* I... what? */
+@14
 END
-++ @15 /* Told you I loved you, didn't I? */ EXTERN BEARE25J BEArenSolarStay1.1
-++ @16 /* I am going to live my life as a mortal. With you. */ EXTERN BEARE25J BEArenSolarStay1.1
-++ @17 /* That. */ EXTERN BEARE25J BEArenSolarStay1.1
+++ @15 EXTERN BEARE25J BEArenSolarStay1.1
+++ @16 EXTERN BEARE25J BEArenSolarStay1.1
+++ @17 EXTERN BEARE25J BEArenSolarStay1.1
 
 CHAIN BEARE25J BEArenSolarStay1.1
-@18 /* This is the best day ever. And forevermore. */
-= @19 /* I demand a kiss. A huge kiss. Right now. */
-= @20 /* I love you, my dear mortal. Best of all the world. */
+@18
+= @19
+= @20
 COPY_TRANS FINSOL01 32
 
-// Branwen's Gorion Wraith sequence.
+// Gorion Wraith sequence.
 
 EXTEND_BOTTOM HGWRA01 18
 IF ~Global("BEArenRomanceActive","GLOBAL",2) InParty("BEAren") See("BEAren")~ EXTERN HGWRA01 BEArenWraith1
 END
 
 CHAIN HGWRA01 BEArenWraith1
-@21 /* What of the inevitable pain you must give to the one you love? The priestess you call 'Branwen'. */
-== BEARE25J @22 /* <CHARNAME> loves me, and I am happy with him. */
+@21
+== BEARE25J @22
 EXTERN HGWRA01 24
 
 EXTEND_BOTTOM HGWRA01 24
@@ -105,47 +102,47 @@ BEGIN BEArenG
 
 CHAIN 
 IF ~Global("BEArenWraithSpirit1","GLOBAL",0)~ THEN BEArenG BEArenWraithSpirit1
-@23 /* My granddaughter. You have grown tall, yet there's no sense in your head! */
+@23
 DO ~SetGlobal("BEArenWraithSpirit1","GLOBAL",1)~
-== BEARE25J @24 /* G-grandmother? */
-== BEArenG @25 /* Still not wearing my woolen socks, I see. No hot milk before bed, either. And to top it all, you're bedding a Bhaalspawn! */
-== BEARE25J @26 /* Am not! */
-== BEArenG @27 /* Are too! */
-== BEARE25J @28 /* (sigh) All right, I am. */
-== BEArenG @29 /* He is going to doom you, you know. DOOM you. And then you'll rape and pillage and murder together, and whole cities will burn because of you two! Even if you remember to wear my woolen socks, which you won't! */
-== BEARE25J @30 /* That's... that's not true! */
+== BEARE25J @24
+== BEArenG @25
+== BEARE25J @26
+== BEArenG @27
+== BEARE25J @28
+== BEArenG @29
+== BEARE25J @30
 END
-++ @31 /* I'm not a murderer! Well, maybe a little. */ EXTERN HGWRA01 25
-++ @32 /* Stop it, Gorion! She doesn't deserve this! */ EXTERN HGWRA01 25
-+ ~CheckStatGT(Player1,16,WIS)~ + @33 /* It's a lie, Branwen! Don't believe it! */ EXTERN HGWRA01 25
-++ @34 /* Enough! I won't allow this to continue! And woolen socks are itchy! */ EXTERN HGWRA01 25
+++ @31 EXTERN HGWRA01 25
+++ @32 EXTERN HGWRA01 25
++ ~CheckStatGT(Player1,16,WIS)~ + @33 EXTERN HGWRA01 25
+++ @34 EXTERN HGWRA01 25
 
-// Branwen's talk after Gorion Wraith:
+// Talk after Gorion Wraith
 
 APPEND BEARE25J
 
 IF ~Global("BEArenWraithSpirit1","GLOBAL",2)~ w1
-SAY @35 /* That son of a mother! I want to kill him all over again! */
-++ @36 /* Easy, easy, Branwen. He's dead. */ + w1.1
-++ @37 /* All right. You're the priestess. */ + w1.1
-++ @38 /* I'm sorry he brought you such pain. */ + w1.1
+SAY @35
+++ @36 + w1.1
+++ @37 + w1.1
+++ @38 + w1.1
 END
 
 IF ~~ w1.1
-SAY @39 /* (Branwen suddenly snickers.) Actually, 'twas nice to see grandmother again. And she was right, I'm not wearing warm socks, though I should. */
-= @40 /* But that ugly, undead thing! Ugh! I'm glad 'tis destroyed at last. */
-= @41 /* Let's go. And thank you. */
-++ @42 /* You're very welcome. */ + w1.2
-++ @43 /* Thank you for what? */ + w1.3
+SAY @39
+= @40
+= @41
+++ @42 + w1.2
+++ @43 + w1.3
 END
 
 IF ~~ w1.2
-SAY @44 /* We're going to be naughty again tonight, I hope? 'Twill be a disappointment if my grandmother's proven wrong. */
+SAY @44
 IF ~~ DO ~SetGlobal("BEArenWraithSpirit1","GLOBAL",3)~ EXIT
 END
 
 IF ~~ w1.3
-SAY @45 /* For giving that bastard a what for. */
+SAY @45
 IF ~~ + w1.2
 END
 
@@ -154,15 +151,15 @@ END // For APPEND
 // Various non-essential interjection for ToB.
 
 I_C_T AMMERC02 1 BEArenSaemonMet11
-== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @46 /* About time, I say. If you need a knife, I'm ready to loan you one, here. */
+== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @46
 END 
 
 I_C_T BAZDRA01 0 BEArenDrakonis1
-== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @47 /* Draconis, huh? You're no dragon, boy. Stand aside if you wish to live. */
+== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @47
 END
 
 I_C_T SARMEL01 56 BEArenSARMEL0156
-== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @48 /* And what's your interest in this, old woman? */
+== BEARE25J IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @48
 END
 
 I_C_T SARMEL01 40 BEArenMelissanYagaTemple1

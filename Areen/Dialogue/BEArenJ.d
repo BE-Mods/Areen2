@@ -1,40 +1,24 @@
 BEGIN BEARENJ
 
-// This is Branwen's main dialogue file after she joins the party. Whenever she interrupts Aran Linvail, confesses her love to CHARNAME or comments at the Tree of Life, she speaks from this very file.
-// Here you will find all these annoying-to-code-but necessary things like the Slayer Transformation interjections, Entering Hell interjection, gypsy's reaction in Trademeet, Crazy Celvan and other things. Brace yourself.
-
-// Branwen's friendship/romance/lovetalks are way below, if you want to start with these.
-
-// Gypsy in Trademeet, predicting Branwen's fortune. The condition means "If you're not talking to CHARNAME and the character is Branwen".
-
-// You can read Weidu readme at Weidu.org for more examples. Or just steal this code and forget it all like a bad dream... until you suddenly need it again.
-
 EXTEND_BOTTOM TRGYP02 2
 IF ~!InPartySlot(LastTalkedToBy,0) Name("BEAren",LastTalkedToBy)~ EXTERN TRGYP02 g1
 END
 
 CHAIN TRGYP02 g1
-@0 /* You are a noble woman, but new trials are ahead. Brace yourself, Hand of Tempus, for your friends will need you. */
-== BEARENJ @1 /* Thank you, good woman. I am always ready. */ 
+@0
+== BEARENJ @1
 EXIT
 
-// Branwen was already talking here, so we didn't need InMyArea/CD_STATE_NOTVALID checks.
-
-// Crazy Celvan - an obligatory bad limerick. Vanilla game uses "AR0300" instead of "GLOBAL", so let's use an area variable, too.
-// Here you can see WEIGHT command. It means that whatever other dialogues Celvan has, this one will be triggered first if Branwen is around. Of course, the dialogue below can be triggered only once.
+// Crazy Celvan - an obligatory bad limerick.
 
 CHAIN IF WEIGHT #-1 
 ~InParty("BEAren")
 See("BEAren")
 !StateCheck("BEAren",CD_STATE_NOTVALID)
 Global("BEArenReactionCelvan","AR0300",0)~ THEN CELVAN c1
-@2 /* There was once a lady so fair
-Spent whole mornings combing her hair.
-But orcs swiftly came,
-And down her mace came,
-Because her god Tempus was there! */
+@2
 DO ~SetGlobal("BEArenReactionCelvan","AR0300",1)~
-== BEARENJ @3 /* Who was it about? Who? Me? */
+== BEARENJ @3
 END CELVAN 1
 
 // Obligatory comments for Madame Nin's brothel in the Copper Coronet
@@ -43,76 +27,65 @@ CHAIN IF WEIGHT #-1
 ~NumTimesTalkedTo(0) 
 Name("BEAren",LastTalkedToBy)
 !Global("MadamUpset","GLOBAL",1)~ THEN MADAM BEArenReactionMadam1
-@4 /* Greetings, my lady. I am Madame Nin, and I am here to ensure you are pleasantly accompanied. Are you interested in companionship, my lady? */
-== BEARENJ @5 /* Not in the sort you're proposing. Excuse me. */
+@4
+== BEARENJ @5
 EXIT
-
-
-// THIS IS IMPORTANT: if you use INTERJECT, you must understand that you're cutting in the game's dialogue, replacing someone else's reaction. So my recommendation is NEVER to do it, except in one or two cases below.
-// On the other hand, using I_C_T, which means INTERJECT_COPY_TRANS, is fine and good.
-
-// ALSO, ALL INTERJECT and I_C_T commands require a UNIQUE PREFIXED NAME, because they set a UNIQUE PREFIXED VARIABLE.
-// This is why I don't write INTERJECT Player1 3 p3, but INTERJECT Player1 3 BEArenSpellholdDizzy0.
-// Weidu will create a variable with the same name. Same goes for your mod.
 
 // Yoshimo's betrayal
 
 I_C_T YOSHJ 113 BEArenYOSHJ113
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @8 /* Betrayal... I do not understand, Yoshimo. I just don't. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @8
 END
 
 // Spellhold, right after the player loses his or her soul.
 
 INTERJECT Player1 3 BEArenSpellholdDizzy0
 == BEARENJ IF ~InParty("BEAren") Range("BEAren",15) !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN
-@9 /* Are you all right? What has Irenicus done to you? I swear, I'll kill him! */
+@9
 END
-++ @10 /* I'm all right. Don't worry. */ EXTERN BEARENJ pl1.1
-++ @11 /* I felt strange, like I wasn't in control. */ EXTERN BEARENJ pl1.2
-++ @12 /* Don't coddle me! */ EXTERN BEARENJ pl1.1
+++ @10 EXTERN BEARENJ pl1.1
+++ @11 EXTERN BEARENJ pl1.2
+++ @12 EXTERN BEARENJ pl1.1
 
 CHAIN BEARENJ pl1.1
-@13 /* All right. But be wary. No one wants to lose you. */
+@13
 EXIT
 
 CHAIN BEARENJ pl1.2
-@14 /* Really? That's disturbing. But I'm here, <CHARNAME>. All your friends are with you. */
+@14
 EXIT
 
 // Player becomes the Slayer for the first time.
 
 I_C_T PLAYER1 5 BEArenFirstSlayerChange1
-== BEARENJ IF ~InParty("BEAren") See("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @15 /* Uh-oh. Tempus would be... impressed, I think? But better not do it again. */
+== BEARENJ IF ~InParty("BEAren") See("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @15
 END
 
 // Lonk is dead, inmates are free, time to battle Irenicus!
 
 I_C_T PLAYER1 15 BEArenLonkIsDead1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @16 /* Quickly, tell them what to do, or they'll turn on us! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @16
 END
 
 // This is the dialogue for the Tree of Life.
-// Non-romanced Branwen:
+// Non-romanced:
 
 EXTEND_BOTTOM PLAYER1 33
 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) Global("BEArenTreeOfLife","GLOBAL",0) !Global("BEArenRomanceActive","GLOBAL",2)~ EXTERN PLAYER1 pl2
 END
 
 CHAIN PLAYER1 pl2
-@17 /* Branwen, a fierce priestess from the North. She looks at you with a fond smile, but the battle hammer is firm in her hand. */
+@17
 DO ~SetGlobal("BEArenTreeOfLife","GLOBAL",1)~
 END
-++ @18 /* Branwen, this is not your fight. You do not have to follow me. */ EXTERN BEARENJ pl2.1
-++ @19 /* You have done a lot for me, Branwen. You can go home now. */ EXTERN BEARENJ pl2.1
-++ @20 /* Are you ready to follow me? I need you to win. */ EXTERN BEARENJ pl2.1
+++ @18 EXTERN BEARENJ pl2.1
+++ @19 EXTERN BEARENJ pl2.1
+++ @20 EXTERN BEARENJ pl2.1
 
 CHAIN BEARENJ pl2.1
-@21 /* You saved my life, and you are a friend. We're in this together, and I will remain by your side no matter what. By Tempus' shield! */
+@21
 END
 COPY_TRANS PLAYER1 33
-
-// COPY_TRANS  means coming back to the main dialogue, so other characters can say their piece.
-// INTERJECT 33 + COPY_TRANS 33 is okay, you can use it almost anywhere. Still, use I_C_T for one-liners - see examples below.
 
 // Romanced Branwen at the Tree of Life:
 
@@ -122,66 +95,66 @@ EXTERN PLAYER1 pl3
 END
 
 CHAIN PLAYER1 pl3
-@22 /* Branwen, your comrade in arms and a devoted lover. She is standing still as a statue, listening to the sounds from the next room, but her gaze never leaves your face. */
+@22
 DO ~SetGlobal("BEArenTreeOfLife","GLOBAL",1)~
 END
-++ @23 /* Branwen, I -- */ EXTERN BEARENJ pl3.1
+++ @23 EXTERN BEARENJ pl3.1
 
 CHAIN BEARENJ pl3.1
-@24 /* Don't even think about leaving me behind. Ahem. But in case it wasn't what you wanted to say, I'm sorry for interrupting. */
-= @25 /* 'Tis no use to linger before the battle. Both my sword arm and Tempus' grace are with you, my dear lover. Until the end. */
-= @26 /* Come, let's enjoy the grand finale. Irenicus must be shaking with fear within. 'Twill be a pleasure to put my mace to his skull at last! */
+@24
+= @25
+= @26
 END
 COPY_TRANS PLAYER1 33
 
 // Tree of Life, Irenicus is dead.
 
 I_C_T PLAYER1 16 BEArenIrenicusIsDead1
-== BEARENJ IF ~InParty("BEAren") Range("BEAren",15) !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @27 /* The madman falls, but what of your soul? Has it returned? */
+== BEARENJ IF ~InParty("BEAren") Range("BEAren",15) !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @27
 END
 
 // Entering Hell with the rest of the party.
 
 I_C_T PLAYER1 25 BEArenEnteringHell1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @28 /* You always take me to the strangest places. I do not know whether to thank you or curse you. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @28
 END
 
 // Battling Irenicus. There are four identical interjections for four dialogue states.
 
 I_C_T HELLJON 7 BEArenThirdBattleWithIrenicus1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29 /* You will not escape this time, wizard! We are strong and we have Tempus' favor! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29
 END
 
 I_C_T HELLJON 8 BEArenThirdBattleWithIrenicus1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29 /* You will not escape this time, wizard! We are strong and we have Tempus' favor! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29
 END
 
 I_C_T HELLJON 9 BEArenThirdBattleWithIrenicus1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29 /* You will not escape this time, wizard! We are strong and we have Tempus' favor! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29
 END
 
 I_C_T HELLJON 10 BEArenThirdBattleWithIrenicus1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29 /* You will not escape this time, wizard! We are strong and we have Tempus' favor! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @29
 END
 
 // ROMANCE CONTENT: the second slayer change and Bodhi abduction.
 
 INTERJECT Player1 7 BEArenSecondSlayerChange0
-== BEArenJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) OR(2) Global("BEArenRomanceActive","GLOBAL",1) Global("BEArenRomanceActive","GLOBAL",2)~ THEN @30 /* Can't sleep? No surprise. I'll be glad away to be out of this place, myself. Wait. By Tempus, are you all right? */
+== BEArenJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) OR(2) Global("BEArenRomanceActive","GLOBAL",1) Global("BEArenRomanceActive","GLOBAL",2)~ THEN @30
 END
-++ @31 /* Something is happening to me. Run! */ EXTERN BEArenJ BEArenSecondSlayerChange1
-++ @32 /* Branwen, I may turn into the Slayer again. */ EXTERN BEArenJ BEArenSecondSlayerChange1
-++ @33 /* Fly, you fool! */ EXTERN BEArenJ BEArenSecondSlayerChange1
+++ @31 EXTERN BEArenJ BEArenSecondSlayerChange1
+++ @32 EXTERN BEArenJ BEArenSecondSlayerChange1
+++ @33 EXTERN BEArenJ BEArenSecondSlayerChange1
 
 CHAIN BEArenJ BEArenSecondSlayerChange1
-@34 /* You lips move, but I hear nothing. Is it... Oh, no! <CHARNAME>, NO! */
+@34
 DO ~SetGlobal("BEArenSecondSlayerChange","GLOBAL",1)
 ActionOverride(Player1,ReallyForceSpell(Myself,SLAYER_CHANGE))~
 EXIT
 
 INTERJECT Player1 10 BEArenSlayerSurvived1
-== BEArenJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) OR(2) Global("BEArenRomanceActive","GLOBAL",1) Global("BEArenRomanceActive","GLOBAL",2) Global("BEArenSecondSlayerChange","GLOBAL",1)~ THEN @35 /* By Tempus' mighty underwear... Gods, you're alive. I was afraid that thing has... had... has... */
-== BEArenJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) OR(2) Global("BEArenRomanceActive","GLOBAL",1) Global("BEArenRomanceActive","GLOBAL",2) Global("BEArenSecondSlayerChange","GLOBAL",1)~ THEN @36 /* Now I'm mumbling like a weeping babe. I'm with you, and together we'll get you back to the right state again. Come on! */
+== BEArenJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) OR(2) Global("BEArenRomanceActive","GLOBAL",1) Global("BEArenRomanceActive","GLOBAL",2) Global("BEArenSecondSlayerChange","GLOBAL",1)~ THEN @35
+== BEArenJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) OR(2) Global("BEArenRomanceActive","GLOBAL",1) Global("BEArenRomanceActive","GLOBAL",2) Global("BEArenSecondSlayerChange","GLOBAL",1)~ THEN @36
 END
 IF ~~ EXIT
 
@@ -189,9 +162,9 @@ EXTEND_BOTTOM Player1 10
 IF ~Dead("BEAren") Global("BEArenSecondSlayerChange","GLOBAL",1)~ EXTERN Player1 12
 END
 
-// Bodhi abduction. Since Branwen leaves the party temporarily, some of her dialogue moves to BEARENP.d file. For convenience, I will attach it below after Bodhi's dialogue via APPEND BEARENP command.
+// Bodhi abduction.
 
-BEGIN BEARENV // Vampire Branwen in Bodhi's crypt, she talks below, in C6BODHI o#BranAb chain.
+BEGIN BEARENV
 
 // Bodhi's dialogue at the entrance to the Graveyard.
 
@@ -200,30 +173,14 @@ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)
 END
 
 CHAIN BODHIAMB BEArenKidnap
-@37 /* A lovely priestess of Tempus. You are going to set a fine example for our Bhaalspawn. */
-== BEArenJ @38 /* Dream on, creature. */
-== BODHIAMB @39 /* I do not need to, Branwen. Darkness calls out to you. Come with me... */
+@37
+== BEArenJ @38
+== BODHIAMB @39
 END
 IF ~~ DO ~ClearAllActions()
 StartCutSceneMode()
-StartCutScene("BEArenVC")~ UNSOLVED_JOURNAL @100001 // you can read more about @100001 in English/Setup-Branwen.tra
+StartCutScene("BEArenVC")~ UNSOLVED_JOURNAL @100001
 EXIT
-
-/* Basically, @100001 is a dialogue line. It is replaced with @100001, because Weidu, our "mod program", requires lines like @100001 for journal entries. In "non-traified" dialogue, it looks like this:
-CHAIN BODHIAMB BEArenKidnap
-@37 /* A lovely priestess of Tempus. You are going to set a fine example for our Bhaalspawn. */
-== BEArenJ @38 /* Dream on, creature. */
-== BODHIAMB @39 /* I do not need to, Branwen. Darkness calls out to you. Come with me... */
-END
-IF ~~ DO ~ClearAllActions()
-StartCutSceneMode()
-StartCutScene("BEArenVC")~ UNSOLVED_JOURNAL ~The Final Battle with Bodhi.
-
-Bodhi appeared in an ambush shortly before I reached her haven, warning me that she was aware of my pursuit and stealing from me the one person that is dearest to my heart: Branwen.  Before she vanished and unleashed more of her undead creations upon me, Bodhi warned me that if I continue I will lose even more than I thought possible.  I cannot give up on the Rhynn Lanthorn... but now the life and immortal soul of the one I love is at stake, as well!~
-EXIT
-Note that this code is commented, and won't be executed. */
-
-// The following commands add new dialogue to Bodhi's dialogue in the crypt. A_T_T, or ADD_TRANS_TRIGGER prevents Bodhi from entering the fight immediately, if Branwen's a vampire. The rest adds new lines if Branwen was abducted.
 
 A_T_T C6bodhi 21 ~!Global("BEArenVampire","GLOBAL",2)~ DO 0
 
@@ -232,46 +189,46 @@ IF ~Global("BEArenVampire","GLOBAL",2)~ + 23
 END
 
 EXTEND_BOTTOM C6BODHI 23
-+ ~Global("BEArenVampire","GLOBAL",2)~ + @40 /* You have taken too much already! You will return both Imoen's soul and Branwen! */ EXTERN C6BODHI BEArenAb
-+ ~Global("BEArenVampire","GLOBAL",2)~ + @41 /* And you have delivered on that promise. Return Branwen and perhaps I will be merciful. */ EXTERN C6BODHI BEArenAb
-+ ~Global("BEArenVampire","GLOBAL",2)~ + @42 /* I would have hunted you for your theft of Branwen alone. She is very important to me. */ EXTERN C6BODHI BEArenAb
-+ ~Global("BEArenVampire","GLOBAL",2)~ + @43 /* You place too much confidence in sentiment. The theft of Branwen will not save you. */ EXTERN C6BODHI BEArenAbConf
++ ~Global("BEArenVampire","GLOBAL",2)~ + @40 EXTERN C6BODHI BEArenAb
++ ~Global("BEArenVampire","GLOBAL",2)~ + @41 EXTERN C6BODHI BEArenAb
++ ~Global("BEArenVampire","GLOBAL",2)~ + @42 EXTERN C6BODHI BEArenAb
++ ~Global("BEArenVampire","GLOBAL",2)~ + @43 EXTERN C6BODHI BEArenAbConf
 END
 
 CHAIN C6BODHI BEArenAbConf
-@44 /* An interesting ploy, though I am sure her fate will still serve as an example, whether you wish her back or not. */
+@44
 END
 IF ~~ EXTERN C6BODHI BEArenAb
 
 CHAIN C6BODHI BEArenAb
-@45 /* Here she is, though I doubt your fumbling could have inspired the loyalty I have taken with a bite and a gaze.  She is mine now, and will do my bidding gladly. */
-== BEARENV @46 /* As you say, mistress. I am your servant in all things. */
-== C6BODHI @47 /* She is not even fully turned and yet she is mine to use against you. Doesn't it gall you? I thought it might. */
+@45
+== BEARENV @46
+== C6BODHI @47
 END
 IF ~~ EXTERN C6BODHI 28
 
-// Elhan's sages, Oghma, Imnesvale's books, obligatory extra dialogue options. BEArenB is Branwen's body. You can copy it and give it another name. Look to Setup-Branwen.tp2 for the exact code.
+// Elhan's sages, Oghma, Imnesvale's books, obligatory extra dialogue options.
 
 EXTEND_BOTTOM WARSAGE 0
-+ ~!Dead("C6BODHI") OR(2) Global("BEArenVampire","GLOBAL",1) Global("BEArenVampire","GLOBAL",2)~ + @48 /* A loved one was taken by a vampire. What can I expect when I find them? */ EXTERN WARSAGE 6
-+ ~PartyHasItem("BEArenB")~ + @49 /* Someone I care about has fallen to a vampire. Is there any way to save them? */ EXTERN WARSAGE 5
++ ~!Dead("C6BODHI") OR(2) Global("BEArenVampire","GLOBAL",1) Global("BEArenVampire","GLOBAL",2)~ + @48 EXTERN WARSAGE 6
++ ~PartyHasItem("BEArenB")~ + @49 EXTERN WARSAGE 5
 END
 
 EXTEND_BOTTOM DOGHMA 0
-+ ~Global("RevealUmar","GLOBAL",1) PartyHasItem("BEArenB")~ + @50 /* A friend is afflicted by vampirism. An old book suggested that followers of Oghma might know something about that. */ EXTERN DOGHMA 10
++ ~Global("RevealUmar","GLOBAL",1) PartyHasItem("BEArenB")~ + @50 EXTERN DOGHMA 10
 END
 
 EXTEND_BOTTOM IMNBOOK1 0
-+ ~Global("RevealUmar","GLOBAL",1) PartyHasItem("BEArenB")~ + @51 /* I'm looking for information about a tome that details the curing of vampirism. */ EXTERN IMNBOOK1 4
++ ~Global("RevealUmar","GLOBAL",1) PartyHasItem("BEArenB")~ + @51 EXTERN IMNBOOK1 4
 END
 
-// Branwen in the temple of Amaunator
+// In the temple of Amaunator
 
 APPEND BEARENP
 
 IF WEIGHT #-1 ~Global("BEArenVampire","GLOBAL",4)~ v1
-SAY @52 /* Am I... am I asleep? No, 'tis not a dream, yet I am myself again... and the darkness calls to me no longer. */
-IF ~~ DO ~EraseJournalEntry(32084)  // These are journal entries from the game.
+SAY @52
+IF ~~ DO ~EraseJournalEntry(32084)
 EraseJournalEntry(32085)
 EraseJournalEntry(16351)
 EraseJournalEntry(7002)
@@ -287,68 +244,44 @@ EraseJournalEntry(3927)
 SetGlobal("BEArenVampire","GLOBAL",5)~ SOLVED_JOURNAL @100002 + v1.1 // read about @100002 in English/Setup-Branwen.tra
 END
 
-/* Again, the code would look like this if I didn't have to replace a journal entry with @100002 for BG2EE purposes:
-IF WEIGHT #-1 ~Global("BEArenVampire","GLOBAL",4)~ v1
-SAY @52 /* Am I... am I asleep? No, 'tis not a dream, yet I am myself again... and the darkness calls to me no longer. */
-IF ~~ DO ~EraseJournalEntry(32084)  // These are journal entries from the game.
-EraseJournalEntry(32085)
-EraseJournalEntry(16351)
-EraseJournalEntry(7002)
-EraseJournalEntry(3716)
-EraseJournalEntry(5814)
-EraseJournalEntry(16331)
-EraseJournalEntry(15710)
-EraseJournalEntry(6589)
-EraseJournalEntry(11864)
-EraseJournalEntry(3374)
-EraseJournalEntry(3377)
-EraseJournalEntry(3927)
-SetGlobal("BEArenVampire","GLOBAL",5)~ SOLVED_JOURNAL ~The Final Battle with Bodhi.
-
-While I had feared for some time that Bodhi's final revenge on me would be to take away Branwen forever, it seems that the information in the lorebook was right... Amaunator's idol has restored Branwen not only to life, but has removed the vampiric curse from her, as well.~ + v1.1
-END
-Again, this code is commented out and will not be run/compiled/executed. */
-
 IF ~~ v1.1
-SAY @53 /* 'Twas you, wasn't it? <CHARNAME>, my dearest lover, you have saved me once again. Truly, 'twas Tempus' hand and mine own heart that brought me to you. */
+SAY @53
 IF ~~ DO ~EraseJournalEntry(@100001)~ + v1.1a
 END
 
 IF ~~ v1.1a
-SAY @54 /* Thank you. I wish that I could have resisted Bodhi, yet I had not. Her dark domination magic was repulsive, but it crushed me in an instant. I... you can't imagine how relieved I am to be with you again. */
-++ @55 /* I am glad, as well. Join me, and let's get out of this place. */ DO ~ActionOverride("BEAren",JoinParty())~ EXIT
-++ @56 /* I have no room for you now. Will you wait for me in the Bridge District? */ + v1.2
+SAY @54
+++ @55 DO ~ActionOverride("BEAren",JoinParty())~ EXIT
+++ @56 + v1.2
 END
 
 IF ~~ v1.2
-SAY @57 /* 'Tis not my wish, but... if you insist. */
-= @58 /* I hope to see you again soon, <CHARNAME>. */
+SAY @57
+= @58
 IF ~~ DO ~SetGlobal("KickedOut","LOCALS",1) MoveGlobal("AR0500","BEAren",[4053.255])~ EXIT
 END
 
 END // for the APPEND BEARENP
 
-// BELOW THERE ARE NON-ESSENTIAL INTERJECTIONS THAT EVERY NPC MOD HAS.
 
-// To add them, use Infinity Explorer to read the game's dialogue and choose good places for your interjections. Weidu has a tutorial on I_C_T, if you want to learn more.
-// Actually, I really recommend you to try that - it's always best when your NPC has a unique interjection, and additional interjections are always a bonus.
+// NON-ESSENTIAL INTERJECTIONS
 
-// Quayle and his amazing brain are back
+// Quayle
 
 I_C_T QUAYLE 0 BEArenQUAYLE0
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @59 /* Quayle? Ha! A proper little reunion we're all having. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @59
 END
 
-// Viconia, hello!
+// Viconia
 
 I_C_T VICONI 13 BEArenVICONI13
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @60 /* Fear of the drow is not surprising. But to think they could burn Viconia alive... I do not wish to imagine what would happen, had you not intervened. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @60
 END
 
-// Xzar is back
+// Xzar
 
 I_C_T LYROS 5 BEArenLYROS5
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @61 /* Uh-oh. Weren't these fools... well, us? */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @61
 END
 
 // Corneil, goverment building
@@ -379,38 +312,38 @@ END
 // Maevar, Renal, Aran Linvail
 
 I_C_T MAEVAR 24 BEArenMAEVAR24
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @73 /* Another thug, I'll bet. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @73
 END
 
 I_C_T MAEVAR 29 BEArenMAEVAR29
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @74 /* Now we must be murderers, as well? By Tempus' mighty hammer, my patience is wearing thin. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @74
 END
 
 I_C_T EDWIN 3 BEArenEDWIN3
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @75 /* I wish *your* door was shut. Of all people I expected to meet here, you, Edwin Odesseiron, were the last. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @75
 END
 
 I_C_T EDWIN 16 BEArenEDWIN16
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @76 /* We are not killing the merchant, are we? His only crime is dealing with this... Red Wizard! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @76
 END
 
 I_C_T RENAL 5 BEArenRENAL5
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @77 /* And I am sick of thieves, but I doubt anyone cares. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @77
 END
 
 I_C_T RENAL 41 BEArenRENAL41
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @78 /* Now, finally, are we allowed to kill someone or not?! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @78
 END
 
 // Rayic Gethras, Edwin quest
 I_C_T DCOWL1 0 BEArenDCOWL10
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @79 /* Now, finally, are we allowed to kill someone or not?! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @79
 END
 
 // Jermien, Imnesvale
 
 I_C_T JUGJER01 0 BEArenJUGJER010
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @80 /* Now, finally, are we allowed to kill someone or not?! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @80
 == JUGJER01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @81
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @82
 == JUGJER01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @83
@@ -430,84 +363,84 @@ END
 // Tolgerias in goverment building and planar sphere
 
 I_C_T TOLGER 0 BEArenTOLGER0
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @94 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @94
 END
 
 I_C_T TOLGER2 0 BEArenTOLGER20
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95
 END
 
 I_C_T TOLGER2 2 BEArenTOLGER22
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95
 END
 
 I_C_T TOLGER2 4 BEArenTOLGER24
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95
 END
 
 I_C_T TOLGER2 5 BEArenTOLGER25
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95 /* Agree? Agree to what? 'Tis all about lies and deceit, <CHARNAME>, and I don't like it one bit. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @95
 END
 
 // de'Arnise-related
 
 I_C_T NALIA 56 BEArenBEAren56
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @99 /* The girl is a brave one. I vote we take her with us, <CHARNAME>. She will be of help in the castle. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @99
 END
 
 I_C_T NALIA 75 BEArenBEAren75
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @100 /* And your father allowed that? To marry you off to some noble brat against your will? */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @100
 END
 
 I_C_T NALIA 77 BEArenBEAren77
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @102 /* A barbaric custom. Why not drive him from your lands and whack him on the head with a mace if he does not take the hint? I'd help you gladly! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @102
 END
 
 I_C_T NALIAJ 171 BEArenBEArenJ171
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @102 /* A barbaric custom. Why not drive him from your lands and whack him on the head with a mace if he does not take the hint? I'd help you gladly! */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @102
 END
 
 // Spellhold
 
 I_C_T PPCOWLED 1 BEArenPPCOWLED1
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @107 /* 'Tis all a little too crazy for my taste. You'd better step back, though: he looks dangerous. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @107
 END
 
 I_C_T ELEARB01 2 BEArenELEARB012
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @111 /* Lovely. Can I whack him on the head with my hammer? */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @111
 END
 
 I_C_T PPIRENI1 3 BEArenPPIRENI13
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @114 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @114
 END
 
 
 // The Underdark
 
 I_C_T BREG01 2 BEArenBREG012
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @115 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
-== BREG01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @116 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @115
+== BREG01 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @116
 END
 
 // Kruin
 
 I_C_T KRUIN 4 BEArenKRUIN4
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117
 == KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @118
 END
 
 I_C_T KRUIN 6 BEArenKRUIN6
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117
 == KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @118
 END
 
 I_C_T KRUIN 12 BEArenKRUIN12
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @117
 == KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @118
 END
 
 I_C_T KRUIN 11 BEArenKRUIN11
-== KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @119 /* Explain it or not, 'tis a prison for mages, healthy and sane both. 'Tis simple enough for those that can see. */
+== KRUIN IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @119
 DO ~GiveItemCreate("BEGLOVES",Player1,0,0,0)~
 END
 
@@ -515,1249 +448,1218 @@ END
 
 APPEND BEARENJ
 
-/* These days most of the companions have friendship paths for those players who do not want to romance them. But I do not want to write two separate paths for Branwen - remember, she's just a test NPC. So I am going to write her friendship path and add romance bits to every dialogue. And I will add some talks that will be completely romance-specific. This way the players will have a friendship AND a romance. */
-
-// No CHAINs here. Just simple SAY commands, one after another.
-// To know how and when these talks run, open Branwen/Scripts/BEArenS.baf.
-
-// These talks trigger both if Branwen is your friend and if Branwen is romanced. If she is romanced, music plays.
-
-// Talk 1. 
+// Talk 1.
 
 IF ~Global("BEArenTalk","GLOBAL",2)~ t1
-SAY @129 /* Let's stop and talk for a moment. By Tempus, I haven't seen you in ages! */
-++ @130 /* What for? You already know about Irenicus and Imoen. */ + t1.1
-++ @131 /* If it's about some rumors about me being a Child of Bhaal again, I will break someone's shield over their head. Just saying. */ + t1.2
-++ @132 /* Sure, let's talk. How have you been? */ + t1.3
-++ @133 /* Now is not the best time, Branwen. */ + t.0
+SAY @129
+++ @130 + t1.1
+++ @131 + t1.2
+++ @132 + t1.3
+++ @133 + t.0
 END
 
 IF ~~ t.0
-SAY @134 /* Until next time, then. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @134
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
-// Note how t1.0 can be used for ALL lovetalks - it increments BEArenTalk and sets the timer.
-
-/* Branches t1.1, t1.2 and t1.3 are "looping branches" - they create different answers for Branwen, but they would still loop back to the same place, t1.4. It's efficient: you don't have to create big separate branches. */
-
 IF ~~ t1.1
-SAY @135 /* The whole Athkatla knows that by now. Nay, 'tis not what I wanted to ask you about. */
+SAY @135
 IF ~~ + t1.4
 END
 
 IF ~~ t1.2
-SAY @136 /* I've been in Baldur's Gate, <CHARNAME>. I remember Sarevok's fall, and his lineage, and talk about yours. I know who you are, and it does not frighten me one bit. */
+SAY @136
 IF ~~ + t1.4
 END
 
 IF ~~ t1.3
-SAY @137 /* Those last few days? Looking for you. Before that I stayed in Baldur's Gate and worked with the city guard, but without you it just wasn't the same. */
+SAY @137
 IF ~~ + t1.4
 END
 
 IF ~~ t1.4
-SAY @138 /* Remember the grand celebration in the Duchal Palace? Everyone drunk as a skunk, and Coran waking up wearing nothing but a tiara and Minsc's dirty socks? */
-= @139 /* Dynaheir dancing, Khalid and Jaheira by the window... everyone else drinking and laughing... I haven't seen any of them since. */
-= @140 /* Though I've heard Ajantis is somewhere around, and, of course, I know about Khalid and Dynaheir. */
-= @141 /* But what about you? How have *you* been? You weren't just travelling down the coast working with militia like I did. So, what's new here? */
-++ @142 /* It s been fun. Everyone's offering me new missions, money's flooding in, I'm discovering new castles and cities... I've even travelled between planes! */ + t1.5
-++ @143 /* People want to join me right when they see me. Nearly everyone I meet wants to become my friend, take a spot in my party, tell me their life story... it's endearing, actually. */ + t1.6
-++ @144 /* Other than Irenicus' torture, I really have nothing to say. */ + t1.7
-++ @145 /* Same old, same old. */ + t1.8
+SAY @138
+= @139
+= @140
+= @141
+++ @142 + t1.5
+++ @143 + t1.6
+++ @144 + t1.7
+++ @145 + t1.8
 END
 
 IF ~~ t1.5
-SAY @146 /* Phew... By Tempus' battle hammer, that's mighty impressive! I'm glad I met you again. */
+SAY @146
 IF ~~ + t1.8
 END
 
 IF ~~ t1.6
-SAY @147 /* Erm. You realize I'm one of "these people", right? */
-= @148 /* (Branwen laughs.) */
+SAY @147
+= @148
 IF ~~ + t1.8
 END
 
 IF ~~ t1.7
-SAY @149 /* I am truly sorry about that bastard ever touching you. But worry not: my hammer cracks skulls like nobody's business. */
+SAY @149
 IF ~~ + t1.8
 END
 
 IF ~~ t1.8
-SAY @150 /* Anyway, Duke Belt says hello. Remember him at the Duchal Palace? It's good you saved the fellow. He said they'd always be happy to welcome the Hero of Baldur's Gate back. */
-++ @151 /* That's nice to hear. */ + t1.9
-++ @152 /* Thank you for telling me. */ + t1.9
-++ @153 /* Maybe I'll go back there some day. */ + t1.9
-++ @154 /* I'm not sure if I'd want to go back. */ + t1.9
+SAY @150
+++ @151 + t1.9
+++ @152 + t1.9
+++ @153 + t1.9
+++ @154 + t1.9
 END
 
 IF ~~ t1.9
-SAY @155 /* I don't know what the future will bring, but by Tempus, I'm sure 'twill be a great one. Wherever we go. */
-= @156 /* Speaking of which, 'tis past time we were on our way. Come on! */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @155
+= @156
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
-
-/* We need IncrementGlobal() and RealSetGlobalTimer() in every dialogue. The last state is the best place, IF the dialogue has one ending, otherwise you'll have to duplicate. */
 
 // Talk 2.
 
 IF ~Global("BEArenTalk","GLOBAL",4)~ t2
-SAY @157 /* Remember how we lay on the grass under the walls of Candlekeep? I want to treat ourselves again. Here, take this. */
-++ @158 /* A picnic basket? */ + t2.3
-++ @159 /* Branwen, this is not a good time for picnics. */ + t2.1
-++ @160 /* Ooooh, fresh bread and soft cheese and tomatoes and two bottles of wine! Impressive. */ + t2.2
-++ @161 /* I am sorry, but no. */ + t.0
+SAY @157
+++ @158 + t2.3
+++ @159 + t2.1
+++ @160 + t2.2
+++ @161 + t.0
 END
 
 IF ~~ t2.1
-SAY @162 /* And why ever not? Because warriors never go hungry? Because sitting on the grass and eating bread and cheese will make you a girly girl instead of a mighty warrior? Pah! */
-= @163 /* You need strength, and you need rest. Tempus says so. */
+SAY @162
+= @163
 IF ~~ + t2.3
 END
 
 IF ~~ t2.2
-SAY @164 /* I added some roasted meat and potatoes. Too bad 'tis all gone cold. Yet we might still have a nice meal. */
+SAY @164
 IF ~~ + t2.3
 END
 
 IF ~~ t2.3
-SAY @165 /* Let's have fun! Tempus willing, you and I will enjoy yourselves today. */
-++ @166 /* I like the way you think. */ + t2.4
-++ @167 /* Pass the bread, please! */ + t2.4
-++ @168 /* No. Just no. */ + t.0
+SAY @165
+++ @166 + t2.4
+++ @167 + t2.4
+++ @168 + t.0
 END
 
 IF ~~ t2.4
-SAY @169 /* In my youth, when summers were short, and childhoods even shorter, we oft picnicked at sundown on the cliffs. I remember those meals still... our family together, my father laughing... */
-= @170 /* We are family now, <CHARNAME>. And I want you to have good memories of this. */
-++ @171 /* Screw the memories! Let's enjoy the *food*! */ + t2.5
-++ @172 /* I'm touched, Branwen. Thank you. */ + t2.6
-++ @173 /* I propose a toast. To Branwen, the most romantic priestess from the Norheim isles! */ + t2.6
+SAY @169
+= @170
+++ @171 + t2.5
+++ @172 + t2.6
+++ @173 + t2.6
 END
 
 IF ~~ t2.5
-SAY @174 /* (She laughs.) */
-= @175 /* Let's! */
+SAY @174
+= @175
 IF ~~ + t2.6
 END
 
 IF ~~ t2.6
-SAY @176 /* To <CHARNAME>! The best friend I could ever have. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ + t2.7
+SAY @176
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t2.7
 END
 
-// Note how I placed a condition for BEArenRomanceActive below a "normal" exit.
-// That's how it works if you want to add some "conditional" text to SAY dialogue.
-
 IF ~~ t2.7
-SAY @177 /* And the most handsome man. */
+SAY @177
 IF ~~ EXIT
 END
 
 // Talk 3.
 
 IF ~Global("BEArenTalk","GLOBAL",6)~ t3
-SAY @178 /* We are doing honorable work, hunting that mad mage. 'Tis good. */ 
-++ @179 /* Aye. He had conducted horrible experiments, tortured people in jars. */ + t3.2
-++ @180 /* The bastard will pay for everything he's done to us. */ + t3.2
-++ @181 /* I'm kind of interested in his experiments, actually. */ + t3.1
+SAY @178
+++ @179 + t3.2
+++ @180 + t3.2
+++ @181 + t3.1
 END
 
 IF ~~ t3.1
-SAY @182 /* Aye, and 'twill be his great pleasure to show you all of them, I suspect. */
+SAY @182
 IF ~~ + t3.2
 END
 
 IF ~~ t3.2
-SAY @183 /* But 'tis truly not right that we have to acquire unseemly allies. The Shadow Thieves? Their dark rivals? The Cowled Wizards? */
-= @184 /* My head spins just from thinking about it. 'Twill bring us no honor to be sure. */
-++ @185 /* We can pointlessly discuss it and then do it, or we can just do it. Do you know what I prefer? */ + t3.3
-++ @186 /* Greater good and all that. Even thieves can redeem themselves by aiding us. */ + t3.4
-++ @187 /* You're right. I wish it was possible to just slaughter the whole lot. */ + t3.5
+SAY @183
+= @184
+++ @185 + t3.3
+++ @186 + t3.4
+++ @187 + t3.5
 END
 
 IF ~~ t3.3
-SAY @188 /* No, which? Discuss it, right? */
+SAY @188
 IF ~~ + t3.5
 END
 
 IF ~~ t3.4
-SAY @189 /* What is the point of that, if afterwards they would remain thieves who would pillage and murder? */
+SAY @189
 IF ~~ + t3.5
 END
 
 IF ~~ t3.5
-SAY @190 /* Treacherous, murderous, greedy. I would slaughter them all with my battle hammer, if I could. Alas, we are denied that. */
-= @191 /* But, by Tempus, when our need has passed, I shall raise the nearby temples and come back in numbers! */
-++ @192 /* Sounds good to me. */ + t3.6
-++ @193 /* Right. End of discussion. */ + t.0
-++ @194 /* And lose our last allies in this city? */ + t3.7
-++ @195 /* More killing? And how would that make anything right? */ + t3.7
+SAY @190
+= @191
+++ @192 + t3.6
+++ @193 + t.0
+++ @194 + t3.7
+++ @195 + t3.7
 END
 
 IF ~~ t3.6
-SAY @196 /* Yes! They will burn with cleansing fire! Let their wives suffer, let their... children... weep... */
+SAY @196
 IF ~~ + t3.7
 END
 
 IF ~~ t3.7
-SAY @197 /* Bah! <CHARNAME>, why do you like making it so complicated! */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @197
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 // Talk 4.
 
 IF ~Global("BEArenTalk","GLOBAL",8)~ t4
-SAY @198 /* Another dent on my hammer. We are putting our weapons to good use. */ 
-++ @199 /* Your point being? */ + t4.2
-++ @200 /* I bet that ruffian didn't like it when you hit him on the head. */ + t4.1
-++ @201 /* Not now, Branwen. */ + t.0
+SAY @198
+++ @199 + t4.2
+++ @200 + t4.1
+++ @201 + t.0
 END
 
 IF ~~ t4.1
-SAY @202 /* Ha! No, I don't think he liked it, either. */
+SAY @202
 IF ~~ + t4.2
 END
 
 IF ~~ t4.2
-SAY @203 /* Does it bother you to kill so often? I confess, sometimes, when I lie awake at night, it does bother me. */
-= @204 /* I know I fight with honor, and my enemies are guilty of numerous crimes, but still... */
-++ @205 /* You are doing good work, Branwen. Everyone has doubts from time to time. */ + t4.3
-++ @206 /* Who cares? We're adventurers. It's what we do. */ + t4.4
-++ @207 /* I understand. I wonder sometimes, myself. */ + t4.3
+SAY @203
+= @204
+++ @205 + t4.3
+++ @206 + t4.4
+++ @207 + t4.3
 END
 
 IF ~~ t4.3
-SAY @208 /* We all do, I think. But the battle comes, and the doubt is washed clean again. */
+SAY @208
 IF ~~ + t4.5
 END
 
 IF ~~ t4.4
-SAY @209 /* Truly, you're right. I must be a fool to doubt myself and Tempus' wisdom. */
+SAY @209
 IF ~~ + t4.5
 END
 
 IF ~~ t4.5
-SAY @210 /* I should not bother you with this. Tempus favors us, and I shall not be hesitant in my strikes. We'll destroy the scum, split the loot and call it a day. */
-= @211 /* But it's been good to talk with you of my own doubts. My hammer is ever at your command. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ + t4.6
+SAY @210
+= @211
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t4.6
 END
 
 IF ~~ t4.6
-SAY @212 /* As are some other weapons, should you wish it. */
-++ @213 /* Why, Branwen, are you flirting with me? */ + t4.7
-++ @214 /* I'll keep it in mind. */ + t4.8
-++ @215 /* Not interested, thank you. */ + t4.9
+SAY @212
+++ @213 + t4.7
+++ @214 + t4.8
+++ @215 + t4.9
 END
 
 IF ~~ t4.7
-SAY @216 /* My lips are sealed. But you heard my words, didn't you? */
+SAY @216
 IF ~~ EXIT
 END
 
 IF ~~ t4.8
-SAY @217 /* You do that. */
+SAY @217
 IF ~~ EXIT
 END
 
 IF ~~ t4.9
-SAY @218 /* As you wish. */
+SAY @218
 IF ~~ DO ~SetGlobal("BEArenRomanceActive","GLOBAL",3)~ EXIT
 END
 
 // Talk 5.
 
 IF ~Global("BEArenTalk","GLOBAL",10)~ t5
-SAY @219 /* I like you a lot. You make me laugh, like my childhood friends used to. */ 
-++ @220 /* I could never picture you as a child. */ + t5.1
-++ @221 /* What were you like back then? */ + t5.1
-++ @222 /* Thank you. I'd like to have been your childhood friend. */ + t5.1
-++ @223 /* I'm not really interested in discussing it right now. */ + t.0
+SAY @219
+++ @220 + t5.1
+++ @221 + t5.1
+++ @222 + t5.1
+++ @223 + t.0
 END
 
 IF ~~ t5.1
-SAY @224 /* I was not very different from what I am now. Boisterous. Noisy. A little clumsy. */
-= @225 /* Boys called me beautiful when they wanted to kiss me, but they'd kick me in the mud as easily. And I'd kick them. We were free, and equals... */
-= @226 /* When we started growing up, our training started, and I understood for the first time that some roles weren't given to women freely. But I struggled, and persevered. */
-= @227 /* But I wanted to tell you about my friends. We built castles of sand on the shore, danced and laughed around the fires in the village, gossiped in the garden when everyone was asleep. We... held hands when no one saw that. */
-++ @228 /* First love? That's romantic. */ + t5.2
-++ @229 /* It wasn't very romantic in Candlekeep. Of course, when I left, it was an entirely different story. */ + t5.3
-++ @230 /* It sounds very nice. */ + t5.2
+SAY @224
+= @225
+= @226
+= @227
+++ @228 + t5.2
+++ @229 + t5.3
+++ @230 + t5.2
 END
 
 IF ~~ t5.2
-SAY @231 /* It was. I still remember those years fondly. */
+SAY @231
 IF ~~ + t5.3
 END
 
 IF ~~ t5.3
-SAY @232 /* You must have been lonely in Candlekeep. No other children but Imoen, lonely old men all around, and Gorion never letting you out of his sight. */
-++ @233 /* I had a bookish childhood. That worked for me. */ + t5.4
-++ @234 /* I still found ampletime for my pranks, believe me. */ + t5.4
-++ @235 /* Don't remind me. It was a horrible waste of my childhood years. */ + t5.4
-++ @236 /* Ah, it wasn't so bad. */ + t5.4
+SAY @232
+++ @233 + t5.4
+++ @234 + t5.4
+++ @235 + t5.4
+++ @236 + t5.4
 END
 
 IF ~~ t5.4
-SAY @237 /* I'm glad they didn't spoil *everything* for you. You're not some bookworm, <CHARNAME>. You are a true warrior. */
-= @238 /* Perhaps you'll tell me more of Candlekeep, Imoen and Gorion, as we walk? */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @237
+= @238
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 // Talk 6.
 
 IF ~Global("BEArenTalk","GLOBAL",12)~ t6
-SAY @239 /* I'm annoyed. Every task brings new villains, every villains bring their minions, and it ends with a soup of blood and broken limbs. */
-= @240 /* By Tempus, don't they see we are going to slaughter them all? Why don't these fools yield and save themselves the trouble? */
-++ @241 /* Because they're idiots? */ + t6.1
-++ @242 /* Then it'd be boring. */ + t6.2
-++ @243 /* True. I wouldn't mind trying diplomacy once in a while. */ + t6.3
-++ @244 /* Branwen, this is not a good time. */ + t.0
+SAY @239
+= @240
+++ @241 + t6.1
+++ @242 + t6.2
+++ @243 + t6.3
+++ @244 + t.0
 END
 
 IF ~~ t6.1
-SAY @245 /* They are, and everyone knows that! I bet even their mothers called them idiots as they grew up. */
+SAY @245
 IF ~~ + t6.4
 END
 
 IF ~~ t6.2
-SAY @246 /* Hmm. True. */
+SAY @246
 IF ~~ + t6.4
 END
 
 IF ~~ t6.3
-SAY @247 /* That would be even more boring. Forget I said anything. */
+SAY @247
 IF ~~ + t6.4
 END
 
 IF ~~ t6.4
-SAY @248 /* I remember what it felt like to be defeated. I stood, unable to move, when Tranzig and his men were laughing at me. And then he began casting the stone transformation, and I was helpless before it... */
-= @249 /* I do not wish to be defeated ever again, but those fools know not what true defeat is. They are lambs to the slaughter, and their masters do not even deny it. */
-= @250 /* Why do they follow this stupid path, do you think? Is there perchance a secret building somewhere? "Suicidal minions please apply here"? */
-++ @251 /* Athkatla is a corrupted city. There's no work, no money, and families to feed. People become bandits or dirty guards or low-rank Shadow Thieves, because they do not wish to starve. */ + t6.5
-++ @252 /* Maybe they think of themselves as good and true people who protect stability? */ + t6.5
-++ @253 /* What choice do they have? */ + t6.5
-++ @254 /* Heheh. Maybe. */ + t6.5
+SAY @248
+= @249
+= @250
+++ @251 + t6.5
+++ @252 + t6.5
+++ @253 + t6.5
+++ @254 + t6.5
 END
 
 IF ~~ t6.5
-SAY @255 /* It's just... they are everywhere! Truly, whenever we go, we are attacked by some mercenaries or bandits or someone's minions with empty eyes! */
-= @256 /* I'm no scholar, but even I know that the land where every peasant dreams of becoming a villain is sick. And what cure can we offer save a warhammer? */
-++ @257 /* A warhammer is a very good sort of cure! */ + t6.6
-++ @258 /* Or a katana. A great method, very delicate. Swisssshhhh... */ + t6.6
-++ @259 /* Maybe someone should join the Council of Six and help these lands. */ + t6.7
-++ @260 /* I'm bored. Let's finish this conversation another time. */ + t.0
+SAY @255
+= @256
+++ @257 + t6.6
+++ @258 + t6.6
+++ @259 + t6.7
+++ @260 + t.0
 END
 
 IF ~~ t6.6
-SAY @261 /* Haha! Indeed. */ 
+SAY @261
 IF ~~ + t6.8
 END
 
 IF ~~ t6.7
-SAY @262 /* Yes. But who? Some idealistic noble, some hermit, a newcomer? Would the people even want this? */
+SAY @262
 IF ~~ + t6.8
 END
 
 IF ~~ t6.8
-SAY @263 /* I just know that while we enjoy ourselves, simple people suffer here. And Tempus does not let me sit idly. */
-= @264 /* I must think on this. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ + t6.8a
+SAY @263
+= @264
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t6.8a
 END
 
 IF ~~ t6.8a
-SAY @265 /* Ha! A funny thought came to my head. Imagine you and me, side by side, ruling these lands together, kindly and honorably. What a sight that would be! */
-++ @266 /* Was that a marriage offer? */ + t6.9
-++ @267 /* Together? Isn't that a bit forward of you? */ + t6.9
-++ @268 /* Sorry, Branwen, but we're just friends. */ + t4.9 // using an old lovetalk's "breakup" condition
+SAY @265
+++ @266 + t6.9
+++ @267 + t6.9
+++ @268 + t4.9
 END
 
 IF ~~ t6.9
-SAY @269 /* Nay, never mind. It was but an idle thought. You and I... 'tis only a fantasy, and I'd gladly escape that stuffed palace and go hunting villains anyhow. */
-= @270 /* Now I'm blushing. Oh, let's just forget this. Please? */
+SAY @269
+= @270
 IF ~~ EXIT
 END
 
 // Talk 7.
 
 IF ~Global("BEArenTalk","GLOBAL",14)~ t7
-SAY @271 /* I've given a thought to the prospect of making these lands better. It is going to happen one day. */
-++ @272 /* How? */ + t7.1
-++ @273 /* In a fairy tale, maybe. */ + t7.1
-++ @274 /* You tell yourself that, sister. */ + t7.1
-++ @275 /* Branwen, I'm not interested in the subject right now. */ + t.0
+SAY @271
+++ @272 + t7.1
+++ @273 + t7.1
+++ @274 + t7.1
+++ @275 + t.0
 END
 
 IF ~~ t7.1
-SAY @276 /* 'Twould be best if things were akin to my home isle's way. Everyone who produces, sows, fights, raises children, grows crops and does anything else useful has a vote, be it an old midwife or a new farmer. */
-= @277 /* When a big decision is to be made, they gather together. Those who have no craft, can no longer work, or are not yet sixteen years of age are left behind. */
-= @278 /* Thus everyone weighs on the decision, and only those who give to the isle's wellbeing are allowed to put a white stone into the pot, to vote. 'Tis most sensible to me. */
-++ @279 /* Why not let everyone vote? Old men who must be fed by the state, and young people who cannot find a job? */ + t7.2
-++ @280 /* I agree. Sounds like a good system. */ + t7.3
-++ @281 /* It has its flaws, but how do you propose to install it in Amn? */ + t7.3
+SAY @276
+= @277
+= @278
+++ @279 + t7.2
+++ @280 + t7.3
+++ @281 + t7.3
 END
 
 IF ~~ t7.2
-SAY @282 /* No. 'Tis bad. If you take and take, and give nothing, what worth can there be in your voice? Decisions are made by those who swing the sword and wield the hammer. */
-++ @283 /* That's a very narrow view of things, Branwen. */ + t7.2a
-++ @284 /* I suppose I see your point. */ + t7.3
+SAY @282
+++ @283 + t7.2a
+++ @284 + t7.3
 END
 
 IF ~~ t7.2a
-SAY @285 /* Yet 'tis not mine alone. */
+SAY @285
 IF ~~ + t7.3
 END
 
 IF ~~ t7.3
-SAY @286 /* When this adventure is over, we must approach the Chief Inspector. If we get him on our side, and your friends from Athkatla's nobility, and maybe even someone on the Council of Six... Then we'll have the power to change things. */
-++ @287 /* Wouldn't playing at politics be too boring? We are adventurers, after all. */ + t7.4
-++ @288 /* Seems like you've thought of everything. */ + t7.4
-++ @289 /* And who will decide the future of Amn? */ + t7.4
+SAY @286
+++ @287 + t7.4
+++ @288 + t7.4
+++ @289 + t7.4
 END
 
 IF ~~ t7.4
-SAY @290 /* We'll get those people together. 'Tis up to them to decide, but we'll make sure they do before we leave on our next adventure. A good idea, no? */
-= @291 /* I remember the iron crisis. I saw the trade in Baldur's Gate coming to ruin because of the Iron Throne. We mustn't let the same sort of corruption continue here. */
-= @292 /* Thank you for... entertaining my notions. I'm not the one for politics, but I hate injustice. */
-++ @293 /* Any time, Branwen. */ + t7.5
-++ @294 /* Just let's talk of something more interesting next time, all right? */ + t7.6
+SAY @290
+= @291
+= @292
+++ @293 + t7.5
+++ @294 + t7.6
 END
 
 IF ~~ t7.5
-SAY @295 /* 'Tis a great pleasure to talk to you, <CHARNAME>. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @295
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 IF ~~ t7.6
-SAY @296 /* You have my word. */
+SAY @296
 IF ~~ + t7.5
 END
 
 // Talk 8.
 
 IF ~Global("BEArenTalk","GLOBAL",16)~ t8
-SAY @297 /* In my yestereve's dream, Tempus showed me the Wall of Faithless. 'Twas most disturbing. */
-++ @298 /* The Wall is the place where the souls of disbelievers go, right? */ + t8.1
-++ @299 /* Why did you dream of it? */ + t8.2
-++ @300 /* I do not want to talk about the Wall right now, Branwen. */ + t.0
+SAY @297
+++ @298 + t8.1
+++ @299 + t8.2
+++ @300 + t.0
 END
 
 IF ~~ t8.1
-SAY @301 /* Quite so. If you do not worship a god, after death your soul just... dissolves. Ugh! It was so... so... */
+SAY @301
 IF ~~ + t8.2
 END
 
 IF ~~ t8.2
-SAY @302 /* I do not know why Tempus shows me such horrible things at times. Yet I know of one reason. */
-= @303 /* <CHARNAME>, do you worship the Lord of Battles? */ 
-++ @304 /* I respect him as a deity, but no, I worship another. */ + t8.3
-++ @305 /* I do not worship a god. */ + t8.4
-++ @306 /* Actually, I do. We both follow Tempus, Branwen. */ + t8.5
+SAY @302
+= @303
+++ @304 + t8.3
+++ @305 + t8.4
+++ @306 + t8.5
 END
 
 IF ~~ t8.3
-SAY @307 /* I understand. We all have our callings. */
+SAY @307
 IF ~~ + t8.6
 END
 
 IF ~~ t8.4
-SAY @308 /* Oh. That's why Tempus sent me the vision, then. */
+SAY @308
 IF ~~ + t8.6
 END
 
-/* Sometimes when the player says something interesting and you want to use it in some later conversation, it's worth it to set a variable, like in t8.5 below. */
-
 IF ~~ t8.5
-SAY @309 /* 'Tis good! We should pray together some time. Though I say a good battle is the best prayer. */
+SAY @309
 IF ~~ DO ~SetGlobal("BEArenSchool","GLOBAL",1)~ + t8.6
 END
 
-// If I want one of the dialogue options to be only available for romance, here's what I do:
-
 IF ~~ t8.6
-SAY @310 /* Your choices are yours alone, but since I've wanted to tell you about Tempus for some time, will you let me? Just a few... fun facts. */
-+ ~Global("BEArenRomanceActive","GLOBAL",1)~ + @311 /* I like when you're going all seductive on me. */ + t8.6a
-++ @312 /* All right. */ + t8.7
-++ @313 /* Not really. */ + t.0
+SAY @310
++ ~Global("BEArenRomanceActive","GLOBAL",1)~ + @311 + t8.6a
+++ @312 + t8.7
+++ @313 + t.0
 END
 
 IF ~~ t8.6a
-SAY @314 /* Ha! I can't say I'm not fond of these moments, either. */
+SAY @314
 IF ~~ + t8.7
 END
 
 IF ~~ t8.7
-SAY @315 /* If you're ever hungry or in need of lodgings or a weapon, a temple of Tempus is where you should go. We have mess halls, barracks and armories. */
-= @316 /* Clerics of Tempus fight on both sides of every conflict, and Tempus only encourages it. So there's no strict hierarchy, for what sensible high priest would ask for the fighting to stop? */
-= @317 /* Yet Tempus does not hold with senseless carnage, and accepts peace as a state that must come after any war. */
-++ @318 /* Anything else? */ + t8.8
-++ @319 /* Thanks, Branwen. If I ever go hungry and in need of good steel, I'll be sure to visit your brethren. */ + t8.8
+SAY @315
+= @316
+= @317
+++ @318 + t8.8
+++ @319 + t8.8
 END
 
 IF ~~ t8.8
-SAY @320 /* If you ever hear someone calling the Lord of Battles unfair and unseemly names, know their ignorance. Tempus encourages honorable battle, forbids cowardice and says that any war is meaningless without peace following it. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @320
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 IF ~Global("BEArenRomanceActive","GLOBAL",1)~ + t8.10
 END
 
 IF ~~ t8.10
-SAY @321 /* But when you complete a deed that would please Tempus, a priest or a priestess would say: "Tempus thanks you", and a proper response would be: "and I thank Tempus". */
-= @322 /* And do you know what may please me now? */
-++ @323 /* I don't know. Tempus is *not* a goddess of hot and passionate love, is he? */ + t8.11
-++ @324 /* You naughty priestess. I really like that seductive voice. So, what is it? */ + t8.11
-++ @325 /* No idea. Enlighten me. */ + t8.11
-++ @326 /* Branwen, I am really not comfortable with all this. Let's just keep it friendly. */ + t4.9
+SAY @321
+= @322
+++ @323 + t8.11
+++ @324 + t8.11
+++ @325 + t8.11
+++ @326 + t4.9
 END
 
 IF ~~ t8.11
-SAY @327 /* All in good time. And I make good on *all* my promises, <CHARNAME>. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @327
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 // Talk 9.
 
-// Some gender conditions here.
-
 IF ~Global("BEArenTalk","GLOBAL",18)~ t9
-SAY @328 /* A family <PRO_MANWOMAN> or a lonely wolf? Which is your path? */
-++ @329 /* What brought this on? */ + t9.1
-+ ~Gender(Player1,MALE)~ + @330 /* A family <PRO_MANWOMAN>, I think. */ + t9.2
-+ ~Gender(Player1,FEMALE)~ + @330 /* A family <PRO_MANWOMAN>, I think. */ + t9.2a
-++ @331 /* A lonely wolf, without a doubt. */ + t9.3
-++ @332 /* Neither. I have my friends, and they're my family. */ + t9.4
-++ @333 /* Let's talk another time. */ + t.0
+SAY @328
+++ @329 + t9.1
++ ~Gender(Player1,MALE)~ + @330 + t9.2
++ ~Gender(Player1,FEMALE)~ + @330 + t9.2a
+++ @331 + t9.3
+++ @332 + t9.4
+++ @333 + t.0
 END
 
 IF ~~ t9.1
-SAY @334 /* I like travelling with you. But if you marry and settle down, 'twill all be gone. */
+SAY @334
 IF ~~ + t9.5
 IF ~Global("BEArenRomanceActive","GLOBAL",1)~ + t9.1a
 END
 
 IF ~~ t9.1a
-SAY @335 /* Unless, of course, you marry me. Haha! But even so, people part. */
+SAY @335
 IF ~~ + t9.5
 END
 
 IF ~~ t9.2
-SAY @336 /* 'Tis so? Never pictured you with seven children and a bossy wife. */
+SAY @336
 IF ~~ + t9.5
 END
 
 IF ~~ t9.2a
-SAY @337 /* Truly? Never imagined you cooking daily and giving birth yearly. */
+SAY @337
 IF ~~ + t9.5
 END
 
 IF ~~ t9.3
-SAY @338 /* You are one, I agree. */
+SAY @338
 IF ~~ + t9.5
 END
 
 IF ~~ t9.4
-SAY @339 /* Aw, 'tis so good to hear. I feel the same way about you. */
+SAY @339
 IF ~~ + t9.5
 END
 
 IF ~~ t9.5
-SAY @340 /* So many good friends spend years together, save each other's lives and give heartfelt promises, and then they marry, father children... and disappear, visiting once a year and behaving like strangers. */
-= @341 /* I don't want that to happen to us. */
-++ @342 /* But you can marry and still have your friends, Branwen. */ + t9.6
-++ @343 /* I don't want that to happen, either. */ + t9.7
-++ @344 /* I'm afraid such is life. */ + t9.7
+SAY @340
+= @341
+++ @342 + t9.6
+++ @343 + t9.7
+++ @344 + t9.7
 END
 
 IF ~~ t9.6
-SAY @345 /* Ha! 'Twould take a true diplomat and a paragon of balance besides. */
+SAY @345
 IF ~~ + t9.7
 END
 
 IF ~~ t9.7
-SAY @346 /* But even so, there are times when you're lost without home and hearth. Sitting in a wet bedroll under a lonely tree in the night, sharing a paltry meal, wincing from the pain in an old wound... is it truly better? */
-= @347 /* I don't know. I just know that whatever joy having a family brings, I do not wish to lose the camaraderie we have now. */
-++ @348 /* True words. I feel the same myself, sometimes. */ + t9.8
-++ @349 /* Then let's make sure it doesn't happen, even if it seems difficult. */ + t9.9
-++ @350 /* We won't, Branwen. I swear. */ + t9.9
-++ @351 /* We'll see what happens. */ + t9.10
+SAY @346
+= @347
+++ @348 + t9.8
+++ @349 + t9.9
+++ @350 + t9.9
+++ @351 + t9.10
 END
 
 IF ~~ t9.8
-SAY @352 /* Aye. But our journey is not done yet. */
+SAY @352
 IF ~~ + t9.10
 END
 
 IF ~~ t9.9
-SAY @353 /* I'll hold you to this promise. */
+SAY @353
 IF ~~ + t9.10
 END
 
 IF ~~ t9.10
-SAY @354 /* Come. The road awaits. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @354
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 // Talk 10.
 
 IF ~Global("BEArenTalk","GLOBAL",20)~ t10
-SAY @355 /* Anything on your mind? */
-++ @356 /* Not particularly. */ + t10.2
-++ @357 /* A couple of things. */ + t10.2
-++ @358 /* Irenicus. */ + t10.1
-++ @359 /* I'd prefer to walk in silence right now. */ + t.0
+SAY @355
+++ @356 + t10.2
+++ @357 + t10.2
+++ @358 + t10.1
+++ @359 + t.0
 END
 
 IF ~~ t10.1
-SAY @360 /* That bastard. I'll walk in his blood yet! */
+SAY @360
 IF ~~ + t10.2
 END
 
 IF ~~ t10.2
-SAY @361 /* Would you care to play a game with me? The rules are simple. You tell me the name of the villain you'd like to kill, I'll tell you what death I envision for him. */
-++ @362 /* Sounds interesting. Let's try it. */ + t10.3
-++ @363 /* Why not? I could use a short respite. */ + t10.3
-++ @364 /* I'd rather not play. */ + t.0
+SAY @361
+++ @362 + t10.3
+++ @363 + t10.3
+++ @364 + t.0
 END
 
 IF ~~ t10.3
-SAY @365 /* Your move. */
-++ @366 /* Bhaal. */ + t10.5
-++ @367 /* Sarevok. */ + t10.6
-++ @368 /* Demogorgon. */ + t10.7
-++ @369 /* Cyric. */ + t10.8
-++ @370 /* I'm done, thanks. */ + t10.9
+SAY @365
+++ @366 + t10.5
+++ @367 + t10.6
+++ @368 + t10.7
+++ @369 + t10.8
+++ @370 + t10.9
 END
 
 
 IF ~~ t10.5
-SAY @373 /* Do not resurrect him. Problem solved. */
-= @374 /* Wait. No. Try to resurrect him, and make each try more and more successful, like he's going to be brought back right now, they just need another few days, another ritual... and then it all comes crashing down. */
-= @375 /* To top it all, take all his divine energy and give it to a force of balance and good. He'd crap his pants with envy, only... yep, no crap, no pants. Only a disembodied spirit, watching... in pain. */
+SAY @373
+= @374
+= @375
 IF ~~ + t10.3
 END
 
 IF ~~ t10.6
-SAY @376 /* He's dead! Isn't he? */
-= @377 /* But, okay, if he wasn't, I'd make him travel with you. Let him see your every success, and find out what a fool he was. Maybe a great warrior such as he might even redeem himself. */
-= @378 /* If not, there's always the Abyss. */
+SAY @376
+= @377
+= @378
 IF ~~ + t10.3
 END
 
-// I want to check if Demogorgon is dead. Fortunately, it's easy:
-// Global("DemogorgonIsDead","GLOBAL",1)
-
 IF ~~ t10.7
-SAY @379 /* The Prince of Demons? Better stay well away. */
+SAY @379
 IF ~~ + t10.7b
 END
 
 IF ~~ t10.7b
-SAY @381 /* But if you asked me, I'd say in a big battle. Spells flying, swords cutting, archers loosing, demonspawn everywhere - and a glorious, glorious victory! */
-= @382 /* Because we deserve that. */
+SAY @381
+= @382
 IF ~~ + t10.3
 END
 
 IF ~~ t10.8
-SAY @383 /* A living god? You set your sights high! And the higher the better, I say! */
-= @384 /* We'd need Tempus' favor to win this one. But with your heritage and your strength, heavens themselves would tremble. */
-= @385 /* I hope that Cyric the Loser would endure the worst punishment for his own pride. Living a life as a mortal, knowing he'd have nowhere to go in the afterlife unless he tried to redeem himself. */
+SAY @383
+= @384
+= @385
 IF ~~ + t10.3
 END
 
 IF ~~ t10.9
-SAY @386 /* 'Twas my pleasure. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ + t10.10
+SAY @386
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t10.10
 END
 
 IF ~~ t10.10
-SAY @387 /* Truly, I'd like us to play... other sorts of games one day. Would you consider it? */
-++ @388 /* With you, my lovely Branwen, anything. */ + t10.11
-++ @389 /* Me? Oh, I'm ready right now! */ + t10.11
-++ @390 /* I'd rather we stayed friends. */ + t.0
+SAY @387
+++ @388 + t10.11
+++ @389 + t10.11
+++ @390 + t.0
 END
 
 IF ~~ t10.11
-SAY @391 /* 'Tis decided, then. Once a night is special enough... we come out and play. */
-= @392 /* I can't wait. */
+SAY @391
+= @392
 IF ~~ EXIT
 END
 
 // Talk 11. 
 
 IF ~Global("BEArenTalk","GLOBAL",22)~ t11
-SAY @393 /* Once more we plunge into battle, and once more my blood sings! 'Tis a most wonderful feeling when a mighty adversary is before us, and lesser enemies scream in fear! */
-++ @394 /* You have a true warrior spirit, Branwen. */ + t11.1
-++ @395 /* Doesn't it seem too bloodthirsty to you? */ + t11.1
-++ @396 /* Let us speak of bloodshed another time. */ + t.0
+SAY @393
+++ @394 + t11.1
+++ @395 + t11.1
+++ @396 + t.0
 END
 
 IF ~~ t11.1
-SAY @397 /* Aye, I am what Tempus made me. And no other path would suffice. */
-= @398 /* I revere honest battle. I breathe with my hammer, and revel in every strike. Truly, even making love pales before it. */
-++ @399 /* Did you have many lovers? */ + t11.2
-++ @400 /* And you would know, wouldn't you? */ + t11.2
-++ @401 /* I disagree. Making love is much better than making war. */ + t11.3
-++ @402 /* There's nothing like taking a lover right after battle. */ + t11.4
+SAY @397
+= @398
+++ @399 + t11.2
+++ @400 + t11.2
+++ @401 + t11.3
+++ @402 + t11.4
 END
 
 IF ~~ t11.2
-SAY @403 /* I've had my share of... adventures. Indeed, I see nothing shameful in it. */
+SAY @403
 IF ~~ + t11.5
 END
 
 IF ~~ t11.3
-SAY @404 /* 'Tis better to make both, wouldn't you agree? */
+SAY @404
 IF ~~ + t11.5
 END
 
 IF ~~ t11.4
-SAY @405 /* Aye, you have the right of it. Oooh, the memory almost brought me to my knees just now, hot and trembling. */
+SAY @405
 IF ~~ + t11.5
 END
 
 IF ~~ t11.5
-SAY @406 /* You of all people should know what 'tis like, with all the knights and elves and maidens chasing you and wanting you in their bed. Men sought my company, and I reciprocated. */
-= @407 /* And I don't regret a thing. That's what my grandmother said before she died: regret nothing. She was a beauty in her day... */
-= @408 /* Ah, but look at me, drowning in old memories. That should be boring to you. */
-++ @409 /* Not at all. Tell me about your grandmother. */ + t11.6
-++ @410 /* Yes, let's talk later. */ + t.0
+SAY @406
+= @407
+= @408
+++ @409 + t11.6
+++ @410 + t.0
 END
 
 IF ~~ t11.6
-SAY @411 /* My grandmother has been a true valkyrie. She dreamed of flying, of steering ships, but in truth, she never ventured far from the isles, because she married young and had four sons to raise. */
-= @412 /* Yet she had inner strength. All the men on the isles respected her, and many young ones came to her for battle training. Nobody could wield a quarterstaff like her. */
-= @413 /* I often wonder: were she unmarried and free, what couldn't she achieve? She would have flown high and far indeed... wouldn't she? */
-= @414 /* But here I stand in her place, fighting in Tempus' name. And, by Tempus' shield, I swear am going to fly far. */
-++ @415 /* I believe you. */ + t11.7
-++ @416 /* I hope you'll be flying at my side. */ + t11.8
-++ @417 /* Does it mean you reject marriage entirely? */ + t11.9
+SAY @411
+= @412
+= @413
+= @414
+++ @415 + t11.7
+++ @416 + t11.8
+++ @417 + t11.9
 END
 
 IF ~~ t11.7
-SAY @418 /* And I believe in you. By Tempus' warrior spirit, your wings are the mightiest I have ever seen! */
+SAY @418
 IF ~~ + t11.10
 END
 
 IF ~~ t11.8
-SAY @419 /* 'Tis an offer, then? I would love to accept. If we are both alive at the end of this mission, then... aye. We shall fly together. */
+SAY @419
 IF ~~ + t11.10
 END
 
 IF ~~ t11.9
-SAY @420 /* Nay. If I fall in love, marry I might... even carry a child to term, Tempus willing. But I will not be chained to the house and hearth. Never again. */
+SAY @420
 IF ~~ + t11.10
 END
 
 IF ~~ t11.10
-SAY @421 /* But the hour is growing late, and we still have much to do. Shall we move on? */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @421
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 // Talk 12.
 
 IF ~Global("BEArenTalk","GLOBAL",24)~ t12
-SAY @422 /* What kind of enemy do you enjoy facing most? */
-++ @423 /* Exotic ones, like beholders or illithids. They're helpless when you use proper defense. */ + t12.1
-++ @424 /* Mages. Breaking their shields is always a challenge. */ + t12.2
-++ @425 /* Strong ones, like giants, trolls or golems. */ + t12.3
-++ @426 /* Dragons, of course! They are the hardest, but the loot is superb. */ + t12.4
-++ @427 /* Other adventurers and mercenaries. The most cunning enemies. */ + t12.5
-++ @428 /* Different ones. It varies from time to time. */ + t12.6
-++ @429 /* I do not enjoy these battles, Branwen. */ + t12.7
-++ @430 /* I really don't want to think about it now. */ + t.0
+SAY @422
+++ @423 + t12.1
+++ @424 + t12.2
+++ @425 + t12.3
+++ @426 + t12.4
+++ @427 + t12.5
+++ @428 + t12.6
+++ @429 + t12.7
+++ @430 + t.0
 END
 
 IF ~~ t12.1
-SAY @431 /* Whacking them with a club has a certain pleasure to it, I'll admit. Ugly beasts. */
+SAY @431
 IF ~~ + t12.8
 END
 
 IF ~~ t12.2
-SAY @432 /* Ha! Dispelling often works, but 'tis terribly frustrating when it doesn't. */
+SAY @432
 IF ~~ + t12.8
 END
 
 IF ~~ t12.3
-SAY @433 /* Aye, each of them requires something special. Blunt edges, fire, acid... 'tis like a roaring puzzle that wishes to rip your head off. */
+SAY @433
 IF ~~ + t12.8
 END
 
 IF ~~ t12.4
-SAY @434 /* Aye, a dragon's horde is every adventurer's dream. When I was a girl, 'twas often that I dreamt of finding a shining tiara in a dark cave beside a dragon's corpse. */
+SAY @434
 IF ~~ + t12.8
 END
 
 IF ~~ t12.5
-SAY @435 /* And so many of them work on the side of evil. 'Tis disheartening. */
+SAY @435
 IF ~~ + t12.8
 END
 
 IF ~~ t12.6
-SAY @436 /* Any enemy is a good enemy, as long as he's not a craven coward. */
+SAY @436
 IF ~~ + t12.8
 END
 
 IF ~~ t12.7
-SAY @437 /* No? You loot the bodies only because you must, and that smile I saw was but a trick of the light? Must truly be so, indeed. */
+SAY @437
 IF ~~ + t12.8
 END
 
 IF ~~ t12.8
-SAY @438 /* We are truly fortunate. Young, healthy and ready for battle, and, by Tempus, the next skirmish is always near! */
-= @439 /* Bandits, thieves, monsters old and new... what haven't we encountered? */
-= @440 /* I feel stronger and faster, too. Tempus' favor grows, and I can almost perform miracles. Bringing back the dead, curing horrible wounds... I simply never imagined. */
-++ @441 /* You are a talented healer, Branwen. */ + t12.8b
-++ @442 /* I feel much more powerful, too.  */ + t12.8a
+SAY @438
+= @439
+= @440
+++ @441 + t12.8b
+++ @442 + t12.8a
 END
 
 IF ~~ t12.8a
-SAY @443 /* And it shows. */
+SAY @443
 IF ~~ + t12.8b
 END
 
 IF ~~ t12.8b
-SAY @444 /* I cannot thank you enough for letting me join your war party, my dear friend. */
-++ @445 /* You're very welcome, Branwen. */ + t12.9
-++ @446 /* The pleasure's all mine. */ + t12.9
-++ @447 /* Oh, just stop gushing. */ + t12.9
+SAY @444
+++ @445 + t12.9
+++ @446 + t12.9
+++ @447 + t12.9
 END
 
 IF ~~ t12.9
-SAY @448 /* Let's find a dragon to kill! And, by Tempus, the final blow will be mine! */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ + t12.10
+SAY @448
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t12.10
 END
 
 IF ~~ t12.10
-SAY @449 /* I must say, nothing heats my blood like thinking of a powerful enemy... and taking a powerful lover. Think on this while we walk, won't you? */
-= @450 /* And I shall think of you. */
+SAY @449
+= @450
 IF ~~ EXIT
 END
 
 // Talk 13.
 
 IF ~Global("BEArenTalk","GLOBAL",26)~ t13
-SAY @451 /* We've become richer than some kings in the north by now. What are you going to do with these heaps of money? */
-++ @452 /* Treat myself. Best armor, best weapons, best everything. */ + t13.1
-++ @453 /* Invest. Buy a house or two, some shares, something like that. */ + t13.2
-++ @454 /* Open a shop or a famous inn. Many adventurers do that. */ + t13.3
-++ @455 /* I don't want to talk about money right now, Branwen. */ + t.0
+SAY @451
+++ @452 + t13.1
+++ @453 + t13.2
+++ @454 + t13.3
+++ @455 + t.0
 END
 
 IF ~~ t13.1
-SAY @456 /* Wise. And it means new armor and weapons for me, as well, hmm? */
+SAY @456
 IF ~~ + t13.4
 END
 
 IF ~~ t13.2
-SAY @457 /* 'Tis boring and time-wasting, no? Much easier to kill another dragon and rob his lair. But as it pleases you. */
+SAY @457
 IF ~~ + t13.4
 END
 
 IF ~~ t13.3
-SAY @458 /* Ha! I'll come by and down a cup or two of your strongest brew, if so. */
+SAY @458
 IF ~~ + t13.4
 END
 
 IF ~~ t13.4
-SAY @459 /* I never had much. Money slips through my fingers, one way or another. But Tempus provides, and I never needed much beside room, board, and a fine hammer in my hand. */
-++ @460 /* What about the time when you become old? Or unable to fight? */ + t13.5
-++ @461 /* I see what you mean. It's easier to live this way. */ + t13.7
-++ @462 /* Well, as long as that hammer is enchanted doubly and triply and is worth a small fortune... */ + t13.6
+SAY @459
+++ @460 + t13.5
+++ @461 + t13.7
+++ @462 + t13.6
 END
 
 IF ~~ t13.5
-SAY @463 /* Tempus favors the Order of the Broken Blade. It honors those who were injured in Tempus' service. Besides, I can always heal in his name. */
+SAY @463
 IF ~~ + t13.7
 END
 
 IF ~~ t13.6
-SAY @464 /* Ha! Aye, you have the right of it. But 'tis not for selling. */
+SAY @464
 IF ~~ + t13.7
 END
 
 IF ~~ t13.7
-SAY @465 // this does not work yet [BDTPAM4] nor [bdtpam4]  
-= @466 /* When next we are in an inn, shall we rent a royal room, do you think? With a huge pile of Calimshan grapes on the table and a hot bath in the corner? */
-++ @467 /* I'm all for it! */ + t13.8
-++ @468 /* We can do that. */ + t13.8
-++ @469 /* We'll see. */ + t13.8
+SAY @465
+= @466
+++ @467 + t13.8
+++ @468 + t13.8
+++ @469 + t13.8
 END
 
 IF ~~ t13.8
-SAY @470 /* Oh, the anticipation! When we come there, I am going to raid the kitchen. You are coming with me: we'll grab the finest bits of the roast, and wash it down with the sweetest red wine. */
-= @471 /* So what are we waiting for? Onwards! */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @470
+= @471
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 // Talk 14.
 
 IF ~Global("BEArenTalk","GLOBAL",28)~ t14
-SAY @472 /* You are a Bhaalspawn, and I rarely mention that, if ever. Do you want to know why? */
-++ @473 /* Why? */ + t14.1
-++ @356 /* Not particularly. */ + t.0
+SAY @472
+++ @473 + t14.1
+++ @356 + t.0
 END
 
 IF ~~ t14.1
-SAY @474 /* I don't care. Well, 'tis untrue, I do, but... 'tis not fear of you. */
-= @475 /* Yours is a strong, unyielding presence. Bhaal's heritage may have shaped you somewhat, but you are ruling it now. */
-= @476 /* And if it tries to twist you, I rather think you'll twist it and force it into your service instead. For you are a true warrior. */
-++ @477 /* Thank you. I'm honored you believe in me this much. */ + t14.2
-++ @478 /* We'll see. It may not be as easy as you think. */ + t14.3
-++ @479 /* Yet Bhaal was the Lord of Murder, remember? He may have a trick or two up his sleeve. */ + t14.3
+SAY @474
+= @475
+= @476
+++ @477 + t14.2
+++ @478 + t14.3
+++ @479 + t14.3
 END
 
 IF ~~ t14.2
-SAY @480 /* 'Tis nothing. You've done much more for me. */
+SAY @480
 IF ~~ + t14.4
 END
 
 IF ~~ t14.3
-SAY @481 /* Bah! What can the old codger do? Bhaal is dead, and a living hand and will are more powerful by far. */
+SAY @481
 IF ~~ + t14.4
 END
 
 IF ~~ t14.4
-SAY @482 /* Bhaal or no, you're a damn fine friend. Tell you what: if you ever decide to take your father's power, I'll still worship Tempus... but I'll send a prayer or two your way from time to time. */
-++ @214 /* I'll keep it in mind. */ + t14.7
-++ @483 /*  I don't want to take Bhaal's place, Branwen. */ + t14.5
-++ @484 /* You won't become my high priestess? */ + t14.6
+SAY @482
+++ @214 + t14.7
+++ @483 + t14.5
+++ @484 + t14.6
 END
 
 IF ~~ t14.5
-SAY @485 /* Who says you have to? Any god's power can be turned to good, if Tempus... ahem, if the new owner wills it. */
+SAY @485
 IF ~~ + t14.7
 END
 
 IF ~~ t14.6
-SAY @486 /* Nay, my dear friend. Though playing pretend would be fun. A new god and <PRO_HISHER> new high priestess. Could be amusing, no? */
+SAY @486
 IF ~~ + t14.7
 END
 
 IF ~~ t14.7
-SAY @487 /* I'm really fond of you. */
+SAY @487
 IF ~~ + t14.8
 IF ~Global("BEArenRomanceActive","GLOBAL",1)~ + t14.9
 END
 
 IF ~~ t14.8
-SAY @488 /* You're like a <PRO_BROTHERSISTER> to me. And a true <PRO_BROTHERSISTER> in arms. */
+SAY @488
 IF ~~ + t14.10
 END
 
 IF ~~ t14.9
-SAY @489 /* I have known you for a long time, and cared for you for most of it. But only now I understand that I would truly love to spend my life fighting beside you, and need naught but your smile for the reward. */
+SAY @489
 IF ~~ + t14.10
 END
 
 IF ~~ t14.10
-SAY @490 /* I am glad we have met. */
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",3600)~ EXIT
+SAY @490
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
 END
 
 // Talk 15.
 
 IF ~Global("BEArenTalk","GLOBAL",30)~ t15
-SAY @491 /* Things are getting grim, and our hunt for Irenicus will soon pay off. This should be our last talk for a while. */
-= @492 /* Tempus willing, we are going to emerge victorious. But if not, know that it was an honor to fight and die by your side. */
-++ @493 /* Branwen, stop this immediately. Nobody is dying. Nobody else. Is that clear? */ + t15.1
-++ @494 /* The honor is mine, Branwen. */ + t15.3
-++ @495 /* Nah, we'll just kick Irenicus' butt and go home. */ + t15.2
-++ @496 /* Let's talk later, all right? */ + t.0
+SAY @491
+= @492
+++ @493 + t15.1
+++ @494 + t15.3
+++ @495 + t15.2
+++ @496 + t.0
 END
 
 IF ~~ t15.1
-SAY @497 /* Aye-aye, commander! */
+SAY @497
 IF ~~ + t15.3
 END
 
 IF ~~ t15.2
-SAY @498 /* That we shall. With extreme prejudice, too. */
+SAY @498
 IF ~~ + t15.3
 END
 
 IF ~~ t15.3
-SAY @499 /* I've been reading about summoning devas. Tempus grants that spell to the most devout of his priests. And there are very tiring, but greatly rewarding magics of greater restoration. */
-= @500 /* I hope to be useful to you in this. That son of a mother is going so far down he'll need a torch to find his own ass. */
-++ @501 /* Without question. */ + t15.5
-++ @502 /* After I'm done with him, he won't have an ass to find. Wait, that didn't sound so good... */ + t15.4
-++ @503 /* You will be useful, Branwen. Don't worry. */ + t15.5
+SAY @499
+= @500
+++ @501 + t15.5
+++ @502 + t15.4
+++ @503 + t15.5
 END
 
 IF ~~ t15.4
-SAY @504 /* (Branwen snickers.) */
+SAY @504
 IF ~~ + t15.5
 END
 
 IF ~~ t15.5
-SAY @505 /* Thank you for choosing me. For picking me among the brave, bright and wonderful warriors we've met on our way. 'Tis because of you I am here, a stronger priestess and a better sword hand. */
-= @506 /* Here, a fine bottle of old Norheim mead. Let's uncork it together and drink to victory! */
-++ @507 /* To victory! */ + t15.6
-++ @508 /* To kicking Irenicus' butt! */ + t15.6
-++ @509 /* To us! */ + t15.6
-++ @510 /* I'll pass, but I value the gesture. */ + t15.6
+SAY @505
+= @506
+++ @507 + t15.6
+++ @508 + t15.6
+++ @509 + t15.6
+++ @510 + t15.6
 END
-
-// Since this is the last talk in the sequence of fifteen talks, we do not need to set the timer for the next one. We still need to update the variable, though.
 
 IF ~~ t15.6
-SAY @511 /* (Branwen pulls you in a huge hug.) */
-= @512 /* These are the days of our lives, <CHARNAME>. Remember that. */
+SAY @511
+= @512
 IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1)~ EXIT 
 END
-
 
 
 // Extra talks: An hour into Chapter 5.
 
 IF ~Global("BEArenTalkSoul","GLOBAL",1)~ t17
-SAY @532 /* <CHARNAME>, the time might not be right, but I worry. How are you? 'Tis a tactless question, I know, but... */
-++ @533 /* It's all right, Branwen. I feel empty, but I soldier on. We all must. */ + t17.1
-++ @534 /* I'm fine, but thank you for asking. */ + t17.1
-++ @535 /* I really don't know what I feel right now. */ + t17.1
-++ @536 /* Yes, it was tactless of you. Let's end this conversation. */ + t17.0
+SAY @532
+++ @533 + t17.1
+++ @534 + t17.1
+++ @535 + t17.1
+++ @536 + t17.0
 END
 
 IF ~~ t17.0
-SAY @537 /* 'Twill be as you wish. Please, forgive my bluntness. */
+SAY @537
 IF ~~ DO ~IncrementGlobal("BEArenTalkSoul","GLOBAL",1)~ EXIT
 END
 
 IF ~~ t17.1
-SAY @538 /* You are the strongest person I know. Irenicus could never take it from you. */
-= @539 /* I wonder something. That baseborn monster said he'd survived years under a similar curse. Decades, even. Does it mean that you might spend your entire life without a soul and never miss it? */
-++ @540 /* Why not? Your mind remains intact, and your body, too. */ + t17.2
-++ @541 /* Of course. It's just a link to the supernatural, and things like the afterlife. */ + t17.2
-++ @542 /* I don't think so. Something essential is lacking. */ + t17.2
-++ @543 /* Believe me, I'm missing it a lot right now. */ + t17.2
+SAY @538
+= @539
+++ @540 + t17.2
+++ @541 + t17.2
+++ @542 + t17.2
+++ @543 + t17.2
 END
 
 IF ~~ t17.2
-SAY @544 /* Children of Bhaal have no afterlife, do they? They just... turn into dust, like Sarevok did, and then they disappear forever. Or wait in the former realm of Bhaal, perhaps - we'll never know. */
-= @545 /* Huh. Sounds like Irenicus will see no afterlife, either, save for the pits of the burning hells. That, at least, is some consolation. */
-= @546 /* Anyway, I hope that if you fall, you fall gloriously in battle, and I will defend you to my last breath. This I swear. */
-++ @547 /* Will you follow me into death, if I ask you? */ + t17.3
-++ @548 /* I'd rather not fall at all, thank you very much. */ + t17.4
-++ @549 /* I appreciate it, Branwen. */ + t17.5
+SAY @544
+= @545
+= @546
+++ @547 + t17.3
+++ @548 + t17.4
+++ @549 + t17.5
 END
 
 IF ~~ t17.3
-SAY @550 /* 'Tis strange of you to ask. Of course! Is there any other answer? */
+SAY @550
 IF ~~ + t17.5
 END
 
 IF ~~ t17.4
-SAY @551 /* If only 'twas for us to choose. */
+SAY @551
 IF ~~ + t17.5
 END
 
 IF ~~ t17.5
-SAY @552 /* I am ever by your side, if you need my aid. But I hope we find the bastard way before you ever need it. */
-= @553 /* Be strong, my dear friend. And be prepared. */
+SAY @552
+= @553
 IF ~~ DO ~IncrementGlobal("BEArenTalkSoul","GLOBAL",1)~ EXIT
 END
 
 // Lovetalk 1, at rest, after talk 1 happened.
 
 IF ~Global("BEArenLovetalk","GLOBAL",2)~ l1
-SAY @554 /* <CHARNAME>, are you going to watch me undress? 'Tis most courteous of you. */
-++ @555 /* Did you mean to say 'discourteous'? */ + l1.1
-++ @556 /* I'll keep watching, then. */ + l1.2
-++ @557 /* I wasn't watching, no. */ + l1.3a
-++ @558 /* I do not think I'm interested. Good night. */ + l.0
+SAY @554
+++ @555 + l1.1
+++ @556 + l1.2
+++ @557 + l1.3a
+++ @558 + l.0
 END
 
 IF ~~ l.0
-SAY @559 /* Then we'll forget this. Good night, <CHARNAME>. */
+SAY @559
 IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) SetGlobal("BEArenRomanceActive","GLOBAL",3) RestParty()~ EXIT
 END
 
 IF ~~ l1.1
-SAY @560 /* Of course not. I am rather... flattered by your interest, in fact. */
+SAY @560
 IF ~~ + l1.3
 END
 
 IF ~~ l1.2
-SAY @561 /* Please do. 'Tis good to be watched by a man I find desirable. */
+SAY @561
 IF ~~ + l1.3
 END
 
 IF ~~ l1.3a
-SAY @562 /* Oh. My mistake. */
+SAY @562
 IF ~~ + l1.3
 END
 
 IF ~~ l1.3
-SAY @563 /* Remember Baldur's Gate and our first meeting near Nashkel? I liked you well back then. */
-++ @564 /* We were just friends, though. Nothing more. */ + l1.4
-++ @565 /* Brings back memories of the time we were together, doesn't it? */ + l1.5
+SAY @563
+++ @564 + l1.4
+++ @565 + l1.5
 END
 
 IF ~~ l1.4
-SAY @566 /* Yes, and I regret it now, a little. */
+SAY @566
 IF ~~ + l1.6
 END
 
 IF ~~ l1.5
-SAY @567 /* We parted ways, as I thought joining you made me weak. I was right in a fashion, but I was wrong, too. */
+SAY @567
 IF ~~ + l1.6
 END
 
 IF ~~ l1.6
-SAY @568 /* 'Tis a mistake not pursue your passion, I see it now. You are strong, handsome, you make me smile and you've saved me. */
-++ @569 /* And you like me as more than a friend, is this what you're trying to say? */ + l1.6a
-++ @570 /* Branwen, I don't want to give you the wrong idea. Let's stay friends. Good night. */ + l.0
+SAY @568
+++ @569 + l1.6a
+++ @570 + l.0
 END
 
 IF ~~ l1.6a
-SAY @571 /* I do. 'Tis not an offer to spend a night with me right away, you understand. I will not fall into your arms right away, a willing victim. But give it time, and... */
-++ @572 /* And? */ + l1.7
-++ @573 /* We might become lovers? */ + l1.7
-++ @574 /* Sorry, but I am not interested. Good night, Branwen. */ + l.0
+SAY @571
+++ @572 + l1.7
+++ @573 + l1.7
+++ @574 + l.0
 END
 
 IF ~~ l1.7
-SAY @575 /* I like you, <CHARNAME>. I really like you. */
-= @576 /* And once we've gotten used to each other again and become good friends, who knows? */
-++ @577 /* If a romance doesn't work out, we'd still be good friends, right? */ + l1.8
-++ @578 /* Take it slow. I get it. */ + l1.8
-++ @579 /* Being friends is enough for me, so let's stop there. */ + l.0
+SAY @575
+= @576
+++ @577 + l1.8
+++ @578 + l1.8
+++ @579 + l.0
 END
 
 IF ~~ l1.8
-SAY @580 /* No matter what happens, I'll always be your friend. You know that. */
-++ @581 /* All right, count me in. */ + l1.9
-++ @351 /* We'll see what happens. */ + l1.9
-++ @582 /* I'm still going to see other girls, mind. */ + l1.10
+SAY @580
+++ @581 + l1.9
+++ @351 + l1.9
+++ @582 + l1.10
 END
 
 IF ~~ l1.9
-SAY @583 /* Good night, <CHARNAME>. Sleep well... and, if you wish it, dream of us. */
-= @584 /* I might. */
+SAY @583
+= @584
 IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RestParty()~ EXIT
 END
 
 IF ~~ l1.10
-SAY @585 /* Ha! As if I ever doubted *that*. */
+SAY @585
 IF ~~ + l1.9
 END
 
-// Lovetalk 2, at rest, after talk 15 happens. So it's 'talk 16', or even 'talk 17' of sorts.
+// Lovetalk 2, at rest, after talk 15 happens.
 
 IF ~Global("BEArenLovetalk","GLOBAL",4)~ l2
-SAY @586 /* 'Tis time to rest already? I thought... oh, but never mind. I don't think I can wait another day. */
-++ @587 /* Wait for what? */ + l2.0
-++ @588 /* Branwen, I think I know what you're about, and I'm not interested. */ + l.0
+SAY @586
+++ @587 + l2.0
+++ @588 + l.0
 END
 
 IF ~~ l2.0
-SAY @589 /* Curious, are we? Come over there with me, and I'll tell you. */
-++ @590 /* Very well. */ + l2.1
-++ @591 /* No, I don't think I want to. */ + l.0
+SAY @589
+++ @590 + l2.1
+++ @591 + l.0
 END
 
 IF ~~ l2.1
-SAY @592 /* Now that we're alone, I am going to whisper it to you, so you'd feel my breath on your skin. */
-= @593 /* You. I want you with me tonight. I want to hold you and hear your heartbeat and moan under your touch. */
-= @594 /* This night is ours. Do you want it? */
-++ @595 /* I do. Come to me, Branwen. Be mine at last. */ + l2.2
-++ @596 /* Of course. I loved you in Baldur's Gate, and I love you now. */ + l2.2
-++ @597 /* Very much. */ + l2.2
-++ @598 /* Branwen, I am not sure about this... */ + l2.1a
-++ @599 /* No. We are good friends, but this is it. */ + l.0
+SAY @592
+= @593
+= @594
+++ @595 + l2.2
+++ @596 + l2.2
+++ @597 + l2.2
+++ @598 + l2.1a
+++ @599 + l.0
 END
 
 IF ~~ l2.1a
-SAY @600 /* I am sure enough for both of us, but... if you do not want me, is this all a mistake? And we're better off as friends instead? */
-++ @601 /* No, not at all. I want you. Let's spend this night together. */ + l2.2
-++ @602 /* Perhaps we are. */ + l.0
-++ @603 /* If you put it like this, then yes. */ + l.0
+SAY @600
+++ @601 + l2.2
+++ @602 + l.0
+++ @603 + l.0
 END
 
 IF ~~ l2.2
-SAY @604 /* 'Tis Tempus' will that we are meant to be together tonight, but 'tis my heart that chose you. */
-= @605 /* Be my lover, <CHARNAME>, and let the whole world wait. */
+SAY @604
+= @605
 IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) SetGlobal("BEArenRomanceActive","GLOBAL",2) RestParty()~ EXIT
 END
 
-// Wakeup talk to lovetalk 2. Technically, it's lovetalk 3, but you're not getting it if you refused Branwen.
-// See the script for more details: Branwen/Scripts/BEArenS.baf
+// Wakeup talk to lovetalk 2.
 
 IF ~Global("BEArenLovetalk","GLOBAL",6)~ l3
-SAY @606 /* Hello there. Did you rest well? */
-++ @607 /* It was a good night. */ + l3.1
-++ @608 /* Rather! */ + l3.1
-++ @609 /* Could be better. Could be worse. */ + l3.0
+SAY @606
+++ @607 + l3.1
+++ @608 + l3.1
+++ @609 + l3.0
 END
 
 IF ~~ l3.0
-SAY @610 /* You rascal! I'd throw a shoe at you, but I don't see any about. */
+SAY @610
 IF ~~ + l3.1
 END
 
 IF ~~ l3.1
-SAY @611 /* I hope many more nights together await us. You pleased me so much I want to ravish you all over again, but new battles await. Or?.. */
-++ @612 /* To the Nine Hells with the battles. Come here. */ + l3.2
-++ @613 /* No, it's time to get up. Come on! */ + l3.3
+SAY @611
+++ @612 + l3.2
+++ @613 + l3.3
 END
 
 IF ~~ l3.2
-SAY @614 /* Gladly! */
-IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",3600) RestParty()~ EXIT // we set the timer for the next lovetalk, lovetalk 4
+SAY @614
+IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",60) RestParty()~ EXIT // we set the timer for the next lovetalk, lovetalk 4
 END
 
 IF ~~ l3.3
-SAY @615 /* Irenicus'd better watch out: a satisfied valkyrie is on the loose. And, by Tempus, she is truly inspired to fight! */
-IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",3600)~ EXIT
+SAY @615
+IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",60)~ EXIT
 END
 
 // Lovetalk 4, an hour after lovetalk 3
 
 IF ~Global("BEArenLovetalk","GLOBAL",8)~ l4
-SAY @616 /* I'm truly happy these days. Despite everything. 'Twould seem strange, yet 'tis so. */
-++ @617 /* Because we became lovers? */ + l4.1
-++ @618 /* Because we are together again? */ + l4.1
-++ @619 /* No regrets? */ + l4.2
-++ @620 /* I am glad. Let's move on, all right? */ + l4.0
+SAY @616
+++ @617 + l4.1
+++ @618 + l4.1
+++ @619 + l4.2
+++ @620 + l4.0
 END
 
 IF ~~ l4.0
-SAY @621 /* As you say, my dear commander. Onwards! */
+SAY @621
 IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1)~ EXIT
 END
 
 IF ~~ l4.1
-SAY @622 /* Of course. It gladdens my heart to wake up and know you're near. But 'tis not that alone. */
+SAY @622
 IF ~~ + l4.2
 END
 
 IF ~~ l4.2
-SAY @623 /* A year before I believed I should not love a man too much. I could become too weak, and my warrior skills would suffer. And depending on anyone so much... no, that was not for me, I vowed. */
-= @624 /* Yet I am here with you and I do not feel any weaker. I think I have found some inner strength. */
-= @625 /* I am in love, and I am loved. The heart knows what it wants, they say. Seems like my heart is wiser than me. */
-++ @626 /* I'm glad you've finally realized it. */ + l4.3
-++ @627 /* As long as you don't run away again. */ + l4.3
-++ @628 /* I love you, Branwen. */ + l4.3
-++ @629 /* And now that's over with, let's move on. */ + l4.0
+SAY @623
+= @624
+= @625
+++ @626 + l4.3
+++ @627 + l4.3
+++ @628 + l4.3
+++ @629 + l4.0
 END
 
 IF ~~ l4.3
-SAY @630 /* I love you. I've always loved you, I think. Ever since the Nashkel Fair, when you chased the stone from my eyes. */
-= @631 /* I do not know what the future will bring, but here and now, I am happy. And 'tis enough for me. */
-++ @632 /* By Tempus, you are right! */ + l4.4
-++ @633 /* And for me. */ + l4.4
-++ @634 /* We'll see what the future brings. */ + l4.4
+SAY @630
+= @631
+++ @632 + l4.4
+++ @633 + l4.4
+++ @634 + l4.4
 END
 
 IF ~~ l4.4
-SAY @35 /* (Branwen laughs.) */
-= @636 /* Come. Let's show your enemies who holds the real power. And then we'll see what the night brings... */
+SAY @35
+= @636
 IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1)~ EXIT
 END
-
-
 
 END // END for APPEND

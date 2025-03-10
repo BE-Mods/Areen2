@@ -1,14 +1,15 @@
 @0    = ~Tell me about Areen.~
-@1    = ~Ah, Areen Selemchant! The disciplined wild mage of Athkatla - a contradiction that works! Bringing scholarly rigor to chaos itself while planning an academy at Ulcaster. Most unexpected!~
-@2    = ~I... how did you—? My plans for Ulcaster are hardly public knowledge. <i>adjusts collar nervously</i> Most disconcerting.~
+@1    = ~Ah, Areen Selemchant! The disciplined wild mage of Athkatla. A contradiction that works! Bringing scholarly rigor to chaos itself, while planning an academy at Ulcaster. Most unexpected!~
+@2    = ~I... how did you know about that? My plans for Ulcaster are hardly public knowledge. Most disconcerting.~
 @3    = ~Ah, Areen Selemchant! The controlled chaos mage whose heart was finally captured! Theory suggests impossible, yet reality proves otherwise. A most fascinating case study!~
-@4    = ~<i>adjusts his collar</i> Good heavens. Is nothing sacred to you bards?.~
+@4    = ~Good heavens. Is nothing sacred to you bards?.~
+
 @5    = ~You are leaving, aren't you? I would be sorely tempted, if I were you. Good luck my friend.~
 @6    = ~This is it, isn't it? This is the moment.~
 @7    = ~I do not wish to leave you, Areen. I love you.~
 @8    = ~I only know that I would regret not taking this opportunity.~
 @9    = ~I really do not know what to choose.~
-@10   = ~I've studied chaos and order my entire life, yet this choice before you defies all academic classification. Divinity or mortality—each with profound implications.~
+@10   = ~I've studied chaos and order my entire life, yet this choice before you defies all academic classification.~
 @11   = ~Whatever path you choose, my feelings remain unchanged. Rather remarkable, considering my usual insistence on logical certainty.~
 @12   = ~Choose what feels right for you. Not for me, not for the Realms... but for yourself.~
 @13   = ~I suppose this is farewell. One hopes our paths might cross again, though probability suggests otherwise. Quite...Good bye, <CHARNAME>.~
@@ -17,8 +18,9 @@
 @16   = ~I love you, Areen.~
 @17   = ~I would rather share one lifetime with you than face all the ages of this world alone. I choose a mortal life.~
 @18   = ~I...~
-@19   = ~<i>clears his throat</i> A most unexpected resolution. One could hardly anticipate such a fortunate turn of events. Quite remarkable, indeed.~
+@19   = ~A most unexpected resolution. One could hardly anticipate such a fortunate turn of events. Quite remarkable, indeed.~
 @20   = ~I love you, <CHARNAME>.~
+
 @21   = ~What of the inevitable pain you must give to the one you love? What of Areen?~
 @22   = ~<CHARNAME> loves me and so do I.~
 @23   = ~My son. You have grown in magical powers, yet your life choices are erratic!~
@@ -35,15 +37,16 @@
 @34   = ~Enough!~
 @35   = ~Bloody bastard!~
 @36   = ~How dare this creature to play such tricks.~
-@37   = ~All right. You're the priestess.~
+@37   = ~It's over now.~
 @38   = ~I'm sorry he brought you such pain.~
 @39   = ~I need a moment to gather my thoughts.~
 @40   = ~...~
 @41   = ~Let's go. And thank you.~
 @42   = ~You're very welcome.~
 @43   = ~Thank you for what?~
-@44   = ~<i>Areen embraces you with heartfelt warmth</i>~
+@44   = ~Areen embraces you with heartfelt warmth.~
 @45   = ~For giving that bastard a what for.~
+
 @46   = ~You cannot trust this one, <CHARNAME>.~
 @47   = ~Careful now. There is rather more at work here than immediately meets the eye.~
 @48   = ~And might I inquire as to your interest in this matter? Do enlighten us.~
@@ -81,7 +84,7 @@
 @80   = ~For now, at least.~
 @81   = ~True.~
 @82   = ~I do not wish for you to mistake my contemplation for complaint.~
-@83   = ~After all, we have achieved a great deal - defeating Irenicus, rescuing an elven city, and even associating with demigods. These are no small accomplishments, to be sure.~
+@83   = ~After all, we have achieved a great deal: defeating Irenicus, rescuing an elven city, and even associating with demigods. These are no small accomplishments, to be sure.~
 @84   = ~You are right.~
 @85   = ~And we did it together, Areen.~
 @86   = ~I don't know.~

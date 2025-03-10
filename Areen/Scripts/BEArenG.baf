@@ -1,4 +1,4 @@
-// Branwen's Mother appears after Gorion's Wraith calls upon her in dialogue and this cutscene plays:
+// Areen's Mother appears after Gorion's Wraith calls this cutscene plays:
 IF
 True()
 THEN

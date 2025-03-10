@@ -1,6 +1,6 @@
-// Branwen's abduction, Branwen's new script during the abduction. Note that there's another script for the vampire Branwen in Bodhi's crypt - it's not the same
+// Abduction, new script during the abduction.
 IF
-Global("O#CleanseVampire","AR1401",2)
+Global("BECleanseVampire","AR1401",2)
 Global("BEArenVampire","GLOBAL",3)
 Name("BEAren",Myself)
 AreaCheck("AR1401")
@@ -26,7 +26,7 @@ Global("BERomanceVampireTeleport","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("BERomanceVampireTeleport","GLOBAL",1)
-CreateVisualEffectObject("SPDIMNDR",Myself)   // when Branwen's abducted by Bodhi, she teleports
+CreateVisualEffectObject("SPDIMNDR",Myself)
 Wait(2)
 DestroySelf()
 END

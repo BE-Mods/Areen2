@@ -1,4 +1,4 @@
-// Branwen's abduction, vampire Branwen's script
+// Abduction, vampire script
 IF
 Global("C6BodhiFight","AR0809",1)
 Allegiance(Myself,NEUTRAL)

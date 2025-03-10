@@ -1,42 +1,53 @@
 @0    = ~You are a noble man, but new trials are ahead. Brace yourself, disciplined scholar, for your friends will need you.~
 @1    = ~And you call yourself a diviner?~
+
 @2    = ~There once was a mage from Athkatla,
 Whose wild magic was quite a spectacula',
 With Amnish-like poise,
 And minimal noise,
 The strictest wild caster particulah!~
 @3    = ~You deserve praise, little fella, if only for thinking this on the spot.~
+
 @4    = ~Greetings, my lord. I am Madame Nin, and I am here to ensure you are pleasantly accompanied. Are you interested in companionship?~
 @5    = ~Not in the slightest.~
-@8    = ~A ruse meticulously crafted, I grant you that, Yoshimo. But you will live to regret it.~
+
+@8    = ~A ruse meticulously crafted, I grant you that, Yoshimo. But you will yet live to regret it.~
+
 @9    = ~Are you all right, <CHARNAME>?~
 @10   = ~I'm all right. Don't worry.~
 @11   = ~I felt strange, like I wasn't in control.~
 @12   = ~Don't coddle me!~
 @13   = ~Worry not, I'll let you be.~
 @14   = ~We will get through this as well. Together.~
+
 @15   = ~Bloody hell, <CHARNAME>, I've read about this...you must, you must be careful, alright?~
+
 @16   = ~Say something!~
+
 @17   = ~Areen, a disciplined wild mage. He looks at you with a serious but calm face.~
 @18   = ~Areen, this is not your fight. You do not have to follow me.~
 @19   = ~You have done a lot for me, Areen. You can go home now.~
 @20   = ~Are you ready to follow me? I need you to win.~
 @21   = ~It is not my custom to abandon a friend in need. I will see this ordeal finished for good!~
 @22   = ~Areen, your first advisor and soul mate. He looks at you with devotion.~
-@23   = ~Areen, I --~
+@23   = ~Areen, I...~
 @24   = ~Don't.~
 @25   = ~All that needed saying has been said already.~
 @26   = ~Let's finish this bloody bastard Irenicus!~
+
 @27   = ~I...I expected something else. Do you feel different, <CHARNAME>?~
 @28   = ~Is never that simple, isn't it? Where did you bring us?~
-@29   = ~It's time to put an end to this madness!~
+
+@29   = ~It's time to put an end to your madness!~
+
 @30   = ~Are you all right? Something is awry.~
 @31   = ~Something is happening to me. Run!~
 @32   = ~Areen, I may turn into the Slayer again.~
 @33   = ~Fly, you fool!~
 @34   = ~You lips move, but I hear nothing. Is it... Oh, no! <CHARNAME>, NO!~
-@35   = ~<i>Looks at you seriously</i> Come, rest a little.~
+@35   = ~Come, rest a little.~
 @36   = ~I'm with you now. Let's get out of here.~
+
 @37   = ~A devoted wild mage. You are going to set a fine example for our Bhaalspawn.~
 @38   = ~Bugger off, Bodhi.~
 @39   = ~Darkness calls out to you, Areen. Come with me...~
@@ -48,6 +59,7 @@ The strictest wild caster particulah!~
 @45   = ~Here he is, though I doubt your fumbling could have inspired the loyalty I have taken with a bite and a gaze.  He is mine now, and will do my bidding gladly.~
 @46   = ~As you say, mistress. I am your servant in all things.~
 @47   = ~He is not even fully turned and yet he is mine to use against you. Doesn't it gall you? I thought it might.~
+
 @48   = ~A loved one was taken by a vampire. What can I expect when I find them?~
 @49   = ~Someone I care about has fallen to a vampire. Is there any way to save them?~
 @50   = ~A friend is afflicted by vampirism. An old book suggested that followers of Oghma might know something about that.~
@@ -61,7 +73,8 @@ The strictest wild caster particulah!~
 @58   = ~I hope our paths cross again soon, <CHARNAME>.~
 
 // interjections to others
-@59   = ~Quayle? Well, well... <i>mockingly</i> Your intelligence was always monstrous, but I hardly expected to find you performing in a circus.~
+
+@59   = ~Quayle? Well, well... Your intelligence was always monstrous, but I hardly expected to find you performing in a circus.~
 @60   = ~Fear of the drow is not surprising. But lighting up these pyres in the middle of the government district? That is preposterous. I am certain they did not even have a permit for such an inflammatory display.~
 @61   = ~A hardly unexpected insinuation.~
 
@@ -77,8 +90,8 @@ The strictest wild caster particulah!~
 
 @70   = ~Yes, he was. Tell him, <CHARNAME>.~
 
-@71   = ~I am Areen Selemchant, and they are under my supervision.~
-@72   = ~Very well, sir. They shall be permitted to practice. However, I must issue the warning nonetheless, merely a formality, you understand.~
+@71   = ~I think you are late, your colleagues already left. I am Areen Selemchant, and they are under my supervision.~
+@72   = ~Very well, sir. They shall be permitted to practice for now. However, I must issue the warning nonetheless, merely a formality, you understand.~
 
 @73   = ~Another thug, I'll bet.~
 @74   = ~I am not happy that we are doing their dirty work, <CHARNAME>.~
@@ -99,7 +112,7 @@ The strictest wild caster particulah!~
 @87   = ~Farewell, Jermien.~
 
 @94   = ~Psst, <CHARNAME>, I've heard of this Tolgerias - a cunning fellow, shady to the core. He has a reputation for saying one thing while meaning another. Do not leap blindly into his requests. To be honest, I also doubt he possesses any genuine information about your friend Imoen.~
-@95   = ~I warned you this one was cunning. My lord Selemchant will hear about this.~
+@95   = ~I warned you this one was cunning. Lord Selemchant will hear about this.~
 
 @99   = ~It would be prudent to have her accompany us if we intend to navigate the castle with any modicum of efficiency.~
 @100  = ~If your father arranged this marriage, you ought to abide by his wishes. It is, after all, your duty as Lady de'Arnise.~
@@ -111,111 +124,121 @@ The strictest wild caster particulah!~
 
 @114  = ~Ah yes, 'healing and learning.' Much like how a butcher 'heals' a pig of its life and 'learns' the most efficient way to turn it into bacon. Your institutional hospitality is... overwhelming.~
 
-@115  = ~This proposal bears all the hallmarks of what Athkatlan merchants call the 'noble investor's folly'—extraordinary returns promised on a modest investment, only to discover it all has been a scam.~
+@115  = ~This proposal bears all the hallmarks of what Athkatlan merchants call the 'noble investor's folly'-extraordinary returns promised on a modest investment, only to discover it all has been a scam.~
 
 @116  = ~You offend me, friend, but I was not talking to you, was I?~
 
-@117  = ~Hand over the blade. It's rightfully his, and more importantly, a wild mage of his caliber could reduce half of Athkatla to smoking rubble should we provoke him. Some battles aren't worth the... collateral rearrangement of the cityscape.~
+@117  = ~Hand over the blade, <CHARNAME>. It's rightfully his, and more importantly, a wild mage of his caliber could reduce half of Athkatla to smoking rubble should we provoke him. Some battles aren't worth the... collateral rearrangement of the cityscape.~
 @118  = ~Listen to your friend. He knows what he's talking about. Besides, I...might...even give you these magic gloves of mine in return. What say you?~
 
 @119  = ~Here, take these.~
 
 
-// love talks
+// love talks - after this there is a pre-rest love talk 1
 
-@129 = ~I think it's time we have a proper discussion. It feels like we do not know much about each other.~
-@130 = ~What for? You already know about Irenicus and Imoen.~
-@131 = ~If this is about those Child of Bhaal rumors again, I won't be held responsible for the consequences.~
-@132 = ~Certainly. How have you been since we parted ways?~
+// talk 1: General how-have-you-been conversation - A natural starting point that establishes basic rapport.
+
+@129 = ~I find talking while walking to be rather calming. Care for a conversation?"~
+@130 = ~You already know about Irenicus and Imoen. There is nothing else in my mind.~
+@131 = ~If this is about those Child of Bhaal rumors...~
+@132 = ~Certainly. How are you?~
 @133 = ~Now is not the best time, Areen.~
 @134 = ~Another time, then.~
-@135 = ~Half of Athkatla likely knows that by now. I'm interested in quite a different conversation.~
-@136 = ~I was in Baldur's Gate during that time. I remember Sarevok's fall, and the subsequent... discussions about lineage. Your heritage doesn't concern me in the slightest.~
-@137 = ~I spent the last few days before coming back to Athkatla conducting research in Baldur's Gate, but found it rather limiting without your... unique perspective.~
-@138 = ~Remember that celebration at the Duchal Palace?~
-@139 = ~I left soon after that.~
+@135 = ~Those are pressing matters indeed, but indulge me here - it would do you good to clear your thoughts.~
+@136 = ~I do not partake in rumors, <CHARNAME>. And your heritage doesn't concern me in the slightest.~
+@137 = ~I am faring well enough, all things considered.~
+@138 = ~The last time I saw you was at the celebrations in the Duchal Palace, after your defeat of Sarevok. I doubt you even noticed me among the crowd.~
+@139 = ~I departed shortly thereafter. Well before that unpleasant Dragonspear affair.~
 @140 = ~My...family business in Athkatla required my attention.~
-@141 = ~But what about yourself? How have things been? You've not merely been traveling the coast, I presume.~
-@142 = ~It's been rather remarkable. I've been adventuring and accumulated considerable wealth, until all went to shit.~
-@143 = ~I've discovered that people seem irresistibly drawn to me. Nearly everyone I encounter wishes to join my company, share their life story...~
+@141 = ~But enough about my circumstances. What of yours? How are you faring?~
+@142 = ~I was on my way to become a famous adventurer, a hero. Until all went to shit at Dragonspear.~
+@143 = ~I feel somewhat out of place, if I'm being honest.~
 @144 = ~Beyond Irenicus' torture, there's not much to report.~
 @145 = ~Much the same as always.~
-@146 = ~I'm glad our paths have crossed again, then.~
-@147 = ~I take the hint.~
-@148 = ~<i>Looks at you with half a smile</i>~
-@149 = ~I'm genuinely sorry about that miserable affair. Rest assured, my magical abilities are at your disposal should we encounter him again.~
-@150 = ~I would welcome you into my home but...well...that is no longer an option.~
-@151 = ~Yeah, sorry about that.~
+@146 = ~I... heard. I'm genuinely sorry about that miserable affair.~
+@147 = ~I'm glad our paths have crossed again, then.~
+@148 = ~Areen looks at you with half a smile.~
+@149 = ~Rest assured, my magical abilities are at your disposal should we encounter him again.~
+@150 = ~A pity I cannot offer you my residence - it would have served you as an excellent place to rest and plan. Alas, it will take months to properly restore order to that dreadful mess.~
+@151 = ~I am sorry about that.~
 @152 = ~Thank you for the offer anyway.~
-@153 = ~It was not my fault, you know.~
+@153 = ~It was not my fault, you know that, right?~
 @154 = ~I will help you rebuild it, Areen.~
-@155 = ~Nothing we can do about it. Better to focus in the future paths.~
-@156 = ~Speaking of which, we should continue our journey. Shall we?~
+@155 = ~Nothing to be done about it now. Rather pointless to fret over it, wouldn't you say?~
+@156 = ~Best we, ah, focus on whatever lies ahead. Shall we?~
 
-@157 = ~Have you ever tried Amnian oranges and sweet wines? I thought we might indulge a little. Here, if you would.~
-@158 = ~What do you have there?~
-@159 = ~Areen, this hardly seems the appropriate moment for picnics.~
-@160 = ~There is always a first time.~
-@161 = ~I'm afraid I must decline.~
-@162 = ~And why not? Because adventurers shouldn't partake in civilized pastimes? Might live's pleasures somehow diminish your heroic stature? Preposterous.~
-@163 = ~It would be good for you.~
-@164 = ~That's the spirit!~
-@165 = ~Let's enjoy this moment, shall we? Academic rigor requires some breaks as well.~
-@166 = ~I appreciate your methodical approach to relaxation.~
-@167 = ~Pass the wine, if you would!~
-@168 = ~No. Just no.~
-@169 = ~During my childhood, before my parents died, we would often dine outdoors in the evenings. I still recall those meals... my family gathered, my parents arguing about their latest theories...~
-@170 = ~We are something of a family now, <CHARNAME>. And I'd like you to have pleasant recollections of times like these.~
-@171 = ~Forget the memories! Let's focus on the wine!~
-@172 = ~I'm touched, Areen. Thank you.~
-@173 = ~I propose a toast. To Areen, the most scholarly wild mage of the Amnian aristocracy!~
-@174 = ~<i> Areen agrees with a nod of his head</i>~
-@175 = ~By all means!~
-@176 = ~To <CHARNAME>! The finest friend one could hope for.~
-@177 = ~And the most captivating individual I've encountered.~
+// talk 2: How we both have improved in combat and magic - Sharing professional observations shows mutual respect and lays groundwork for deeper connection.
 
-@178 = ~I'm glad were after this deranged mage. What he did to my house...and to you, of course.~
-@179 = ~Indeed. His horrific experiments, torturing people in those containers...~
-@180 = ~He'll pay dearly for everything he's done.~
-@181 = ~I must admit to a certain curiosity about his experiments.~
-@182 = ~I can related to that academic curiosity...~
-@183 = ~What I find troubling is our need to associate with such questionable allies. The Shadow Thieves? Their mysterious rivals?~
-@184 = ~It's all rather distasteful. Not the sort of connections a I would like to cultivate.~
-@185 = ~We can waste time debating the ethics or simply proceed with what's necessary.~
-@186 = ~The greater good must prevail. Even thieves may earn redemption.~
-@187 = ~You're right. I wish we could simply wipe the lot of them.~
-@188 = ~I think I do.~
-@189 = ~What's the value in that if they continue their criminal enterprises afterward?~
-@190 = ~Treacherous, murderous, avaricious. I wish the Council of Six could do something more about that. Alas, I do not see that happening anytime soon.~
-@191 = ~However, I shall document their activities thoroughly and present the evidence to the proper authorities!~
-@192 = ~That seems perfectly reasonable.~
-@193 = ~Right. End of discussion.~
-@194 = ~And lose our last allies in this city?~
-@195 = ~How would that improve matters?~
-@196 = ~Yes! They'll face the consequences of a properly documented investigation! Let their associates suffer, let their... families... endure legal proceedings...~
-@197 = ~Let's leave it at that before someone overhears us.~
+@157 = ~I've been observing your movements in combat these past days. Most... illuminating. Your have became quite skilled since our early encounters.~
+@158 = ~You've been watching me move?~
+@159 = ~I appreciate the assessment, but perhaps focus on your own magic rather than scrutinizing me.~
+@160 = ~I've noticed improvements in your casting as well.~
+@161 = ~I'm not interested in talking right now.~
+@162 = ~Not in any intrusive manner, I assure you. Merely professional observation.~
+@163 = ~I see...~
+@164 = ~Indeed. My wild surges have become less... unpredictable.~
+@165 = ~My parents always emphasized that even wild magic requires discipline. Raw power without control is merely a liability.~
+@166 = ~What specific improvements have you noticed?~
+@167 = ~I suppose we've both had to adapt quickly to survive.~
+@168 = ~Let's continue this discussion another time.~
+@169 = ~Both our movements have improved considerably. There's a... rhythm when we engage in combat now that wasn't present before. You've developed an instinct for when to conserve energy and when to unleash your full capabilities.~
+@170 = ~I've documented similar patterns in my own casting. Where once I relied heavily on theoretical applications, I now find myself improvising within established frameworks.~
+@171 = ~Is that why you're keeping those detailed notes in that journal you carry?~
+@172 = ~Do you think our synchrony has been influenced by our travels together?~
+@173 = ~Your observations are quite thorough. Do you analyze everything this carefully?~
+@174 = ~You've noticed that, have you? Yes, precise documentation is essential.~
+@175 = ~Each evening I transcribe the day's observations: spell interactions, environmental factors affecting the weave, unusual surge manifestations. One never knows which detail might prove crucial to understanding the greater pattern.~
+@176 = ~I dare say, we are both learning from each other.~
+@177 = ~And I... I appreciate your willingness to understand rather than judge. This is... most appreciated.~
 
-@198 = ~I am quite proud of my handling of wild surges during combat. We're putting our abilities to excellent practical use.~
-@199 = ~Your point being?~
-@200 = ~I imagine that unfortunate those ruffians didn't appreciate being on the receiving end of your spell.~
-@201 = ~Not now, Areen.~
-@202 = ~Ha! No, I don't believe they found it particularly agreeable.~
-@203 = ~Do you ever find yourself troubled by our frequent need to... eliminate obstacles? I confess, sometimes during my evening meditations, I find it rather disquieting.~
-@204 = ~I know my spells serve a noble purpose, and our adversaries are unquestionably deserving of their fate, yet still...~
-@205 = ~Everyone experiences doubts occasionally, Areen.~
-@206 = ~Who cares? We're adventurers. It's simply what we do.~
-@207 = ~I understand completely. I sometimes wonder myself.~
-@208 = ~We all do, I suspect.~
-@209 = ~Well, I care.~
-@210 = ~I shouldn't burden you with these contemplations. Mystra willing, I shall be precise in my castings and we'll dispatch the miscreants.~
-@211 = ~But I appreciate your willingness to discuss my ethical conundrum.~
-@212 = ~I remain, <CHARNAME>, ever your faithful...friend.~
-@213 = ~Are you flirting with me, Areen?~
-@214 = ~I'll keep that in mind.~
-@215 = ~I'm not interested, thank you.~
-@216 = ~<i>Areen face turns red</i>~
-@217 = ~Please do.~
-@218 = ~As you wish.~
+// talk 3: Picnic excuse and talking about childhood - Moving beyond the present to share personal history in a casual setting.
+
+@178 = ~<CHARNAME>, a word. I've procured some Amnian oranges and a bottle of Berduskan sweet wine from the last merchant we encountered. I thought perhaps we might... indulge in a brief respite from our endeavors.~
+@179 = ~This is unexpected. What's the occasion, Areen?~
+@180 = ~I could use a moment to catch my breath.~
+@181 = ~Areen, we're in the middle of an important quest. This hardly seems the appropriate moment for picnics.~
+@182 = ~I understand your dedication to our mission, but academic rigor and battlefield performance both require occasional intervals of rest. The mind needs moments of reflection just as a blade needs regular honing. I... simply thought it might be beneficial.~
+@183 = ~Well then. I've found us a suitable spot just over that rise. It's defensible, offers a clear view of approaching dangers, and happens to have quite pleasant afternoon light.~
+@184 = ~Areen carefully lays out a small cloth and begins arranging slices of orange and cups for the wine with methodical precision*~
+@185 = ~I've never seen you so... relaxed, Areen. It's a nice change.~
+@186 = ~I appreciate your methodical approach to relaxation. Even your picnics are precisely organized.~
+@187 = ~Pass the wine, if you would!~
+@188 = ~I'm hardly "relaxed," merely... adopting appropriate behavior for the social context.~
+@189 = ~Organization is the foundation of all worthwhile pursuits. Even apparent spontaneity benefits from careful preparation. One doesn't simply fling components about when casting a spell, does one? The same principle applies to... well, everything else.~
+@190 = ~Areen pours wine with careful precision, ensuring all cups receive exactly the same amount.~
+@191 = ~During my childhood in Athkatla, before my parents died, we would often dine outdoors in the gardens of our estate. Not the grand affairs other noble families hosted, mind you - just the three of us. I still recall those evenings... my family gathered, my parents arguing about their latest theories on wild magic fluctuations while I studied their notes...~
+@192 = ~Tell me more about your family.~
+@193 = ~Is there any wine left?~
+@194 = ~I'm sorry about your parents, Areen.~
+@195 = ~Do you think about your parents often?~
+@196 = ~I am from a minor branch the Selemchant House. My great-grantfather was Thayze Selemchant, founder of the Council of Six and his first Meisharch. But my parents status was always somewhat precarious due to our association with wild magic - a discipline the Council of Six views with considerable suspicion. My parents devoted their lives to demonstrating that wild magic could be approached with academic rigor rather than reckless abandon. Their research was... brilliant, actually. Revolutionary. But ultimately, an uncontrolled surge took them both during an experiment when I was fourteen.~
+@197 = ~That is my past. In a way, we are something of a family now, wouldn't you say? Thrown together by circumstance, certainly, but bound by shared purpose. I'd... like to think that someday you might recall these moments fondly. Even in the midst of chaos, there can be order. Even with wild magic, there can be... control. *He raises his cup slightly*~ To moments of clarity amidst uncertainty.~
+
+// talk 4: Areen's approach to wild magic - Sharing his passion and expertise, revealing what matters to him professionally.
+
+@198 = ~My apologies for the distraction in our last skirmish. I've been contemplating the nature of chaotic energies in relation to the controlled structures of traditional formulae. It's rather fascinating how the two seemingly contradictory approaches can be reconciled within a disciplined framework.~
+@199 = ~That sounds intriguing. Tell me more about your approach to wild magic.~
+@200 = ~Another lecture on magical theory? I'll pass.~
+@201 = ~I need to focus on our journey right now, Areen.~
+@202 = ~I... yes, of course. I suppose my enthusiasm for the subject can be rather tedious to those not similarly inclined. Still, perhaps you might indulge me briefly? I seldom have the opportunity to discuss my discipline with someone of your... considerable talents.~
+@203 = ~Wild magic is often misunderstood, portrayed as a chaotic force wielded by eccentric fools who enjoy the unpredictable results. But that perception misses the essence entirely.~
+@204 = ~True mastery of wild magic demands more discipline, not less. One must comprehend the intricate patterns within chaos itself - uncertainty as a variable in one's calculations. My parents dedicated their lives to establishing this principle, and I continue their work.~
+@205 = ~How exactly does one "calculate" chaos? Isn't that contradictory?~
+@206 = ~Your parents must have been remarkable mages. Tell me about them.~
+@207 = ~I've encountered other wild mages who seemed to treat it as a game of chance.~
+@208 = ~Consider the way water flows down a mountainside. Seemingly random, yet governed by precise principles. Similarly, chaotic energies follow patterns that, while complex, are not truly random. My castic techniques utilize these patterns through applied theory and meticulous observation.~
+@209 = ~They were... extraordinary. Not merely in their magical prowess, but in their intellectual rigor. They approached wild magic as scholars first, practitioners second. They believed that every surge, every anomaly could be documented, quantified, and eventually predicted, if one possessed sufficient understanding of the underlying principles.~
+@210 = ~The difference between a dabbler and a true practitioner of wild magic is preparation. Spells like Chaos Shield are essential.~
+@211 = ~I apologize for monopolizing the conversation. It's rather difficult to find others who appreciate the academic foundations of wild magic. Most practitioners I've encountered seem content to wave their hands and hope for favorable outcomes. A travesty to the discipline, really.~
+@212 = ~I... find it remarkably comfortable discussing these matters with you, <CHARNAME>. Most people either fear wild magic or dismiss it as frivolous.~
+@213 = ~I enjoy our conversations, Areen. Your passion is captivating.~
+@214 = ~I'm glad you feel comfortable with me. I value your insights.~
+@215 = ~Don't read too much into it. I'm just being polite.~
+@216 = ~That's... most kind of you to say. I fear my enthusiasm sometimes overshadows proper decorum. Still, it's... pleasant to have one's dedication appreciated. I look forward to our next discussion, when time permits.~
+@217 = ~As do I. True understanding comes rarely enough that one ought to value it when found.~
+@218 = ~Ah. Yes, of course. How presumptuous of me. Please disregard my comments. I shall endeavor to keep our future interactions to the minimum.~
+
+// talk 5: Areen shares his knowledge of Amn with the protagonist - This contextualizes his background and provides useful information.
 
 @219 = ~I find your company quite enjoyable. You have a way of lifting my spirit that reminds me of my parents.~
 @220 = ~I find it difficult to imagine you as a child.~
@@ -237,6 +260,8 @@ The strictest wild caster particulah!~
 @236 = ~It wasn't particularly unpleasant.~
 @237 = ~I'm pleased they didn't entirely suppress your natural inclinations. Clearly, you're not an academic, <CHARNAME>, you are...something else.~
 @238 = ~I'd love to know more about Candlekeep, Imoen and Gorion as we continue?~
+
+// talk 6: Athkatla corruption and how to put a stop to it - Beginning to share values and moral viewpoints.
 
 @239 = ~I find myself rather irritated today. Every task reveals new villains, every villain commands minions, and it inevitably concludes in a messy chaos of magical discharge and broken bodies.~
 @240 = ~Why don't these fools surrender and spare themselves the considerable discomfort?~
@@ -260,7 +285,7 @@ The strictest wild caster particulah!~
 @258 = ~Or a spin of a lightning wand. A most effective approach. With mathematical precision...~
 @259 = ~Perhaps someone should join the Council of Six and attempt to improve these lands.~
 @260 = ~I'm growing weary of this conversation. Let's continue it another time.~
-@261 = ~*smiles* Indeed.~
+@261 = ~Indeed.~
 @262 = ~Indeed. But who? Some idealistic noble, some hermetic scholar, an outsider? Would the populace even desire such intervention?~
 @263 = ~I'm simply aware that while we pursue our objectives, ordinary citizens suffer. And all my academic knowledge is in vain.~
 @264 = ~I...I must think more on this.~
@@ -271,12 +296,13 @@ The strictest wild caster particulah!~
 @269 = ~It was merely an idle hypothesis. But, why not? In time...in a long time...~
 @270 = ~Let's keep walking, shall we?~
 
+// talk 7: Our adventure together to get Imoen back and punish Irenicus - Discussing their shared mission shows growing trust and alignment of purpose.
+
 @271 = ~I've been contemplating approaches to improving my homeland. I believe meaningful change is inevitable.~
 @272 = ~How?~
 @273 = ~In some fantastical scenario, perhaps.~
 @274 = ~Whatever helps you sleep at night.~
 @275 = ~Areen, I'm not interested in this topic at present.~
-
 @276 = ~The optimal approach would follow the meritocratic model. Everyone who demonstrates intellectual contribution, participates in constructive initiatives, or performs any other valuable service would have representation.~
 @277 = ~When significant decisions must be made, they convene. Those who lack intellectual merit, have abandoned themselves, or are not yet cognitively mature are excluded from proceedings.~
 @278 = ~Thus all participate in the decision-making process, but only those who contribute meaningfully to society are permitted a formal vote. It's eminently logical.~
@@ -287,7 +313,6 @@ The strictest wild caster particulah!~
 @283 = ~That's an extremely narrow perspective, Areen.~
 @284 = ~I suppose I understand your reasoning.~
 @285 = ~Someone asked me once if I knew the difference between a civilian and a citizen. A citizen accepts personal responsibility and devotes to the well-being of their country. A civilian does not.~
-
 @286 = ~Once this current enterprise concludes, I may have a word my my uncle Lord Selemchant. ~
 @287 = ~Wouldn't political machinations be terribly tedious? We are adventurers, after all.~
 @288 = ~You appear to have analyzed everything thoroughly.~
@@ -299,6 +324,8 @@ The strictest wild caster particulah!~
 @294 = ~Perhaps we could discuss something more engaging next time?~
 @295 = ~It's genuinely stimulating to converse with you, <CHARNAME>.~
 @296 = ~You have my word.~
+
+// talk 8: What type of enemy they fear most - Revealing vulnerabilities indicates growing trust.
 
 @297 = ~I had a rather fascinating dream last night about the ruins of Ulcaster. Quite provocative, intellectually speaking.~
 @298 = ~Ulcaster? That abandoned school of magic east of Beregost?~
@@ -332,6 +359,7 @@ The strictest wild caster particulah!~
 @326 = ~Areen, I'm rather uncomfortable with this direction. Let's maintain a purely platonic relationship.~
 @327 = ~Having you by my side when this dream comes true.~
 
+// talk 9: How comfortable we are around each other and more childhood memories - Acknowledging the deepening friendship and sharing more personal history.
 
 @328 = ~A family <PRO_MANWOMAN> or a solitary one? Which path do you envision for yourself?~
 @329 = ~What brought this on?~
@@ -361,6 +389,7 @@ The strictest wild caster particulah!~
 @353 = ~I shall hold you to that promise.~
 @354 = ~Come. The path awaits.~
 
+// talk 10: How to make this a better world and a bit of family issues - Starting to reveal deeper values and personal struggles.
 
 @355 = ~Have you a moment to spare? I'd welcome a brief diversion from our current predicament.~
 @356 = ~Not particularly.~
@@ -384,10 +413,10 @@ The strictest wild caster particulah!~
 @376 = ~Ah, the Council of Six. Amn's most intriguing political entity. Six anonymous rulers who hold absolute authority while keeping their identities secret from even each other in public settings. Quite the fascinating governmental structure, when examined objectively.~
 @377 = ~They're identified only by rank: Meisarch, Tessarch, Namarch, Iltarch, Pommarch, and Dahaunarch. Succession is determined by rank – when the Meisarch dies or is removed, everyone moves up a position, and a new Dahaunarch is appointed from among Amn's influential families.~
 @378 = ~The Council effectively controls all aspects of Amnian life while remaining largely immune to assassination or corruption. One can't bribe a faceless entity, after all. Though rumors persist of Shadow Thief connections, particularly with the Iltarch. All quite speculative, naturally.~
-@379 = ~The Cowled Wizards? <i>adjusts his robes uncomfortably</i> An organization I'm intimately familiar with. They maintain a stranglehold on magical practice in Amn. They present themselves as guardians protecting the populace from magical mishaps, but in truth, they're merely another instrument of control.~
+@379 = ~The Cowled Wizards? An organization I'm intimately familiar with. They maintain a stranglehold on magical practice in Amn. They present themselves as guardians protecting the populace from magical mishaps, but in truth, they're merely another instrument of control.~
 @381 = ~Their policies stifle magical innovation and research, particularly in disciplines they deem... unconventional. They have little tolerance for wild magic – they consider it unpredictable and dangerous.~
 @382 = ~A rather hypocritical stance from an organization that employs some of the most dangerous magical practices in private.~
-@383 = ~The Twisted Rune? <i>lowers his voice noticeably</i> They're not a subject often discussed in polite company, even among mages. A cabal of liches and other powerful undead spellcasters, if the rumors are to be believed.~
+@383 = ~The Twisted Rune? They're not a subject often discussed in polite company, even among mages. A cabal of liches and other powerful undead spellcasters, if the rumors are to be believed.~
 @384 = ~They're said to manipulate events throughout the Realms from the shadows, with particular influence in Amn, Tethyr, and Calimshan. Most educated people dismiss them as mere folklore designed to frighten apprentice mages into caution, but I've encountered... concerning evidence to the contrary.~
 @385 = ~During my studies, I came across references to their symbol – a twisted arrangement of runes – in several ancient texts discussing necromantic practices. I would strongly advise avoiding any further investigation into their activities. Some knowledge invites unwelcome attention.~
 @386 = ~Perhaps we might attempt another round at a more opportune moment.~
@@ -395,9 +424,10 @@ The strictest wild caster particulah!~
 @388 = ~What...about...physical topics?~
 @389 = ~My dear Areen, I think there is only one topic we have not discussed...~
 @390 = ~No, nothing.~
-@391 = ~<i>hesitates</i> I care about you deeply, <CHARNAME>. What we have—this connection between us—it means everything to me.~
+@391 = ~I... I care about you deeply, <CHARNAME>. What we have, this connection between us, it means everything to me.~
 @392 = ~But physical intimacy... it's just not something I experience the same way others do.~
 
+// talk 11: What kind of person the protagonist wants to be - Showing interest in the protagonist's inner life demonstrates caring beyond utility.
 
 @393 = ~An intriguing confluence of magical energies surrounds us. Each battle is a delicate experiment where wild magic dances on the precipice of controlled chaos, presenting a most remarkable opportunity for scholarly observation!~
 @394 = ~You have a fascinating approach to magic, Areen.~
@@ -429,6 +459,8 @@ The strictest wild caster particulah!~
 @420 = ~Joy is found in understanding, not in superficial excitement. There is profound satisfaction in unraveling the intricate mechanisms governing the Weave.~
 @421 = ~The hour is growing late. Shall we proceed with our journey?~
 
+// talk 12: Areen's dream about building a school of magic - Sharing future aspirations and dreams indicates significant trust.
+
 @422 = ~What type of enemy do you find most fascinating, <CHARNAME>?~
 @423 = ~Exotic beasts like beholders or illithids. Their arcane defenses are hard to break.~
 @424 = ~Spellcasters. Analyzing their magical defenses and countermeasures is often overwhelming.~
@@ -438,7 +470,6 @@ The strictest wild caster particulah!~
 @428 = ~Each encounter brings unique fears and fascinations, I guess.~
 @429 = ~I do not find any particular fascinating, just obstacles to overcome.~
 @430 = ~Let's talk some other time.~
-
 @431 = ~Indeed. Each enemy presents a unique magical puzzle. Solving their vulnerabilities is an intellectual challenge that transcends mere physical combat.~
 @432 = ~I agree. Dispelling mechanisms require precise magical calculations. Each successful counterspell is a moment of scientific triumph.~
 @433 = ~Analyzing these magical beasts provides fascinating empirical data about non-sentient entities though.~
@@ -460,6 +491,8 @@ The strictest wild caster particulah!~
 @449 = ~I say, this intellectual connection we share transcends mere physical interactions.~
 @450 = ~Let's move on.~
 
+// talk 13: How rich we have become and what we will do with the money - Practical plans for the future show long-term thinking about life after their immediate quest.
+
 @451  = ~We've become richer than some kings of old. What are you going to do with these heaps of money?~
 @452  = ~Treat myself. Best armor, best weapons, best everything. What? Do you need something?~
 @453  = ~Invest. Buy a house or two, a castle, with farmlands perhaps.~
@@ -470,7 +503,7 @@ The strictest wild caster particulah!~
 @458  = ~Do you really want to become a cliché, <CHARNAME>?~
 @459  = ~I was afforded a rather comfortable upbringing in Athkatla, as one might expect of the Selemchant name—modest though our branch may be. That comfort persisted until my parents' untimely demise, of course. I've never particularly concerned myself with wealth beyond what's necessary to procure quality parchment, precise spell components, and other such scholarly essentials. The pursuit of magical understanding rather transcends mere monetary concerns, wouldn't you agree?~
 @460  = ~Never think what you will do when you grow old? Or injured?~
-@461  = ~<i>ironically</i> A simple life, righ?~
+@461  = ~A simple life... righ.~
 @462  = ~Well, your magic garments are worth a fortune now.~
 @463  = ~That's what magic is for, I guess. (who said that?)~
 @464  = ~You got me there.~
@@ -481,6 +514,8 @@ The strictest wild caster particulah!~
 @469  = ~We'll see.~
 @470  = ~I yearn for a royal bed and a sweet red wine.~
 @471  = ~What are we waiting for, my dear? Onwards!~
+
+// talk 14: The protagonist's Bhaalspawn heritage - A deeply personal topic that shows maximum trust from the protagonist's side.
 
 @472  = ~You are a Bhaalspawn, and I rarely mention that, if ever. Do you want to know why?~
 @473  = ~Why?~
@@ -502,6 +537,8 @@ The strictest wild caster particulah!~
 @489  = ~I have known you for rather some time now. But only at this very moment do I understand that I would truly love spending my life with you, and require nothing but your smile as my reward.~
 @490  = ~I am glad we have met.~
 
+// talk 15: "I will help you fight everything and how happy I am you allow me to travel with you" - A declaration of loyalty and friendship that serves as a culmination of the friendship arc.
+
 @491  = ~Things are becoming frightfully grim, and our pursuit of Irenicus shall soon bear fruit.~
 @492  = ~Mystra willing, we shall emerge victorious and put this dreadfully mad mage precisely in his place. Whatever...the cost.~
 @493  = ~Areen, stop worrying. There is nothing else he can do to us.~
@@ -510,20 +547,22 @@ The strictest wild caster particulah!~
 @496  = ~Let's talk later, all right?~
 @497  = ~Ever the optimist, aren't you?~
 @498  = ~If you insist.~
-@499  = ~I do hope Mystra doesn't falter me in the moment of truth, and I can <i>Nahal</i> Irenicus' arse.~
+@499  = ~I do hope Mystra doesn't falter me in the moment of truth, and I can 'Nahal' Irenicus' arse.~
 @500  = ~That mad dog would have wished they truly took him to Spellhold. I'm frightfully sorry, <CHARNAME>, I got carried away.~
 @501  = ~We are of the same mind.~
 @502  = ~After I'm done with him, he won't know where his ass is.~
 @503  = ~I trust you will do well, Areen.~
-@504  = ~<i>Areen smiles at you.</i>~
+@504  = ~Areen smiles at you.~
 @505  = ~I've never, um, thanked you for bringing me along on this grand adventure, for choosing me over perhaps more exotic companions or someone better prepared for the task at hand.~
 @506  = ~You've made me a better mage, <CHARNAME>.~
 @507  = ~To victory!~
 @508  = ~It has been my priviledge.~
 @509  = ~Now you've done it...you've made me cry.~
 @510  = ~Don't worry about it.~
-@511  = ~<i>Areen hugs you tightly.</i>~
+@511  = ~Areen hugs you tightly.~
 @512  = ~I am with you, <CHARNAME>. Let's go.~
+
+// Extra talks: An hour into Chapter 5.
 
 @532  = ~How are you faring, <CHARNAME>? A rather blunt inquiry, I realize, but... circumstances being what they are, I thought it prudent to ask.~
 @533  = ~I feel empty, but I will get over this.~
@@ -547,6 +586,8 @@ The strictest wild caster particulah!~
 @551  = ~We are of the same mind then.~
 @552  = ~I am ever by your side, you know...if you should need my aid.~
 @553  = ~Though I sincerely hope we find the bastard quick.~
+
+// love talk 1: First hints of deeper feelings (after friendship talk 1) - Subtle recognition of potential romantic interest.
 
 @554 = ~<CHARNAME>, I've been meaning to discuss something of a... personal nature with you. Do you have a moment?~
 @555 = ~Is everything alright, Areen?~
@@ -581,6 +622,8 @@ The strictest wild caster particulah!~
 @584 = ~I suspect my dreams will be pleasantly preoccupied.~
 @585 = ~I anticipated as much. I'm proposing an addition to your life, not a restriction of it. At the moment.~
 
+// love talk 2: "I will give my life to protect you and to fight Irenicus" - A declaration that takes on romantic undertones in this context.
+
 @586 = ~I notice we are prepared for the evening. Before everyone settles, might I have a word with you? In private?~
 @587 = ~What's on your mind, Areen?~
 @588 = ~Areen, I'd rather not have any more personal discussions.~
@@ -602,6 +645,8 @@ The strictest wild caster particulah!~
 @604 = ~I believe there's a certain wisdom in finding comfort in one another amidst all this chaos. But please understand – this isn't mere practicality. It's... quite meaningful to me.~
 @605 = ~I look forward to the quiet moments we might share tonight, <CHARNAME>. Just us, while the world continues its tumultuous course around us.~
 
+// love talk 3: Discussing what a future together might look like - Moving beyond the immediate quest to imagine a shared life.
+
 @606 = ~Good morning. Did you sleep well?~
 @607 = ~Very well, actually.~
 @608 = ~Better than I have in weeks.~
@@ -612,6 +657,8 @@ The strictest wild caster particulah!~
 @613 = ~We should probably join the others. Duty calls.~
 @614 = ~A few more moments of peace would be... quite agreeable.~
 @615 = ~Yes, quite right. I feel unexpectedly refreshed, actually. Perhaps there's something to be said for proper rest in good company. Our foes may find me a more formidable opponent today.~
+
+// love talk 4: Commitment despite asexual nature - An honest conversation about his nature and how a meaningful relationship could work despite differences.
 
 @616 = ~I find myself in an unexpectedly positive state of mind lately. Curious, given our circumstances.~
 @617 = ~Because of our relationship?~
@@ -632,6 +679,5 @@ The strictest wild caster particulah!~
 @632 = ~An excellent proposal!~
 @633 = ~Nothing would please me more.~
 @634 = ~We'll see what the future holds.~
-@635 = ~<i>Areen smiles, a rare sight of genuine warmth.</i>~
+@635 = ~Areen smiles, a rare sight of genuine warmth.~
 @636 = ~Come. Let's demonstrate the true potential of properly harnessed chaos to our opponents. Afterward, we might discuss our future plans in more... comfortable surroundings.~
-

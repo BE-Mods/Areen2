@@ -1,4 +1,4 @@
-// This is a cutscene for Branwen's abduction by Bodhi.
+// This is a cutscene for abduction by Bodhi.
 IF
 True()
 THEN

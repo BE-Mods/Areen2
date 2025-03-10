@@ -1,5 +1,4 @@
-// This is Areen's dream script for ToB. It means that all events and talks that should happen at rest are scripted here.
-// We have one lovetalk in O#Bra25J.d - after Balthazar is dead.
+// This is Areen's dream script for ToB.
 IF
 InParty(Myself)
 Global("BEArenLastNight","GLOBAL",0)
