@@ -444,6 +444,12 @@ I_C_T KRUIN 11 BEArenKRUIN11
 DO ~GiveItemCreate("BEGLOVES",Player1,0,0,0)~
 END
 
+// Shangalar - Twisted rune hideout
+I_C_T HLSHANG 1 BEArenHLSHANG1
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @120
+END
+
+
 // LOVETALKS START HERE
 
 APPEND BEARENJ
@@ -699,7 +705,7 @@ SAY @224
 = @225
 = @226
 = @227
-++ @228 + t5.2
+++ @228 + t.0
 ++ @229 + t5.3
 ++ @230 + t5.2
 END
@@ -887,7 +893,7 @@ END
 
 IF ~~ t8.5
 SAY @309
-IF ~~ DO ~SetGlobal("BEArenSchool","GLOBAL",1)~ + t8.6
+IF ~~ + t8.6
 END
 
 IF ~~ t8.6
@@ -1043,17 +1049,19 @@ END
 
 
 IF ~~ t10.5
-SAY @373
+SAY @371
+= @372
+= @373
 = @374
 = @375
-IF ~~ + t10.3
+IF ~~ + t10.9
 END
 
 IF ~~ t10.6
 SAY @376
 = @377
 = @378
-IF ~~ + t10.3
+IF ~~ + t10.9
 END
 
 IF ~~ t10.7
@@ -1064,14 +1072,14 @@ END
 IF ~~ t10.7b
 SAY @381
 = @382
-IF ~~ + t10.3
+IF ~~ + t10.9
 END
 
 IF ~~ t10.8
 SAY @383
 = @384
 = @385
-IF ~~ + t10.3
+IF ~~ + t10.9
 END
 
 IF ~~ t10.9
