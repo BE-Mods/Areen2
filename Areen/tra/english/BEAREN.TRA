@@ -1,8 +1,8 @@
-@1    = ~Bloody hell, those bastards have reduced my residence to rubble! <CHARNAME>? This chaos is hardly unexpected, now that I see you here.~
+@1    = ~Bloody hell, those bastards have reduced my residence to rubble! What are you doing here, <CHARNAME>? This chaos is hardly unexpected, now that I see you here.~
 @2    = ~Look who's back! Isn't it a proper reunion, Boo?~
 @3    = ~That was not our doing, Areen.~
-@4    = ~I shall not grovel before Lord Selemchant again. <CHARNAME>, could I perhaps travel with you until I am back on my feet? And less homeless.~
-@5    = ~Join us, Areen, I could use your help and you can earn some gold.~
+@4    = ~I shall not grovel before Lord Selemchant again. Could I perhaps travel with you until I am back on my feet? And less homeless?~
+@5    = ~Join me, Areen, I could use your help and you can earn some gold.~
 @6    = ~I am sorry about your house, Areen. But that's not possible right now.~
 @7    = ~I shall lend my arcane expertise to our endeavor.~
 @8    = ~I should probably tell you that I am going to rescue Imoen from the Cowled Wizards.~

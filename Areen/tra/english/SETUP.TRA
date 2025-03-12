@@ -41,9 +41,9 @@ Type: Two-handed
 Requires:
  5 Strength
 
-Weight: 4 lb.~
+Weight: 4~
 
-@11  = ~Minor Chaos Armor~
+@11  = ~Acolyte's Chaos Vestments~
 @12  = ~These distinctive robes were first crafted in the years following the Time of Troubles, when practitioners of wild magic sought ways to better control their increasingly unpredictable art. The fabric is interwoven with metallic threads forming intricate patterns that help stabilize magical energies. While not as potent as the legendary Archmaster's Chaos Vestments crafted by the most accomplished wild mages, these robes became popular among early practitioners for their protective properties. Several sets were created in Waterdeep's magical academies as wild magic began to gain reluctant acceptance among more traditional spellcasters.
 
 STATISTICS:
@@ -52,7 +52,7 @@ Equipped abilities:
 - Vocalize
 - Wild surge bonus +10
 
-Weight: 3 lb.~
+Weight: 3~
 
 @13  = ~Areen's Improved Chaos Shield~
 

@@ -134,9 +134,13 @@ The strictest wild caster particulah!~
 
 @120  = ~<CHARNAME>, I recognize these symbols. The Twisted Rune. Oh, we are so... fucked.~
 
-// love talks - after this there is a pre-rest love talk 1
 
-// talk 1: General how-have-you-been conversation - A natural starting point that establishes basic rapport.
+
+
+
+// LOVE TALKS
+
+// talk 1: General how-have-you-been conversation - A natural starting point that establishes basic rapport. After this there is a pre-rest love talk 1
 
 @129 = ~I find talking while walking to be rather calming. Care for a conversation?"~
 @130 = ~You already know about Irenicus and Imoen. There is nothing else in my mind.~
@@ -199,7 +203,7 @@ The strictest wild caster particulah!~
 @181 = ~Areen, we're in the middle of an important quest. This hardly seems the appropriate moment for picnics.~
 @182 = ~I understand your dedication to our mission, but academic rigor and battlefield performance both require occasional intervals of rest. The mind needs moments of reflection just as a blade needs regular honing. I... simply thought it might be beneficial.~
 @183 = ~Well then. I've found us a suitable spot just over that rise. It's defensible, offers a clear view of approaching dangers, and happens to have quite pleasant afternoon light.~
-@184 = ~Areen carefully lays out a small cloth and begins arranging slices of orange and cups for the wine with methodical precision*~
+@184 = ~Areen carefully lays out a small cloth and begins arranging slices of orange and cups for the wine with methodical precision.~
 @185 = ~I've never seen you so... relaxed, Areen. It's a nice change.~
 @186 = ~I appreciate your methodical approach to relaxation. Even your picnics are precisely organized.~
 @187 = ~Pass the wine, if you would!~
@@ -212,7 +216,7 @@ The strictest wild caster particulah!~
 @194 = ~I'm sorry about your parents, Areen.~
 @195 = ~Do you think about your parents often?~
 @196 = ~I am from a minor branch the Selemchant House. My great-grantfather was Thayze Selemchant, founder of the Council of Six and his first Meisharch. But my parents status was always somewhat precarious due to our association with wild magic - a discipline the Council of Six views with considerable suspicion. My parents devoted their lives to demonstrating that wild magic could be approached with academic rigor rather than reckless abandon. Their research was... brilliant, actually. Revolutionary. But ultimately, an uncontrolled surge took them both during an experiment when I was fourteen.~
-@197 = ~That is my past. In a way, we are something of a family now, wouldn't you say? Thrown together by circumstance, certainly, but bound by shared purpose. I'd... like to think that someday you might recall these moments fondly. Even in the midst of chaos, there can be order. Even with wild magic, there can be... control. *He raises his cup slightly*~ To moments of clarity amidst uncertainty.~
+@197 = ~That is my past. In a way, we are something of a family now, wouldn't you say? Thrown together by circumstance, certainly, but bound by shared purpose. I'd... like to think that someday you might recall these moments fondly.~
 
 // talk 4: Areen's approach to wild magic - Sharing his passion and expertise, revealing what matters to him professionally.
 
@@ -247,7 +251,7 @@ The strictest wild caster particulah!~
 @223 = ~This isn't the time for a geography lesson, Areen.~
 @224 = ~Amn is often referred to as "The Merchant's Domain" across the Realms. If the saying "follow the money" were true, all paths would indeed lead there.~
 @225 = ~It's a relatively young nation, but one that's become extraordinarily wealthy due to its geographic position as the springboard for goods traveling north to the Heartlands. Nearly every merchant in the continent either does business with Amn or passes through it during their annual ventures.~
-@226 = ~The Council of Six rules Amn - anonymous figures who maintain absolute authority while keeping their identities secret even from one another in public settings. They're identified only by rank: Meisarch, Tessarch, Namarch, Iltarch, Pommarch, and Dahaunarch.~
+@226 = ~The Council of Six rules Amn - anonymous figures who maintain absolute authority while keeping their identities secret even from one another in public settings. They're identified only by rank: Meisarch, Tessarch, Namarch, Iltarch, Pommarch, and Dahaunarch. Before the Council of Six was established in 1333 DR, Amn was ruled by a monarchy that eventually collapsed due to mercantile conflicts.~
 @227 = ~My own family, the Selemchants, hold considerable influence in Athkatla.~
 @228 = ~Uff, too much information, please stop.~
 @229 = ~Tell me more about this Council of Six. How does such a secretive government function?~
@@ -258,7 +262,7 @@ The strictest wild caster particulah!~
 @234 = ~Are there other power groups in Amn besides the Council?~
 @235 = ~How does Amn compare to other nations of the Sword Coast?~
 @236 = ~Has Amn always been ruled by this Council?~
-@237 = ~Beyond the Council, Amn's true power structure is quite layered. The Cowled Wizards maintain a stranglehold on magical practice - presenting themselves as guardians protecting the populace from mishaps, but they're merely another instrument of control. Unlike Waterdeep or Baldur's Gate, where magic flows more freely, Amn keeps it tightly regulated. This system dates back only about a century - before the Council of Six was established in 1333 DR, Amn was ruled by a monarchy that eventually collapsed due to mercantile conflicts. The Cowled Wizards particularly stifle disciplines they deem... unconventional. They have little tolerance for wild magic, for instance. A rather hypocritical stance from an organization that employs some of the most dangerous magical practices in private.~
+@237 = ~Beyond the Council, Amn's true power structure is quite layered. The Cowled Wizards maintain a stranglehold on magical practice - presenting themselves as guardians protecting the populace from mishaps, but they're merely another instrument of control. Unlike Waterdeep or Baldur's Gate, where magic flows more freely, Amn keeps it tightly regulated. The Cowled Wizards particularly stifle disciplines they deem... unconventional. They have little tolerance for wild magic, for instance. A rather hypocritical stance from an organization that employs some of the most dangerous magical practices in private.~
 @238 = ~My mouth is dry, but I am glad you are so curious, perhaps we can talk more about my country another time. Shall we continue our journey? There's much to be done.~
 
 // talk 6: Athkatla corruption and how to put a stop to it - Beginning to share values and moral viewpoints.
@@ -272,7 +276,7 @@ The strictest wild caster particulah!~
 @245 = ~Bitter? No, merely... disappointed. I've witnessed enough to form a rather unfavorable opinion.~
 @246 = ~Oh, I assure you, Athkatla elevates corruption to an art form. In other cities, bribes might change hands beneath tables. In Athkatla, they're presented on silver platters with elaborate ceremony. It's almost admirable in its brazenness.~
 @247 = ~Indeed. "The coin flows where it wills," as they say. But at what cost? When wealth becomes the sole virtue, other values - honor, compassion, intellectual pursuit - become expendable luxuries.~
-@248 = ~The Selemchants among Athkatla's elite. My great-grandfather, Thayze, even sat on the Council of Six as Meisarch. His death coincided with the Council Schism seven years ago. Rather convenient timing, wouldn't you agree?~
+@248 = ~Take my great-grandfather, Thayze, who even sat on the Council of Six as Meisarch. His death coincided with the Council Schism seven years ago. A rather convenient timing, if you ask me. That is how things work here.~
 @249 = ~After that, our family's standing... diminished a little. Some regarded us with suspicion, as potential threats to be monitored.~
 @250 = ~But now my uncle is Lord Selenchant, and things are getting back to normal.~
 @251 = ~Do you think your family was deliberately targeted?~
@@ -298,20 +302,20 @@ The strictest wild caster particulah!~
 
 // talk 7: Our adventure together to get Imoen back and punish Irenicus - Discussing their shared mission shows growing trust and alignment of purpose.
 
-@271 = ~This pursuit of Irenicus-it's rather more consuming than the academic exercises I'm accustomed to.~
+@271 = ~This pursuit of Irenicus is rather more consuming than the academic exercises I'm accustomed to.~
 @272 = ~It's difficult not to think about it. Imoen is like family to me.~
 @273 = ~I'm surprised to hear you admit that. You usually seem quite focused on your magical studies.~
 @274 = ~It's a complex situation that tests all of us. I appreciate your candor.~
 @275 = ~I don't have time for your musings right now, Areen.~
 @276 = ~Yes, well... one can only remain detached for so long when faced with such extraordinary circumstances.~
 @277 = ~Your steadfast commitment to Imoen is... admirable.~
-@278 = ~I've been contemplating what drives a man like Irenicus. His magical prowess is undeniable, yet he wields it with such cold calculation. It's... disturbing.~
+@278 = ~I've been contemplating what drives a man like Irenicus. From what you told me, his magical prowess is undeniable yet he wields it with such cold calculation. It's... disturbing.~
 @279 = ~What specifically about Irenicus troubles you the most?~
 @280 = ~Have you encountered anyone like him in your studies of magic?~
 @281 = ~I never thought I'd hear you admit to being disturbed by anything.~
-@282 = ~What troubles me? Well, beyond the obvious moral transgressions, it's his... methodology. He approaches magic with technical brilliance but without respect for its fundamental nature or consequences.~
+@282 = ~Beyond the obvious moral transgressions?~
 @283 = ~That seems to contradict your own disciplined approach to wild magic.~
-@284 = ~I understand. Even precision can become monstrous when divorced from ethics.~
+@284 = ~Magical skills can become monstrous when divorced from ethics.~
 @285 = ~Hardly a contradiction. I pursue control and understanding precisely because I respect the power I wield. Irenicus seems to view magic merely as a tool for his ambitions.~
 @286 = ~There were always those who pushed too far, brilliant minds seduced by their own intellect.~
 @287 = ~And you? Were you ever tempted to cross those boundaries?~
@@ -408,7 +412,7 @@ The strictest wild caster particulah!~
 @369 = ~I'd create a world where people weren't forced into conflict by power-hungry leaders.~
 @370 = ~I'm not sure I should have that kind of power. Small changes can have unforeseen consequences.~
 @371 = ~A noble aspiration. My parents believed similarly, despite the Cowled Wizards' attempts to control magical knowledge.~
-@372 = ~They established a small school in our home's cellar. Nothing grand, 3 students at most, but it was enough to draw unwanted attention.~
+@372 = ~They established a small school in our home's cellar. Nothing grand, three students at most, but it was enough to draw unwanted attention.~
 @373 = ~The authorities never directly intervened, but our family's reputation suffered. Trade partnerships dissolved, invitations ceased, cousins suddenly "too busy" to visit.~
 @374 = ~Still, my parents persisted. "Knowledge in darkness dies," my mother would say. "Better to light a candle than curse the shadows," my father would reply.~
 @375 = ~A sentiment I've tried to honor. I must say...~
@@ -592,95 +596,95 @@ The strictest wild caster particulah!~
 
 // love talk 1: First hints of deeper feelings (after friendship talk 1) - Subtle recognition of potential romantic interest.
 
-@554 = ~<CHARNAME>, I've been meaning to discuss something of a... personal nature with you. Do you have a moment?~
-@555 = ~Is everything alright, Areen?~
-@556 = ~I'm all ears.~
-@557 = ~Perhaps another time? I'm rather preoccupied.~
-@558 = ~I'd rather not have personal discussions. Let's just rest.~
-@559 = ~Very well. Perhaps it was presumptuous of me to broach the subject. Good night, <CHARNAME>.~
-@560 = ~Quite so. I simply wished to... clarify certain aspects of our companionship that I've been contemplating.~
-@561 = ~I appreciate your willingness to listen. This isn't a conversation I typically initiate.~
-@562 = ~Ah. Of course. Perhaps I've misjudged the timing.~
-@563 = ~Do you recall our initial meeting near Baldur's Gate? Even then, I found myself... drawn to your company in a way that surprised me.~
-@564 = ~I thought we were merely traveling companions.~
-@565 = ~I remember feeling a connection with you as well.~
-@566 = ~We were, but I've come to realize there was potential for more that I neglected to acknowledge.~
-@567 = ~Indeed. At the time, I was fixated on maintaining a professional distance, believing emotional connections would interfere with my studies. I've since reconsidered that position.~
-@568 = ~I've come to realize that intellectual pursuits needn't preclude emotional ones. Your resolve, your inner will despite our circumstances... they've made quite an impression.~
-@569 = ~Are you saying you have romantic feelings toward me, Areen?~
-@570 = ~Areen, I value our friendship too much to complicate it. Let's leave things as they are.~
-@571 = ~I am, though I should be clear about certain boundaries. I have little interest in physical intimacy, but I find myself longing for a deeper emotional connection with you. If that's something you might consider...~
-@572 = ~Go on.~
-@573 = ~You're proposing a romantic relationship without sex?~
-@574 = ~I'm sorry, but that's not what I'm looking for. Let's remain friends.~
-@575 = ~I'm suggesting we explore the possibility of a relationship built on intellectual and emotional intimacy, <CHARNAME>.~
-@576 = ~We could begin by simply acknowledging these feelings, and see where our connection leads us.~
-@577 = ~And if it doesn't work out romantically, our friendship would remain intact?~
-@578 = ~A thoughtful approach. I appreciate your candor.~
-@579 = ~I think friendship is all I can offer.~
-@580 = ~Absolutely. Our intellectual rapport and camaraderie are the foundation of my regard for you. That won't change.~
-@581 = ~I'd like to explore this connection between us.~
-@582 = ~I should mention I might pursue other romantic interests as well.~
-@583 = ~Thank you for your openness, <CHARNAME>. Rest well tonight.~
-@584 = ~I suspect my dreams will be pleasantly preoccupied.~
-@585 = ~I anticipated as much. I'm proposing an addition to your life, not a restriction of it. At the moment.~
+@554 = ~I've found myself rather reflective after our previous conversation. It's... curious. In Athkatla, one becomes accustomed to keeping thoughts tightly ordered, like specimens in a collector's cabinet. Yet now, I find my mind wandering in your direction with alarming frequency.~
+@555 = ~I'm flattered you think of me, Areen.~
+@556 = ~Are these wandering thoughts a problem for you?~
+@557 = ~I've been thinking about you too.~
+@558 = ~I'd rather you keep your thoughts to yourself. We should maintain a professional relationship.~
+@559 = ~Quite right. Forgive the momentary lapse in judgment.~
+@560 = ~Flattered? Well, I suppose that's... acceptable. Though I hadn't intended it as flattery so much as an observation of an unexpected cognitive pattern.~
+@561 = ~A problem? I wouldn't characterize it as such, though it is... unprecedented. My academic focus has rarely been so consistently interrupted.~
+@562 = ~Have you? That's... rather unexpected. I find I was not entirely prepared for such a direct response.~
+@563 = ~I've always maintained that proper magical study requires absolute clarity of mind. My parents impressed that upon me from an early age. "A distracted mage is a dangerous mage," my father would say. Particularly for those of us who work with wild magic.~
+@564 = ~Does thinking about me distract you from your magical studies?~
+@565 = ~Your parents sound very disciplined. Were they always so structured?~
+@566 = ~Yes. No. I mean... it's not an unpleasant distraction. More like when one discovers a fascinating new spell. Though that analogy perhaps lacks a certain... warmth.~
+@567 = ~They were indeed.~
+@568 = ~I find that I... value your companionship more than I had anticipated. I am used to relationships as strategic alliances. This feels... different.~
+@569 = ~I feel the same way. There's something special developing between us.~
+@570 = ~I think you're reading too much into our companionship. Let's keep things simple.~
+@571 = ~I... well. That's rather direct, isn't it? I suppose I should clarify. I haven't had many opportunities for... close friendships.~
+@572 = ~Tell me more about how relationships work in Amn.~
+@573 = ~I'd like us to be close because we choose to be. Is that so different in Amn?~
+@574 = ~This conversation is becoming uncomfortable. Let's focus on our quest.~
+@575 = ~In Amn, everything has its price - even affection. Marriages are business mergers, friendships are trade agreements in disguise. Everything is weighed against its potential return on investment.~
+@576 = ~My parents were... unusual in that regard. Their marriage was based on love rather than status. It caused quite the scandal in certain circles.~
+@577 = ~They sound wonderful. You must miss them terribly.~
+@578 = ~Do you aspire to follow their example?~
+@579 = ~Interesting history lesson, but we should rest now.~
+@580 = ~I do miss them. In some ways, I suppose I do aspire to their example. Though I've never expected to find someone who would... Well. That is to say, I've dedicated myself to my studies rather than searching for companionship.~
+@581 = ~Perhaps sometimes the best discoveries are the ones we aren't actively searching for.~
+@582 = ~It sounds like you've resigned yourself to being alone. That's rather sad.~
+@583 = ~Indeed.~
+@584 = ~I... find myself curious to see what unexpected discoveries might lie ahead for us. Though I should warn you - I'm rather unpracticed in matters of the heart. I expect I'll make mistakes that would seem obvious to others. Rest well, <CHARNAME>.~
+@585 = ~I haven't resigned myself to anything. I simply recognized the statistical improbability of finding someone who would understand my... peculiarities.~
 
-// love talk 2: "I will give my life to protect you and to fight Irenicus" - A declaration that takes on romantic undertones in this context.
+// love talk 2: Discussing what a future together might look like - Moving beyond the immediate quest to imagine a shared life.
 
-@586 = ~I notice we are prepared for the evening. Before everyone settles, might I have a word with you? In private?~
-@587 = ~What's on your mind, Areen?~
-@588 = ~Areen, I'd rather not have any more personal discussions.~
-@589 = ~Would you mind following me to that quieter spot over there? I'd prefer this conversation remain between us.~
-@590 = ~Of course.~
-@591 = ~I think I'll stay here, thank you.~
-@592 = ~Thank you for indulging me. I find myself... unusually anxious about this.~
-@593 = ~<CHARNAME>, I've been finding it increasingly difficult to sleep properly. I wonder if... that is to say, I was wondering if you might consider sharing your bed tonight. Simply to rest together. Perhaps with some...cuddling.~
-@594 = ~I've never suggested anything like this before. What do you think?~
-@595 = ~I'd like that very much, Areen.~
-@596 = ~I've been hoping you might suggest something like this.~
-@597 = ~That sounds lovely.~
-@598 = ~I'm not entirely sure about this...~
-@599 = ~I don't think that would be appropriate for our relationship.~
-@600 = ~I completely understand your hesitation. Perhaps I've misinterpreted the nature of our connection? Would you prefer we maintain more conventional boundaries?~
-@601 = ~No, you haven't misinterpreted. I'd be happy to share my bed with you.~
-@602 = ~Maybe we should.~
-@603 = ~I think that would be best.~
-@604 = ~I believe there's a certain wisdom in finding comfort in one another amidst all this chaos. But please understand – this isn't mere practicality. It's... quite meaningful to me.~
-@605 = ~I look forward to the quiet moments we might share tonight, <CHARNAME>. Just us, while the world continues its tumultuous course around us.~
+@586 = ~I've been spending my evenings planning a series of thought experiments to understand these... feelings I've developed. Feelings towards you, to be quite specific.~
+@587 = ~Tell me about these experiments.~
+@588 = ~I'm not interested in being your research subject, Areen.~
+@589 = ~I'm attempting to apply an analytical framework to understand these sentiments, but I'm finding the standard methods rather inadequate. It's all quite... confounding.~
+@590 = ~Perhaps some things aren't meant to be analyzed, just experienced.~
+@591 = ~This conversation is making me uncomfortable. Let's drop it.~
+@592 = ~Experienced? Yes, I suppose there's wisdom in that approach.~
+@593 = ~I find myself wondering what might lie beyond this current adventure. For both of us. Together, perhaps. The thought of returning to my solitary existence in Athkatla holds significantly less appeal than it once did.~
+@594 = ~I've never given much thought to what a shared life might entail. But I find the prospect rather... intriguing.~
+@595 = ~What would you want from such a life together?~
+@596 = ~I've been thinking about that too, Areen.~
+@597 = ~Shared research would be fascinating. We could study wild magic together.~
+@598 = ~Aren't you getting ahead of yourself? We barely know each other.~
+@599 = ~I don't see a future for us. Let's remain focused on our current tasks.~
+@600 = ~Perhaps I am. One doesn't typically chart the course before determining if the vessel is seaworthy. But I've always found that proper planning prevents... disappointment.~
+@601 = ~I appreciate your thoroughness. Tell me more about what you envision.~
+@602 = ~This is too much, too soon. I need space.~
+@603 = ~I think we should keep our relationship strictly professional.~
+@604 = ~I envision... balance. Not the stuffy confinement of Athkatlan society, nor the chaotic wandering of an adventurer's life. Something in between. A home, perhaps, where we could pursue our interests and still venture out when curiosity or necessity calls.~
+@605 = ~Listen to me, plotting a future like a merchant drafting a contract. Perhaps some things, the most important things, are best approached with the heart rather than the mind. A concept I'm still... learning to embrace. Sleep well, <CHARNAME>.~
 
-// love talk 3: Discussing what a future together might look like - Moving beyond the immediate quest to imagine a shared life.
+// love talk 3: "I will give my life to protect you and to fight Irenicus" - A declaration that takes on romantic undertones in this context.
 
-@606 = ~Good morning. Did you sleep well?~
-@607 = ~Very well, actually.~
-@608 = ~Better than I have in weeks.~
-@609 = ~Adequately, considering the circumstances.~
-@610 = ~I see my company fails to inspire enthusiasm. How terribly flattering.~
-@611 = ~I must confess, I found the experience rather... comforting. I wouldn't be opposed to similar arrangements in the future, though I suppose our immediate concerns demand attention. Unless...~
-@612 = ~The world can wait a little longer. Stay with me.~
-@613 = ~We should probably join the others. Duty calls.~
-@614 = ~A few more moments of peace would be... quite agreeable.~
-@615 = ~Yes, quite right. I feel unexpectedly refreshed, actually. Perhaps there's something to be said for proper rest in good company. Our foes may find me a more formidable opponent today.~
+@606 = ~I... had a rather vivid dream last night. About you. About us, facing Irenicus together. It was... most unsettling.~
+@607 = ~What happened in the dream?~
+@608 = ~Dreams can often reveal our deepest fears, Areen.~
+@609 = ~I'd rather not hear about your dreams right now.~
+@610 = ~Yes, of course. Perhaps another time. Though I do feel compelled to share... something of significance.~
+@611 = ~I saw you fall. In the dream. At Irenicus's hand. I've never experienced such... visceral terror before. Even when facing actual mortal peril myself. The thought of losing you was... unbearable.~
+@612 = ~It was just a dream, Areen. We'll face Irenicus together, and we'll both survive.~
+@613 = ~I understand. I worry about losing you too.~
+@614 = ~I know it was merely a dream. The rational part of my mind understands that perfectly well. But it has crystallized something for me, something I need you to understand. I will give my life to protect you and to fight Irenicus, should it come to that. Not out of some abstract principle or heroic ideal, but because a world without you in it has become... unacceptable to me.~
+@615 = ~It's... somewhat reassuring to know I'm not alone in this sentiment. I will give my life to protect you and to fight Irenicus, should circumstances demand it. Not for glory or principle, but because I've come to value your existence above my own.~
 
 // love talk 4: Commitment despite asexual nature - An honest conversation about his nature and how a meaningful relationship could work despite differences.
 
-@616 = ~I find myself in an unexpectedly positive state of mind lately. Curious, given our circumstances.~
-@617 = ~Because of our relationship?~
-@618 = ~Because we found each other again?~
-@619 = ~No regrets?~
-@620 = ~I'm glad. Let's move on, all right?~
-@621 = ~As you wish. Onward then.~
-@622 = ~Indeed. Your presence brings me considerable comfort. But there's more to it than that.~
-@623 = ~For years, I held fast to the belief that emotional attachments would compromise my studies. That opening myself to such connections would lead to intellectual diminishment. A rather cold calculus, in retrospect.~
-@624 = ~Yet here I am, with you, and I find my mind sharper than ever. As though the emotional clarity has enhanced my magical focus rather than detracted from it.~
-@625 = ~It seems my heart possessed wisdom my intellect was too stubborn to recognize.~
-@626 = ~I'm glad you've finally realized it.~
-@627 = ~Just don't retreat behind those walls again.~
-@628 = ~I love you, Areen.~
-@629 = ~And now that's been established, let's move on.~
-@630 = ~I believe I've loved you since our first meeting, when you saw value in my approach to wild magic despite others' dismissal.~
-@631 = ~I cannot predict what lies ahead, but I find this present contentment quite sufficient. When this is all over, I've been considering attempting to restore the Ulcaster School of Magic. With your help, perhaps?~
-@632 = ~An excellent proposal!~
-@633 = ~Nothing would please me more.~
-@634 = ~We'll see what the future holds.~
-@635 = ~Areen smiles, a rare sight of genuine warmth.~
-@636 = ~Come. Let's demonstrate the true potential of properly harnessed chaos to our opponents. Afterward, we might discuss our future plans in more... comfortable surroundings.~
+@616 = ~There's something I must discuss with you. Something... personal. About the nature of my feelings and... certain limitations I possess. I fear it may affect your perception of our relationship.~
+@617 = ~Whatever it is, I'm here to listen, Areen.~
+@618 = ~You seem nervous. Take your time.~
+@619 = ~Is this about your feelings for me?~
+@620 = ~I don't think I want to hear this.~
+@621 = ~I understand. Perhaps it's best left unsaid. Let us simply continue as we were before I... complicated things.~
+@622 = ~Yes, well. This isn't... particularly easy for me. The Amnian education on such matters is decidedly lacking.~
+@623 = ~The truth is that while I have developed profound emotional feelings for you. Feelings I would classify as love. My... physical responses do not align with conventional romantic expectations.~
+@624 = ~But I find myself wanting something more... genuine with you. Something based on honesty.~
+@625 = ~To be explicitly clear: I desire your companionship, your intellect, your presence in my life. I wish to build a future with you. But the... physical aspects of romance that most seem to value so highly - I find myself... indifferent to such matters.~
+@626 = ~Are you saying you love me but aren't physically attracted to me?~
+@627 = ~I value your honesty, Areen. This doesn't change how I feel about you.~
+@628 = ~I think I understand. You're describing something like asexuality?~
+@629 = ~This is too complicated. I think we should end things before we get hurt.~
+@630 = ~Yes, precisely. My parents noticed this trait in me from an early age. They worried it would make finding companionship difficult. They encouraged me to be honest about it, though few in Athkatla would appreciate such candor.~
+@631 = ~I understand if this changes things between us. But I needed you to know the truth before we... proceed further. I do love you, truly and deeply. And I believe we could build something meaningful together. Different, perhaps, from conventional relationships, but no less significant.~
+@632 = ~I love you too, Areen. We'll figure out what works for us, together.~
+@633 = ~Thank you for trusting me with this. I still want to be with you.~
+@634 = ~I don't think this will work for me. I need more from a relationship.~
+@635 = ~I... didn't dare hope for such acceptance. To be accepted simply as I am...~
+@636 = ~I love you, <CHARNAME>. Whatever challenges may come, we shall face them together. I find that prospect more exhilarating than any wild surge I've ever experienced.~

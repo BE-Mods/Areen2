@@ -445,9 +445,14 @@ DO ~GiveItemCreate("BEGLOVES",Player1,0,0,0)~
 END
 
 // Shangalar - Twisted rune hideout
+
 I_C_T HLSHANG 1 BEArenHLSHANG1
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @120
 END
+
+// Neera's questline
+
+
 
 
 // LOVETALKS START HERE
@@ -466,7 +471,7 @@ END
 
 IF ~~ t.0
 SAY @134
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 IF ~~ t1.1
@@ -522,7 +527,7 @@ END
 IF ~~ t1.9
 SAY @155
 = @156
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 2.
@@ -569,8 +574,8 @@ END
 
 IF ~~ t2.6
 SAY @176
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t2.7
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ + t2.7
 END
 
 IF ~~ t2.7
@@ -626,7 +631,7 @@ END
 
 IF ~~ t3.7
 SAY @197
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 4.
@@ -664,8 +669,8 @@ END
 IF ~~ t4.5
 SAY @210
 = @211
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t4.6
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ + t4.6
 END
 
 IF ~~ t4.6
@@ -726,7 +731,7 @@ END
 IF ~~ t5.4
 SAY @237
 = @238
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 6.
@@ -787,8 +792,8 @@ END
 IF ~~ t6.8
 SAY @263
 = @264
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t6.8a
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ + t6.8a
 END
 
 IF ~~ t6.8a
@@ -851,7 +856,7 @@ END
 
 IF ~~ t7.5
 SAY @295
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 IF ~~ t7.6
@@ -918,7 +923,7 @@ END
 
 IF ~~ t8.8
 SAY @320
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 IF ~Global("BEArenRomanceActive","GLOBAL",1)~ + t8.10
 END
 
@@ -933,7 +938,7 @@ END
 
 IF ~~ t8.11
 SAY @327
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 9.
@@ -1013,7 +1018,7 @@ END
 
 IF ~~ t9.10
 SAY @354
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 10.
@@ -1084,8 +1089,8 @@ END
 
 IF ~~ t10.9
 SAY @386
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t10.10
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ + t10.10
 END
 
 IF ~~ t10.10
@@ -1169,7 +1174,7 @@ END
 
 IF ~~ t11.10
 SAY @421
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 12.
@@ -1243,8 +1248,8 @@ END
 
 IF ~~ t12.9
 SAY @448
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
-IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ + t12.10
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
+IF ~Global("BEArenRomanceActive","GLOBAL",1)~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ + t12.10
 END
 
 IF ~~ t12.10
@@ -1306,7 +1311,7 @@ END
 IF ~~ t13.8
 SAY @470
 = @471
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 14.
@@ -1371,7 +1376,7 @@ END
 
 IF ~~ t14.10
 SAY @490
-IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenTalk","GLOBAL",1) RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)~ EXIT
 END
 
 // Talk 15.
@@ -1543,7 +1548,6 @@ END
 IF ~~ l1.8
 SAY @580
 ++ @581 + l1.9
-++ @351 + l1.9
 ++ @582 + l1.10
 END
 
@@ -1618,12 +1622,12 @@ END
 
 IF ~~ l3.2
 SAY @614
-IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",60) RestParty()~ EXIT // we set the timer for the next lovetalk, lovetalk 4
+IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",2400) RestParty()~ EXIT // we set the timer for the next lovetalk, lovetalk 4
 END
 
 IF ~~ l3.3
 SAY @615
-IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",60)~ EXIT
+IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1) RealSetGlobalTimer("BEArenLoveTimer","GLOBAL",2400)~ EXIT
 END
 
 // Lovetalk 4, an hour after lovetalk 3
@@ -1661,11 +1665,11 @@ SAY @630
 = @631
 ++ @632 + l4.4
 ++ @633 + l4.4
-++ @634 + l4.4
+++ @634 + l4.0
 END
 
 IF ~~ l4.4
-SAY @35
+SAY @635
 = @636
 IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1)~ EXIT
 END
