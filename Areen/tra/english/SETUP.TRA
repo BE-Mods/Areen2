@@ -1,8 +1,8 @@
 @1   = ~Areen the wild mage NPC mod for BG2EE~
 @2   = ~Areen~
-@3   = ~When asked about his past, Areen Selemchant regards you with a measured gaze that belies his mastery of wild magic. He speaks with careful precision about his parents, pioneering wild mages who perished in their pursuit of understanding the chaotic art. Their dedication to scholarly rigor lives on in their son, who views wild magic not as a source of whimsy, but as a discipline demanding intellectual fortitude.
+@3   = ~When asked about his past, AREEN straightens his robes meticulously before responding. Born to a disgraced branch of House Selemchant in Athkatla, he was raised amid whispers of scandal after his parents chose to study wild magic rather than conventional spellcraft. Their mysterious disappearance during an arcane experiment left him with half-finished journals and a determination to prove wild magic worthy of scholarly respect.
 
-His lips tighten when he mentions the recent loss of his crafting recipes and spell book in a bandit ambush, though he seems more bothered by the disruption to his systematic study than the material loss itself. You notice how he bristles at tales of wild mages who treat their gift as a joke, considering them an embarrassment to the art his parents helped establish. Despite his rigid demeanor, there's an underlying current of passion when he speaks of combining magical theory with practical craftsmanship, though he's currently seeking to reconstruct his lost knowledge.~
+Though his manner remains formal, there's an unmistakable gleam in his eye when discussing magical theory. For all his reserved demeanor, you suspect AREEN finds more joy in the unpredictable nature of his magic than he's willing to admit, even to himself.~
 @4   = ~Areen's Body~
 @5   = ~Areen was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you do not know what it would be.~
 @6   = ~Areen's Mother~
@@ -25,7 +25,7 @@ His parents' recovered journals now rest in their shared library, alongside the 
 // new items description
 
 @9   = ~Areen's Legacy Staff~
-@10  = ~This staff was crafted by Areen's parents through meticulous research as part of their legacy of bringing discipline to wild magic. Gifted to their son upon completing his early studies, the staff's intricate runes and carefully balanced enchantments help to guide and temper wild magic surges. Though already a remarkable achievement in magical crafting, certain patterns in its construction suggest it was designed with future improvements in mind.
+@10  = ~This staff was crafted by Areen's parents through meticulous research as part of their legacy of bringing discipline to wild magic. Gifted to their son upon completing his early studies, the staff's intricate runes and carefully balanced enchantments help to guide and temper wild magic surges.
 
 STATISTICS:
 
@@ -43,8 +43,8 @@ Requires:
 
 Weight: 4~
 
-@11  = ~Acolyte's Chaos Vestments~
-@12  = ~These distinctive robes were first crafted in the years following the Time of Troubles, when practitioners of wild magic sought ways to better control their increasingly unpredictable art. The fabric is interwoven with metallic threads forming intricate patterns that help stabilize magical energies. While not as potent as the legendary Archmaster's Chaos Vestments crafted by the most accomplished wild mages, these robes became popular among early practitioners for their protective properties. Several sets were created in Waterdeep's magical academies as wild magic began to gain reluctant acceptance among more traditional spellcasters.
+@11  = ~Acolyte's Chaos Vestment~
+@12  = ~These distinctive robes were first crafted in the years following the Time of Troubles, when practitioners of wild magic sought ways to better control their increasingly unpredictable art. The fabric is interwoven with metallic threads forming intricate patterns that help stabilize magical energies. While not as potent as the legendary Archmaster's Chaos Vestments crafted by the most accomplished wild mages, these robes became popular among early practitioners for their protective properties. Several sets were created in Waterdeep's magical academies as wild magic began to gain acceptance among more traditional spellcasters.
 
 STATISTICS:
 
@@ -69,7 +69,9 @@ Saving Throw: None
 Improved Chaos Shield increases a Wild Mage's chance to gain a favorable result when a Wild Surge occurs. Every time a roll is made on the Wild Surge chart, an extra 25 is added to the dice roll. When Nahal's Reckless Dweomer is cast, the bonus from Improved Chaos Shield stacks with the Wild Mage's level bonus. It does not stack with Chaos Shield.~
 
 @15  = ~A Beginner's Guide to Controlled Chaos~
-@16  = ~This foundational text approaches wild magic as a serious field of study requiring disciplined practice and thorough theoretical understanding. The author emphasizes the importance of proper magical theory, careful preparation, and methodical approach to spell manipulation. Essential Principles for the Aspiring Wild Mage:
+@16  = ~This foundational text approaches wild magic as a serious field of study requiring disciplined practice and thorough theoretical understanding. The author emphasizes the importance of proper magical theory, careful preparation, and methodical approach to spell manipulation.
+
+Essential Principles for the Aspiring Wild Mage:
 
 Contrary to common belief, most wild surge manifestations are manageable with proper preparation. While dramatic effects do occur, experienced practitioners rarely face truly dangerous consequences.
 
@@ -120,9 +122,24 @@ Equipped abilities:
 
 Weight: 1~
 
+@27  = ~Archmaster's Chaos Vestment~
+@28  = ~This magnificent robe shimmers with an inner red light. Crafted in the years following the Time of Troubles, it represents the pinnacle of chaos-controlling attire, created by the most accomplished wild mage theorists of that era. The fabric appears to be in constant subtle motion, woven with platinum and mithral threads forming complex mathematical patterns that help channel and stabilize even the most unpredictable magical energies.
+
+Thayze Selemchant gifted these robes as a token of gratitude for his resurrection, having acquired them during his time among the Cowled Wizards of Amn. Such vestments are exceedingly rare, as few practitioners of wild magic ever attain the mastery required to safely craft them.
+
+STATISTICS:
+
+Equipped abilities:
+- Vocalize
+- Wild surge bonus +20
+- Free Action
+
+Weight: 3~
+
+
 @101 =  ~Revised Wild Surge Table~
 
-// These are the entries for Bodhi abduction. If you'd like to see how they are used, please, take a look at O#BranJ.d file, but only after you've read simpler dialogue files.
+// These are the entries for Bodhi abduction. 
 
 @100001 = ~The Final Battle with Bodhi.
 

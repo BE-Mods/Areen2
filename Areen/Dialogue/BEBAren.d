@@ -208,10 +208,10 @@ See("Jaheira")
 !StateCheck("BEAren",CD_STATE_NOTVALID)
 Global("BEArenJaheira1","GLOBAL",0)~ THEN BEBAREN BEArenJaheira1
 @80
-DO ~SetGlobal("BEArenJaheira2","GLOBAL",1)~
+DO ~SetGlobal("BEArenJaheira1","GLOBAL",1)~
 == BJAHEIR @81
 == BEBAREN @82
-== BJAHEIR @82
+== BJAHEIR @83
 == BEBAREN @84
 EXIT
 
@@ -348,7 +348,52 @@ DO ~SetGlobal("BEArenImoen2","GLOBAL",1)~
 == BEBAREN @129
 EXIT
 
-/* Gap between @130 and @150, in case we want to include more 2nd round banter in the future. */
+// Keldorn, if Keldorn denouonce his wife
+
+CHAIN
+IF ~InParty("BEAren")
+See("BEAren")
+!StateCheck("Keldorn",CD_STATE_NOTVALID)
+!StateCheck("BEAren",CD_STATE_NOTVALID)
+Global("MariaFight","LOCALS",2)
+Global("LadyMaria","GLOBAL",4)
+Global("BEArenKeldorn2","GLOBAL",0)~ THEN BKELDOR BEArenKeldorn2
+@130
+DO ~SetGlobal("BEArenKeldorn2","GLOBAL",1)~
+== BEBAREN @131
+== BKELDOR @132
+== BEBAREN @133
+== BKELDOR @134
+== BEBAREN @135
+== BKELDOR @136
+== BEBAREN @137
+== BKELDOR @138
+== BEBAREN @139
+EXIT
+
+// Anomen, if knight test passed
+
+CHAIN
+IF ~InParty("Anomen")
+See("Anomen")
+!StateCheck("Anomen",CD_STATE_NOTVALID)
+!StateCheck("BEAren",CD_STATE_NOTVALID)
+Global("AnomenIsKnight","GLOBAL",1)
+Global("BEArenAnomen1","GLOBAL",0)~ THEN BEBAREN BEArenAnomen1
+@140
+DO ~SetGlobal("BEArenAnomen1","GLOBAL",1)~
+== BANOMEN @141
+== BEBAREN @142
+== BANOMEN @143
+== BEBAREN @144
+== BANOMEN @145
+== BEBAREN @146
+== BANOMEN @147
+== BEBAREN @148
+== BANOMEN @149
+== BEBAREN @150
+EXIT
+
 
 // THIRD ROUND OF BANTER
 
@@ -357,9 +402,10 @@ EXIT
 CHAIN
 IF ~InParty("BEAren")
 See("BEAren")
-Gender("Edwin",FEMALE)
 !StateCheck("Edwin",CD_STATE_NOTVALID)
 !StateCheck("BEAren",CD_STATE_NOTVALID)
+Global("EdwinWoman","LOCALS",1)
+!Gender("Edwin",MALE)
 Global("BEArenEdwin3","GLOBAL",0)~ THEN BEDWIN BEArenEdwin3
 @151
 DO ~SetGlobal("BEArenEdwin3","GLOBAL",1)~
@@ -376,7 +422,8 @@ EXIT
 CHAIN
 IF ~InParty("BEAren")
 See("BEAren")
-Gender("Edwin",MALE)
+Dead("degard")
+!Global("TalkedDegardan","GLOBAL",4)
 !StateCheck("Edwin",CD_STATE_NOTVALID)
 !StateCheck("BEAren",CD_STATE_NOTVALID)
 Global("BEArenEdwin3","GLOBAL",1)~ THEN BEDWIN BEArenEdwin4

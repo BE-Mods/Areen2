@@ -56,6 +56,10 @@ COPY ~Areen/Items/BEROBE1.ITM~ ~override~
      SAY 0xC @11
      SAY 0x54 @12
 
+COPY ~Areen/Items/BEROBE2.ITM~ ~override~
+     SAY 0xC @27
+     SAY 0x54 @28
+
 COPY ~Areen/Spells/BEDEL#3.SPL~ ~override~
 
 COPY ~Areen/Spells/BEWI599.SPL~ ~override~
@@ -237,8 +241,6 @@ ACTION_IF GAME_IS ~eet~ BEGIN //only true if game is detected as Enhanced Editio
 END ELSE BEGIN //we use different Fate Spirit dialogue patching for any other platform than EET
   COMPILE ~Areen/Dialogue/FATESP.d~
 END
-
-
 
 BEGIN @101
 

@@ -56,7 +56,7 @@ The strictest wild caster particulah!~
 @42   = ~I would have hunted you for your theft of Areen alone. He is very important to me.~
 @43   = ~You place too much confidence in sentiment. The theft of Areen will not save you.~
 @44   = ~An interesting ploy, though I am sure his fate will still serve as an example, whether you wish him back or not.~
-@45   = ~Here he is, though I doubt your fumbling could have inspired the loyalty I have taken with a bite and a gaze.  He is mine now, and will do my bidding gladly.~
+@45   = ~Here he is, though I doubt your fumbling could have inspired the loyalty I have taken with a bite and a gaze. He is mine now, and will do my bidding gladly.~
 @46   = ~As you say, mistress. I am your servant in all things.~
 @47   = ~He is not even fully turned and yet he is mine to use against you. Doesn't it gall you? I thought it might.~
 
@@ -64,12 +64,12 @@ The strictest wild caster particulah!~
 @49   = ~Someone I care about has fallen to a vampire. Is there any way to save them?~
 @50   = ~A friend is afflicted by vampirism. An old book suggested that followers of Oghma might know something about that.~
 @51   = ~I'm looking for information about a tome that details the curing of vampirism.~
-@52   = ~*Looks at his hands* Am I...am I myself again? I can no longer feel the darkness calling upon me.~
+@52   = ~*Looks at his hands* Am I... am I myself again? I can no longer feel the darkness calling upon me.~
 @53   = ~You brought me back, <CHARNAME>, a debt I can scarcely hope to repay.~
 @54   = ~I wish that my will had been stronger. Her dark magic crushed me in an instant. I... you can't imagine how relieved I am to be with you again.~
 @55   = ~I couldn't bear to lose you too. Welcome back.~
 @56   = ~I have no room for you now, Areen. Go home.~
-@57   = ~If..if that is your wish.~
+@57   = ~If... if that is your wish.~
 @58   = ~I hope our paths cross again soon, <CHARNAME>.~
 
 // interjections to others
@@ -107,11 +107,11 @@ The strictest wild caster particulah!~
 @82   = ~Yes, it has been... quite some time.~
 @83   = ~By Mystra, you look so like your father. Except your eyes. You have...~
 @84   = ~My mother's eyes. I know.~
-@85   = ~So tragic an end... But let's not reminisce. What brings you here lad?~
+@85   = ~So tragic an end... but let's not reminisce. What brings you here lad?~
 @86   = ~We've come to conduct some investigations. This here is a good friend of mine, and our leader, <CHARNAME>.~
 @87   = ~Farewell, Jermien.~
 
-@94   = ~Psst, <CHARNAME>, I've heard of this Tolgerias - a cunning fellow, shady to the core. He has a reputation for saying one thing while meaning another. Do not leap blindly into his requests. To be honest, I also doubt he possesses any genuine information about your friend Imoen.~
+@94   = ~Psst, <CHARNAME>, I've heard of this Tolgerias—a cunning fellow, shady to the core. He has a reputation for saying one thing while meaning another. Do not leap blindly into his requests. To be honest, I also doubt he possesses any genuine information about your friend Imoen.~
 @95   = ~I warned you this one was cunning. Lord Selemchant will hear about this.~
 
 @99   = ~It would be prudent to have her accompany us if we intend to navigate the castle with any modicum of efficiency.~
@@ -133,9 +133,6 @@ The strictest wild caster particulah!~
 @119  = ~Here, take these.~
 
 @120  = ~<CHARNAME>, I recognize these symbols. The Twisted Rune. Oh, we are so... fucked.~
-
-
-
 
 
 // LOVE TALKS
@@ -215,7 +212,7 @@ The strictest wild caster particulah!~
 @193 = ~Is there any wine left?~
 @194 = ~I'm sorry about your parents, Areen.~
 @195 = ~Do you think about your parents often?~
-@196 = ~I am from a minor branch the Selemchant House. My great-grantfather was Thayze Selemchant, founder of the Council of Six and his first Meisharch. But my parents status was always somewhat precarious due to our association with wild magic - a discipline the Council of Six views with considerable suspicion. My parents devoted their lives to demonstrating that wild magic could be approached with academic rigor rather than reckless abandon. Their research was... brilliant, actually. Revolutionary. But ultimately, an uncontrolled surge took them both during an experiment when I was fourteen.~
+@196 = ~I am from a minor branch the Selemchant House. My great-grantfather was Thayze Selemchant, founder of the Council of Six and his first Meisharch. But my parents status was always somewhat precarious due to our association with wild magic—a discipline the Council of Six views with considerable suspicion. My parents devoted their lives to demonstrating that wild magic could be approached with academic rigor rather than reckless abandon. Their research was... brilliant, actually. Revolutionary. But ultimately, an uncontrolled surge took them both during an experiment when I was fourteen.~
 @197 = ~That is my past. In a way, we are something of a family now, wouldn't you say? Thrown together by circumstance, certainly, but bound by shared purpose. I'd... like to think that someday you might recall these moments fondly.~
 
 // talk 4: Areen's approach to wild magic - Sharing his passion and expertise, revealing what matters to him professionally.
@@ -226,7 +223,7 @@ The strictest wild caster particulah!~
 @201 = ~I need to focus on our journey right now, Areen.~
 @202 = ~I... yes, of course. I suppose my enthusiasm for the subject can be rather tedious to those not similarly inclined. Still, perhaps you might indulge me briefly? I seldom have the opportunity to discuss my discipline with someone of your... considerable talents.~
 @203 = ~Wild magic is often misunderstood, portrayed as a chaotic force wielded by eccentric fools who enjoy the unpredictable results. But that perception misses the essence entirely.~
-@204 = ~True mastery of wild magic demands more discipline, not less. One must comprehend the intricate patterns within chaos itself - uncertainty as a variable in one's calculations. My parents dedicated their lives to establishing this principle, and I continue their work.~
+@204 = ~True mastery of wild magic demands more discipline, not less. One must comprehend the intricate patterns within chaos itself—uncertainty as a variable in one's calculations. My parents dedicated their lives to establishing this principle, and I continue their work.~
 @205 = ~How exactly does one "calculate" chaos? Isn't that contradictory?~
 @206 = ~Your parents must have been remarkable mages. Tell me about them.~
 @207 = ~I've encountered other wild mages who seemed to treat it as a game of chance.~
@@ -292,7 +289,7 @@ The strictest wild caster particulah!~
 @261 = ~Perhaps. Though I've often wondered if the cure might prove worse than the disease. Revolutions have a nasty habit of consuming their own children, after all.~
 @262 = ~That's... an intriguing observation. We do tend to accomplish what bureaucracies cannot, don't we? Though I confess I've never thought of adventuring as a political act before. Perhaps there's something to that.~
 @263 = ~What I find most troubling isn't the corruption itself, but how it warps people's values. When coin becomes the measure of all things, people begin to see themselves and others as mere commodities.~
-@264 = ~I refuse to accept such reductionism. There are principles worth upholding regardless of profit. Intelligence without wisdom, wealth without compassion - these are not worthy aspirations. At least, not in my estimation.~
+@264 = ~I refuse to accept such reductionism. There are principles worth upholding regardless of profit. Intelligence without wisdom, wealth without compassion—these are not worthy aspirations. At least, not in my estimation.~
 @265 = ~I... apologize if I've been overly forthcoming. It's rare that I find someone with whom I can discuss such matters.~
 @266 = ~I'm glad you feel comfortable sharing your thoughts with me.~
 @267 = ~I've enjoyed hearing your perspective. It helps me understand you better.~
@@ -323,7 +320,7 @@ The strictest wild caster particulah!~
 @289 = ~I appreciate your perspective on this. It helps to talk through these things.~
 @290 = ~My parents instilled in me a rather rigid ethical framework regarding magical practice. Though they were pioneers in wild magic, they never sacrificed principles for results.~
 @291 = ~As for Irenicus... I suspect his journey began with legitimate scholarly pursuit. Perhaps even noble intentions. But somewhere along the way, the pursuit itself became corrupted.~
-@292 = ~I've seen it happen before - the gradual erosion of ethical boundaries, justified by incremental advancements. "Just one more experiment," they say. "Just one more boundary to cross." Before long, the person they once were exists only in memory.~
+@292 = ~I've seen it happen before—the gradual erosion of ethical boundaries, justified by incremental advancements. "Just one more experiment," they say. "Just one more boundary to cross." Before long, the person they once were exists only in memory.~
 @293 = ~We won't let that happen to us, no matter what we face.~
 @294 = ~That's a sobering thought.~
 @295 = ~If there's one thing this ordeal has impressed upon me, it's the value of... friends who ground one in reality. My parents had each other. Irenicus, it seems, had no one. Quite enough philosophical musings for one day. Shall we continue?~
@@ -449,7 +446,7 @@ The strictest wild caster particulah!~
 @404 = ~A perfectly reasonable ambition. Power can certainly provide protection, though I've observed it rarely brings contentment to those who pursue it as an end rather than a means.~
 @405 = ~A fair question. I... I suppose I've realized that while I know much about how you fight and lead, I know precious little about who you are. The person behind the decisions.~
 @406 = ~While I devote a great deal of curiosity to my studies. I often neglected to apply that same curiosity to people.~
-@407 = ~In the past, I... I saw others merely as variables - useful or not useful, nothing more.~
+@407 = ~In the past, I... I saw others merely as variables—useful or not useful, nothing more.~
 @408 = ~Seeing people as means to an end rather than... well, people.~
 @409 = ~And you're trying to change that? I'm impressed, Areen.~
 @410 = ~Interesting observation, but I really need to focus on our current situation.~
@@ -514,12 +511,12 @@ The strictest wild caster particulah!~
 @463 = ~Well, beyond the obvious investment in my academic pursuits and I've been considering property for that school we discussed.~
 @464 = ~Live comfortably? A perfectly reasonable ambition, though I suspect you'll find it more challenging than anticipated. Wealth has a curiously transitory nature - particularly for individuals of our... profession. Today's dragon's hoard becomes tomorrow's equipment repairs and spell component purchases.~
 @465 = ~What makes wealth truly valuable isn't its accumulation but its application.~
-@466 = ~True wealth comes from investment - in knowledge, in institutions, in legacies that outlast mere coin.~
+@466 = ~True wealth comes from investment—in knowledge, in institutions, in legacies that outlast mere coin.~
 @467 = ~Your Amnian perspective on wealth is rather refreshing.~
 @468 = ~So you're less interested in the gold itself than what it can accomplish?~
 @469 = ~I suppose we could all benefit from thinking beyond immediate gratification.~
 @470 = ~Most outsiders take one look at an Amnian and see nothing but avarice. But there's a difference between valuing wealth and being consumed by it.~
-@471 = ~Our fortune is merely a tool - like a wand or a sword. In the right hands, it can create something magnificent. In the wrong ones, it becomes destructive or simply wasted potential. I intend to make the most of it... as, I suspect, do you.~
+@471 = ~Our fortune is merely a tool, much like a wand or a sword. In the right hands, it can create something magnificent. In the wrong ones, it becomes destructive or simply wasted potential. I intend to make the most of it... as, I suspect, do you.~
 
 // talk 14: The protagonist's Bhaalspawn heritage - A deeply personal topic that shows maximum trust from the protagonist's side.
 
@@ -540,7 +537,7 @@ The strictest wild caster particulah!~
 @486 = ~Your personality is indeed compelling, but let's not diminish the gravity of your situation with deflection. Though I do appreciate your ability to maintain levity in the face of such... cosmic entanglements.~
 @487 = ~I'm hardly qualified to advise on matters of divine heritage. However, I have observed that those who define themselves primarily by their ancestry often lead rather predictable lives.~
 @488 = ~You are more than Bhaal's progeny. You are the sum of your decisions, not merely the blood in your veins. That seems a worthwhile perspective to maintain, regardless of what powers or prophecies may present themselves.~
-@489 = ~You are more than Bhaal's progeny. You are the sum of your decisions, not merely the blood in your veins. And I... find myself increasingly grateful that your decisions have included tolerating my company. Your heritage is but one facet of who you are - an extraordinary facet, certainly - but not the whole.~
+@489 = ~You are more than Bhaal's progeny. You are the sum of your decisions, not merely the blood in your veins. And I... find myself increasingly grateful that your decisions have included tolerating my company. Your heritage is but one facet of who you are—an extraordinary facet, certainly—but not the whole.~
 @490 = ~I... appreciate your trust in discussing this matter. Now, perhaps we should continue onward? I suspect dwelling overlong on divine matters invites attention from planes best left undisturbed.~
 
 // talk 15: "I will help you fight everything and how happy I am you allow me to travel with you" - A declaration of loyalty and friendship that serves as a culmination of the friendship arc.
@@ -617,7 +614,7 @@ The strictest wild caster particulah!~
 @572 = ~Tell me more about how relationships work in Amn.~
 @573 = ~I'd like us to be close because we choose to be. Is that so different in Amn?~
 @574 = ~This conversation is becoming uncomfortable. Let's focus on our quest.~
-@575 = ~In Amn, everything has its price - even affection. Marriages are business mergers, friendships are trade agreements in disguise. Everything is weighed against its potential return on investment.~
+@575 = ~In Amn, everything has its price: even affection. Marriages are business mergers, friendships are trade agreements in disguise. Everything is weighed against its potential return on investment.~
 @576 = ~My parents were... unusual in that regard. Their marriage was based on love rather than status. It caused quite the scandal in certain circles.~
 @577 = ~They sound wonderful. You must miss them terribly.~
 @578 = ~Do you aspire to follow their example?~

@@ -3,12 +3,12 @@
 @2    = ~Indeed. Our acquaintance was brief then. What surprised me was seeing him months later with you. Quayle as a mentor seemed improbable-the man could barely finish a thought without praising himself.~
 @3    = ~That sounds like him! He often said I reminded him of something he'd lost. Did he ever mention that to you?~
 @4    = ~I'm afraid not. Though I must say, his work with you has altered my perception of him. It seems that mentorship was his calling, though I suspect even he didn't realize it.~
-@5    = ~That's so kind. Quayle insisted I had talent, but I just had a good teacher. He said teaching me helped focus his thoughts-that I gave his scattered brilliance a constellation.~
+@5    = ~That's so kind. Quayle insisted I had talent, but I just had a good teacher. He said teaching me helped focus his thoughts—that I gave his scattered brilliance a constellation.~
 @6    = ~Well, it appears Quayle was wiser than I initially credited. I am glad you joined us.~
 
 @7    = ~Anomen, I heard your father is selling his last properties in the city... may I inquire about the price of your family's estate in the government district?~
-@8    = ~(Anomen face reddens) How DARE you! My family's affairs are none of your concern, Selemchant!~
-@9    = ~I meant no offense. Merely making conversation about real estate-a neutral topic among civilized men.~
+@8    = ~*his face reddens* How DARE you! My family's affairs are none of your concern, Selemchant!~
+@9    = ~I meant no offense. Merely making conversation about real estate—a neutral topic among civilized men.~
 @10   = ~I... apologize for my outburst. When one bears the weight of restoring family honor, such topics become rather sensitive.~
 @11   = ~We all operate under the shadows of expectation and disappointment, don't we?~
 
@@ -20,11 +20,11 @@
 @17   = ~Indeed you have, which is more than many would do. I suppose we all have our seasons of regrettable decisions.~
 @18   = ~On that we agree.~
 
-@19   = ~I've been meaning to ask, Edwin, are you operating independently in Amn, or might we expect more of your red-robed colleagues to make an appearance? The Cowled Wizards seem remarkably unconcerned by your presence...well...besides the late Rayic Gethras.~
+@19   = ~I've been meaning to ask, Edwin, are you operating independently in Amn, or might we expect more of your red-robed colleagues to make an appearance? The Cowled Wizards seem remarkably unconcerned by your presence... well... besides the late Rayic Gethras.~
 @20   = ~Do not insult my intelligence with such transparent questioning, Selemchant. As if I would divulge Thayan operations to someone of your... limited arcane standing.~
 @21   = ~Come now, there's no need for hostility. Professional curiosity, that's all. I merely wondered if your presence indicates a shift in Thayan foreign policy regarding Amn.~
 @22   = ~The politics of Thay are far beyond your comprehension, as are most matters of true consequence. My business here is my own. (For now, at least.)~
-@23   = ~Your defensiveness suggests either you're indeed acting alone-possibly even against your superiors' wishes-or there's something significant enough in motion to warrant such secrecy. Either way, rather telling.~
+@23   = ~Your defensiveness suggests either you're indeed acting alone—possibly even against your superiors' wishes—or there's something significant enough in motion to warrant such secrecy. Either way, rather telling.~
 @24   = ~Your attempts at psychological manipulation are as clumsy as your spellcasting. When Thay moves, worlds tremble. That I am here should be enough to concern you, not whether I am a vanguard or an outlier.~
 @25   = ~I'll take that as an answer in itself. Do remember, Edwin, that Amn may tolerate one Red Wizard as a curiosity, but would respond rather differently to one too many.~
 
@@ -48,10 +48,10 @@
 @41   = ~I assure you I've never witnessed masked moles performing theatre. But I am sure the Cowled Wizards wouldn't appreciate either.~
 @42   = ~My uncle Scratchy had quite the run-in with those humorless robes. See, he'd invented this marvelous turnip-powered illumination device – a precursor to my own Flasher Master Bruiser, if you will. Anyway, he was demonstrating it in the Promenade when it malfunctioned and turned one of those wizards completely purple from head to toe! Matched his cowl perfectly, I must say. The poor fellow kept sneezing sparkles for a fortnight. Now, normally this would've meant a one-way ticket to Spellhold, but Uncle Scratchy had the brilliant idea to convince them it was a new fashion trend. Within a week, half the Cowled Wizards were dyeing themselves purple! Started calling themselves the 'Aubergine Authority.' Fashion is so fickle, don't you think?~
 @43   = ~I wonder about the origin of these fantastical narratives, Jan. Was this... peculiar storytelling tendency inherited from your parents?~
-@44   = ~Tricky business, parents. My own father was adamant I follow in the family turnip business - "Jan," he'd say, "turnips are in our blood!" Which was technically true after that unfortunate accident with the Turnip Juice Extractor. Turned his veins slightly green for months! Your parents sound like proper magical folk though. Reminds me of my great-aunt Gertrude who tried to magically enhance her turnips to sing opera. Didn't work out, but she did get the most melodious compost heap in all of Waterdeep! Say, did your parents ever experiment with agricultural applications for wild magic? I've always thought a self-seasoning turnip would revolutionize the culinary world!~
+@44   = ~Tricky business, parents. My own father was adamant I follow in the family turnip business. "Jan," he'd say, "turnips are in our blood!" Which was technically true after that unfortunate accident with the Turnip Juice Extractor. Turned his veins slightly green for months! Your parents sound like proper magical folk though. Reminds me of my great-aunt Gertrude who tried to magically enhance her turnips to sing opera. Didn't work out, but she did get the most melodious compost heap in all of Waterdeep! Say, did your parents ever experiment with agricultural applications for wild magic? I've always thought a self-seasoning turnip would revolutionize the culinary world!~
 @45   = ~My parents were serious magical theorists, Jan. They explored the fundamental nature of wild magic and its relationship to the Weave. Their work on chaotic energy stabilization ended when... when the experiment failed.~
 @46   = ~Oh, I'm terribly sorry to hear about your parents' experiment. Failure can be quite the teacher though! Why, when my Turnip Trebuchet failed spectacularly during the annual Jansen family picnic, sending Great-Uncle Hermie soaring over three counties, we learned valuable lessons about trajectory, wind resistance, and the surprising aerodynamic properties of elderly gnomes! He landed in a hay wagon in Beregost, and met his fifth wife that way!~
-@47   = ~But losing family to magical mishaps - that's rough. No wonder you're so dedicated to getting it right.~
+@47   = ~But losing family to magical mishaps—that's rough. No wonder you're so dedicated to getting it right.~
 @48   = ~I... thank you, Jan.~
 
 @49   = ~This sparrow has a proposition for the methodical heron! Teach me that spell of yours, the Nahal's Reckless Dweomer one. What better bridge between our philosophies than for a Doomguard to wield the very magic that courts the entropy we so adore? Think of the poetic symmetry!~
@@ -73,7 +73,7 @@
 @63   = ~Korgan, I would appreciate if you do not splash all this blood on my tunic when you swing your weapon. These stains are dreadfully difficult to remove.~
 @64   = ~Bah! Ye prancin' Amnian popinjay! Maybe if ye weren't standin' about like some useless ornament, ye wouldn't get decorated with me handiwork! A bit o' blood might put some steel in that jellied spine o' yours!~
 @65   = ~I... well, yes, quite. Perhaps I should... um... maintain a more prudent distance.~
-@66   = ~In me day, mages knew their place-behind the axe-wielders, where they could toss their sparkly nonsense without gettin' in the way!~
+@66   = ~In me day, mages knew their place, behind the axe-wielders, where they could toss their sparkly nonsense without gettin' in the way!~
 @67   = ~You're right, of course. I shall endeavor to position myself more advantageously in future encounters.~
 @68   = ~Look at ye, foldin' faster than a cheap tent in a storm! Stand yer ground next time, wizard, or I'll use yer fancy robes to clean me steel!~
 
@@ -88,7 +88,7 @@
 @76   = ~Little Areen speaks of my witch with the right words, but Minsc's heart still feels like it was stomped by a frost giant! Dynaheir was wise and powerful, like a shining star in the night to guide Minsc and Boo!~
 @77   = ~I wish I could discuss certain spells with her. Now... well, such academic matters seem rather trivial in comparison.~
 @78   = ~Boo says you wanted to learn from Dynaheir? She would have liked that. She always said knowledge should be shared, except the knowledge of where Minsc keeps his emergency hamster treats! That is a secret for Minsc and Boo alone!~
-@79   = ~Yes, well... quite. If there's anything I can do-though I suspect smashing evil is your preferred method of processing grief. Not an entirely unreasonable approach, all things considered.~
+@79   = ~Yes, well... quite. If there's anything I can do—though I suspect smashing evil is your preferred method of processing grief. Not an entirely unreasonable approach, all things considered.~
 
 @80   = ~I hope I'm not being indiscreet, my dear Jaheira, but one hears things. You are a Harper, correct?~
 @81   = ~Don't be so polite about it. You know it well enough.~
@@ -108,7 +108,7 @@
 @93   = ~Discipline? There's no disciplining chaos. I know what I am talking about. My entire family was destroyed by the pursuit of magical power. Each generation consumed by it until nothing remained but madness and suffering.~
 @94   = ~I'm well aware of your family's history. However, you're conflating the pursuit of necromancy with the study of wild magic. They are fundamentally different disciplines. One seeks to control death; mine seeks to understand the chaotic foundations of the Weave itself.~
 @95   = ~Different paths to the same destination. Magic corrupts, regardless of its form. I've seen how it twists people. How it promises control while stealing it away. Your "wild surges" are merely the most honest expression of magic's true nature.~
-@96   = ~That's precisely the point. Wild magic doesn't pretend to offer absolute control-it acknowledges the inherent chaos in all magic. By studying this chaos systematically, we develop a more complete understanding of the Weave than those who delude themselves with illusions of perfect control.~
+@96   = ~That's precisely the point. Wild magic doesn't pretend to offer absolute control—it acknowledges the inherent chaos in all magic. By studying this chaos systematically, we develop a more complete understanding of the Weave than those who delude themselves with illusions of perfect control.~
 @97   = ~And what happens when your "systematic study" produces a surge that turns you inside out? Or worse, endangers those around you? My ancestor Lavok began as a curious scholar too, before ambition consumed him.~
 @98   = ~The difference is that I harbor no delusions of immortality, Valygar. I seek knowledge, not power. My family may have embraced an unorthodox art, but we've always maintained strict ethical boundaries. Perhaps that's where yours went astray.~
 
@@ -132,7 +132,7 @@
 @114  = ~(Another interruption.) What is it? Make it quick, I have scrolls to study that your primitive mind couldn't begin to comprehend.~
 @115  = ~Charming as ever. I require advice of a specific nature. During wild surges, I've occasionally summoned beings that were... decidedly not on my agenda. Demons, specifically. Rather inconvenient. I was hoping you might have insight on how to avoid such occurrences.~
 @116  = ~Avoiding demons? Why would one wish to do that? They make excellent servants when properly bound. But I suppose your feeble wild magic lacks the precision of proper Thayan conjuration. The key is intent and dominance. Your will must be absolute. Demons sense hesitation like wolves sense fear.~
-@117  = ~Intent? That's your sage advice? I'm not summoning them deliberately, Edwin. What I need are containment protocols - preventative measures for when theory inevitably gives way to chaos. Surely even Thayan conjurers have contingencies when things go... sideways?~
+@117  = ~Intent? That's your sage advice? I'm not summoning them deliberately, Edwin. What I need are containment protocols, preventative measures for when theory inevitably gives way to chaos. Surely even Thayan conjurers have contingencies when things go... sideways?~
 @118  = ~Bah! Contingencies are for the weak! (Though my own are quite elegant, of course.) Fine. If you insist on cowering from power rather than wielding it, draw a binding circle beforehand and protect yourself against their evil. Elementary precautions that even a child in Thay would know.~
 @119  = ~The binding circle is sensible. I'll incorporate that into my rutine. I appreciate the practical advice. We will all benefit from it...sooner than later.~
 @120  = ~Right. Don't bother me again.~
@@ -147,38 +147,35 @@
 @128  = ~And you think these pretty dimples will help you, will they? Arrgh! Next time, I'll tell <CHARNAME>. I've no doubt <PRO_HISHER> towels suffered from your attacks, too. We'll plan revenge together.~
 @129  = ~You know, for someone so buttoned-up, you've got a way with words sometimes, Areen. I can't totally get back what was taken, but maybe... maybe I can build something new around what's left.~
 
-/*
-@130  = ~~
-@131  = ~~
-@132  = ~~
-@133  = ~~
-@134  = ~~
-@135  = ~~
-@136  = ~~
-@137  = ~~
-@138  = ~~
-@139  = ~~
+@130  = ~I... wanted to speak with you, Sir Keldorn. About what happened with Lady Maria and Sir William. I know it's a personal matter, but I felt compelled to offer my thoughts, if you would hear them.~
+@131  = ~*sighs deeply* Speak your mind, Areen. There are few secrets left in my life now.~
+@132  = ~You did what was required by law and by your oath. I cannot imagine the weight of such a decision, but there is honor in upholding one's principles even when they cut against one's heart. Many men would have abandoned their duty when faced with such personal cost.~
+@133  = ~Honor? I sometimes wonder. My daughters look at me differently now. I see it in their eyes—they understand the letter of the law, but not why their father would choose it over mercy. Over family.~
+@134  = ~The path of law is rarely comfortable, Sir Keldorn. My parents taught me that true discipline means adherence to principles even when emotion urges otherwise. But... *hesitates* may I ask if you ever considered another course? Not for judgment, but to understand your reasoning.~
+@135  = ~*looks away* Every moment since I learned of it. I could have confronted William privately. I could have sought reconciliation with Maria. I could have... *voice breaks slightly* But a knight of the Order cannot selectively apply justice. What example would I set if I ignored the very laws I've sworn to uphold simply because they touched my household?~
+@136  = ~There's wisdom in consistency. A system of law cannot function if exceptions are made for personal preference. Yet I find myself wondering—does upholding the social contract always serve the greater good? *pauses* Forgive me. That's an academic question, and this is hardly academic for you.~
+@137  = ~No, your question has merit. I've asked it myself many nights now. The Order teaches that law serves justice, and justice serves good. But when they seem to diverge... *shakes head* I made my choice. I must believe it was the right one, or everything I've stood for becomes meaningless.~
+@138  = ~For what it's worth, I believe your choice reflects integrity rather than coldness. The difficult decisions—the ones that cost us personally—those are the true measure of our convictions. I've seen men abandon principles at the first sign of personal inconvenience. You did not.~
+@139  = ~*with a sad smile* Thank you, Areen. Strange—I've served the Order for decades, yet I find comfort in the words of a young wild mage. Perhaps there is wisdom in unexpected places. I only hope that someday my daughters will understand that I could not be two men—the father who shields them from all harm, and the paladin who stands for something greater than himself.~
 
-@140  = ~~
-@141  = ~~
-@142  = ~~
-@143  = ~~
-@144  = ~~
-@145  = ~~
-@146  = ~~
-@147  = ~~
-@148  = ~~
-@149  = ~~
-@150  = ~~
-
-*/
+@140  = ~I've never congratulated you properly, Sir Anomen. The Order of the Radiant Heart is fortunate to have you in its ranks.~
+@141  = ~Thank you, Areen. Though I have long awaited this honor, now that it is mine, I find myself more humbled than prideful.~
+@142  = ~Fascinating. I would have expected more... exuberance, given your previous enthusiasm about becoming a knight.~
+@143  = ~The trial changes a man, Areen. When faced with the choice between vengeance and justice, one must look deeply into one's own soul.~
+@144  = ~A distinction many fail to recognize. Your restraint was... unexpected, but commendable.~
+@145  = ~You sound surprised. Did you think me incapable of such discipline?~
+@146  = ~Let us say your temperament has not always suggested such measured consideration. It represents a significant transformation.~
+@147  = ~The glory I sought as a squire seems hollow compared to the responsibility I now bear. Helm's guidance has been my strength through this difficult time.~
+@148  = ~The path of discipline is rarely appreciated by those accustomed to more... impulsive approaches. Has your family witnessed this change in you?~
+@149  = ~My family situation remains... complicated. But I no longer measure my worth through others' eyes. The Order has become my true home now.~
+@150  = ~Then you have achieved two victories, Sir Anomen. One of station, and one of character. Few can claim as much.~
 
 @151  = ~You there, Selemchant! I require your assistance immediately. (As if this day could not become more humiliating.) You are versed in the arcane arts of gender reversal magic, are you not? I demand you help me with this... predicament.~
-@152  = ~I beg your pardon, Edwin..sorry...Edwina? I'm afraid wild magic theory doesn't specifically address gender transformations. This appears to be the result of a powerful artifact enchantment, not some trivial cantrip gone awry.~
+@152  = ~I beg your pardon, Edwin... sorry... Edwina? I'm afraid wild magic theory doesn't specifically address gender transformations. This appears to be the result of a powerful artifact enchantment, not some trivial cantrip gone awry.~
 @153  = ~Do not lecture me on the origin of my condition, you simpleton! (Why am I surrounded by such incompetence?) The Nether Scroll's magic is beyond your meager understanding, but surely your chaotic spellcasting must have some utility in reversing unwanted transformations!~
 @154  = ~I must caution you against making assumptions about wild magic, Edwin. I could attempt to help, but without proper research and preparation, the results would be unpredictable at best.~
 @155  = ~Unpredictable? (As if I hadn't noticed.) Look at me, you fool! I have female... attachments! My robes no longer fit properly! Every moment in this form is an insult. I demand action, not excuses!~
-@156  = ~I understand your frustration, but attempting to reverse this with a wild surge would be profoundly unwise. The interaction between Netherese magic and wild magic could compound your problem-you might end up with additional transformations or worse. I'd recommend consulting a specialist in transmutation magic or finding the original scroll's countermeasure.~
+@156  = ~I understand your frustration, but attempting to reverse this with a wild surge would be profoundly unwise. The interaction between Netherese magic and wild magic could compound your problem—you might end up with additional transformations or worse. I'd recommend consulting a specialist in transmutation magic or finding the original scroll's countermeasure.~
 @157  = ~Bah! Useless, the lot of you! By the crimson flames of Kossuth, if I must remain in this form one more day, I shall rain such destruction upon this realm that even the Red Wizards will speak of it in hushed tones!~
 
 @158  = ~Thanks for nothing, Selemchant. In the end, your help was not necessary. (As if I would rely on such incompetence.) I have returned to my magnificent male form without your chaotic fumbling.~
