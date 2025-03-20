@@ -1,0 +1,29 @@
+// Spawn Selemchant Ambush
+
+IF
+Global("BEAmbushSpawn","GLOBAL",0)
+Global("BESelemchantAmbush","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("BEAmbushSpawn","GLOBAL",1)
+CreateCreature("BESELCAP",[207.673],13)
+CreateCreature("BESELSOL",[261.735],13)
+CreateCreature("BESELSOL",[57.686],13)
+CreateCreature("BESELSOL",[9.779],13)
+CreateCreature("BESELSOL",[198.804],13)
+CreateCreature("BESELMAG",[123.529],13)
+CreateCreature("BESELMAG",[405.612],13)
+END
+
+
+IF
+Global("BESelemchantAmbush","GLOBAL",3)
+THEN
+RESPONSE #100
+ActionOverride("BESELSOL",Enemy())
+ActionOverride("BESELSOL",Enemy())
+ActionOverride("BESELSOL",Enemy())
+ActionOverride("BESELSOL",Enemy())
+ActionOverride("BESELMAG",Enemy())
+ActionOverride("BESELMAG",Enemy())
+END

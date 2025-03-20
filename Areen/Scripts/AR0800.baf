@@ -1,0 +1,27 @@
+// Spawn Selemchant Guards
+
+IF
+Global("BEGuardsSpawn","GLOBAL",0)
+Global("BEArenQuest","GLOBAL",7)
+PartyHasItem("BEMEDAL")
+THEN
+RESPONSE #100
+SetGlobal("BEGuardsSpawn","GLOBAL",1)
+CreateCreature("BESELCAP",[2269.1227],13)
+CreateCreature("BESELSOL",[2407.1351],13)
+CreateCreature("BESELSOL",[2162.1164],13)
+CreateCreature("BESELSOL",[2089.1141],13)
+CreateCreature("BESELMAG",[2036.1052],13)
+END
+
+IF
+Global("BEGuardsSpawn","GLOBAL",1)
+Global("BEArenQuest","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("BEGuardsSpawn","GLOBAL",2)
+ActionOverride("BESELSOL",EscapeArea())
+ActionOverride("BESELSOL",EscapeArea())
+ActionOverride("BESELSOL",EscapeArea())
+ActionOverride("BESELSOL",EscapeArea())
+END

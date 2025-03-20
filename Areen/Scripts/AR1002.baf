@@ -1,0 +1,30 @@
+// Quest reward
+
+// Lord Selemchant gets the medallion
+
+IF
+Global("BEArenQuest","GLOBAL",9)
+PartyHasItem("BEMEDAL")
+THEN
+RESPONSE #100
+SetGlobal("BEArenQuest","GLOBAL",20)
+TakePartyItem("BEMEDAL")
+DestroyItem("BEMEDAL")
+GivePartyGold(5000)
+AddXPObject(Player1,10000)
+AddXPObject(Player2,10000)
+AddXPObject(Player3,10000)
+AddXPObject(Player4,10000)
+AddXPObject(Player5,10000)
+AddXPObject(Player6,10000)
+ReputationInc(2)
+END
+
+// Lord Selemchant angry
+IF
+Global("BESelemchantAmbush","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("BESelemchantAmbush","GLOBAL",2)
+ReputationInc(-2)
+END

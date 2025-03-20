@@ -1,0 +1,18 @@
+// Quest reward
+
+// Thayze gets the medallion and revives
+
+IF
+Global("BEArenQuest","GLOBAL",9)
+PartyHasItem("BEMEDAL")
+THEN
+RESPONSE #100
+SetGlobal("BEArenQuest","GLOBAL",10)
+TakePartyItem("BEMEDAL")
+DestroyItem("BEMEDAL")
+CreateVisualEffect("DEATHWRD",[360.302])
+Wait(1)
+DestroySelf()
+Wait(1)
+CreateCreature("BESELEM2",[360.302],13)
+END

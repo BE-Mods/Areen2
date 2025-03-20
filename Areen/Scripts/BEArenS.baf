@@ -317,8 +317,8 @@ Global("BEArenShutUp","GLOBAL",0)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
-PlaySong(0)
-PlaySound("O#BRAN")
+//PlaySong(0)
+//PlaySound("O#BRAN")
 StartDialogueNoSet(Player1)
 END
 
@@ -331,4 +331,100 @@ See(Player1)
 THEN
 RESPONSE #100
 StartDialogueNoSet(Player1)
+END
+
+// Areen quest-related scripts
+
+// Party enters graveyard and areen asks to go se tomb
+IF
+InParty(Myself)
+Global("BEArenQuest","GLOBAL",0)
+AreaCheck("AR0800")
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("BEArenQuest","GLOBAL",1)
+StartDialogueNoSet(Player1)
+END
+
+// Spawn Thayze in tomb
+
+IF
+InParty(Myself)
+AreaCheck("AR0807")
+Global("BEArenQuest","GLOBAL",2)
+Global("BEThayzeSpawn","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("BEThayzeSpawn","GLOBAL",1)
+CreateCreature("BESELEM",[360.302],13)
+END
+
+// Spawn Lord Selemchant in Councilg bulding
+
+IF
+InParty(Myself)
+AreaCheck("AR1002")
+Global("BEArenQuest","GLOBAL",3)
+Global("BELordSelemchantSpawn","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("BELordSelemchantSpawn","GLOBAL",1)
+CreateCreature("BELORDSE",[1136.941],13)
+END
+
+// Spawn Acolyte
+
+IF
+InParty(Myself)
+AreaCheck("AR1010")
+Global("BEArenQuest","GLOBAL",4)
+Global("BEBrysneSpawn","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("BEBrysneSpawn","GLOBAL",1)
+CreateCreature("BEBRYSNE",[1045.965],13)
+END
+
+// amulet-medallion exchange
+IF
+InParty(Myself)
+Global("BEArenQuest","GLOBAL",6)
+PartyHasItem("AMUL14")
+THEN
+RESPONSE #100
+SetGlobal("BEArenQuest","GLOBAL",7)
+TakePartyItem("AMUL14")
+DestroyItem("AMUL14")
+CreateItem("BEMEDAL",0,0,0)
+END
+
+// Thayze grants xp
+IF
+InParty(Myself)
+Global("BEArenQuest","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("BEArenQuest","GLOBAL",10)
+AddXPObject(Player1,10000)
+AddXPObject(Player2,10000)
+AddXPObject(Player3,10000)
+AddXPObject(Player4,10000)
+AddXPObject(Player5,10000)
+AddXPObject(Player6,10000)
+PlaySound("EFF_M09")
+CreateVisualEffect("SPSUNRAY",[360.302])
+Wait(1)
+CreateCreature("BESELEM2",[360.302],13)
+END
+
+IF
+InParty(Myself)
+Global("BEArenQuest","GLOBAL",11)
+THEN
+RESPONSE #100
+SetGlobal("BEArenQuest","GLOBAL",12)
+CreateItem("BEMEDAL2",0,0,0)
 END

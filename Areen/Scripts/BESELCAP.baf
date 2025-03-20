@@ -1,0 +1,14 @@
+IF
+See([PC])
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+Help()
+AttackReevaluate(NearestEnemyOf(Myself),30)
+END

@@ -87,7 +87,7 @@ CHAIN BEARENJ pl2.1
 END
 COPY_TRANS PLAYER1 33
 
-// Romanced Branwen at the Tree of Life:
+// Romanced at the Tree of Life:
 
 EXTEND_BOTTOM PLAYER1 33
 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID) Global("BEArenTreeOfLife","GLOBAL",0) Global("BEArenRomanceActive","GLOBAL",2)~
@@ -414,7 +414,6 @@ I_C_T PPIRENI1 3 BEArenPPIRENI13
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @114
 END
 
-
 // The Underdark
 
 I_C_T BREG01 2 BEArenBREG012
@@ -450,7 +449,12 @@ I_C_T HLSHANG 1 BEArenHLSHANG1
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @120
 END
 
-// Neera's questline
+/* 121 to 128 available for extra interjections*/
+
+
+
+ 
+
 
 
 
@@ -1675,3 +1679,50 @@ IF ~~ DO ~IncrementGlobal("BEArenLovetalk","GLOBAL",1)~ EXIT
 END
 
 END // END for APPEND
+
+
+// Areen quest-related
+
+APPEND BEARENJ
+// Graveyard District Quest Trigger
+//IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ BEArenGraveyardQuest
+IF ~Global("BEArenQuest","GLOBAL",1)~ BEArenGraveyardQuest
+SAY @1000
+++ @1001 /* Of course, Areen. Where is this mausoleum? */ + BEArenGraveyardQuest1
+++ @1002 /* Selemchant? Like the Athkatlan merchant family? */ + BEArenGraveyardQuest2
+++ @1003 /* We don't have time for personal errands right now. */ + BEArenGraveyardQuest3
+END
+
+IF ~~ BEArenGraveyardQuest1
+SAY @1004 /* It's in the eastern section. A modest structure by Athkatlan standards, though that's hardly saying much. */
+= @1005 /* Thank you. This means more to me than you might guess. */
+IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",2)~ EXIT
+END
+
+IF ~~ BEArenGraveyardQuest2
+SAY @1006 /* Yes, though I'm from a lesser branch. My uncle currently holds the family lordship, but I've had little contact with that side of the family since pursuing my, ah, magical studies. */
+= @1007 /* Wild magic isn't considered a respectable pursuit for a scion of Amn, even a minor one. */
+++ @1001 + BEArenGraveyardQuest1
+++ @1003 + BEArenGraveyardQuest3
+END
+
+IF ~~ BEArenGraveyardQuest3
+SAY @1008 /* I understand. We can return when the situation is less pressing. */
+  IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",2)~ EXIT
+END
+
+END // END of the quest APPEND
+
+
+// Quest related lines
+I_C_T BESELEM 0 BEAreenThayze01
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @2001
+END
+
+I_C_T BELORDSE 0 BEAreenLordSelemchant01
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @3001
+END
+
+I_C_T BELORDSE 1 BEAreenLordSelemchant11
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @3003
+END

@@ -30,8 +30,8 @@ His parents' recovered journals now rest in their shared library, alongside the 
 STATISTICS:
 
 Equipped Abilities:
-- Bonus to saving throws vs. polymorph +2
-- Wild surge bonus +5
+– Bonus to saving throws vs. polymorph +2
+– Wild surge bonus +5
 
 THAC0: +1
 Damage: 1d6+1 (crushing)
@@ -49,8 +49,8 @@ Weight: 4~
 STATISTICS:
 
 Equipped abilities:
-- Vocalize
-- Wild surge bonus +10
+– Vocalize
+– Wild surge bonus +10
 
 Weight: 3~
 
@@ -115,9 +115,9 @@ The text includes detailed analysis of experimental procedures and theoretical f
 STATISTICS:
 
 Equipped abilities:
-- Improves casting speed by 1
-- Wild surge bonus +5
-- Can memorize two 1st-level wizard spells
+– Improves casting speed by 1
+– Wild surge bonus +5
+– Can memorize two 1st-level wizard spells
 
 
 Weight: 1~
@@ -130,16 +130,44 @@ Thayze Selemchant gifted these robes as a token of gratitude for his resurrectio
 STATISTICS:
 
 Equipped abilities:
-- Vocalize
-- Wild surge bonus +20
-- Free Action
+– Vocalize
+– Wild surge bonus +20
+– Free Action
 
 Weight: 3~
 
-
 @101 =  ~Revised Wild Surge Table~
 
-// These are the entries for Bodhi abduction. 
+@201 =  ~Areen's Quest: A Ghost From The Past~
+
+// QUEST RELATED
+
+@30  = ~Selemchant Medallion~
+@31  = ~This ornate medallion bears the crest of House Selemchant, one of Athkatla's influencial merchant families. Though finely crafted from precious metals and gemstones, it appears to have no magical properties in its current state.~
+
+@32  = ~Selemchant Contingency Medallion~
+@33  = ~This medallion once belonged to Thayze Selemchant, a powerful mage and head of a prestigious Amnian merchant family. When worn, it enhances the wearer's spellcasting speed and provides contingecy protections.
+
+The medallion serves as a reminder of the lengths to which Thayze Selemchant went to try to ensure his return from death. A plan that nearly failed due to familial betrayal.
+
+STATISTICS:
+
+Equipped abilities:
+– Improves casting speed by 1
+
+Charge abilities:
+– Contingency once per day
+
+Weight: 1~
+
+@34  = ~Thayze~
+@35  = ~Lord Selemchant~
+@36  = ~Brysne~
+@37  = ~Selemchant Captain~
+@38  = ~Selemchant Soldier~
+@39  = ~Selemchant Mage~
+
+// These are the entries for Bodhi abduction.
 
 @100001 = ~The Final Battle with Bodhi.
 
