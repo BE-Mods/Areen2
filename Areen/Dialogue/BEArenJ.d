@@ -1731,10 +1731,6 @@ I_C_T BELORDSE 5 BEAreenLordSelemchant51
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @3004
 END
 
-I_C_T BELORDSE 6 BEAreenLordSelemchant61
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @3004
-END
-
 I_C_T BESELCAP 0 BEAreenSelemchantCaptain01
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @5011
 END

@@ -1,17 +1,23 @@
-@1    = ~Bloody hell, those bastards have reduced my residence to rubble! What are you doing here, <CHARNAME>? This chaos is hardly unexpected, now that I see you here.~
-@2    = ~Look who's back! Isn't it a proper reunion, Boo?~
-@3    = ~That was not our doing, Areen.~
-@4    = ~I shall not grovel before Lord Selemchant again. Could I perhaps travel with you until I am back on my feet? And less homeless?~
+@1    = ~Bloody hell, you bastards have reduced my residence to rubble!~
+@2    = ~Are you talking to Boo?~
+@3    = ~That was not our doing.~
+
+@4    = ~You may not recall me, but I certainly know you, 'Hero of Baldur's Gate.' Areen Selemchant, wild mage, at your... ah... service. Since I've rather inconveniently lost my home now, thank you very much, perhaps we could reach a traveling partnership? Just until I can establish myself again.~
+
 @5    = ~Join me, Areen, I could use your help and you can earn some gold.~
 @6    = ~I am sorry about your house, Areen. But that's not possible right now.~
+
 @7    = ~I shall lend my arcane expertise to our endeavor.~
+
 @8    = ~I should probably tell you that I am going to rescue Imoen from the Cowled Wizards.~
 @9    = ~I am going to find Irenicus, the mage who kidnapped and tortured me.~
 @10   = ~All right, let's go.~
+
 @11   = ~Have it your way then.~
 @12   = ~I see, then you may be in as dear need of me as I am of you. I'll help, <CHARNAME>, as best I can.~
 @13   = ~Should you not leave this to the proper authorities? I can help you with that as well.~
 @14   = ~Let's go then, before some rubble falls on our head here.~
+
 @15   = ~Well, hello, <CHARNAME>, can I help you with something?~
-@16   = ~I could use your help while in Amn.~
+@16   = ~I could use your help while in Amn, Areen.~
 @17   = ~Not at the moment.~

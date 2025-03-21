@@ -21,7 +21,7 @@ END
 
 IF ~PartyHasItem("BEMEDAL")~ THEN BEGIN BELordSelemchantEnd1
    SAY @3009
-   IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",9) AddJournalEntry(@10008, QUEST) EscapeArea()~ EXIT
+   IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",9) AddJournalEntry(@10008, QUEST_DONE) EscapeArea()~ EXIT
 END
 
 IF ~Global("BEArenQuest","GLOBAL",12)~ THEN BEGIN BELordSelemchantBad

@@ -32,5 +32,5 @@ END
 
 IF ~~ BESelemchantCaptainAmbush2
   SAY @5010
-  IF ~~ DO ~SetGlobal("BESelemchantAmbush","GLOBAL",3) AddJournalEntry(@10012, QUEST) Enemy()~ EXIT
+  IF ~~ DO ~SetGlobal("BESelemchantAmbush","GLOBAL",3) AddJournalEntry(@10012, QUEST_DONE) Enemy()~ EXIT
 END
