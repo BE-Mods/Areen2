@@ -91,6 +91,8 @@ COPY ~Areen/Items/BEGLOVES.ITM~ ~override~
      SAY 0x54 @26
 
 // creature file
+COPY ~Areen/Portraits/bearen.bmp~ ~override/bearen.bmp~
+
 COPY ~Areen/Characters/BEAren.cre~ ~override/BEAren.cre~
      SAY NAME1 @2
      SAY NAME2 @2
@@ -98,6 +100,8 @@ COPY ~Areen/Characters/BEAren.cre~ ~override/BEAren.cre~
      WRITE_ASCII 0x248 ~BEArenS~ #8  // script for lovetalks and such.
      WRITE_ASCII 0x2cc ~BEAren~  #8  // Areen's greeting dialogue.
      WRITE_ASCII 0x280 ~BEAren~  #32 // death variable - when we want to refer to Areen in the game, we'll call her BEAren. For example, InParty("BEAren") means that Areen is in party.
+     WRITE_ASCII 0x34 ~bearen~
+     WRITE_ASCII 0x3c ~bearen~
 
 COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BESELEM.d~
         ~Areen/Dialogue/BELORDSE.d~
@@ -107,7 +111,6 @@ COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BESELEM.d~
 
         ~Areen/Scripts/BESELSOL.baf~
         ~Areen/Scripts/BESELCAP.baf~
-        ~Areen/Scripts/BESELEM.baf~
         ~Areen/Scripts/BESELEM2.baf~
 
 COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BEBAren.d~
@@ -137,36 +140,51 @@ COPY ~Areen/Items/BEMEDAL2.ITM~ ~override~
      SAY DESC  @33
 
 // creatures
+COPY ~Areen/Portraits/bethayze.bmp~ ~override/bethayze.bmp~
+COPY ~Areen/Portraits/bethayz2.bmp~ ~override/bethayz2.bmp~
+COPY ~Areen/Portraits/belordse.bmp~ ~override/belordse.bmp~
+COPY ~Areen/Portraits/bebrysne.bmp~ ~override/bebrysne.bmp~
+COPY ~Areen/Portraits/beselcap.bmp~ ~override/beselcap.bmp~
 
 COPY ~Areen/Characters/BESELEM.cre~ ~override/BESELEM.cre~
      SAY NAME1 @34
      SAY NAME2 @34
 WRITE_ASCII SCRIPT_DEFAULT ~BESELEM~
 WRITE_ASCII DIALOG ~BESELEM~
+WRITE_ASCII 0x34 ~bethayze~
+WRITE_ASCII 0x3c ~bethayze~
 
 COPY ~Areen/Characters/BESELEM2.cre~ ~override/BESELEM2.cre~
      SAY NAME1 @34
      SAY NAME2 @34
 WRITE_ASCII SCRIPT_DEFAULT ~BESELEM2~
 WRITE_ASCII DIALOG ~BESELEM2~
+WRITE_ASCII 0x34 ~bethayz2~
+WRITE_ASCII 0x3c ~bethayz2~
 
 COPY ~Areen/Characters/BELORDSE.cre~ ~override/BELORDSE.cre~
      SAY NAME1 @35
      SAY NAME2 @35
 WRITE_ASCII SCRIPT_DEFAULT ~BELORDSE~
 WRITE_ASCII DIALOG ~BELORDSE~
+WRITE_ASCII 0x34 ~belordse~
+WRITE_ASCII 0x3c ~belordse~
 
 COPY ~Areen/Characters/BEBRYSNE.cre~ ~override/BEBRYSNE.cre~
      SAY NAME1 @36
      SAY NAME2 @36
 WRITE_ASCII SCRIPT_DEFAULT ~BEBRYSNE~
 WRITE_ASCII DIALOG ~BEBRYSNE~
+WRITE_ASCII 0x34 ~bebrysne~
+WRITE_ASCII 0x3c ~bebrysne~
 
 COPY ~Areen/Characters/BESELCAP.cre~ ~override/BESELCAP.cre~
      SAY NAME1 @37
      SAY NAME2 @37
 WRITE_ASCII SCRIPT_DEFAULT ~BESELCAP~
 WRITE_ASCII DIALOG ~BESELCAP~
+WRITE_ASCII 0x34 ~beselcap~
+WRITE_ASCII 0x3c ~beselcap~
 
 COPY ~Areen/Characters/BESELSOL.cre~ ~override/BESELSOL.cre~
      SAY NAME1 @38
@@ -203,7 +221,10 @@ SAY DESC @5 /* Areen was captured by Bodhi and infected with vampirism, forcing 
 // Since we're using Bodhi's abduction for Areen, with journal entries, and we want these journal entries to work for BG2:EE and EET, we need to use this code:
 ACTION_IF GAME_IS ~BG2EE eet~ BEGIN
 ADD_JOURNAL EXISTING TITLE (#74337) @100001 @100002 // #74337 means ~The final Battle with Bodhi~ in BG2EE's dialog.tlk. In short, we give our journal entries a name, but only for BG2EE.
+ADD_JOURNAL TITLE (@10001) @10002 @10003 @10004 @10005 @10006 @10007 @10008 @10009 @10010 @10011 @10012
 END
+
+
 
 // Now we are going to add Areen content for the Throne of Bhaal. You need one more cre file, or you could use the same one twice.
 ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN // It means that the Throne of Bhaal is installed. If not, this part is not added to the game. This check also works for BG2:EE games.
@@ -216,7 +237,8 @@ SAY BIO @3
 WRITE_ASCII 0x248 ~BEAre25S~ #8  // override script where you put all the commands for lovetalks and such.
 WRITE_ASCII 0x2cc ~BEAren25~ #8  // dialogue file where we'll put Areen's greeting dialogue for ToB, if you summon her via Fate Spirit.
 WRITE_ASCII 0x280 ~BEAren~   #32 // death variable - it remains the same in ToB.
-
+WRITE_ASCII 0x34 ~bearen~
+WRITE_ASCII 0x3c ~bearen~
 
 COMPILE EVALUATE_BUFFER ~Areen/Dialogue/BEBAre25.d~  // All Areen's ToB banters with other party members will go here.
 	~Areen/Dialogue/BEAren25.d~  // Areen's ToB greeting dialogue will go here.

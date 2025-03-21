@@ -167,17 +167,29 @@ Weight: 1~
 @101 =  ~Revised Wild Surge Table~
 
 // Quest journal entries
+
 @10001 = ~Selemchant Family Feud~
+
 @10002 = ~While visiting the Graveyard District in Athkatla, Areen asked to visit his family's mausoleum. He seems eager to pay his respects, as he hasn't visited it since childhood.~
+
 @10003 = ~We encountered the ghost of Thayze Selemchant in the family mausoleum. He claims he was betrayed by the current Lord Selemchant, who stole a magical medallion that would have allowed Thayze to be resurrected. He's asked us to recover the medallion from his nephew.~
+
 @10004 = ~Lord Selemchant denied knowing about the medallion's magical properties. He claims he donated it to the Temple of Waukeen years ago as a gesture of goodwill.~
+
 @10005 = ~Brysne at the Temple of Waukeen confirmed they have the Selemchant medallion, but will only trade it for an Amulet of Protection.~
-@10006 = ~We exchanged an Amulet of Protection for the Selemchant medallion. Now we must return it to Thayze's ghost.~
+
+@10006 = ~We exchanged an Amulet of Protection for the Selemchant medallion. Now we must return it to Thayze's ghost. He surely will reward us.~
+
 @10007 = ~Before returning the medallion to Thayze, we were confronted by a group of Selemchant house guards who demanded we bring the medallion back to Lord Selemchant. This family dispute runs deeper than it first appeared.~
+
 @10008 = ~We returned the medallion to Lord Selemchant. He seemed relieved to have the family heirloom back and rewarded us handsomely. We better avoid the Selemchant's mausoleum for a time.~
+
 @10009 = ~After giving the medallion to Lord Selemchant, we returned to the mausoleum. Thayze's ghost was enraged by our betrayal and attacked us. We were forced to put his spirit to rest permanently.~
-@10010 = ~We brought the medallion to Thayze's ghost. The artifact's magic restored him to life after years trapped as a spirit. A grateful Thayze gave us the restored medallion before departing to seek a new life far from Amn. Should we tell Lord Selemchant?~
-@10011 = ~After giving the medallion to Thayze, we confronted Lord Selemchant. He was furious that we helped resurrect his uncle and threatened retribution from House Selemchant.~
+
+@10010 = ~We brought the medallion to Thayze's ghost. The artifact's magic restored him to life after years trapped as a spirit. A grateful Thayze gave us the restored medallion before departing to seek a new life far from Amn.~
+
+@10011 = ~After giving the medallion to Thayze, we confronted Lord Selemchant. He was furious that we helped resurrect his uncle and threatened retribution from House Selemchant. We've made a powerful enemy in Athkatla.~
+
 @10012 = ~Soldiers of House Selemchant ambushed us at the city gates, clearly seeking revenge for our role in Thayze's resurrection. They've made their point and lost. Pursuing the matter further would only bring unwanted attention to the family's internal conflicts.~
 
 // These are the entries for Bodhi abduction.

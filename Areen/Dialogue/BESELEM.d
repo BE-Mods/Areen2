@@ -10,7 +10,7 @@ END
 IF ~~ BEThayzeFirst2
   SAY @2005
   = @2006
-  IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",3)~ EXIT
+  IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",3) AddJournalEntry(@10003, QUEST)~ EXIT
 END
 
 IF ~PartyHasItem("BEMEDAL")~ THEN BEGIN BEThayzeSecond1
@@ -20,5 +20,5 @@ END
 
 IF ~Global("BEArenQuest","GLOBAL",20)~ THEN BEGIN BEThayzeFight
    SAY @2008
-   IF ~~ DO ~DestroySelf() CreateCreature("BANSHE01",[360.302],13)~ EXIT
+   IF ~~ DO ~DestroySelf() AddJournalEntry(@10009, QUEST) CreateCreature("BANSHE01",[360.302],13)~ EXIT
 END

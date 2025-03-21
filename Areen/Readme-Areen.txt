@@ -36,7 +36,9 @@ This mod adds Areen as a viable, fully developed NPC.
 
 Areen can be found in the Waukeen's Promenade of Athkatla, standing next to the blast area. You do not need to start a new game to get him into your party. In ToB, he can also be summoned from the Pocket Plane Fate Spirit.
 
-He has a full friendship with the PC, banters with Bioware and Beamdog NPCs, a number of interjections, character reactions and other scenery dialogue, both in SoA and ToB.
+He has a full friendship with the PC, banters with Bioware and Beamdog NPCs, a number of interjections, character reactions and other scenery dialogue, both in SoA and ToB. He has an optional short quest.
+
+Areen and NPCs of his quest have custom, AI-developed portraits.
 
 Female human, elven, and half-elven protagonists may begin a romance with Areen and continue it to ToB. 
 
@@ -74,6 +76,8 @@ A: Yes, it should be. It uses code borrowed from Branwen NPC mod, which is EET c
 -----------
 
 Areen is hard-based on Branwen NPC mod by Olga Silaeva (Kulyok).
+
+Portraits have been created using free online AI software.
 
 Borja Esteve: Quest desgin, Content writer
 

@@ -1,4 +1,4 @@
-@5000 = ~You there, <CHARNAME>. I am Captain Esmel Argrim of Lord Selemchant's guard. You are hereby requested to hand the Selemchant medallion to him personally in the Council of Six building. He is the rightful owner.~
+@5000 = ~You there, <CHARNAME>. I am the captain of Lord Selemchant's guard. You are hereby requested to hand the Selemchant medallion to him personally in the Council of Six building. He is the rightful owner.~
 
 @5001 = ~I understand. Have a nice day.~
 @5002 = ~What if I don't?~
@@ -15,5 +15,5 @@
 @5008 = ~I surrender. I will defend myself in court.~
 @5009 = ~You are a fool if you think I will come easily.~
 
-@5010 = ~There will be no need. Justice will be served here with a trial by combat. I, Captain Larrio Ophal, will represent Lord Selemchant. Draw!~
+@5010 = ~There will be no need. Justice will be served here with a trial by combat.~
 

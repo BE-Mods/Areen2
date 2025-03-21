@@ -1688,27 +1688,27 @@ APPEND BEARENJ
 //IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ BEArenGraveyardQuest
 IF ~Global("BEArenQuest","GLOBAL",1)~ BEArenGraveyardQuest
 SAY @1000
-++ @1001 /* Of course, Areen. Where is this mausoleum? */ + BEArenGraveyardQuest1
-++ @1002 /* Selemchant? Like the Athkatlan merchant family? */ + BEArenGraveyardQuest2
-++ @1003 /* We don't have time for personal errands right now. */ + BEArenGraveyardQuest3
+++ @1001 + BEArenGraveyardQuest1
+++ @1002 + BEArenGraveyardQuest2
+++ @1003 + BEArenGraveyardQuest3
 END
 
 IF ~~ BEArenGraveyardQuest1
-SAY @1004 /* It's in the eastern section. A modest structure by Athkatlan standards, though that's hardly saying much. */
-= @1005 /* Thank you. This means more to me than you might guess. */
-IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",2)~ EXIT
+SAY @1004
+= @1005
+IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",2) AddJournalEntry(@10002, QUEST)~ EXIT
 END
 
 IF ~~ BEArenGraveyardQuest2
-SAY @1006 /* Yes, though I'm from a lesser branch. My uncle currently holds the family lordship, but I've had little contact with that side of the family since pursuing my, ah, magical studies. */
-= @1007 /* Wild magic isn't considered a respectable pursuit for a scion of Amn, even a minor one. */
+SAY @1006
+= @1007
 ++ @1001 + BEArenGraveyardQuest1
 ++ @1003 + BEArenGraveyardQuest3
 END
 
 IF ~~ BEArenGraveyardQuest3
 SAY @1008 /* I understand. We can return when the situation is less pressing. */
-  IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",2)~ EXIT
+  IF ~~ DO ~SetGlobal("BEArenQuest","GLOBAL",2) AddJournalEntry(@10002, QUEST)~ EXIT
 END
 
 END // END of the quest APPEND
@@ -1725,4 +1725,16 @@ END
 
 I_C_T BELORDSE 1 BEAreenLordSelemchant11
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @3003
+END
+
+I_C_T BELORDSE 5 BEAreenLordSelemchant51
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @3004
+END
+
+I_C_T BELORDSE 6 BEAreenLordSelemchant61
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @3004
+END
+
+I_C_T BESELCAP 0 BEAreenSelemchantCaptain01
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @5011
 END
