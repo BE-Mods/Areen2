@@ -215,8 +215,8 @@ WRITE_ASCII 0x280 ~BEArenV~  #32 // death variable
 COPY ~Areen/Characters/bearenb.itm~ ~override~           // Areen's body - you can create an /Items folder and place it there, too.
 SAY NAME1 @4 /* Areen's Body */ // These lines must follow bearenb.itm immediately, otherwise her body won't have a name and a description
 SAY NAME2 @4 /* Areen's Body */
-SAY UNIDENTIFIED_DESC @5 /* Areen was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you do not know what it would be. */
-SAY DESC @5 /* Areen was captured by Bodhi and infected with vampirism, forcing you to slay her. There may be some way to revive her, though you do not know what it would be. */
+SAY UNIDENTIFIED_DESC @5 /* Areen was captured by Bodhi and infected with vampirism, forcing you to slay him. There may be some way to revive him, though you do not know what it would be. */
+SAY DESC @5 /* Areen was captured by Bodhi and infected with vampirism, forcing you to slay him. There may be some way to revive him, though you do not know what it would be. */
 
 // Since we're using Bodhi's abduction for Areen, with journal entries, and we want these journal entries to work for BG2:EE and EET, we need to use this code:
 ACTION_IF GAME_IS ~BG2EE eet~ BEGIN
@@ -224,9 +224,9 @@ ADD_JOURNAL EXISTING TITLE (#74337) @100001 @100002 // #74337 means ~The final B
 ADD_JOURNAL TITLE (@10001) @10002 @10003 @10004 @10005 @10006 @10007 @10008 @10009 @10010 @10011 @10012
 END
 
+// TOB CONTENT
 
-
-// Now we are going to add Areen content for the Throne of Bhaal. You need one more cre file, or you could use the same one twice.
+// You need one more cre file, or you could use the same one twice.
 ACTION_IF FILE_EXISTS_IN_GAME ~mel01.cre~ THEN // It means that the Throne of Bhaal is installed. If not, this part is not added to the game. This check also works for BG2:EE games.
 BEGIN // you WILL need an END below.
 

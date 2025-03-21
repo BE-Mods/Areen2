@@ -1,4 +1,5 @@
 // Areen doesn't know level 7 Improved Chaos Shield, but a level 5 version, this ensures he doesn't get it back after reload/death
+
 IF
 InParty(Myself)
 HaveKnownSpell(2723)
@@ -8,6 +9,7 @@ ReallyForceSpellRES("BEDEL#3",Myself)    // this will trigger a cowled wizard to
 END
 
 // Areen can practice magic and extend license, the reverse needs checking
+
 IF
 InParty(Myself)
 GlobalGT("CowledWarning","GLOBAL",0)
@@ -24,9 +26,6 @@ RESPONSE #100
 SetGlobal("CowledWarning","GLOBAL",1)
 END
 
-
-
-
 // Friendship talks start.
 
 IF 
@@ -35,12 +34,13 @@ Global("BEArenShutUp","GLOBAL",0)
 Global("BEArenTalk","GLOBAL",0)
 THEN
 RESPONSE #100
-RealSetGlobalTimer("BEArenTimer","GLOBAL",60)    // timer for talks
+RealSetGlobalTimer("BEArenTimer","GLOBAL",2400)    // timer for talks
 SetGlobal("BEArenTalk","GLOBAL",1)
 END
 
 // And this is how we initiate romance:
-IF 
+
+IF
 InParty(Myself)
 Gender(Player1,FEMALE)
 OR(3)
@@ -147,12 +147,12 @@ Global("BEArenTalk","GLOBAL",28)
 Global("BEArenTalk","GLOBAL",30)
 THEN
 RESPONSE #100
-//PlaySong(0)
-//PlaySound("O#BRAN")                     // You can play your song here. Just create a wav file(for example, AAAA.wav, but it really must be prefixed with your prefix), and place its name here.
+PlaySong(0)
+PlaySong(62)
 StartDialogueNoSet(Player1)
 END
 
-// talks for Chapters.
+// Extra talk: at the begining of Chapter 5
 
 IF
 InParty(Myself)
@@ -167,54 +167,9 @@ Global("BEArenChapter5","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("BEArenChapter5","GLOBAL",1)
-RealSetGlobalTimer("BEArenChapter5Timer","GLOBAL",60)    // setting a timer for another talk
+RealSetGlobalTimer("BEArenChapter5Timer","GLOBAL",90)    // setting a timer for another talk
 END
 
-
-IF
-InParty(Myself)
-Global("BEArenShutUp","GLOBAL",0)
-OR(2)
-Global("BEArenRomanceActive","GLOBAL",1)
-Global("BEArenRomanceActive","GLOBAL",2)
-See(Player1)
-!StateCheck(Player1,CD_STATE_NOTVALID) 
-!StateCheck(Myself,CD_STATE_NOTVALID)
-CombatCounter(0)
-!See([ENEMY])
-OR(3)
-Global("BEArenChapter4","GLOBAL",1)
-Global("BEArenChapter5","GLOBAL",1)
-Global("BEArenChapter7","GLOBAL",1)
-THEN
-RESPONSE #100
-//PlaySong(0)
-//PlaySound("O#BRAN")
-StartDialogueNoSet(Player1)
-END
-
-// Same block, non-romanced version(without music)
-IF
-InParty(Myself)
-Global("BEArenShutUp","GLOBAL",0)
-!Global("BEArenRomanceActive","GLOBAL",1)
-!Global("BEArenRomanceActive","GLOBAL",2)
-See(Player1)
-!StateCheck(Player1,CD_STATE_NOTVALID) 
-!StateCheck(Myself,CD_STATE_NOTVALID)
-CombatCounter(0)
-!See([ENEMY])
-OR(3)
-Global("BEArenChapter4","GLOBAL",1)
-Global("BEArenChapter5","GLOBAL",1)
-Global("BEArenChapter7","GLOBAL",1)
-THEN
-RESPONSE #100
-StartDialogueNoSet(Player1)
-END
-
-
-// Extra talk: half hour after Chapter 5
 IF
 InParty(Myself)
 Global("BEArenShutUp","GLOBAL",0)
@@ -223,7 +178,7 @@ See(Player1)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 CombatCounter(0)
 !See([ENEMY])
-RealGlobalTimerExpired("BEArenChapter5Timer","GLOBAL") // Timer from Chapter 5 block expired
+RealGlobalTimerExpired("BEArenChapter5Timer","GLOBAL") // Timer from Chapter 5 talk expired
 Global("BEArenTalkSoul","GLOBAL",0)
 THEN
 RESPONSE #100
@@ -246,7 +201,7 @@ Global("BEArenTalkSoul","GLOBAL",1)
 THEN
 RESPONSE #100
 PlaySong(0)
-PlaySound("O#BRAN")
+PlaySong(62)
 StartDialogueNoSet(Player1)
 END
 
@@ -267,6 +222,7 @@ StartDialogueNoSet(Player1)
 END
 
 // 3rd lovetalk after rest
+
 IF
 InParty(Myself)
 Global("BEArenLovetalk","GLOBAL",5)
@@ -294,6 +250,7 @@ StartDialogueNoSet(Player1)  // No music here, because music from the previous l
 END
 
 // 4th lovetalk, an hour after the last one:
+
 IF
 InParty(Myself)
 Global("BEArenLovetalk","GLOBAL",7)
@@ -317,12 +274,13 @@ Global("BEArenShutUp","GLOBAL",0)
 !StateCheck(Myself,CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
-//PlaySong(0)
-//PlaySound("O#BRAN")
+PlaySong(0)
+PlaySong(62)
 StartDialogueNoSet(Player1)
 END
 
 // post-vampire dialogue
+
 IF
 Global("BEArenVampire","GLOBAL",4)
 See(Player1)
@@ -333,7 +291,7 @@ RESPONSE #100
 StartDialogueNoSet(Player1)
 END
 
-// Areen quest-related scripts
+// QUEST RELATED SCRIPTS
 
 // Party enters graveyard and areen asks to go se tomb
 IF
@@ -389,6 +347,7 @@ CreateCreature("BEBRYSNE",[1045.965],13)
 END
 
 // amulet-medallion exchange
+
 IF
 InParty(Myself)
 Global("BEArenQuest","GLOBAL",6)
@@ -402,6 +361,7 @@ CreateItem("BEMEDAL",0,0,0)
 END
 
 // Thayze grants xp
+
 IF
 InParty(Myself)
 Global("BEArenQuest","GLOBAL",9)

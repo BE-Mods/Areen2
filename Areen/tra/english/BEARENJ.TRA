@@ -74,7 +74,8 @@ The strictest wild caster particulah!~
 
 // interjections to others
 
-@59   = ~Quayle? Well, well... Your intelligence was always monstrous, but I hardly expected to find you performing in a circus.~
+@59   = ~You're joking, right? This is so elementary it's rather embarrassing.~
+
 @60   = ~Fear of the drow is not surprising. But lighting up these pyres in the middle of the government district? That is preposterous. I am certain they did not even have a permit for such an inflammatory display.~
 @61   = ~A hardly unexpected insinuation.~
 
@@ -91,16 +92,16 @@ The strictest wild caster particulah!~
 @70   = ~Yes, he was. Tell him, <CHARNAME>.~
 
 @71   = ~I think you are late, your colleagues already left. I am Areen Selemchant, and they are under my supervision.~
-@72   = ~Very well, sir. They shall be permitted to practice for now. However, I must issue the warning nonetheless, merely a formality, you understand.~
+@72   = ~Oh! I... I see. You... you shall be permitted to practice for now, of course. However, I must issue the warning nonetheless, merely a formality, you understand. *clears his throat*~
 
 @73   = ~Another thug, I'll bet.~
-@74   = ~I am not happy that we are doing their dirty work, <CHARNAME>.~
+@74   = ~I am not happy that we are doing his dirty work, <CHARNAME>.~
 @75   = ~My good sir Odesseiron, I certainly did not expect to find you here. Aren't you a bit out of place?~
-@76   = ~Let's not rush into his biddings. I'm certain that for every task they request there is a less violent alternative solution.~
-@77   = ~Honor among thieves, am I right?~
-@78   = ~Let's get this over with.~
+@76   = ~Let's not rush into his biddings. I'm certain that for every task he requests there is a less violent alternative solution. We did enough already as it is.~
+@77   = ~Better not to mingle with this lot, <CHARNAME>.~
+@78   = ~It is indeed private property, <CHARNAME>, and we are trespassing.~
 
-@79   = ~This particular cowled wizard has a rather infamous reputation, <CHARNAME>. If you are set on murdering him...which I most certainly do not approve of, but that will be entirely on your conscience...better to act before he casts his magical wards.~
+@79   = ~This particular cowled wizard has a rather infamous reputation, <CHARNAME>. If you are set on murdering him (which I most certainly do not approve of, but that will be entirely on your conscience) better to act before he casts his magical wards.~
 
 @80   = ~Jermien, is that you? It's me, Areen. Areen Selemchant.~
 @81   = ~Oghma's beard! Areen? The last time I saw you, you were hiding behind your mother's robes.~
@@ -109,7 +110,8 @@ The strictest wild caster particulah!~
 @84   = ~My mother's eyes. I know.~
 @85   = ~So tragic an end... but let's not reminisce. What brings you here lad?~
 @86   = ~We've come to conduct some investigations. This here is a good friend of mine, and our leader, <CHARNAME>.~
-@87   = ~Farewell, Jermien.~
+
+@87   = ~Well... isn't that convenient?~
 
 @94   = ~Psst, <CHARNAME>, I've heard of this Tolgerias—a cunning fellow, shady to the core. He has a reputation for saying one thing while meaning another. Do not leap blindly into his requests. To be honest, I also doubt he possesses any genuine information about your friend Imoen.~
 @95   = ~I warned you this one was cunning. Lord Selemchant will hear about this.~
@@ -152,7 +154,7 @@ The strictest wild caster particulah!~
 @137 = ~I am faring well enough, all things considered.~
 @138 = ~The last time I saw you was at the celebrations in the Duchal Palace, after your defeat of Sarevok. I doubt you even noticed me among the crowd.~
 @139 = ~I departed shortly thereafter. Well before that unpleasant Dragonspear affair.~
-@140 = ~My...family business in Athkatla required my attention.~
+@140 = ~My... family business in Athkatla required my attention.~
 @141 = ~But enough about my circumstances. What of yours? How are you faring?~
 @142 = ~I was on my way to become a famous adventurer, a hero. Until all went to shit at Dragonspear.~
 @143 = ~I feel somewhat out of place, if I'm being honest.~
@@ -162,7 +164,7 @@ The strictest wild caster particulah!~
 @147 = ~I'm glad our paths have crossed again, then.~
 @148 = ~Areen looks at you with half a smile.~
 @149 = ~Rest assured, my magical abilities are at your disposal should we encounter him again.~
-@150 = ~A pity I cannot offer you my residence - it would have served you as an excellent place to rest and plan. Alas, it will take months to properly restore order to that dreadful mess.~
+@150 = ~A pity I cannot offer you my residence, it would have served you as an excellent place to rest and plan. Alas, it will take months to properly restore order to that dreadful mess.~
 @151 = ~I am sorry about that.~
 @152 = ~Thank you for the offer anyway.~
 @153 = ~It was not my fault, you know that, right?~
@@ -172,7 +174,7 @@ The strictest wild caster particulah!~
 
 // talk 2: How we both have improved in combat and magic - Sharing professional observations shows mutual respect and lays groundwork for deeper connection.
 
-@157 = ~I've been observing your movements in combat these past days. Most... illuminating. Your have became quite skilled since our early encounters.~
+@157 = ~I've been observing your movements in combat lately. Most... illuminating. Your have became quite skilled since our early encounters.~
 @158 = ~You've been watching me move?~
 @159 = ~I appreciate the assessment, but perhaps focus on your own magic rather than scrutinizing me.~
 @160 = ~I've noticed improvements in your casting as well.~
@@ -201,15 +203,15 @@ The strictest wild caster particulah!~
 @180 = ~I could use a moment to catch my breath.~
 @181 = ~Areen, we're in the middle of an important quest. This hardly seems the appropriate moment for picnics.~
 @182 = ~I understand your dedication to our mission, but academic rigor and battlefield performance both require occasional intervals of rest. The mind needs moments of reflection just as a blade needs regular honing. I... simply thought it might be beneficial.~
-@183 = ~Well then. I've found us a suitable spot just over that rise. It's defensible, offers a clear view of approaching dangers, and happens to have quite pleasant afternoon light.~
+@183 = ~Well then. I've found us a suitable spot just over there..~
 @184 = ~Areen carefully lays out a small cloth and begins arranging slices of orange and cups for the wine with methodical precision.~
 @185 = ~I've never seen you so... relaxed, Areen. It's a nice change.~
-@186 = ~I appreciate your methodical approach to relaxation. Even your picnics are precisely organized.~
+@186 = ~I appreciate your methodical approach to relaxation.~
 @187 = ~Pass the wine, if you would!~
 @188 = ~I'm hardly "relaxed," merely... adopting appropriate behavior for the social context.~
 @189 = ~Organization is the foundation of all worthwhile pursuits. Even apparent spontaneity benefits from careful preparation. One doesn't simply fling components about when casting a spell, does one? The same principle applies to... well, everything else.~
-@190 = ~Areen pours wine with careful precision, ensuring all cups receive exactly the same amount.~
-@191 = ~During my childhood in Athkatla, before my parents died, we would often dine outdoors in the gardens of our estate. Not the grand affairs other noble families hosted, mind you - just the three of us. I still recall those evenings... my family gathered, my parents arguing about their latest theories on wild magic fluctuations while I studied their notes...~
+@190 = ~*Areen pours wine with careful precision, ensuring all cups receive exactly the same amount.*~
+@191 = ~During my childhood in Athkatla, before my parents died, we would often dine outdoors in the gardens of our estate. Not the grand affairs other noble families hosted, mind you, just the three of us. I still recall those evenings... my family gathered, my parents arguing about their latest theories on wild magic fluctuations while I studied their notes.~
 @192 = ~Tell me more about your family.~
 @193 = ~Is there any wine left?~
 @194 = ~I'm sorry about your parents, Areen.~
@@ -570,7 +572,7 @@ The strictest wild caster particulah!~
 
 // Extra talks: An hour into Chapter 5.
 
-@532  = ~How are you faring, <CHARNAME>? A rather blunt inquiry, I realize, but... circumstances being what they are, I thought it prudent to ask.~
+@532  = ~How are you faring, <CHARNAME>? A rather blunt inquiry, particularly in the present environment, I realize, but... circumstances being what they are, I thought it prudent to ask.~
 @533  = ~I feel empty, but I will get over this.~
 @534  = ~I'm fine, but thank you for asking.~
 @535  = ~I really don't know what I feel right now.~
@@ -621,11 +623,11 @@ The strictest wild caster particulah!~
 @577 = ~They sound wonderful. You must miss them terribly.~
 @578 = ~Do you aspire to follow their example?~
 @579 = ~Interesting history lesson, but we should rest now.~
-@580 = ~I do miss them. In some ways, I suppose I do aspire to their example. Though I've never expected to find someone who would... Well. That is to say, I've dedicated myself to my studies rather than searching for companionship.~
+@580 = ~I do miss them. In some ways, I suppose I do aspire to their example. Though I've never expected to find someone who would... well. That is to say, I've dedicated myself to my studies rather than searching for companionship.~
 @581 = ~Perhaps sometimes the best discoveries are the ones we aren't actively searching for.~
 @582 = ~It sounds like you've resigned yourself to being alone. That's rather sad.~
 @583 = ~Indeed.~
-@584 = ~I... find myself curious to see what unexpected discoveries might lie ahead for us. Though I should warn you - I'm rather unpracticed in matters of the heart. I expect I'll make mistakes that would seem obvious to others. Rest well, <CHARNAME>.~
+@584 = ~I... find myself curious to see what unexpected discoveries might lie ahead for us. Though I should warn you: I'm rather unpracticed in matters of the heart. I may make mistakes that would seem obvious to others. Rest well now, <CHARNAME>.~
 @585 = ~I haven't resigned myself to anything. I simply recognized the statistical improbability of finding someone who would understand my... peculiarities.~
 
 // love talk 2: Discussing what a future together might look like - Moving beyond the immediate quest to imagine a shared life.

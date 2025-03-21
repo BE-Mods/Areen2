@@ -266,9 +266,9 @@ END // for the APPEND BEARENP
 
 // NON-ESSENTIAL INTERJECTIONS
 
-// Quayle
+// Genie in circus tent
 
-I_C_T QUAYLE 0 BEArenQUAYLE0
+I_C_T KGENIE1 3 BEArenKGENIE13
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @59
 END
 
@@ -309,17 +309,17 @@ I_C_T COWENF2 0 BEArenCOWENF20
 == COWENF2 IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @72
 END
 
-// Maevar, Renal, Aran Linvail
+// Maevar and Edwin
 
 I_C_T MAEVAR 24 BEArenMAEVAR24
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @73
 END
 
-I_C_T MAEVAR 29 BEArenMAEVAR29
+I_C_T MAEVAR 30 BEArenMAEVAR30
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @74
 END
 
-I_C_T EDWIN 3 BEArenEDWIN3
+I_C_T EDWIN 0 BEArenEDWIN0
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @75
 END
 
@@ -327,11 +327,13 @@ I_C_T EDWIN 16 BEArenEDWIN16
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @76
 END
 
-I_C_T RENAL 5 BEArenRENAL5
+// parties
+
+I_C_T SEVPAT01 0 BEArenSEVPAT010
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @77
 END
 
-I_C_T RENAL 41 BEArenRENAL41
+I_C_T HLSION 5 BEArenHLSION5
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @78
 END
 
@@ -352,11 +354,7 @@ I_C_T JUGJER01 0 BEArenJUGJER010
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @86
 END
 
-I_C_T JUGJER01 33 BEArenJUGJER0133
-== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @87
-END
-
-I_C_T JUGJER01 36 BEArenJUGJER0136
+I_C_T MGTEOS01 4 BEArenMGTEOS014
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @87
 END
 

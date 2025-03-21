@@ -32,15 +32,13 @@ To install the mod, unpack the archive into your BG2 directory and run setup-are
 3. General Information
 -----------------------
 
-This mod adds Areen as a viable, fully developed NPC.
+This mod adds Areen (LN, wild mage) as a viable, fully developed NPC. It also adds 4 items (2 of them worn by Areen when joining) and a short personal (optional) quest. As an optional component, it is also possible to install a revised version of the wild surges table. This revised version changes the order of surges so that the most negative ones are at the bottom and the "spell cast normally" ones are at the top, thus making Chaos Shields and items that give bonues more attractive to use.
 
-Areen can be found in the Waukeen's Promenade of Athkatla, standing next to the blast area. You do not need to start a new game to get him into your party. In ToB, he can also be summoned from the Pocket Plane Fate Spirit.
+Areen also comes with a level 5 version of Improved Chaos Shield, instead of the normal level 7 version.
 
-He has a full friendship with the PC, banters with Bioware and Beamdog NPCs, a number of interjections, character reactions and other scenery dialogue, both in SoA and ToB. He has an optional short quest.
+He can be found in the Waukeen's Promenade of Athkatla, standing next to the blast area. You do not need to start a new game to get him into your party. In ToB, he can also be summoned from the Pocket Plane Fate Spirit.
 
-Areen and NPCs of his quest have custom, AI-developed portraits.
-
-Female human, elven, and half-elven protagonists may begin a romance with Areen and continue it to ToB. 
+Areen has a 15 friendship talks with the PC, a romance option (human, elf, or half-elf females) which adds additional talks, banters with vanilla and EE NPCs, and interjections, both in SoA and ToB. Areen and the NPCs of his quest have custom, AI-developed portraits.
 
 Depending on PC's level, Areen's experience may be 161000, 400000, 800000 or 1200000 experience points. In ToB, Areen starts with 2500000 experience.
 
