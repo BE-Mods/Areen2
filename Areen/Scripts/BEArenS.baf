@@ -480,7 +480,7 @@ IF
   InParty(Myself)
   InParty("Edwin")
   !See([ENEMY])
-  Global("BEEdwin1","GLOBAL",2)
+  Global("BEEdwina","GLOBAL",2)
 THEN
     RESPONSE #100
     Interact("BEAren")
@@ -513,7 +513,7 @@ IF
   InParty(Myself)
   InParty("Edwin")
   !See([ENEMY])
-  Global("BEEdwin1","GLOBAL",2)
+  Global("BEEdwina","GLOBAL",5 )
 THEN
     RESPONSE #100
     Interact("BEAren")

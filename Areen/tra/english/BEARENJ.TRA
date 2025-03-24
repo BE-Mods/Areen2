@@ -35,7 +35,7 @@ The strictest wild caster particulah!~
 @25   = ~All that needed saying has been said already.~
 @26   = ~Let's finish this bloody bastard Irenicus!~
 
-@27   = ~I...I expected something else. Do you feel different, <CHARNAME>?~
+@27   = ~I... I expected something else. Do you feel different, <CHARNAME>?~
 @28   = ~Is never that simple, isn't it? Where did you bring us?~
 
 @29   = ~It's time to put an end to your madness!~
@@ -66,7 +66,7 @@ The strictest wild caster particulah!~
 @51   = ~I'm looking for information about a tome that details the curing of vampirism.~
 @52   = ~*Looks at his hands* Am I... am I myself again? I can no longer feel the darkness calling upon me.~
 @53   = ~You brought me back, <CHARNAME>, a debt I can scarcely hope to repay.~
-@54   = ~I wish that my will had been stronger. Her dark magic crushed me in an instant. I... you can't imagine how relieved I am to be with you again.~
+@54   = ~I wish that my will had been stronger. Her dark magic crushed me in an instant. I... I am relieved to be with you again.~
 @55   = ~I couldn't bear to lose you too. Welcome back.~
 @56   = ~I have no room for you now, Areen. Go home.~
 @57   = ~If... if that is your wish.~
@@ -160,7 +160,7 @@ The strictest wild caster particulah!~
 @137 = ~I am faring well enough, all things considered.~
 @138 = ~The last time I saw you was at the celebrations in the Duchal Palace, after your defeat of Sarevok. I doubt you even noticed me among the crowd.~
 @139 = ~I departed shortly thereafter. Well before that unpleasant Dragonspear affair.~
-@140 = ~My... family business in Athkatla required my attention.~
+@140 = ~My family business in Athkatla required my attention.~
 @141 = ~But enough about my circumstances. What of yours? How are you faring?~
 @142 = ~I was on my way to become a famous adventurer, a hero. Until all went to shit at Dragonspear.~
 @143 = ~I feel somewhat out of place, if I'm being honest.~
@@ -176,7 +176,7 @@ The strictest wild caster particulah!~
 @153 = ~It was not my fault, you know that, right?~
 @154 = ~I will help you rebuild it, Areen.~
 @155 = ~Nothing to be done about it now. Rather pointless to fret over it, wouldn't you say?~
-@156 = ~Best we, ah, focus on whatever lies ahead. Shall we?~
+@156 = ~Best we focus on whatever lies ahead. Shall we?~
 
 // talk 2: How we both have improved in combat and magic - Sharing professional observations shows mutual respect and lays groundwork for deeper connection.
 
@@ -209,7 +209,7 @@ The strictest wild caster particulah!~
 @180 = ~I could use a moment to catch my breath.~
 @181 = ~Areen, we're in the middle of an important quest. This hardly seems the appropriate moment for picnics.~
 @182 = ~I understand your dedication to our mission, but academic rigor and battlefield performance both require occasional intervals of rest. The mind needs moments of reflection just as a blade needs regular honing. I... simply thought it might be beneficial.~
-@183 = ~Well then. I've found us a suitable spot just over there..~
+@183 = ~Well then. I've found us a suitable spot just over there.~
 @184 = ~Areen carefully lays out a small cloth and begins arranging slices of orange and cups for the wine with methodical precision.~
 @185 = ~I've never seen you so... relaxed, Areen. It's a nice change.~
 @186 = ~I appreciate your methodical approach to relaxation.~
