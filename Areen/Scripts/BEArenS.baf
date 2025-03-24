@@ -291,6 +291,68 @@ RESPONSE #100
 StartDialogueNoSet(Player1)
 END
 
+// romance exclusivities
+
+// What else are we missing? Romance!
+// If Hexxat, Dorn, Anomen, Rasaad, Areen should surrender.
+IF 
+OR(4)
+Global("AnomenRomanceActive","GLOBAL",2)
+Global("HexxatRomanceActive","GLOBAL",2)
+Global("RasaadRomanceActive","GLOBAL",2)
+Global("DoornRomanceActive","GLOBAL",2)
+OR(2)
+Global("BEArenRomanceActive","GLOBAL",1)
+Global("BEArenRomanceActive","GLOBAL",2)
+Global("BEArenAnotherRomanceWon","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("BEArenRomanceActive","GLOBAL",3)
+SetGlobal("BEArenAnotherRomanceWon","GLOBAL",1)
+END
+
+// And if Areen's romance is at 2, others surrender.
+IF 
+Global("BEArenRomanceActive","GLOBAL",2)
+Global("AnomenRomanceActive","GLOBAL",1)
+Global("BEArenAnomenRomanceLost","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("AnomenRomanceActive","GLOBAL",3)
+SetGlobal("BEArenAnomenRomanceLost","GLOBAL",1)
+END
+
+IF
+Global("BEArenRomanceActive","GLOBAL",2)
+Global("AnomenRomanceActive","GLOBAL",1)
+Global("BEArenHexxatRomanceLost","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("HexxatRomanceActive","GLOBAL",3)
+SetGlobal("BEArenHexxatRomanceLost","GLOBAL",1)
+END
+
+IF
+Global("BEArenRomanceActive","GLOBAL",2)
+Global("DornRomanceActive","GLOBAL",1)
+Global("BEArenDornRomanceLost","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("DornRomanceActive","GLOBAL",3)
+SetGlobal("BEArenDornRomanceLost","GLOBAL",1)
+END
+
+IF
+Global("BEArenRomanceActive","GLOBAL",2)
+Global("RasaadRomanceActive","GLOBAL",1)
+Global("BEArenRasaadRomanceLost","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RasaadRomanceActive","GLOBAL",3)
+SetGlobal("BEArenRasaadRomanceLost","GLOBAL",1)
+END
+
+
 // QUEST RELATED SCRIPTS
 
 // Party enters graveyard and areen asks to go se tomb
@@ -387,4 +449,72 @@ THEN
 RESPONSE #100
 SetGlobal("BEArenQuest","GLOBAL",12)
 CreateItem("BEMEDAL2",0,0,0)
+END
+
+// Edwina-related banter
+IF
+  InParty(Myself)
+  InParty("Edwin")
+  !See([ENEMY])
+  !Gender("Edwin",MALE)
+  Global("BEEdwina","GLOBAL",0)
+THEN
+    RESPONSE #100
+    RealSetGlobalTimer("BEEdwinaTimer","GLOBAL",300)
+    SetGlobal("BEEdwina","GLOBAL",1)
+END
+
+IF
+  InParty(Myself)
+  InParty("Edwin")
+  !See([ENEMY])
+  !Gender("Edwin",MALE)
+  RealGlobalTimerExpired("BEEdwinaTimer","GLOBAL")
+  Global("BEEdwina","GLOBAL",1)
+THEN
+    RESPONSE #100
+    SetGlobal("BEEdwina","GLOBAL",2)
+END
+
+IF
+  InParty(Myself)
+  InParty("Edwin")
+  !See([ENEMY])
+  Global("BEEdwin1","GLOBAL",2)
+THEN
+    RESPONSE #100
+    Interact("BEAren")
+END
+
+IF
+  InParty(Myself)
+  InParty("Edwin")
+  !See([ENEMY])
+  Gender("Edwin",MALE)
+  Global("BEEdwina","GLOBAL",3)
+THEN
+    RESPONSE #100
+    RealSetGlobalTimer("BEEdwinaTimer","GLOBAL",300)
+    SetGlobal("BEEdwina","GLOBAL",4)
+END
+
+IF
+  InParty(Myself)
+  InParty("Edwin")
+  !See([ENEMY])
+  RealGlobalTimerExpired("BEEdwinaTimer","GLOBAL")
+  Global("BEEdwina","GLOBAL",4)
+THEN
+    RESPONSE #100
+    SetGlobal("BEEdwina","GLOBAL",5)
+END
+
+IF
+  InParty(Myself)
+  InParty("Edwin")
+  !See([ENEMY])
+  Global("BEEdwin1","GLOBAL",2)
+THEN
+    RESPONSE #100
+    Interact("BEAren")
 END

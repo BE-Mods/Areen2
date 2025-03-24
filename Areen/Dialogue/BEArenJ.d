@@ -358,6 +358,26 @@ I_C_T MGTEOS01 4 BEArenMGTEOS014
 == BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @87
 END
 
+// Valigar joinging dialogue
+I_C_T VALYGAR 35 BEArenVALYGAR35
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @88
+END
+
+I_C_T VALYGAR 44 BEArenVALYGAR44
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @89
+END
+
+I_C_T VALYGAR 3 BEArenVALYGAR3
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @90
+END
+
+I_C_T VALYGAR 19 BEArenVALYGAR19
+== BEARENJ IF ~InParty("BEAren") InMyArea("BEAren") !StateCheck("BEAren",CD_STATE_NOTVALID)~ THEN @91
+END
+
+// planar prison
+
+
 // Tolgerias in goverment building and planar sphere
 
 I_C_T TOLGER 0 BEArenTOLGER0

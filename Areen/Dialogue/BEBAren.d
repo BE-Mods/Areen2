@@ -1,5 +1,31 @@
 BEGIN BEBAREN
 
+// Female-Male Edwin-related banter
+
+CHAIN
+IF ~Global("BEEdwina","GLOBAL",2)~ THEN BEDWIN BEArenEdwin3
+@151
+DO ~SetGlobal("BEEdwina","GLOBAL",3)~
+== BEBAREN @152
+== BEDWIN @153
+== BEBAREN @154
+== BEDWIN @155
+== BEBAREN @156
+== BEDWIN @157
+EXIT
+
+CHAIN
+IF ~Global("BEEdwina","GLOBAL",5)~ THEN BEDWIN BEArenEdwin4
+@158
+DO ~SetGlobal("BEEdwina","GLOBAL",6)~
+== BEBAREN @159
+== BEDWIN @160
+== BEBAREN @161
+== BEDWIN @162
+== BEBAREN @163
+== BEDWIN @164
+EXIT
+
 // FIRST ROUND OF BANTER
 
 // Aeri
@@ -97,14 +123,17 @@ IF ~InParty("Imoen2")
 See("Imoen2")
 !StateCheck("Imoen2",CD_STATE_NOTVALID)
 !StateCheck("BEAren",CD_STATE_NOTVALID)
-Global("BEArenImoen1","GLOBAL",0)~ THEN BEBAREN BEArenImoen1
-@32
-DO ~SetGlobal("BEArenImoen1","GLOBAL",1)~
-== IMOEN2J @33
-== BEBAREN @34
-== IMOEN2J @35
-== BEBAREN @36
-== IMOEN2J @37
+Global("BEArenImoen2","GLOBAL",0)~ THEN BEBAREN BEArenImoen2
+@121
+DO ~SetGlobal("BEArenImoen2","GLOBAL",1)~
+== IMOEN2J @122
+== BEBAREN @123
+== IMOEN2J @124
+== BEBAREN @125
+== IMOEN2J @126
+== BEBAREN @127
+== IMOEN2J @128
+== IMOEN2J @129
 EXIT
 
 // Jan
@@ -289,7 +318,6 @@ DO ~SetGlobal("BEArenYoshimo1","GLOBAL",1)~
 == BYOSHIM @112
 EXIT
 
-
 // SECOND ROUND OF BANTER
 
 // Haer'Dalis 2 (did not follow the sequence, but too lazy to change it now)
@@ -335,20 +363,17 @@ IF ~InParty("Imoen2")
 See("Imoen2")
 !StateCheck("Imoen2",CD_STATE_NOTVALID)
 !StateCheck("BEAren",CD_STATE_NOTVALID)
-Global("BEArenImoen2","GLOBAL",0)~ THEN BEBAREN BEArenImoen2
-@121
-DO ~SetGlobal("BEArenImoen2","GLOBAL",1)~
-== IMOEN2J @122
-== BEBAREN @123
-== IMOEN2J @124
-== BEBAREN @125
-== IMOEN2J @126
-== BEBAREN @127
-== IMOEN2J @128
-== BEBAREN @129
+Global("BEArenImoen1","GLOBAL",0)~ THEN BEBAREN BEArenImoen1
+@32
+DO ~SetGlobal("BEArenImoen1","GLOBAL",1)~
+== IMOEN2J @33
+== BEBAREN @34
+== IMOEN2J @35
+== BEBAREN @36
+== IMOEN2J @37
 EXIT
 
-// Keldorn, if Keldorn denouonce his wife
+// Keldorn 2, if Keldorn denouonce his wife
 
 CHAIN
 IF ~InParty("BEAren")
@@ -371,7 +396,7 @@ DO ~SetGlobal("BEArenKeldorn2","GLOBAL",1)~
 == BEBAREN @139
 EXIT
 
-// Anomen, if knight test passed
+// Anomen 3, if knight test passed
 
 CHAIN
 IF ~InParty("Anomen")
@@ -396,46 +421,6 @@ EXIT
 
 
 // THIRD ROUND OF BANTER
-
-// Edwin 3 - female
-
-CHAIN
-IF ~InParty("BEAren")
-See("BEAren")
-!StateCheck("Edwin",CD_STATE_NOTVALID)
-!StateCheck("BEAren",CD_STATE_NOTVALID)
-Global("EdwinWoman","LOCALS",1)
-!Gender("Edwin",MALE)
-Global("BEArenEdwin3","GLOBAL",0)~ THEN BEDWIN BEArenEdwin3
-@151
-DO ~SetGlobal("BEArenEdwin3","GLOBAL",1)~
-== BEBAREN @152
-== BEDWIN @153
-== BEBAREN @154
-== BEDWIN @155
-== BEBAREN @156
-== BEDWIN @157
-EXIT
-
-// Edwin 4 - after being male again
-
-CHAIN
-IF ~InParty("BEAren")
-See("BEAren")
-Dead("degard")
-!Global("TalkedDegardan","GLOBAL",4)
-!StateCheck("Edwin",CD_STATE_NOTVALID)
-!StateCheck("BEAren",CD_STATE_NOTVALID)
-Global("BEArenEdwin3","GLOBAL",1)~ THEN BEDWIN BEArenEdwin4
-@158
-DO ~SetGlobal("BEArenEdwin3","GLOBAL",2)~
-== BEBAREN @159
-== BEDWIN @160
-== BEBAREN @161
-== BEDWIN @162
-== BEBAREN @163
-== BEDWIN @164
-EXIT
 
 // Imoen 3
 
