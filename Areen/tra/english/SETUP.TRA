@@ -10,16 +10,16 @@ Though his manner remains formal, there's an unmistakable gleam in his eye when 
 
 The noble houses of Amn, however, proved as stifling as ever. When word reached him of ancient wild magic sites in the Snowflake Mountains, Areen departed his homeland, methodically documenting the chaotic energies he encountered. His research expeditions would occasionally cross paths with his old companions, leading to brief but meaningful reunions.
 
-Years later, Areen undertook the ambitious task of restoring the ruins of Ulcaster School of Magic. Where others saw only crumbling remnants of a tragic past, he recognized an opportunity to honor both magical scholarship and controlled chaos. He established an academy there, where he taught aspiring wild mages - though students would often hear him muttering "fuck fuck fuck" under his breath when experiments went particularly awry. Despite these occasional setbacks, his unique blend of scholarly precision and resigned acceptance of chaos proved remarkably effective.
+Years later, Areen undertook the ambitious task of restoring the ruins of Ulcaster School of Magic. Where others saw only crumbling remnants of a tragic past, he recognized an opportunity to honor both magical scholarship and controlled chaos. He established an academy there, where he taught aspiring wild mages—though students would often hear him muttering "fuck fuck fuck" under his breath when experiments went particularly awry. Despite these occasional setbacks, his unique blend of scholarly precision and resigned acceptance of chaos proved remarkably effective.
 
-His parents' crafting journals, once lost to bandits, were eventually recovered from a collector in Waterdeep. They now rest in his academy's library, alongside his own extensive research - a testament to Areen's family's enduring dedication to understanding the controlled chaos of wild magic.~
-@8   = ~After the Bhaalspawn saga, Areen and <CHARNAME> found themselves bound by something deeper than adventure - a connection of minds and hearts that transcended the chaos around them. Together, they restored the ruins of Ulcaster School of Magic, turning it into both a sanctuary for their companionship and a beacon for aspiring wild mages.
+His parents' crafting journals, once lost to bandits, were eventually recovered from a collector in Waterdeep. They now rest in his academy's library, alongside his own extensive research—a testament to Areen's family's enduring dedication to understanding the controlled chaos of wild magic.~
+@8   = ~After the Bhaalspawn saga, Areen and <CHARNAME> found themselves bound by something deeper than adventure—a connection of minds and hearts that transcended the chaos around them. Together, they restored the ruins of Ulcaster School of Magic, turning it into both a sanctuary for their companionship and a beacon for aspiring wild mages.
 
 Their partnership proved as complementary as order and chaos themselves. While Areen meticulously documented magical theories, <CHARNAME> brought adventure and spontaneity to their shared life. Many evenings would find them in the academy's highest tower, sharing tales of their day's discoveries over cups of Amnian tea.
 
-Though they would occasionally part ways - Areen to his research expeditions and <CHARNAME> to answer destiny's call - they always found their way back to each other. Their reunions were marked by quiet joy and shared understanding, often accompanied by Areen's flustered yet endearing "Oh dear, I've missed you terribly."
+Though they would occasionally part ways—Areen to his research expeditions and <CHARNAME> to answer destiny's call—they always found their way back to each other. Their reunions were marked by quiet joy and shared understanding, often accompanied by Areen's flustered yet endearing "Oh dear, I've missed you terribly."
 
-His parents' recovered journals now rest in their shared library, alongside the volumes of research he and <CHARNAME> compiled together - a testament to how love, like wild magic, needs neither physical expression nor conventional form to work its own special kind of chaos in perfect order.~
+His parents' recovered journals now rest in their shared library, alongside the volumes of research he and <CHARNAME> compiled together—a testament to how love, like wild magic, needs neither physical expression nor conventional form to work its own special kind of chaos in perfect order.~
 
 
 // new items description
@@ -39,7 +39,9 @@ Speed Factor: 3
 Proficiency Type: Quarterstaff
 Type: Two-handed
 Requires:
- 5 Strength
+  5 Strength
+ 19 Ingelligence
+ 16 Wisdom
 
 Weight: 4~
 

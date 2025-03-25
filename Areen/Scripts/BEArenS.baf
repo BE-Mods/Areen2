@@ -451,70 +451,142 @@ SetGlobal("BEArenQuest","GLOBAL",12)
 CreateItem("BEMEDAL2",0,0,0)
 END
 
-// Edwina-related banter
+// EVENTS-DEPENDING BANTER
+
+// Edwina-Edwin banter
 IF
-  InParty(Myself)
-  InParty("Edwin")
-  !See([ENEMY])
-  !Gender("Edwin",MALE)
-  Global("BEEdwina","GLOBAL",0)
+InParty(Myself)
+InParty("Edwin")
+!See([ENEMY])
+!Gender("Edwin",MALE)
+Global("BEEdwina","GLOBAL",0)
 THEN
-    RESPONSE #100
-    RealSetGlobalTimer("BEEdwinaTimer","GLOBAL",300)
-    SetGlobal("BEEdwina","GLOBAL",1)
+RESPONSE #100
+RealSetGlobalTimer("BEEdwinaTimer","GLOBAL",300)
+SetGlobal("BEEdwina","GLOBAL",1)
 END
 
 IF
-  InParty(Myself)
-  InParty("Edwin")
-  !See([ENEMY])
-  !Gender("Edwin",MALE)
-  RealGlobalTimerExpired("BEEdwinaTimer","GLOBAL")
-  Global("BEEdwina","GLOBAL",1)
+InParty(Myself)
+InParty("Edwin")
+!See([ENEMY])
+!Gender("Edwin",MALE)
+RealGlobalTimerExpired("BEEdwinaTimer","GLOBAL")
+Global("BEEdwina","GLOBAL",1)
 THEN
-    RESPONSE #100
-    SetGlobal("BEEdwina","GLOBAL",2)
+RESPONSE #100
+SetGlobal("BEEdwina","GLOBAL",2)
 END
 
 IF
-  InParty(Myself)
-  InParty("Edwin")
-  !See([ENEMY])
-  Global("BEEdwina","GLOBAL",2)
+InParty(Myself)
+InParty("Edwin")
+!See([ENEMY])
+Global("BEEdwina","GLOBAL",2)
 THEN
-    RESPONSE #100
-    Interact("BEAren")
+RESPONSE #100
+Interact("BEAren")
 END
 
 IF
-  InParty(Myself)
-  InParty("Edwin")
-  !See([ENEMY])
-  Gender("Edwin",MALE)
-  Global("BEEdwina","GLOBAL",3)
+InParty(Myself)
+InParty("Edwin")
+!See([ENEMY])
+Gender("Edwin",MALE)
+Global("BEEdwina","GLOBAL",3)
 THEN
-    RESPONSE #100
-    RealSetGlobalTimer("BEEdwinaTimer","GLOBAL",300)
-    SetGlobal("BEEdwina","GLOBAL",4)
+RESPONSE #100
+RealSetGlobalTimer("BEEdwinaTimer","GLOBAL",300)
+SetGlobal("BEEdwina","GLOBAL",4)
 END
 
 IF
-  InParty(Myself)
-  InParty("Edwin")
-  !See([ENEMY])
-  RealGlobalTimerExpired("BEEdwinaTimer","GLOBAL")
-  Global("BEEdwina","GLOBAL",4)
+InParty(Myself)
+InParty("Edwin")
+!See([ENEMY])
+RealGlobalTimerExpired("BEEdwinaTimer","GLOBAL")
+Global("BEEdwina","GLOBAL",4)
 THEN
-    RESPONSE #100
-    SetGlobal("BEEdwina","GLOBAL",5)
+RESPONSE #100
+SetGlobal("BEEdwina","GLOBAL",5)
 END
 
 IF
-  InParty(Myself)
-  InParty("Edwin")
-  !See([ENEMY])
-  Global("BEEdwina","GLOBAL",5 )
+InParty(Myself)
+InParty("Edwin")
+!See([ENEMY])
+Global("BEEdwina","GLOBAL",5 )
 THEN
-    RESPONSE #100
-    Interact("BEAren")
+RESPONSE #100
+Interact("BEAren")
+END
+
+// Keldorn-family banter
+
+IF
+InParty(Myself)
+InParty("Keldorn")
+!See([ENEMY])
+Global("BEKeldornFamily","GLOBAL",0)
+Global("LadyMaria","GLOBAL",4)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("BEKeldornFamilyTimer","GLOBAL",30)
+SetGlobal("BEKeldornFamily","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("Keldorn")
+!See([ENEMY])
+RealGlobalTimerExpired("BEKeldornFamilyTimer","GLOBAL")
+Global("BEKeldornFamily","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("BEKeldornFamily","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+InParty("Keldorn")
+!See([ENEMY])
+Global("BEKeldornFamily","GLOBAL",2)
+THEN
+RESPONSE #100
+Interact("BEAren")
+END
+
+// Anomen-test banter
+
+IF
+InParty(Myself)
+InParty("Anomen")
+!See([ENEMY])
+Global("BEAnomenTest","GLOBAL",0)
+Global("AnomenIsKnight","GLOBAL",1)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("BEAnomenTestTimer","GLOBAL",30)
+SetGlobal("BEAnomenTest","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("Anomen")
+!See([ENEMY])
+RealGlobalTimerExpired("BEAnomenTestTimer","GLOBAL")
+Global("BEAnomenTest","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("BEAnomenTest","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+InParty("Anomen")
+!See([ENEMY])
+Global("BEAnomenTest","GLOBAL",2)
+THEN
+RESPONSE #100
+Interact("BEAren")
 END

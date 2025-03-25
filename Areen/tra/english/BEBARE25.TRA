@@ -1,41 +1,41 @@
 @0    = ~Areen, what is that big book that you read every night lately about?~
-@1    = ~Actually, it is about the Avariel, your kin. Quite the scholarly tome - meticulous documentation of what little is known of your people.~
+@1    = ~Actually, it is about the Avariel, your kin. Quite the scholarly tome—meticulous documentation of what little is known of your people.~
 @2    = ~Really? I've never seen anyone with such interest in my people before.~
-@3    = ~Fascinating folk. The anatomical adaptations alone are remarkable - hollow bones providing strength without excessive weight, specialized respiratory systems. Quite the marvel.~
+@3    = ~Fascinating folk. The anatomical adaptations alone are remarkable—hollow bones providing strength without excessive weight, specialized respiratory systems. Quite the marvel.~
 @4    = ~I... I still remember the feeling. The wind through my feathers when I was very small. Before the slavers took me...~
 @5    = ~My dear Aeri, you are now a powerful mage AND cleric. Couldn't you restore your wings through some application of combined arcane and divine magic?~
-@6    = ~I've overcome that desire and made peace with it. Even if I grow back my wings, I doubt I would be accepted back, if I even can find my way home. I'm making my own path now.~
+@6    = ~I've overcome that desire and made peace with it, with myself. Even if I grow back my wings, I doubt I would be accepted back, if I even can find my way home. I'm making my own path now.~
 
 @7    = ~I've been meaning to ask you, Master Selemchant. With your family connections in Athkatla, never thought about entering politics and having a say in Amn's ruling?~
 @8    = ~Politics? In Amn? My good fellow, you might as well suggest I take up juggling flaming swords while blindfolded. Less painful, I should think.~
-@9    = ~I would have thought someone of your... intellectual persuasion would find the challenge stimulating.~
-@10   = ~I find the systematic study of wild magic quite stimulating enough, thank you. Besides, the Selemchant name carries certain... expectations in Athkatla's political circles. Not sure my uncle Lord Selemchant would even allow it.~
+@9    = ~I would have thought someone of your... background would find the challenge stimulating.~
+@10   = ~I find the systematic study of wild magic quite stimulating enough. Besides, the Selemchant name carries certain... expectations. And I am not sure my uncle Lord Selemchant would even allow it.~
 @11   = ~Surely with the right connections and adequate wealth...~
-@12   = ~In Amn, Sir Delryn, there are two paths to political power. One requires an obscene amount of gold. The other requires an equally obscene amount of bloodshed. Neither aligns particularly well with scholarly pursuits.~
-@13   = ~I was merely making conversation.~
-@14   = ~I thought about it, to tell the truth. But to answer your question properly: No, I do not harbor political ambitions now. The Council plays a dangerous game, and I find the rules far too arbitrary for my taste. Even wild magic follows more solid principles.~
+@12   = ~As you well know, there are two paths to political power in Amn. One requires an obscene amount of gold. The other requires an equally obscene amount of bloodshed. Neither aligns particularly well with scholarly pursuits.~
+@13   = ~I was merely making conversation...~
+@14   = ~I thought about it, to tell the truth. But to answer your question properly: No, I do not harbor political ambitions now.~
 @15   = ~Then we share that much at least. I've always found the political machinations of Athkatla's nobility distasteful. My father schemed and connived for position, and for what? I prefer to earn my standing through honorable service to the Order.~
 @16   = ~An admirable stance, Sir Delryn. Though I must caution you. Honor in Athkatla is rather like wild magic in the hands of a novice. Unpredictable, often dangerous, and frequently misunderstood by those who wield it.~
 
-@17   = ~Excuse my ignorance of the matter, but is there any relationship between the wild in wild magic and the wild of the natural world? They both seem to be beyond the strict order that civilized folk try to impose.~
+@17   = ~Excuse my ignorance of the matter, but is there any relationship between the 'wild' in wild magic and the wild of the natural world? They both seem to be beyond the strict order that civilized folk try to impose.~
 @18   = ~A common misconception, though not entirely without merit. The 'wild' in wild magic refers to its unpredictable and chaotic nature, rather than any connection to nature itself. Unlike your druidic powers which draw from the harmony of the natural world, wild magic stems from the raw, unfiltered essence of Mystra's Weave.~
 @19   = ~Hmm, I see. Yet both seem to resist rigid control, do they not? The natural world cannot be tamed by cities and farms any more than your magic can be contained by formulaic spellcraft.~
 @20   = ~I must emphasize that wild magic is not untamable chaos, as some fools believe. The unpredictability is simply... a more complex pattern requiring greater intellectual rigor to master. Much as I imagine you don't simply commune with nature haphazardly, but rather through disciplined understanding of its patterns and cycles.~
 
-@21   = ~I saw you began documenting the planar disturbances in our travels in and out <CHARNAME>'s pocket plane. An exercise in futility, perhaps, but not entirely without academic merit. The convergence of divine energy here surpasses anything documented in Thayan archives. (Even I must admit the phenomenon warrants proper study.)~
+@21   = ~I saw you began documenting the planar disturbances in our travels in and out <CHARNAME>'s pocket plane. An exercise in futility, perhaps, but not entirely without academic merit.(Even I must admit the phenomenon warrants proper study.)~
 @22   = ~Your grudging intellectual curiosity emerges at last, Edwin. I was beginning to think you'd never see beyond the narrow confines of Thayan orthodoxy. These patterns suggest the entire foundation of magical theory may be restructured when this crisis concludes.~
 @23   = ~Do not mistake professional interest for validation, Selemchant. Though I concede that your family's research on magical inflection points has proven... unexpectedly relevant.~
 @24   = ~After all we've been through, my dear Edwin, I'd nearly given up hope of intellectual honesty from you. My parents theorized that moments of divine transformation create unique opportunities for those who understand both structure and chaos.~
-@25   = ~Which raises an intriguing proposition. Should <CHARNAME> choose to destroy the Bhaal legacy rather than claim it, the resulting arcane vacuum would create unprecedented conditions for study. Your approach to cataloguing chaos might complement my more... orthodox approach. The historical significance would be considerable. (As would the accolades.)~
-@26   = ~Are you proposing collaboration, Edwin? After dismissing my work as haphazard experimentation? Though I must admit, combining Thayan perseverance with wild magic's adaptability could produce scholarship unlike anything the Realms has seen.~
-@27   = ~The Odesseiron-Selemchant Treatise on Divine Transference and Planar Reconstitution. The order of names is alphabetical, of course. Our mutual experiences place us in a unique position to document events that will reshape magical discourse for centuries.~
-@28   = ~My parents would appreciate the scholarly ambition, if not necessarily the company. After witnessing what we did, I find myself concerned less with who receives credit and more with ensuring the knowledge survives.~
-@29   = ~A commendably pragmatic position.~
-@30   = ~Then we have an understanding, Edwin. Though I suggest we focus first on ensuring there's a world left in which to publish. And perhaps we keep this arrangement between ourselves - I'd hate for our companions to think you've developed something resembling scholarly integrity.~
+@25   = ~Which raises an intriguing proposition. Should <CHARNAME> choose to destroy the Bhaal legacy rather than claim it, the resulting arcane vacuum would create unprecedented conditions for study. The historical significance would be considerable. (As would the accolades.)~
+@26   = ~Are you proposing collaboration, Edwin? After dismissing my work as haphazard experimentation? Though I must admit, combining Thayan perseverance with wild magic's adaptability could produce scholarship unlike anything Toril has seen.~
+@27   = ~The Odesseiron-Selemchant Treatise on Divine Transference and Planar Reconstitution. Order of names alphabetical, of course.~
+@28   = ~My parents would appreciate the scholarly ambition, if not necessarily the company.~
+@29   = ~Then we have an understanding.~
+@30   = ~Yes, though I suggest we focus first on ensuring there's a world left in which to publish our manuscript. And perhaps we keep this arrangement between ourselves—I'd hate for our companions to think you've developed something resembling scholarly integrity.~
 
 @31   = ~Has my scholarly heron given further thought to our previous discourse? This sparrow's wings still flutter with anticipation at the prospect of learning your Nahal's Reckless Dweomer. The very spell that dances on the knife-edge between order and beautiful chaos!~
-@32   = ~I have indeed given it considerable thought, Haer'Dalis. The Nahal's is not merely a spell. My answer remains unchanged.~
-@33   = ~Ah, but therein lies your misunderstanding, my cautious friend! Who better to navigate chaos than one who embraces its inevitable victory? This humble bard has performed on stages across the planes-surely I can follow your structured approach while adding my own... perspective.~
+@32   = ~I have indeed given it considerable thought, Haer'Dalis. Nahal's is not merely a spell. My answer remains unchanged.~
+@33   = ~Ah, but therein lies your misunderstanding, my cautious friend! Who better to navigate chaos than one who embraces its inevitable victory? This humble bard has performed on stages across the planes—surely I can follow your structured approach while adding my own... perspective.~
 @34   = ~You speak of adding your "perspective" as though wild magic were a theatrical interpretation open to artistic license. It is not.~
 @35   = ~I respects your conviction, if not your conclusion. But know this, my steadfast heron: should you ever reconsider, I would approach your teachings with the same reverence I hold for the final act of a tragic play.~
 @36   = ~Some doors may never open... but this sparrow shall ever listen for the turning of the key.~
@@ -54,64 +54,64 @@
 @48   = ~That particular complexity, I'm afraid, is not unique to those with divine heritage. For what it's worth, Imoen, beneath everything that's happened... your fundamental character remains remarkably constant. Perhaps more so than any of us.~
 @49   = ~Well, aren't you full of surprises today!~
 
-@50   = ~So I've been thinking... all this god-power business will be over eventually, right? And you never talk about what comes after. Got any grand plans tucked away in that proper noggin of yours?~
-@51   = ~I've given it considerable thought, actually. The Ulcaster ruins...Beneath their decay lies a foundation of remarkable magical infrastructure.~
+@50   = ~So I've been thinking... all this funny business will be over eventually, right? And you never talk about what comes after. Got any grand plans tucked away in that proper noggin of yours?~
+@51   = ~I've given it considerable thought, actually. The Ulcaster ruins... beneath their decay lies a foundation of remarkable magical infrastructure.~
 @52   = ~Wait, that creepy old school near Beregost? The one with all the mustiness and nasty wolf-like things? That's your big dream?~
-@53   = ~Its current state is lamentable, yes. But with proper restoration... I believe it could serve as an academy specifically focused on wild magic studies. A controlled environment for those with... unpredictable talents.~
-@54   = ~A school for wild mages? That's actually... not half bad! Better than leaving them to blow themselves up or get run out of town by angry mobs. I've seen how people look at magic they don't understand.~
-@55   = ~Precisely. Wild magic practitioners require specialized instruction. Most existing institutions either reject wild mages outright or attempt to... bring them back to a specific school of magic.~
+@53   = ~Its current state is lamentable, yes. But with proper restoration... I believe it could serve as an academy specifically focused on wild magic studies.~
+@54   = ~A school for wild mages? That's actually... not half bad! Better than leaving them to blow themselves up or get run out of town by angry mobs.~
+@55   = ~Precisely. Wild magic practitioners require specialized instruction. Most existing institutions either reject wild mages outright or attempt to... bring them back to another school of magic.~
 @56   = ~You know what? I could help with that. I mean, after all this is over. I've got a knack for making stuffy places less... stuffy. Every school needs someone to keep things from getting too serious, right?~
 @57   = ~I... I will need to think about it.~
-@58   = ~Plus I could enchant all the chairs to make rude noises when the stuck-up students sit down! Kidding! Mostly. But seriously, we'd make a good team. You with all the boring stuff and me teaching them how to actually have fun with it.~
-@59   = ~Eh...I am not saying no, but...~
+@58   = ~Plus I could enchant all the chairs to make rude noises when the stuck-up students sit down! Kidding! But seriously, we'd make a good team. You with all the boring stuff and me teaching them how to actually have fun with it.~
+@59   = ~Eh... I am not saying no yet, but...~
 @60   = ~Fine, fine. You think about it.~
 
 @61   = ~I must confess, Areen, I am rather surprised you've remained with us this long. You had not struck me as one with the adventurer's spirit, given your... family background.~
 @62   = ~I find myself equally perplexed by my continued presence. Though I suspect it has less to do with any "adventurer's spirit" and more with scholarly obstinance. The Selemchants are hardly known for their courage.~
-@63   = ~I imagine your relatives expected you to be tallying ledgers rather than facing godspawn. In Amn, even magic must generate profit to be deemed worthy of pursuit.~
+@63   = ~I imagine your relatives expected you to be tallying ledgers rather than facing godspawn.~
 @64   = ~Following <CHARNAME> has proven marginally more enlightening than attending tedious mercantile galas.~
-@65   = ~Your spellwork is less erratic than when we first met. Though that's hardly saying much, considering you once turned yourself purple for three days in Athkatla.~
+@65   = ~Your spellwork is less erratic than when we first met. Though that's hardly saying much, considering you once turned yourself purple for three days.~
 @66   = ~I had hoped we'd all collectively agreed to never mention that particular incident again. I was attempting to document the chromatic variations in wild surge manifestations. The results were... unexpectedly personal.~
 @67   = ~Most of your kin would have fled back to their comfortable manors by now. At least you've shown more backbone than I expected from an Amnian merchant-spawn.~
-@68   = ~How terribly gracious of you, Jaheira. I shall have that carved on my tombstone, should we survive this ordeal: "Possessed marginally more backbone than expected." The Selemchant family crest could use such a distinguished motto.~
+@68   = ~How terribly gracious of you, Jaheira. I shall have that carved on my tombstone, should we survive this ordeal—"RIP Areen Selemchant: Possessed marginally more backbone than expected."~
 
-@69   = ~Say, Areen, I've been thinking about expanding the Jansen family turnip empire. You Selemchants have quite the reputation in Athkatla's mercantile circles, don't you? I've got this cousin, Petunia Jansen - breathtaking girl, only has six toes on her left foot - and I was thinking she'd make a splendid match for you!~
+@69   = ~Say, Areen, I've been thinking about expanding the Jansen family turnip empire. You Selemchants have quite the reputation in Athkatla's mercantile circles, don't you? I've got this cousin, Petunia Jansen—breathtaking girl, has six toes on her left foot—and I was thinking she'd make a splendid match for you!~
 @70   = ~Absolutely not, Jan.~
-@71   = ~Of course! The chaos of wild magic, the chaos of marriage - practically the same thing! My aunt Gertrude wed a wild mage once. Their wedding reception ended with the cake turning into a flock of geese, but the turnip profits were magnificent! Think of the business opportunities - the Selemchant name combined with Jansen ingenuity!~
+@71   = ~Are you sure? The chaos of wild magic, the chaos of marriage—practically the same thing! I've I ever told you that my aunt Gertrude wed a wild mage once. Their wedding reception ended with the cake turning into a flock of geese, but the turnip profits were magnificent! Think of the business opportunities—the Selemchant name combined with Jansen ingenuity!~
 @72   = ~I... I'm afraid my family name is not for sale.~
-@73   = ~But think about it. We'll be rich as Waterdhavian nobles! My second cousin twice removed, Petunia-May Jansen, she's got a head for business and is only slightly allergic to magic. Perfect match for you!~
+@73   = ~But think about it. We'll be rich as Waterdhavian nobles! My second cousin twice removed, Petunia-May Jansen, she's got a head for business and is only slightly allergic to magic. Another perfect match for you!~
 @74   = ~And the tax benefits! The Athkatlan Revenue Office gives substantial breaks to newly joined merchant houses!~
-@75   = ~My cousin Tulip is brilliant with numbers. Once counted all the turnips in our cellar without taking off her shoes - seventeen thousand, three hundred and forty-two, in case you were wondering.~
-@76   = ~Seventeen thousand, three hundred and forty-two, really?~
+@75   = ~My cousin is brilliant with numbers. Once counted all the turnips in our cellar without taking off her shoes—seventeen thousand, three hundred and forty-two—in case you were wondering.~
+@76   = ~I said... seventeen thousand, three hundred and forty-two, really?~
 @77   = ~Well, that's what they said about the Jansen turnip cellars until my cousin Dahlia reorganized them! Found three missing cousins who'd been lost in there since the winter of '39! What about a business partnership instead? No marriage necessary! Just lend me the Selemchant name for my new line of Magic-Infused Turnip Elixirs!~
 @78   = ~What precisely would these elixirs do?~
-@79   = ~Whatever we want them to do! Hair growth, hair removal, speaking in tongues, curing hiccups, causing hiccups! My prototype makes the drinker float six inches off the ground every third step! Perfect for avoiding dog droppings in Athkatla's streets!~
+@79   = ~Whatever we want them to do! Hair growth, hair removal, curing hiccups, causing hiccups! My prototype makes the drinker float six inches off the ground every third step! Perfect for avoiding dog droppings in Athkatla's streets!~
 @80   = ~Selling wild magic effects to the public? Absolutely not.~
-@81   = ~Regulation, schmegulation! I've been thinking - what if YOU married into the Jansen family instead? As a Jansen, you'd have access to generations of turnip-growing secrets! Did you know wild magic affects turnip growth? My grandfather's crop spelled out "BEWARE THE PURPLE HAMSTER" after a wild surge! The humble turnip is the most magically receptive vegetable in existence!~
-@82   = ~Master Jansen, you have rendered me speechless.~
+@81   = ~Regulation, schmegulation! I've been thinking—what if YOU married into the Jansen family instead? As a Jansen, you'd have access to generations of turnip-growing secrets! Did you know wild magic affects turnip growth? My grandfather's crop spelled out "BEWARE THE PURPLE HAMSTER" after a wild surge! The humble turnip is the most magically receptive vegetable in existence!~
+@82   = ~Master Jansen, you have rendered me both speechless and exhausted.~
 
-@83   = ~I have been contemplating something, Sir Keldorn, and I believe your perspective would be valuable. In your years as an Inquisitor, have you found that magic itself possesses an inherent moral quality, or is it merely a tool whose virtue depends upon its wielder?~
-@84   = ~Magic, like a sword, can be wielded for good or ill, Areen. But unlike a sword, magic can corrupt its user. The temptation to reach for greater power is always present. Torm teaches that vigilance against such temptation is a constant battle.~
+@83   = ~I have been contemplating something, Sir Keldorn, and I believe your perspective would be valuable. In your years as Inquisitor in the Order, have you found that magic itself possesses an inherent moral quality, or is it merely a tool whose virtue depends upon its wielder?~
+@84   = ~Magic, like a sword, can be wielded for good or ill, as you well know, Areen. But unlike a sword, magic can corrupt its user. The temptation to reach for greater power is always present. Torm teaches that vigilance against such temptation is a constant battle.~
 @85   = ~But surely you must acknowledge that magical theory itself is neutral? I've spent years analyzing the formulaic structures behind wild magic. It's complex mathematics and energy manipulation, not the summoning of infernal powers that some of your Order might believe.~
-@86   = ~I have seen far too many well-intentioned mages fall to corruption. Remember Irenicus? His pursuit of knowledge began as pure curiosity.~
-@87   = ~With all due respect, comparing me to Irenicus is rather extreme.~
-@88   = ~I meant no direct comparison. Perhaps I have grown... cautious with age. I have witnessed too many good men corrupted by power they believed they could control. Even the most disciplined mind can falter when offered enough power.~
-@89   = ~What interests me is that divine magic seems exempt from such scrutiny: You call upon Torm for miracles that rival any arcane spell, yet these powers are deemed inherently virtuous.~
+@86   = ~I have seen far too many well-intentioned mages fall to corruption. Remember the Corthala family? Remember Irenicus?~
+@87   = ~With all due respect, comparing me to Lavok or Irenicus is rather extreme.~
+@88   = ~I meant no direct comparison. Perhaps I have grown cautious with age. I have witnessed too many good men corrupted by power they believed they could control. Even the most disciplined mind can falter when offered enough power.~
+@89   = ~What interests me is that divine magic seems exempt from such scrutiny: Priest call upon gods for miracles that rival any arcane spell, yet these powers are deemed inherently virtuous.~
 @90   = ~Divine magic flows through the servant of a deity and carries the moral character of that god. The power I wield comes with Torm's blessing and is withdrawn should I stray from his teachings. The arcane arts have no such safeguard. You answer to no higher power that might check your ambitions.~
 @91   = ~I would argue this makes the disciplined mage more, not less, morally vigilant than those who simply follow divine dictates.~
-@92   = ~You remind me of my daughters when they debate me at the dinner table. Perhaps there is wisdom in what you say. The man who chooses virtue without promise of reward demonstrates true character. Still, I maintain that such freedom makes the path more perilous.~
+@92   = ~You remind me of my daughters when they debated me at the dinner table. Let's agree that the man who chooses virtue without promise of reward demonstrates true character. Still, I maintain that such freedom makes the path more perilous.~
 
 @93   = ~Ye still breathin', mage? Thought ye'd have blown yerself up by now!~
-@94   = ~Your concern is touching, Korgan.~
-@95   = ~I've got five gold says ye turn yerself into a chicken before this is over!~
+@94   = ~Your concern is touching, master Korgan.~
+@95   = ~I've got five gold says ye turn yerself into a chicken before this is over.~
 @96   = ~I've calculated the odds. It's more likely you'll accidentally cleave your own beard before that happens.~
 @97   = ~When this is done, I'm openin' a tavern. "The Headless Mage." Ye can be the sign!~
 @98   = ~How terribly creative.~
 
 @99   = ~So, Mazzy... lovely weather we're having. For adventuring, that is.~
-@100  = ~Indeed... The clouds seem... appropriately positioned in the sky.~
+@100  = ~Indeed... the clouds seem... appropriately positioned in the sky.~
 @101  = ~Right. Very... cloud-like, I would say. I should return to my studies. Wild magic requires constant attention.~
-@102  = ~Of course. And I should... practice my bowmanship. Or perhaps polish my sword. Something warrior-like.~
+@102  = ~Of course. And I should... practice my bowmanship. Or perhaps polish my sword.~
 @103  = ~Good heavens, we're absolutely dreadful at this, aren't we? Two people facing death daily, and we can't manage small talk.~
 @104  = ~Thank Arvoreen someone said it! Perhaps we'll communicate better in battle than in conversation.~
 
@@ -121,19 +121,19 @@
 @108  = ~Forgive my ignorance, but I'm not entirely familiar with this 'dajemma' you speak of. Is this some form of ritualistic guardianship practiced in your homeland?~
 @109  = ~Dajemma is when young Rashemi men leave their homes to learn of the world! We travel, we fight, we return wiser! Minsc's dajemma has been... longer than most.~
 @110  = ~A cultural exchange program with combative elements. Fascinating.~
-@111  = ~In Rashemen, we learn by DOING! Feel the snow! Wrestle the bear! Books are good for hitting small enemies, but life is the greatest teacher—right, Boo? What? Yes, we should tell him about the witches.~
+@111  = ~In Rashemen, we learn by DOING! Feel the snow! Wrestle the bear! Books are good for hitting small enemies, like spiders, but life is the greatest teacher—right, Boo? What? Yes, we should tell him about the witches.~
 @112  = ~You mean the Wychlaran?~
 @113  = ~The witches are the TRUE power of Rashemen! They guide with wisdom while men like Minsc protect with SWORDS AND FURY! Dynaheir was to be a great leader someday... Minsc has failed terribly.~
-@114  = ~AYou haven't failed, Minsc. You've carried her teachings across half the continent. And now, through this journal, her knowledge will be preserved with the care it deserves. I... believe she would find that an acceptable continuation of your dajemma.~
+@114  = ~You haven't failed, Minsc. You've carried her teachings across half the continent. And now, through this journal, her knowledge will be preserved with the care it deserves. I... I believe she would find that an acceptable continuation of your dajemma.~
 
 @115  = ~Lady de'Arnise, with our adventure nearing its conclusion, have you considered your future responsibilities? The management of your ancestral holdings must surely weigh on your mind.~
-@116  = ~I suppose I must return to the Hold eventually. Father's legacy can't simply be abandoned.~
+@116  = ~I suppose I must return to it eventually. Father's legacy can't simply be abandoned.~
 @117  = ~Indeed. And have you given thought to the... conventional expectations? Marriage alliances and heirs are rather paramount in Amnish nobility, distasteful as such arrangements may be.~
 @118  = ~Marriage? Gods, Areen, you sound like my aunt! I've far more important things to consider than finding some nobleman to give me children.~
 @119  = ~Without heirs, your holdings remain vulnerable to rival families. The Roenals, as I recall, have already made their ambitions quite clear.~
 @120  = ~Isaea Roenal can rot in the Abyss. No, I've been thinking of using my position differently—perhaps even seeking a seat on the Council itself someday. The nobility needs reform from within.~
 @121  = ~Rather ambitious.~
-@122  = ~Maybe I'll invite you to the Hold when this is over. I could use an advisor who understands both magic and Amnish politics.~
+@122  = ~Maybe I'll invite you over. I could use an advisor who understands both magic and Amnish politics.~
 @123  = ~A gracious offer, though I suspect my family's reputation would hardly enhance your standing among your people.~
 
 @124  = ~You remain an enigma to me, wild mage. I observe how you study <CHARNAME>, with that scholar's eye of yours. What is it you seek?~
@@ -146,12 +146,12 @@
 @131  = ~What is that you wish to tell me, Sarevok?~
 @132  = ~I've died and returned from the void, mage. I understand more of chaos than you could possibly imagine. What I wonder is what you'll do when <CHARNAME> ascends. Will your "academic interest" be satisfied then?~
 @133  = ~Perhaps I simply believe that documenting these events has value beyond your narrow pursuit of advantage.~
-@134  = ~Noble sentiments. But remember this, Selemchant – I've seen how men's principles melt away in the crucible of divine power. When the moment comes, we shall see what truly drives you.~
+@134  = ~Noble sentiments. But remember this, Selemchant–I've seen how men's principles melt away in the crucible of divine power. When the moment comes, we shall see what truly drives you.~
 @135  = ~Indeed we shall, Sarevok. Now, if you'll excuse me, I have work that actually matters.~
 
-@136  = ~Your wild magic... it didn't destroy us all back there. I've been meaning to ask - how is it you haven't turned yourself into a potted plant yet?~
+@136  = ~Your wild magic... it didn't destroy us all back there. I've been meaning to ask—how is it you haven't turned yourself into a potted plant yet?~
 @137  = ~Disappointed?~
-@138  = ~But I've noticed something. When that Bhaalspawn attached us, your counterspell wasn't... chaotic. It was calculated.~
+@138  = ~I've noticed something. When that Bhaalspawn attached us, your counterspell wasn't... chaotic. It was calculated.~
 @139  = ~Wild magic isn't about embracing randomness, it's about acknowledging it exists and preparing accordingly. Rather like your ancestors should have done instead of believing they could master death without consequences.~
 @140  = ~The difference being?~
 @141  = ~When I stand before the abyss of magical chaos, I don't delude myself that I control it. I merely... negotiate favorable terms. Your ancestors believed they could dominate the powers they toyed with.~
@@ -159,8 +159,8 @@
 
 @143  = ~You call yourself a mage of discipline, rivvil? Your magic is as untamed as a drow child's first steps.~
 @144  = ~I wouldn't expect you to comprehend my craft.~
-@145  = ~I have seen goblins with more mastery of their crude magics than you demonstrate, Selemchant.~
+@145  = ~I have seen goblins with more mastery of their crude magics than you demonstrate.~
 @146  = ~How fascinating that you've made such comprehensive observations of goblin spellcasters. One wonders about the company you've kept.~
 @147  = ~You mock me?~
 @148  = ~What if I do?~
-@149  = ~I will peel your skin from your bones, jaluk~
+@149  = ~I will peel your skin from your bones, jaluk. Treat carefully.~

@@ -1,21 +1,21 @@
 // Dorn SoA
 
 @0    = ~I've been watching you, mage. You flinch whenever I pass, like prey sensing a predator.~
-@1    = ~I assure you, Il-Khan, it's not fear that prompts my reaction but rather a scholarly aversion to the miasma of otherworldly energy that clings to you. Most... unhygienic.~
+@1    = ~I assure you, Dorn, it's not fear that prompts my reaction but rather a scholarly aversion to the miasma of otherworldly energy that clings to you.~
 @2    = ~Pretty words to mask simple fear.~
-@3    = ~There's nothing simple about a rational response to danger, sir. In Athkatla, we learn to distinguish between power and mere brutality. The Council of Six doesn't maintain control through mindless violence, but through calculated application of influence.~
-@4    = ~The Council of Six? Merchants hiding behind wealth and whispers. My patron grants me strength that would crush your precious Council in an instant.~
-@5    = ~Yes, and at what cost? I've studied enough planar theory to recognize a ruinous bargain. Your patron collects far more than he gives, blackguard. That's not power—it's a rather obvious confidence scheme with your soul as collateral.~
+@3    = ~There's nothing simple about a rational response to danger, sir. In Athkatla, we learn to distinguish between power and mere brutality.~
+@4    = ~You talk like a merchant, wild mage. My patron grants me strength that would crush you in an instant.~
+@5    = ~Yes, and at what cost? I've lived enough among merchants to recognize a ruinous bargain. Your patron collects far more than he gives, blackguard. That's not power—it's a rather obvious confidence scheme with your soul as collateral.~
 
-@6    = ~I couldn't help but notice your technique during our last encounter, Dorn. Your sword strokes appear chaotic, but there's a discernible pattern to your movements.~
+@6    = ~I couldn't help but notice your fighting technique pathers during our last encounter, Dorn.~
 @7    = ~Analyzing my fighting style, mage? Planning to run more efficiently when the time comes?~
-@8    = ~Hardly. I'm merely noting that your combat approach mirrors certain chaotic energy patterns in wild magic. Fascinating, really...primitive, but effective.~
+@8    = ~Hardly. I'm merely noting that your combat approach mirrors certain chaotic energy patterns in wild magic. Fascinating, really... primitive, but effective.~
 @9    = ~In battle, the only theory that matters is who remains standing. Your Amnian academics would soil themselves facing what I've conquered.~
-@10   = ~You underestimate Amn, sir. But I suppose subtlety isn't valued in... where was it again? Luskan?~
+@10   = ~You underestimate Amn, sir. But I suppose subtlety isn't valued in... where was this place you come from? Luskan?~
 @11   = ~Mock my origins at your peril, mage. Unlike you, I've shed the weakness of my past. When this journey ends, remember who you taunted while hiding behind <CHARNAME>'s protection.~
 
 @12   = ~Selemchant. I've come to a conclusion about you.~
-@13   = ~Have you indeed? I await your scholarly assessment with bated breath.~
+@13   = ~Have you? I await your scholarly assessment with bated breath.~
 @14   = ~You hide behind words, but beneath it all, you're driven by the same hunger for power that drives me.~
 @15   = ~There is a rather significant difference between methodical study of the arcane and selling one's soul to the first demonic entity that offers a shortcut to power, Il-Khan.~
 @16   = ~Is there? Your wild magic courts chaos itself. You open yourself to forces beyond your control, just as I have. The only difference is that I acknowledge my pact, while you disguise yours with academic pretension.~
@@ -25,7 +25,7 @@
 @17   = ~We walk among gods and divine power, surrounded by the essence of a dead deity. Does your academic mind comprehend what we face, mage?~
 @18   = ~Actually, this presents quite the unprecedented research opportunity. The metaphysical implications of fractured godhood are... well, they're rather beyond what even the most advanced thaumaturgical texts could anticipate.~
 @19   = ~Research? We stand in the shadow of divinity itself, and you treat it like some classroom exercise.~
-@20   = ~On the contrary. Unlike some who merely seek to harness power without understanding it, I recognize the fundamental importance of comprehending what we're dealing with. One doesn't simply stumble blindly into godhood.~
+@20   = ~Unlike some who merely seek to harness power without understanding it, I recognize the fundamental importance of comprehending what we're dealing with. One doesn't simply stumble blindly into godhood.~
 @21   = ~Your precious understanding won't shield you when the children of Bhaal come for blood. My blade will do more than your theories.~
 @22   = ~Fascinating how you consistently reduce everything to violence. Has it occurred to you that <CHARNAME>'s divine heritage represents more than just another opportunity for bloodshed?~
 @23   = ~When this is finished, <CHARNAME> will ascend or die. The weak theorists like you will record the tale for others to read, while those with true strength shape reality itself.~
@@ -33,7 +33,7 @@
 
 // Hexxat SoA
 
-@25   = ~You keep a careful distance from me, mage. Yet I sense your eyes studying me when you believe I'm unaware.~
+@25   = ~You keep a careful distance from me, Areen. Yet I sense your eyes studying me when you believe I'm unaware.~
 @26   = ~A professional curiosity, nothing more. Most scholars lack the... opportunity for direct observation.~
 @27   = ~And should I offer you a closer examination, would your curiosity overcome your obvious discomfort? Many find the prospect... irresistible.~
 @28   = ~I appreciate the offer, but I prefer to maintain certain professional boundaries in my research. One doesn't study a fire elemental by leaping into the flames, after all. I'm quite content observing from a scholarly and prudent distance.~
@@ -41,8 +41,8 @@
 // Hexxat ToB
 
 @29   = ~When all this is finished, where will you go, Selemchant? Back to your studies in Amn?~
-@30   = ~Assuming we survive this business with Bhaal's essence? I suppose I shall return to my research. Though after witnessing the metaphysical principles at work here, my previous studies seem rather... elementary in comparison.~
-@31   = ~Immortality offers endless time for study. Should you ever reconsider those... professional boundaries of yours, I could show you secrets no mortal academy has catalogued.~
+@30   = ~Assuming we survive this business with Bhaal's essence? I suppose I shall return to my research, yes.~
+@31   = ~Immortality offers endless time for study, you know? Should you ever reconsider those... professional boundaries of yours, I could show you secrets no mortal academy has catalogued.~
 
 // Neera SoA
 
@@ -58,19 +58,19 @@
 @41   = ~"Talent without discipline is merely unrealized potential." Do you practice these little speeches?~
 @42   = ~I don't need to practice stating the obvious. Though I understand why you might find it challenging.~
 @43   = ~You know what, Areen? You're right. I should be more disciplined. I'll start by restraining myself from turning you into a squirrel.~
-@44   = ~How original. Transmutation threats—the last refuge of the magically ineloquent.~
+@44   = ~Transmutation threats—the last refuge of the magically ineloquent.~
 
 @45   = ~So... Areen. Ever accidentally turned anyone into a chicken? I've done it three times!~
 @46   = ~How fascinating. I've never considered poultry transformation a benchmark for magical achievement.~
 @47   = ~Oh come on! You can't tell me you've never had a single funny magical mishap!~
 @48   = ~The difference between us, Neera, is that I don't consider potentially lethal arcane incidents to be "funny."~
 @49   = ~You're about as much fun as a textbook on Amnian tax law. You know that?~
-@50   = ~Having read several such volumes, I assure you they're far more intellectually stimulating than watching you hurl random effects about like a child with fireworks.~
+@50   = ~Having read several such volumes, I assure you they're far more intellectually stimulating than watching you hurl random spells about like a child with fireworks.~
 @51   = ~At least fireworks bring joy to people's lives...~
 
 @52   = ~Neera, I've been meaning to comment on your... activities with your fellow wild mages.~
 @53   = ~What about it? Going to lecture me on proper wild magic etiquette again?~
-@54   = ~Actually, I was going to say that your efforts against the Red Wizards are... not entirely without merit.~
+@54   = ~Actually, I was going to say that your efforts against the Red Wizards were... not entirely without merit.~
 @55   = ~Wait... was that almost... a compliment? Are you feeling alright?~
 @56   = ~Quite. While your methods remain haphazard at best, your dedication to protecting practitioners of our art shows a certain... commendable quality.~
 @57   = ~I'm sorry, did you just say "our art"? As in, you and me, same team?~
@@ -82,7 +82,7 @@
 // Neera ToB
 
 @62   = ~Neera, I've observed a marked improvement in your casting technique. Almost... methodical at times.~
-@63   = ~Was that an actual compliment? From you?~
+@63   = ~Was that an actual compliment?~
 @64   = ~Merely an empirical observation. Your wild surges appear less... well, wild.~
 @65   = ~Maybe I've picked up a thing or two. Even from you, believe it or not.~
 @66   = ~Indeed? Perhaps there's hope for structured magical education after all.~

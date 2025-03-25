@@ -10,8 +10,8 @@
 @8    = ~I only know that I would regret not taking this opportunity.~
 @9    = ~I really do not know what to choose.~
 @10   = ~I've studied chaos and order my entire life, yet this choice before you defies all academic classification.~
-@11   = ~Whatever path you choose, my feelings remain unchanged. Rather remarkable, considering my usual insistence on logical certainty.~
-@12   = ~Choose what feels right for you. Not for me, not for the Realms... but for yourself.~
+@11   = ~Whatever path you choose, my feelings remain unchanged.~
+@12   = ~Choose what feels right for you. Not for me, not for the realms... but for yourself.~
 @13   = ~I suppose this is farewell. One hopes our paths might cross again, though probability suggests otherwise. Quite... good bye, <CHARNAME>.~
 @14   = ~I... what?~
 @15   = ~It is only logical.~
@@ -24,13 +24,13 @@
 @21   = ~What of the inevitable pain you must give to the one you love? What of Areen?~
 @22   = ~<CHARNAME> loves me and so do I.~
 @23   = ~My son. You have grown in magical powers, yet your life choices are erratic!~
-@24   = ~Mother~
+@24   = ~Mother?~
 @25   = ~Areen, my son. How disappointed I am to see what you've become.~
-@26   = ~Mother... is that you? Your little boy...~
-@27   = ~Consorting with a Bhaalspawn? Have I taught you nothing about the dangers of chaos? This... relationship will destroy you just as our experiments destroyed us.~
+@26   = ~Mother... no this can not be.~
+@27   = ~Consorting with a Bhaalspawn? Have I taught you nothing about the dangers of chaos? This relationship will destroy you just as our experiments destroyed us.~
 @28   = ~But...~
-@29   = ~You've been blinded by affection. This child of murder will bring only ruin...~
-@30   = ~Back off, you ghastly fraud! Good heavens, did you honestly think I wouldn't recognize this... this preposterous impersonation? My mother would be absolutely mortified by such a dreadful performance.~
+@29   = ~You've been blinded by affection. This child of murder will bring only ruin.~
+@30   = ~Back off, you ghastly fraud! Good heavens, did you honestly think I wouldn't recognize this... preposterous impersonation? My mother would be absolutely mortified by such a dreadful performance.~
 @31   = ~You are right, Areen, Gorion would never speak this way. You are a fraud!~
 @32   = ~Stop it, Gorion! He doesn't deserve this!~
 @33   = ~I won't let you hurt him!~
@@ -44,7 +44,7 @@
 @41   = ~Let's go. And thank you.~
 @42   = ~You're very welcome.~
 @43   = ~Thank you for what?~
-@44   = ~Areen embraces you with heartfelt warmth.~
+@44   = ~*Areen embraces you with heartfelt warmth.*~
 @45   = ~For giving that bastard a what for.~
 
 @46   = ~You cannot trust this one, <CHARNAME>.~
@@ -129,6 +129,6 @@
 @206  = ~Let's sleep some more.~
 @207  = ~No, it is time to go.~
 @208  = ~As you wish, then.~
-@245  = ~Areen squeezes your hand tightly.~
+@245  = ~*Areen squeezes your hand tightly.*~
 @246  = ~Whatever happens now, I will always love you.~
 @247  = ~Whatever destiny unfolds before us, you will always have a home in my heart.~
