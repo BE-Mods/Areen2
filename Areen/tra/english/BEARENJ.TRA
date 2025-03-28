@@ -310,8 +310,8 @@ The strictest wild caster particulah!~
 
 // talk 7: Our adventure together to get Imoen back and punish Irenicus - Discussing their shared mission shows growing trust and alignment of purpose.
 
-@271 = ~This pursuit of Irenicus is rather more consuming than the academic exercises I'm accustomed to.~
-@272 = ~It's difficult not to think about it. It is all very personal.~
+@271 = ~This pursuit of Irenicus is more consuming than the academic exercises I'm accustomed to.~
+@272 = ~It is all very personal. You understand, right?~
 @273 = ~I'm surprised to hear you admit that. You usually seem quite focused on your magical studies.~
 @274 = ~It's a complex situation that tests all of us. I appreciate your candor.~
 @275 = ~I don't have time for your musings right now, Areen.~
@@ -322,15 +322,15 @@ The strictest wild caster particulah!~
 @280 = ~Have you encountered anyone like him in your studies of magic?~
 @281 = ~I never thought I'd hear you admit to being disturbed by anything.~
 @282 = ~Beyond the obvious moral transgressions?~
-@283 = ~That seems to contradict your own disciplined approach to magic.~
+@283 = ~Does that contradict your own disciplined approach to magic?~
 @284 = ~Magical skills can become monstrous when divorced from ethics.~
 @285 = ~Hardly a contradiction. I pursue control and understanding precisely because I respect the power I wield. Irenicus seems to view magic merely as a tool for his ambitions.~
-@286 = ~There were always those who pushed too far, brilliant minds seduced by their own intellect.~
+@286 = ~There are always those who push too far, brilliant minds seduced by their own intellect.~
 @287 = ~And you? Were you ever tempted to cross those boundaries?~
 @288 = ~What do you think drives someone to become like Irenicus?~
 @289 = ~I appreciate your perspective on this. It helps to talk through these things.~
 @290 = ~My parents instilled in me a rather rigid ethical framework regarding magical practice. Though they were pioneers, they never sacrificed principles for results.~
-@291 = ~As for Irenicus... I suspect his journey began with perhaps even noble intentions. But somewhere along the way, the pursuit itself became corrupted.~
+@291 = ~Irenicus... I suspect his journey began with perhaps even noble intentions. But somewhere along the way, the pursuit itself became corrupted.~
 @292 = ~I've seen it happen before—the gradual erosion of ethical boundaries, justified by incremental advancements. "Just one more experiment," they say. "Just one more boundary to cross." Before long, the person they once were exists only in memory.~
 @293 = ~We won't let that happen to us, no matter what we face.~
 @294 = ~That's a sobering thought.~
