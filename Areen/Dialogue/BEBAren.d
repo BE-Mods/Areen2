@@ -1,68 +1,5 @@
 BEGIN BEBAREN
 
-// TRIGGERED BANTER
-
-// Female-Male Edwin-related banter
-
-CHAIN
-IF ~Global("BEEdwina","GLOBAL",2)~ THEN BEDWIN BEArenEdwin3
-@151
-DO ~SetGlobal("BEEdwina","GLOBAL",3)~
-== BEBAREN @152
-== BEDWIN @153
-== BEBAREN @154
-== BEDWIN @155
-== BEBAREN @156
-== BEDWIN @157
-EXIT
-
-CHAIN
-IF ~Global("BEEdwina","GLOBAL",5)~ THEN BEDWIN BEArenEdwin4
-@158
-DO ~SetGlobal("BEEdwina","GLOBAL",6)~
-== BEBAREN @159
-== BEDWIN @160
-== BEBAREN @161
-== BEDWIN @162
-== BEBAREN @163
-== BEDWIN @164
-EXIT
-
-// if Keldorn denouonce his wife
-
-CHAIN
-IF ~Global("BEKeldornFamily","GLOBAL",2)~ THEN BEBAREN BEArenKeldorn2
-@130
-DO ~SetGlobal("BEKeldornFamily","GLOBAL",3)~
-== BKELDOR @131
-== BEBAREN @132
-== BKELDOR @133
-== BEBAREN @134
-== BKELDOR @135
-== BEBAREN @136
-== BKELDOR @137
-== BEBAREN @138
-== BKELDOR @139
-EXIT
-
-// if knight test passed
-
-CHAIN
-IF ~Global("BEAnomenTest","GLOBAL",2)~ THEN BEBAREN BEArenAnomen2
-@140
-DO ~SetGlobal("BEAnomenTest","GLOBAL",3)~
-== BANOMEN @141
-== BEBAREN @142
-== BANOMEN @143
-== BEBAREN @144
-== BANOMEN @145
-== BEBAREN @146
-== BANOMEN @147
-== BEBAREN @148
-== BANOMEN @149
-== BEBAREN @150
-EXIT
-
 // FIRST ROUND OF BANTER
 
 // Aeri
@@ -433,4 +370,67 @@ DO ~SetGlobal("BEArenImoen3","GLOBAL",1)~
 == IMOEN2J @174
 == BEBAREN @175
 == IMOEN2J @176
+EXIT
+
+// TRIGGERED BANTER
+
+// Female-Male Edwin-related banter
+
+CHAIN
+IF ~Global("BEEdwina","GLOBAL",2)~ THEN BEDWIN BEArenEdwin3
+@151
+DO ~SetGlobal("BEEdwina","GLOBAL",3)~
+== BEBAREN @152
+== BEDWIN @153
+== BEBAREN @154
+== BEDWIN @155
+== BEBAREN @156
+== BEDWIN @157
+EXIT
+
+CHAIN
+IF ~Global("BEEdwina","GLOBAL",5)~ THEN BEDWIN BEArenEdwin4
+@158
+DO ~SetGlobal("BEEdwina","GLOBAL",6)~
+== BEBAREN @159
+== BEDWIN @160
+== BEBAREN @161
+== BEDWIN @162
+== BEBAREN @163
+== BEDWIN @164
+EXIT
+
+// if Keldorn denouonce his wife
+
+CHAIN
+IF ~Global("BEKeldornFamily","GLOBAL",2)~ THEN BEBAREN BEArenKeldorn2
+@130
+DO ~SetGlobal("BEKeldornFamily","GLOBAL",3)~
+== BKELDOR @131
+== BEBAREN @132
+== BKELDOR @133
+== BEBAREN @134
+== BKELDOR @135
+== BEBAREN @136
+== BKELDOR @137
+== BEBAREN @138
+== BKELDOR @139
+EXIT
+
+// if knight test passed
+
+CHAIN
+IF ~Global("BEAnomenTest","GLOBAL",2)~ THEN BEBAREN BEArenAnomen2
+@140
+DO ~SetGlobal("BEAnomenTest","GLOBAL",3)~
+== BANOMEN @141
+== BEBAREN @142
+== BANOMEN @143
+== BEBAREN @144
+== BANOMEN @145
+== BEBAREN @146
+== BANOMEN @147
+== BEBAREN @148
+== BANOMEN @149
+== BEBAREN @150
 EXIT

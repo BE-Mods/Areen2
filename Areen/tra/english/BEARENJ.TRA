@@ -167,7 +167,7 @@ The strictest wild caster particulah!~
 @143 = ~I feel somewhat out of place, if I'm being honest.~
 @144 = ~Beyond Irenicus' torture, there's not much to report.~
 @145 = ~Much the same as always.~
-@146 = ~I... heard. I'm genuinely sorry about that miserable affair.~
+@146 = ~I heard... I'm genuinely sorry about that miserable affair.~
 @147 = ~I'm glad our paths have crossed again, then.~
 @148 = ~*Areen looks at you with half a smile.*~
 @149 = ~Rest assured, my magical abilities are at your disposal should we encounter him again.~
@@ -217,8 +217,8 @@ The strictest wild caster particulah!~
 @187 = ~Pass the wine, if you would!~
 @188 = ~I'm hardly "relaxed," merely... adopting appropriate behavior for the social context.~
 @189 = ~Organization is the foundation of all worthwhile pursuits. Even apparent spontaneity benefits from careful preparation.~
-@190 = ~*Areen pours wine* One doesn't simply fling components about when casting a spell, does one? The same principle applies to... well, everything else.~
-@191 = ~During my childhood in Athkatla, before my parents died, we would often dine outdoors in the gardens of our estate. Not the grand affairs other noble families hosted, mind you, just the three of us. I still recall those evenings... my parents arguing about their latest theories on wild magic fluctuations while I studied their notes.~
+@190 = ~*Areen pours wine* One doesn't simply fly components about when casting a spell, does one? The same principle applies to... well... everything else.~
+@191 = ~During my childhood in Athkatla, before my parents died, we would often dine outdoors in the gardens of our estate. Not the grand affairs other noble families hosted, mind you, just the three of us. I still recall those evenings–my parents arguing about their latest theories on wild magic fluctuations while I studied their notes.~
 @192 = ~Tell me more about your family.~
 @193 = ~Is there any wine left?~
 @194 = ~I'm sorry about your parents, Areen.~
@@ -242,7 +242,7 @@ The strictest wild caster particulah!~
 @209 = ~They were... extraordinary. Not merely in their magical prowess, but in their intellectual rigor. They believed that every surge, every anomaly could be documented, quantified, and eventually predicted, if one possessed sufficient understanding of the underlying principles.~
 @210 = ~The difference between a dabbler and a true practitioner of wild magic is preparation.~
 @211 = ~I apologize for monopolizing the conversation. It's rather difficult to find others who appreciate the academic foundations of wild magic. Most practitioners I've encountered seem content to wave their hands and hope for favorable outcomes. A travesty to the discipline, really.~
-@212 = ~I... find it remarkably comfortable discussing these matters with you, <CHARNAME>. Most people either fear wild magic or dismiss it as frivolous.~
+@212 = ~I... I find it remarkably comfortable discussing these matters with you, <CHARNAME>. Most people either fear wild magic or dismiss it as frivolous.~
 @213 = ~I enjoy our conversations, Areen. Your passion is captivating.~
 @214 = ~I'm glad you feel comfortable with me. I value your insights.~
 @215 = ~Don't read too much into it. I'm just being polite.~
@@ -301,7 +301,7 @@ The strictest wild caster particulah!~
 @262 = ~That's... an intriguing observation. We do tend to accomplish what bureaucracies cannot, don't we? Though I confess I've never thought of adventuring as a political act before. Perhaps there's something to that.~
 @263 = ~What I find most troubling isn't the corruption itself, but how it warps people's values. When coin becomes the measure of all things, people begin to see themselves and others as mere commodities.~
 @264 = ~I refuse to accept such reductionism. There are principles worth upholding regardless of profit. Intelligence without wisdom, wealth without compassion—these are not worthy aspirations. At least, not in my estimation.~
-@265 = ~I... apologize if I've been overly forthcoming. It's rare that I find someone with whom I can discuss such matters.~
+@265 = ~I... I apologize if I've been overly forthcoming. It's rare that I find someone with whom I can discuss such matters.~
 @266 = ~I'm glad you feel comfortable sharing your thoughts with me.~
 @267 = ~I've enjoyed hearing your perspective. It helps me understand you better.~
 @268 = ~It was rather heavy, but I am glad you shared.~
@@ -604,7 +604,7 @@ The strictest wild caster particulah!~
 
 // love talk 1: First hints of deeper feelings (after friendship talk 1) - Subtle recognition of potential romantic interest.
 
-@554 = ~I've found myself rather reflective after our previous conversation. It's... curious. I find my mind wandering in your direction with alarming frequency.~
+@554 = ~I've found myself rather reflective after our find you. It's... curious. My mind wanders in your direction with alarming frequency.~
 @555 = ~I'm flattered you think of me, Areen.~
 @556 = ~Are these wandering thoughts a problem for you?~
 @557 = ~I've been thinking about you too.~
@@ -630,10 +630,10 @@ The strictest wild caster particulah!~
 @577 = ~They sound wonderful. You must miss them terribly.~
 @578 = ~Do you aspire to follow their example?~
 @579 = ~Interesting history lesson, but we should rest now.~
-@580 = ~I do miss them. In some ways, I suppose I do aspire to their example. Though I've never expected to find someone who would... well. That is to say, I've dedicated myself to my studies rather than searching for soulmates.~
+@580 = ~I do miss them. And in some ways, I suppose I do aspire to their example. Though I've never expected to find someone who would... well. That is to say, I've dedicated myself to my studies rather than searching for soulmates.~
 @581 = ~Perhaps sometimes the best discoveries are the ones we aren't actively searching for.~
 @582 = ~It sounds like you've resigned yourself to being alone. That's rather sad.~
-@583 = ~Indeed.~
+@583 = ~Yes, well...~
 @584 = ~I... find myself curious to see what unexpected discoveries might lie ahead for us. Though I should warn you: I'm rather unpracticed in matters of the heart. I may make mistakes that would seem obvious to others. Rest well now, <CHARNAME>.~
 @585 = ~I haven't resigned myself to anything. I simply recognized the statistical improbability of finding someone who would understand my... peculiarities.~
 
