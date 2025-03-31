@@ -548,8 +548,8 @@ The strictest wild caster particulah!~
 @486 = ~Your personality is indeed compelling, but let's not diminish the gravity of your situation with deflection. Though I do appreciate your ability to maintain levity in the face of such... cosmic entanglements.~
 @487 = ~I'm hardly qualified to advise on matters of divine heritage. However, I have observed that those who define themselves primarily by their ancestry often lead rather predictable lives.~
 @488 = ~You are more than Bhaal's progeny. You are the sum of your decisions, not merely the blood in your veins. That seems a worthwhile perspective to maintain, regardless of what powers or prophecies may present themselves.~
-@489 = ~You are more than Bhaal's progeny. You are the sum of your decisions, not merely the blood in your veins. And I... find myself increasingly grateful that your decisions have included tolerating my company. Your heritage is but one facet of who you are—an extraordinary facet, certainly—but not the whole.~
-@490 = ~I... appreciate your trust in discussing this matter. Now, perhaps we should continue onward? I suspect dwelling overlong on divine matters invites attention from planes best left undisturbed.~
+@489 = ~You are more than Bhaal's progeny. You are the sum of your decisions, not merely the blood in your veins. And I... I find myself increasingly grateful that your decisions have included tolerating my company. Your heritage is but one facet of who you are—an extraordinary facet, certainly—but not the whole.~
+@490 = ~I... I appreciate your trust in discussing this matter. Now, perhaps we should continue onward? I suspect dwelling overlong on divine matters invites attention from planes best left undisturbed.~
 
 // talk 15: "I will help you fight everything and how happy I am you allow me to travel with you" - A declaration of loyalty and friendship that serves as a culmination of the friendship arc.
 
@@ -618,7 +618,7 @@ The strictest wild caster particulah!~
 @565 = ~Your parents sound very disciplined. Were they always so structured?~
 @566 = ~Yes. No. I mean... it's not an unpleasant distraction. More like when one discovers a fascinating new spell. Though that analogy perhaps lacks a certain... warmth.~
 @567 = ~They were indeed.~
-@568 = ~I find that I... value your companionship more than I had anticipated. I am used to relationships as strategic alliances. This feels... different.~
+@568 = ~I find that I value your companionship more than I had anticipated. I am used to relationships as strategic alliances. This feels... different.~
 @569 = ~I feel the same way. There's something special developing between us.~
 @570 = ~I think you're reading too much into our companionship. Let's keep things simple.~
 @571 = ~I... well. That's rather direct, isn't it? I suppose I should clarify. I haven't had many opportunities for... close friendships. Things are different in Amn.~
@@ -634,7 +634,7 @@ The strictest wild caster particulah!~
 @581 = ~Perhaps sometimes the best discoveries are the ones we aren't actively searching for.~
 @582 = ~It sounds like you've resigned yourself to being alone. That's rather sad.~
 @583 = ~Yes, well...~
-@584 = ~I... find myself curious to see what unexpected discoveries might lie ahead for us. Though I should warn you: I'm rather unpracticed in matters of the heart. I may make mistakes that would seem obvious to others. Rest well now, <CHARNAME>.~
+@584 = ~I... I find myself curious to see what unexpected discoveries might lie ahead for us. Though I should warn you: I'm rather unpracticed in matters of the heart. I may make mistakes that would seem obvious to others. Rest well now, <CHARNAME>.~
 @585 = ~I haven't resigned myself to anything. I simply recognized the statistical improbability of finding someone who would understand my... peculiarities.~
 
 // love talk 2: Discussing what a future together might look like - Moving beyond the immediate quest to imagine a shared life.
@@ -662,7 +662,7 @@ The strictest wild caster particulah!~
 
 // love talk 3: "I will give my life to protect you and to fight Irenicus" - A declaration that takes on romantic undertones in this context.
 
-@606 = ~I... had a rather vivid dream last night. About you. About us, facing Irenicus together. It was... most unsettling.~
+@606 = ~I had a rather vivid dream last night. About you. About us, facing Irenicus together. It was... most unsettling.~
 @607 = ~What happened in the dream?~
 @608 = ~Dreams can often reveal our deepest fears, Areen.~
 @609 = ~I'd rather not hear about your dreams right now.~
@@ -694,7 +694,7 @@ The strictest wild caster particulah!~
 @632 = ~I love you too, Areen. We'll figure out what works for us, together.~
 @633 = ~Thank you for trusting me with this. I still want to be with you.~
 @634 = ~I don't think this will work for me. I need more from a relationship.~
-@635 = ~I... didn't dare hope for such acceptance. To be accepted simply as I am...~
+@635 = ~I... I didn't dare hope for such acceptance. To be accepted simply as I am...~
 @636 = ~I love you, <CHARNAME>. Whatever challenges may come, we shall face them together. I find that prospect more exhilarating than any wild surge.~
 
 // AREEN QUEST
